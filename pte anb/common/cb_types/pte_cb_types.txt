@@ -569,11 +569,6 @@ cb_pte_stop_raiding = {
 #		NOT = { current_age = age_of_migrations }
 #		OR = {
 #			full_idea_group = religious_ideas
-#			AND = {
-#				has_global_flag = extended_timeline_mod
-#				full_idea_group = early_religious_ideas
-#				NOT = { adm_tech = 50 }
-#			}
 #			has_reform = feudal_theocracy
 #			has_reform = crusading_kingdom_reform
 #			has_reform = militarized_crusader_order_reform
