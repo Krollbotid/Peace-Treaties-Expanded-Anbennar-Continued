@@ -1,4 +1,4 @@
-pte_plunder_curia_treasury_catholic_very_small = {
+pte_plunder_curia_treasury_ravelian_very_small = {
 	category = 6
 	power_projection = no
 	power_cost_base = 0

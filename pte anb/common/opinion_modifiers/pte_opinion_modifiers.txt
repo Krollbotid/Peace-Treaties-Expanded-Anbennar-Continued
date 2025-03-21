@@ -27,3 +27,9 @@ pte_start_succession_crisis_opinion_negative = {
 	min = -200
 	yearly_decay = 1
 }
+
+pte_joined_trade_league = {
+	opinion = 30
+	max = 30
+	yearly_decay = 6
+}

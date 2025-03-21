@@ -16,4 +16,8 @@ pte_hostile_movement_speed_edict = {
 	ai_will_do = {
 		factor = 0
 	}
+
+	notify_trigger = {
+		is_at_war = no
+	}
 }

@@ -29,5 +29,5 @@ has_ate_advisor = {
 
 # Compatibility with Extended Timeline
 #has_owner_religion_or_secularism = {
-	always = no
+#	always = no
 #}

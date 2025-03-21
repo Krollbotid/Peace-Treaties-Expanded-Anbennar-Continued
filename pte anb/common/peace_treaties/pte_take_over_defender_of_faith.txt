@@ -106,7 +106,7 @@ pte_take_over_defender_of_faith = {
 					}
 				}
 				AND = {
-					religion = catholic
+					religion = ravelian
 					is_excommunicated = yes
 				}
 				FROM = {

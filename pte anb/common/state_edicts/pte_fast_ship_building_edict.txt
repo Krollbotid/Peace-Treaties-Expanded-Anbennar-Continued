@@ -25,4 +25,9 @@ pte_fast_ship_building_edict = {
 	ai_will_do = {
 		factor = 0
 	}
+
+	notify_trigger = {
+		is_at_war = no
+		navy_size_percentage = 0.9
+	}
 }

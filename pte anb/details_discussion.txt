@@ -64,9 +64,9 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Conditions for Visibility:[/b]
 [list]
 [*] winner declared war on the loser with the "Question Papal Authority" casus belli
-[*] winner is Catholic
+[*] winner is Ravelian
 [*] winner is excommunicated
-[*] loser is Catholic
+[*] loser is Ravelian
 [*] loser is Curia Controller
 [/list]
 
@@ -244,11 +244,11 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [b]Conditions for Visibility:[/b]
 [list]
-[*] winner is Catholic
+[*] winner is Ravelian
 [*] winner has less than 7 cardinals
-[*] loser is Catholic
+[*] loser is Ravelian
 [*] loser has at least 1 cardinal
-[*] winner owns at least 1 Catholic province that does not have a cardinal
+[*] winner owns at least 1 Ravelian province that does not have a cardinal
 [/list]
 
 [b]Effects:[/b]
@@ -500,7 +500,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] Emperor DLC is active
 [*] Papacy is active
 [*] loser is the Papal State
-[*] loser is Catholic
+[*] loser is Ravelian
 [*] curia coffers have at least 300 ducats stored
 [/list]
 
@@ -509,39 +509,39 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] if there are at least 5000 ducats in the curia coffers:
 [list]
 [*] winner gains 1500 ducats and 0.30 inflation
-[*] if winner is Catholic, not excommunicated and doesn't have selected the Papal State as rival, winner loses 50 Papal Influence
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 50 Papal Influence
 [*] curia coffers lose 2000 ducats
 [/list]
 [*] if there are between 2000 and 5000 ducats in the curia coffers:
 [list]
 [*] winner gains 1000 ducats and 0.20 inflation
-[*] if winner is Catholic, not excommunicated and doesn't have selected the Papal State as rival, winner loses 35 Papal Influence
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 35 Papal Influence
 [*] curia coffers lose 1500 ducats
 [/list]
 [*] if there are between 1000 and 2000 ducats in the curia coffers:
 [list]
 [*] winner gains 500 ducats and 0.10 inflation
-[*] if winner is Catholic, not excommunicated and doesn't have selected the Papal State as rival, winner loses 20 Papal Influence
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 20 Papal Influence
 [*] curia coffers lose 750 ducats
 [/list]
 [*] if there are between 300 and 1000 ducats in the curia coffers:
 [list]
 [*] winner gains 200 ducats and 0.05 inflation
-[*] if winner is Catholic, not excommunicated and doesn't have selected the Papal State as rival, winner loses 10 Papal Influence
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 10 Papal Influence
 [*] curia coffers lose 300 ducats
 [/list]
 [/list]
 
-[i]The war score cost differs from the money gained. The possible war score costs are 10, 20, 25 and 30 for non-Catholics or Catholics that are excommunicated or have selected the Papal State as rival. The war score cost for the other Catholics are 20, 30, 40 and 50. In that case the winner will also suffer AE from this treaty.[/i]
+[i]The war score cost differs from the money gained. The possible war score costs are 10, 20, 25 and 30 for non-Ravelians or Ravelians that are excommunicated or have selected the Papal State as rival. The war score cost for the other Ravelians are 20, 30, 40 and 50. In that case the winner will also suffer AE from this treaty.[/i]
 
 [h1]Install Antipope[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
-[*] winner is Catholic
+[*] winner is Ravelian
 [*] winner is not Curia Controller
 [*] loser is Papal State
-[*] loser is Catholic
+[*] loser is Ravelian
 [*] loser's ruler is not an Antipope installed by the winner
 [*] Papacy Mechanic is active
 [*] either:
@@ -560,9 +560,11 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Effects:[/b]
 [list]
 [*] loser gains a new ruler of winner's culture with a weak claim, who is between 60 and 80 years old
-[*] mutual opinion of winner and loser change by +50
-[*] opinion of other Catholic countries with winner change by -25
+[*] mutual opinion of winner and loser change by +25
+[*] opinion of other Ravelian countries with winner change by -25
 [*] loser gains yearly devotion -0.25 and average monarch lifespan -10% until the death of the new ruler
+[*] winner gains diplomatic reputation -2 until the death of the current ruler
+[*] winner becomes curia controller
 [/list]
 
 [h1]Transfer Monument[/h1]
@@ -593,7 +595,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] winner and loser are monarchies and share the same dynasty
 [*] winner has less than 100 legitimacy
 [/list]
-[/list]
 
 [b]Effects:[/b]
 [list]
@@ -608,7 +609,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] winner and loser are monarchies and share the same dynasty
 [*] loser has at least 1 legitimacy
 [/list]
-[/list]
 
 [b]Effects:[/b]
 [list]
@@ -622,11 +622,58 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [list]
 [*] winner declared war on the loser with the "Stop Slave Raids" casus belli
 [/list]
-[/list]
 
 [b]Effects:[/b]
 [list]
 [*] all coastal provinces of the winner that are in slave raid range of the loser gain a modifier for 30 years that makes it impossible to raid the province
+[/list]
+
+[h1]Liberate the Holy See[/h1]
+
+[b]Conditions for Visibility:[/b]
+[list]
+[*] winner declared war on the loser with the "Liberate the Holy See" casus belli
+[*] winner is Ravelian
+[*] winner is not the Papal States or its overlord
+[*] loser owns Rome (directly or by subject)
+[*] loser is not Papal States
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] Rome is ceded to the Papal States
+[*] loser and the Papal States gain a 5 year truce
+[*] winner gains 25, 35 or 50 Papal Influence (depending on whether the loser is Ravelian, of a Heretic or of a Heathen faith)
+[*] the Papal States' opinion of the winner is changed by 100
+[/list]
+
+[h1]Join Trade League[/h1]
+
+[b]Conditions for Visibility:[/b]
+[list]
+[*] Mare Nostrum DLC is active
+[*] winner is leader of a trade league
+[*] loser is not in any trade league
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] loser joins the trade league of the winner
+[*] loser's opinion of the winner is changed by +30 (the loser may leave the league at any point, but the opinion bonus should prevent AI from doing so rather quickly)
+[*] the effect is executed 1 day after the peace deal is signed, because joining the trade league of a war enemy is not possible
+[/list]
+
+[h1]Raid Splendid Court[/h1]
+
+[b]Conditions for Visibility:[/b]
+[list]
+[*] Mandate of Heaven DLC is active
+[*] loser has at least 1 splendor
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] loser loses 150 splendor
 [/list]
 
 [h1][b][u]Casus Bellis[/u][/b][/h1]
@@ -636,9 +683,9 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Conditions:[/b]
 [list]
 [*] only available for human players
-[*] is Catholic
+[*] is Ravelian
 [*] is excommunicated
-[*] target is Catholic
+[*] target is Ravelian
 [*] target is Curia Controller
 [/list]
 
@@ -887,6 +934,25 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Effects:[/b]
 [list]
 [*] allows to force convert the target to your religion despite being a heathen
+[/list]
+
+[h1]Liberate the Holy See[/h1]
+
+[b]Conditions:[/b]
+[list]
+[*] is independent or a tributary type subject
+[*] is Ravelian
+[*] has at least 1 cardinal
+[*] is not Papal States or its overlord
+[*] Papal States does not exist or does not own Rome
+[*] does not own Rome (directly or by subject)
+[*] the target owns Rome
+[*] the target is either independent or a tributary type subject or its overlord is independent or a tributary type subject
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] unlocks the "Liberate the Holy See" peace offer
 [/list]
 
 [h1][b][u]State Edicts[/u][/b][/h1]

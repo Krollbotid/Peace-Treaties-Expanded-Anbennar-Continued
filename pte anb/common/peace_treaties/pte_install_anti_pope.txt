@@ -23,7 +23,7 @@ pte_install_anti_pope = {
 		religion = ravelian
 		is_papal_controller = no
 		FROM = {
-			tag = PAP
+			tag = Z97
 			religion = ravelian
 			papacy_active = yes
 			NOT = { has_ruler_flag = anti_pope_by_@ROOT }
@@ -50,16 +50,16 @@ pte_install_anti_pope = {
 			}
 		}
 		total_own_and_non_tributary_subject_development = 300
-		OR = {
-			NOT = { is_expanded_mod_active = { mod = holy_roman_empire } }
-			AND = {
-				is_expanded_mod_active = { mod = holy_roman_empire }
-				OR = {
-					is_emperor = no
-					is_religion_enabled = protestant
-				}
-			}
-		}
+		#OR = {
+		#	NOT = { is_expanded_mod_active = { mod = holy_roman_empire } }
+		#	AND = {
+		#		is_expanded_mod_active = { mod = holy_roman_empire }
+		#		OR = {
+		#			is_emperor = no
+		#			is_religion_enabled = protestant
+		#		}
+		#	}
+		#}
 	}
 	is_allowed = {
 		invested_papal_influence = 20

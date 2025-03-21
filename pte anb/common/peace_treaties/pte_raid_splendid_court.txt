@@ -1,12 +1,12 @@
-pte_take_monument_inukshuk = {
+pte_raid_splendid_court = {
 	category = 6
 	power_projection = no
 	power_cost_base = 0
-	prestige_base = 0.5
-	ae_base = 0.063
+	prestige_base = 0.334
+	ae_base = 0
 	warscore_cost = {
 		all_provinces = 0.0
-		no_provinces = 80.0
+		no_provinces = 15.0
 		owner_keeps = 0.0
 		conquered = 0.0
 		returned_core = 0.0
@@ -15,28 +15,21 @@ pte_take_monument_inukshuk = {
 		concede_colonial_region = 0.0
 	}
 	warscore_cap = -1
-	requires_demand_independence = yes
+	requires_demand_independence = no
 	is_make_subject = no
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "Leviathan"
+		has_dlc = "Mandate of Heaven"
 		FROM = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				has_great_project = { type = inukshuk }
-				is_city = yes
-				pte_has_moveable_monument_usable_by = { who = ROOT }
-			}
+			splendor = 1
 		}
 	}
 	is_allowed = {
 		custom_trigger_tooltip = {
-			tooltip = PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE
+			tooltip = PTE_FROM_CAPITAL_CONTROLLED_BY_OUR_SIDE
 			FROM = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
-					has_great_project = { type = inukshuk }
+				capital_scope = {
 					controller = {
 						OR = {
 							is_in_war = {
@@ -56,19 +49,17 @@ pte_take_monument_inukshuk = {
 		}
 	}
 	effect = {
-		pte_move_monument_effect = { monument = inukshuk }
+		FROM = {
+			add_splendor = -150
+		}
 	}
 	ai_weight = {
 		export_to_variable = {
 			variable_name = ai_value
-			value = 100
+			value = 0
 		}
 		limit = {
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_take_monument
-			}
+			always = yes
 		}
 	}
 }

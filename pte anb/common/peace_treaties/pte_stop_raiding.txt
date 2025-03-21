@@ -116,6 +116,120 @@ pte_stop_raiding = {
 									duration = 10950
 								}
 							}
+							if = {
+								limit = {
+									FROM = {
+										has_global_modifier_value = {
+											which = coast_raid_range
+											value = 1
+										}
+									}
+								}
+								every_neighbor_sea_zone = {
+									every_neighbor_province = {
+										limit = {
+											is_sea = no
+											OR = {
+												owned_by = ROOT
+												owner = {
+													is_in_war = {
+														attacker_leader = ROOT
+														defender_leader = FROM
+														attackers = THIS
+														casus_belli = cb_pte_stop_raiding
+													}
+												}
+											}
+										}
+										if = {
+											limit = {
+												has_province_modifier = pte_stop_raiding_modifier
+											}
+											remove_province_modifier = pte_stop_raiding_modifier
+										}
+										add_province_modifier = {
+											name = pte_stop_raiding_modifier
+											duration = 10950
+										}
+									}
+									if = {
+										limit = {
+											FROM = {
+												has_global_modifier_value = {
+													which = coast_raid_range
+													value = 2
+												}
+											}
+										}
+										every_neighbor_sea_zone = {
+											every_neighbor_province = {
+												limit = {
+													is_sea = no
+													OR = {
+														owned_by = ROOT
+														owner = {
+															is_in_war = {
+																attacker_leader = ROOT
+																defender_leader = FROM
+																attackers = THIS
+																casus_belli = cb_pte_stop_raiding
+															}
+														}
+													}
+												}
+												if = {
+													limit = {
+														has_province_modifier = pte_stop_raiding_modifier
+													}
+													remove_province_modifier = pte_stop_raiding_modifier
+												}
+												add_province_modifier = {
+													name = pte_stop_raiding_modifier
+													duration = 10950
+												}
+											}
+											if = {
+												limit = {
+													FROM = {
+														has_global_modifier_value = {
+															which = coast_raid_range
+															value = 3
+														}
+													}
+												}
+												every_neighbor_sea_zone = {
+													every_neighbor_province = {
+														limit = {
+															is_sea = no
+															OR = {
+																owned_by = ROOT
+																owner = {
+																	is_in_war = {
+																		attacker_leader = ROOT
+																		defender_leader = FROM
+																		attackers = THIS
+																		casus_belli = cb_pte_stop_raiding
+																	}
+																}
+															}
+														}
+														if = {
+															limit = {
+																has_province_modifier = pte_stop_raiding_modifier
+															}
+															remove_province_modifier = pte_stop_raiding_modifier
+														}
+														add_province_modifier = {
+															name = pte_stop_raiding_modifier
+															duration = 10950
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				}

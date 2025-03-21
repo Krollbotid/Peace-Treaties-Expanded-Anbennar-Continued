@@ -25,7 +25,7 @@ pte_lift_excommunication_war_goal = {
 	war_name = PTE_LIFT_EXCOMMUNICATION_WAR_NAME
 }
 
-#pte_ban_slavery_war_goal = {
+pte_ban_slavery_war_goal = {
 	type = blockade_ports
 
 	attacker = {
@@ -50,7 +50,7 @@ pte_lift_excommunication_war_goal = {
 	}
 
 	war_name = PTE_BAN_SLAVERY_WAR_NAME
-#}
+}
 
 pte_protect_religious_bretheren_war_goal = {
 	type = take_province
@@ -178,7 +178,7 @@ pte_defend_rival_subject_war_goal = {
 						is_in_war = {
 							attacker_leader = FROM
 							defender_leader = THIS
-							casus_belli = cb_colonial_independance_war
+							casus_belli = cb_colonial_independence_war
 						}
 					}
 				}
@@ -443,43 +443,43 @@ pte_border_friction_war_goal = {
 }
 
 #pte_take_monument_war_goal = {
-	type = take_province
-
-	attacker = {
-		badboy_factor = 0.5
-		prestige_factor = 1
-		peace_cost_factor = 0.5
-
-		allowed_provinces = {
-			is_city = yes
-			pte_has_moveable_monument_usable_by = { who = ROOT }
-		}
-
-		peace_options = {
-			pte_take_monument_stonehenge
-			pte_take_monument_buddha_statues
-			pte_take_monument_moai
-			pte_take_monument_inukshuk
-			pte_take_monument_gomateshwara_statue
-		}
-	}
-
-	defender = {
-		badboy_factor = 1
-		prestige_factor = 1
-		peace_cost_factor = 1
-
-		peace_options = {
-			po_demand_provinces
-			pte_take_monument_stonehenge
-			pte_take_monument_buddha_statues
-			pte_take_monument_moai
-			pte_take_monument_inukshuk
-			pte_take_monument_gomateshwara_statue
-		}
-	}
-
-	war_name = PTE_TAKE_MONUMENT_WAR_NAME
+#	type = take_province
+#
+#	attacker = {
+#		badboy_factor = 0.5
+#		prestige_factor = 1
+#		peace_cost_factor = 0.5
+#
+#		allowed_provinces = {
+#			is_city = yes
+#			pte_has_moveable_monument_usable_by = { who = ROOT }
+#		}
+#
+#		peace_options = {
+#			pte_take_monument_stonehenge
+#			pte_take_monument_buddha_statues
+#			pte_take_monument_moai
+#			pte_take_monument_inukshuk
+#			pte_take_monument_gomateshwara_statue
+#		}
+#	}
+#
+#	defender = {
+#		badboy_factor = 1
+#		prestige_factor = 1
+#		peace_cost_factor = 1
+#
+#		peace_options = {
+#			po_demand_provinces
+#			pte_take_monument_stonehenge
+#			pte_take_monument_buddha_statues
+#			pte_take_monument_moai
+#			pte_take_monument_inukshuk
+#			pte_take_monument_gomateshwara_statue
+#		}
+#	}
+#
+#	war_name = PTE_TAKE_MONUMENT_WAR_NAME
 #}
 
 pte_stop_raiding_war_goal = {
@@ -511,28 +511,28 @@ pte_stop_raiding_war_goal = {
 }
 
 #pte_force_convert_heathen_war_goal = {
-	type = superiority
-
-	attacker = {
-		badboy_factor = 1
-		prestige_factor = 1
-		peace_cost_factor = 1
-
-		peace_options = {
-			po_change_religion
-		}
-	}
-
-	defender = {
-		badboy_factor = 1
-		prestige_factor = 1
-		peace_cost_factor = 1
-
-		peace_options = {
-			po_demand_provinces
-			po_change_religion
-		}
-	}
-
-	war_name = CRUSADE_WAR_NAME
+#	type = superiority
+#
+#	attacker = {
+#		badboy_factor = 1
+#		prestige_factor = 1
+#		peace_cost_factor = 1
+#
+#		peace_options = {
+#			po_change_religion
+#		}
+#	}
+#
+#	defender = {
+#		badboy_factor = 1
+#		prestige_factor = 1
+#		peace_cost_factor = 1
+#
+#		peace_options = {
+#			po_demand_provinces
+#			po_change_religion
+#		}
+#	}
+#
+#	war_name = CRUSADE_WAR_NAME
 #}

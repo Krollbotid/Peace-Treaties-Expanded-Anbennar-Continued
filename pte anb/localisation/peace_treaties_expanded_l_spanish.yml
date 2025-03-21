@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_spanish:
  # Peace Treaties:
  pte_demilitarize_border_desc: "All provinces with a fort, which are owned by @[From.GetTag] §Y[From.GetName]§! and lie in an area that neighbors @[Root.GetTag] §Y[Root.GetAdjective]§! provinces, will lose the fort as well as §R1§! base manpower. Additionally they receive a negative fort level accordingly to the removed fort for §Y10 years§!. This will happen §Y1 day§! after the peace deal is signed, to make sure it uses the new borders."
  CB_ALLOWED_pte_demilitarize_border: "Demilitarize Borders"

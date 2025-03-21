@@ -16,4 +16,9 @@ pte_fast_recruiting_edict = {
 	ai_will_do = {
 		factor = 0
 	}
+
+	notify_trigger = {
+		is_at_war = no
+		army_size_percentage = 0.9
+	}
 }

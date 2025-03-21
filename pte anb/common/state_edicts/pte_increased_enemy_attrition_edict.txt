@@ -17,4 +17,8 @@ pte_increased_enemy_attrition_edict = {
 	ai_will_do = {
 		factor = 0
 	}
+
+	notify_trigger = {
+		is_at_war = no
+	}
 }

@@ -311,3 +311,15 @@ defined_text = {
 		localisation_key = YEARLY_DEVOTION
 	}
 }
+
+defined_text = {
+	name = diplomatic_reputation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DIPLO_SKILL
+	}
+}
