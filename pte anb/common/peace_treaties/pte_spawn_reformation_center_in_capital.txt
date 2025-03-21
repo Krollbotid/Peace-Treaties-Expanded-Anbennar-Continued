@@ -20,12 +20,14 @@ pte_spawn_reformation_center_in_capital = {
 	requires_is_allowed = no
 
 	is_visible = {
-		current_age = age_of_reformation
+		# since ravelianism spawns at the end of age of Unraveling
 		OR = {
-			religion = protestant
-			religion = reformed
-			religion = anglican
-			religion = hussite
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+		}
+		OR = {
+			religion = corinite
+			religion = ravelian
 		}
 		NOT = { religion = FROM }
 		FROM = {
