@@ -6,7 +6,7 @@ Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace optio
 Additional information about each treaty as well as the added Casus Bellis can be found [url=https://steamcommunity.com/workshop/filedetails/discussion/2615504872/2961670721745264890/]here[/url].
 [list]
 [*] Abduct Administrative/Diplomatic/Military Advisor - works!
-[*] Abduct Cardinal
+[*] Abduct Cardinal - untested
 [*] Army Disarmament - works!
 [*] Ban Slavery
 [*] Claim Cultural Hegemony - works!
@@ -27,12 +27,11 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Force Administrative/Diplomatic/Military Technology Sharing - works!
 [*] Force Knowledge Sharing
 [*] Give up Cultural Hegemony - works!
-[*] Host next Imperial Diet - disabled!
-[*] Install Antipope
+[*] Install Antipope - untested
 [*] Join Trade League
-[*] Lift Excommunication
+[*] Lift Excommunication - untested
 [*] Military Supremacy
-[*] Plunder Curia Coffers
+[*] Plunder Curia Coffers - untested
 [*] Protect Religious Bretheren
 [*] Raid Splendid Court
 [*] Seize Fleets
@@ -44,13 +43,38 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Unequal Treaty
 [/list]
 
-[h1]Disabled[/h1]
+[h1]Disabled Peace Treaties[/h1]
 These options are disabled because they either don't fit to Anbennar, or uncompleted, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
 [*] Force Seppuku
+[*] Host next Imperial Diet
 [*] Liberate the Holy See
 [*] Sacrifice Ruler
 [*] Transfer Monument
+[/list]
+
+[h1]Casus Bellis[/h1]
+Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options.
+[list]
+[*] Ban Slavery
+[*] Border Friction - works!
+[*] Claim Cultural Hegemony - works!
+[*] Crush the Coalition
+[*] Intervene in Independence War
+[*] Economic Hegemony
+[*] Military Hegemony
+[*] Naval Hegemony
+[*] Protect Our Religious Bretheren
+[*] Question Papal Authority - untested
+[*] Stop Slave Raids
+[/list]
+
+[h1]Disabled Casus Bellis[/h1]
+These options are disabled because they either don't fit to Anbennar, or uncompleted, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
+[list]
+[*] Proselytize the Heathen
+[*] Acquire Monument
+[*] Liberate the Holy See
 [/list]
 
 [h1]Localisations[/h1]
@@ -68,6 +92,7 @@ These options are disabled because they either don't fit to Anbennar, or uncompl
 [*] should be compatible with most mods
 [list]
 [*] mods that change the [i]countrydiplomacyview.gui[/i] file in the [i]interface[/i] folder may conflict
+[*] if mod adds new advisors or change existing one - these advisors can not be abducted.
 [/list]
 [/list]
 

@@ -182,12 +182,12 @@ pte_take_advisor_adm_effect = {
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				is_expanded_mod_active = { mod = advisor_types }
-			}
-			ate_pte_take_advisor_adm_effect = yes
-		}
+		#else_if = {
+		#	limit = {
+		#		is_expanded_mod_active = { mod = advisor_types }
+		#	}
+		#	ate_pte_take_advisor_adm_effect = yes
+		#}
 		else_if = {
 			limit = {
 				advisor = court_mage
@@ -402,12 +402,12 @@ pte_take_advisor_dip_effect = {
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				is_expanded_mod_active = { mod = advisor_types }
-			}
-			ate_pte_take_advisor_dip_effect = yes
-		}
+		#else_if = {
+		#	limit = {
+		#		is_expanded_mod_active = { mod = advisor_types }
+		#	}
+		#	ate_pte_take_advisor_dip_effect = yes
+		#}
 		remove_advisor_by_category = DIP
 	}
 }
@@ -596,12 +596,12 @@ pte_take_advisor_mil_effect = {
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				is_expanded_mod_active = { mod = advisor_types }
-			}
-			ate_pte_take_advisor_mil_effect = yes
-		}
+		#else_if = {
+		#	limit = {
+		#		is_expanded_mod_active = { mod = advisor_types }
+		#	}
+		#	ate_pte_take_advisor_mil_effect = yes
+		#}
 		remove_advisor_by_category = MIL
 	}
 }

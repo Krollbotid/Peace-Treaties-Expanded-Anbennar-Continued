@@ -54,10 +54,10 @@ cb_pte_ban_slavery = {
 				any_subject_country = {
 					OR = {
 						is_colonial_nation = yes
-						AND = {
-							is_expanded_mod_active = { mod = subjects }
-							is_subject_of_type = dominion_tc
-						}
+						#AND = {
+						#	is_expanded_mod_active = { mod = subjects }
+						#	is_subject_of_type = dominion_tc
+						#}
 					}
 					is_subject_other_than_tributary_trigger = yes
 					NOT = { has_country_modifier = the_abolish_slavery_act }
@@ -564,9 +564,6 @@ cb_pte_stop_raiding = {
 #			}
 #		}
 #		NOT = { has_reform = religious_permanent_revolution_reform }
-#		NOT = { current_age = classical_age }
-#		NOT = { current_age = late_classical_age }
-#		NOT = { current_age = age_of_migrations }
 #		OR = {
 #			full_idea_group = religious_ideas
 #			has_reform = feudal_theocracy
