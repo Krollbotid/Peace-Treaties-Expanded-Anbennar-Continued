@@ -534,7 +534,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [i]The war score cost differs from the money gained. The possible war score costs are 10, 20, 25 and 30 for non-Ravelians or Ravelians that are excommunicated or have selected the Ravelian State as rival. The war score cost for the other Ravelians are 20, 30, 40 and 50. In that case the winner will also suffer AE from this treaty.[/i]
 
-[h1]Install Antipope[/h1]
+[h1]Install Antirector[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
@@ -542,7 +542,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] winner is not Rectorate Controller
 [*] loser is Ravelian State
 [*] loser is Ravelian
-[*] loser's ruler is not an Antipope installed by the winner
+[*] loser's ruler is not an Antirector installed by the winner
 [*] Rectorate Mechanic is active
 [*] either:
 [list]

@@ -268,9 +268,9 @@
  CB_ALLOWED_pte_plunder_curia_treasury_catholic_large: "Plunder the Treasury of the Rectorate"
  PEACE_pte_plunder_curia_treasury_catholic_large: "Plunder Rectorate Coffers"
 
- pte_install_anti_pope_desc: "@[From.GetTag] §Y[From.GetName]'s§! current ruler dies. A new §Y[From.Religion.GetName]§! §Y[Root.Culture.GetName]§! noble between §Y60§! and §Y80§! years with a §Rweak§! claim becomes ruler. \nThe mutual opinion of @[Root.GetTag] §Y[Root.GetName]§! and @[From.GetTag] §Y[From.GetName]§! is changed by §G+25§!. The opinion of all other §Y[From.Religion.GetName]§! countries of @[Root.GetTag] §Y[Root.GetName]§! is changed by §R-25§!. \n@[From.GetTag] §Y[From.GetName]§! gets '§YAntipope§!' until the new ruler's death, which has the following effects: \n   [monarch_lifespan]: §R-10.0%§! \n   [yearly_devotion]: §R-0.25§! \n\nWhile this new ruler is the [From.Monarch.GetTitle], pretender rebels might rise up in [From.Capital.GetName]. \n@[Root.GetTag] §Y[Root.GetName]§! becomes the new §YRectorate Controller§!. \n@[Root.GetTag] §Y[Root.GetName]§! gets '§YInstalled Antipope§!' until the death of §Y[Root.Monarch.GetName]§!, which has the following effects: \n[diplomatic_reputation]: §R-2.00§!"
- CB_ALLOWED_pte_install_anti_pope: "Install Antipope"
- PEACE_pte_install_anti_pope: "$TAKERS$ Antipope"
+ pte_install_anti_pope_desc: "@[From.GetTag] §Y[From.GetName]'s§! current ruler dies. A new §Y[From.Religion.GetName]§! §Y[Root.Culture.GetName]§! noble between §Y60§! and §Y80§! years with a §Rweak§! claim becomes ruler. \nThe mutual opinion of @[Root.GetTag] §Y[Root.GetName]§! and @[From.GetTag] §Y[From.GetName]§! is changed by §G+25§!. The opinion of all other §Y[From.Religion.GetName]§! countries of @[Root.GetTag] §Y[Root.GetName]§! is changed by §R-25§!. \n@[From.GetTag] §Y[From.GetName]§! gets '§YAntirector§!' until the new ruler's death, which has the following effects: \n   [monarch_lifespan]: §R-10.0%§! \n   [yearly_devotion]: §R-0.25§! \n\nWhile this new ruler is the [From.Monarch.GetTitle], pretender rebels might rise up in [From.Capital.GetName]. \n@[Root.GetTag] §Y[Root.GetName]§! becomes the new §YRectorate Controller§!. \n@[Root.GetTag] §Y[Root.GetName]§! gets '§YInstalled Antirector§!' until the death of §Y[Root.Monarch.GetName]§!, which has the following effects: \n[diplomatic_reputation]: §R-2.00§!"
+ CB_ALLOWED_pte_install_anti_pope: "Install Antirector"
+ PEACE_pte_install_anti_pope: "$TAKERS$ Antirector"
 
  #pte_take_monument_buddha_statues_desc: "The monument §YBuddha Statues§! is moved from the @[From.GetTag] §Y[From.GetAdjective]§! province it is currently in to a @[Root.GetTag] §Y[Root.GetAdjective]§! province. When picking the new location, the capital §Y[Root.Capital.GetName]§! will be prioritized, if it fulfills the monument's requirements."
  #CB_ALLOWED_pte_take_monument_buddha_statues: "Transfer Monument: §YBuddha Statues§!"
@@ -332,8 +332,8 @@
  cb_pte_stop_raiding: "Stop Slave Raids"
  cb_pte_stop_raiding_desc: "They are raiding our coasts. We have to stop this."
 
- cb_pte_force_convert_heathen: "Proselytize the Heathens"
- cb_pte_force_convert_heathen_desc: "We must convert them to the true faith!"
+ #cb_pte_force_convert_heathen: "Proselytize the Heathens"
+ #cb_pte_force_convert_heathen_desc: "We must convert them to the true faith!"
 
  # War Goals:
  pte_lift_excommunication_war_goal: "Show Superiority"
@@ -448,8 +448,8 @@
  desc_pte_culture_group_hegemony_modifier: "@[Root.GetTag] §Y[Root.GetName]§! has claimed the §MCultural Hegemony§! for the §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! culture group. \nWe receive these bonuses until we are forced to give them up in a peace deal, until we become a subject, until we change our primary culture to a culture that is not part of the §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! culture group or until we don't own any province with a culture from the §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! culture group anymore."
  pte_spawn_reformation_center_in_capital_modifier: "Missionary Site"
  desc_pte_spawn_reformation_center_in_capital_modifier: "§Y[Root.GetName]§! is a §MMissionary Site§! of the §Y[Root.pte_custom_cor_religion.GetReligionName]§! faith. \nThis means, for the next §Y[Root.pte_custom_cor_duration_display.GetValue] years§!, one random close province will be chosen every §Y6 months§! that will be converted to the §Y[Root.pte_custom_cor_religion.GetReligionName]§! faith."
- pte_anti_pope_modifier: "Antipope"
- pte_anti_pope_controller_modifier: "Installed Antipope"
+ pte_anti_pope_modifier: "Antirector"
+ pte_anti_pope_controller_modifier: "Installed Antirector"
  pte_stop_raiding_modifier: "Slave Raids Stopped"
  pte_demilitarize_border_modifier_1: "Demilitarized Border"
  pte_demilitarize_border_modifier_2: "Demilitarized Border"
@@ -458,9 +458,9 @@
  pte_demilitarize_border_modifier_5: "Demilitarized Border"
 
  # Opinion Modifiers:
- pte_guarantee_hree_diet_host_opinion: "Forced Diet Hosting"
- pte_anti_pope_opinion_positive: "A New Pope"
- pte_anti_pope_opinion_negative: "Installed an Antipope"
+ #pte_guarantee_hree_diet_host_opinion: "Forced Diet Hosting"
+ pte_anti_pope_opinion_positive: "A New Rector"
+ pte_anti_pope_opinion_negative: "Installed an Antirector"
  pte_start_succession_crisis_opinion_positive: "Supported our Succession Claim"
  pte_start_succession_crisis_opinion_negative: "Did not support our Succession Claim"
  pte_joined_trade_league: "Joined Trade League"
@@ -496,7 +496,7 @@
  pte_events8.EVTOPT1: "Finally!"
 
  pte_events.EVTNAME9: "An Unaccepted [Root.Monarch.GetTitle]"
- pte_events.EVTDESC9: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName], once installed as Antipope by [installer_of_anti_pope.GetName], isn't very accepted among the [Root.GetAdjective] people. Now a pretender has risen up, claiming to be the legit [Root.Monarch.GetTitle]!"
+ pte_events.EVTDESC9: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName], once installed as Antirector by [installer_of_anti_pope.GetName], isn't very accepted among the [Root.GetAdjective] people. Now a pretender has risen up, claiming to be the legit [Root.Monarch.GetTitle]!"
  pte_events9.EVTOPT1: "What? No!"
 
  # Power Projection Modifiers:

@@ -332,8 +332,8 @@
  cb_pte_stop_raiding: "Küstenüberfälle unterbinden"
  cb_pte_stop_raiding_desc: "Sie überfallen unsere Küsten. Wir müssen dies unterbinden."
 
- cb_pte_force_convert_heathen: "Bekehrt die Ungläubigen"
- cb_pte_force_convert_heathen_desc: "Wir müssen sie zum wahren Glauben bekehren!"
+ #cb_pte_force_convert_heathen: "Bekehrt die Ungläubigen"
+ #cb_pte_force_convert_heathen_desc: "Wir müssen sie zum wahren Glauben bekehren!"
 
  # War Goals:
  pte_lift_excommunication_war_goal: "Überlegenheit demonstrieren"
@@ -458,7 +458,7 @@
  pte_demilitarize_border_modifier_5: "Entmilitarisierte Grenze"
 
  # Opinion Modifiers:
- pte_guarantee_hree_diet_host_opinion: "Erzwang Reichstagsveranstaltung"
+ #pte_guarantee_hree_diet_host_opinion: "Erzwang Reichstagsveranstaltung"
  pte_anti_pope_opinion_positive: "Ein neuer Papst"
  pte_anti_pope_opinion_negative: "Gegenpapst eingesetzt"
  pte_start_succession_crisis_opinion_positive: "Unterstützte unseren Erbanspruch"
