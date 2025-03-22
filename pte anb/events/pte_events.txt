@@ -646,7 +646,7 @@ province_event = {
 	}
 }
 
-# Pretender Rebels in Papal States after Anti Pope was installed
+# Pretender Rebels in Ravelian State after Anti Pope was installed
 country_event = {
 	id = pte_events.9
 	title = pte_events.EVTNAME9

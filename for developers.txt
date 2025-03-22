@@ -1,0 +1,21 @@
+Quick start for comparation vanilla and Anbennar:
+
+Continents
+Europe - Cannor
+Africa - Sarhal
+Asia - Haless
+Oceania - Insyaa
+North America - North Aelantir
+South America - South Aelantir
+New World - New World
+doesn't exist in vanilla - Serpentspine
+
+Religion
+Christian - Cannor
+Catholic - Ravelian
+Cardinal - Veridical
+
+todo:
+Seppuku - yanshen, command, azjakuma
+Proselytize the Heathen - need to find who may do this
+sacrifice ruler - need to find who uses DOOM

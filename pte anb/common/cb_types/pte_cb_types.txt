@@ -1,4 +1,4 @@
-cb_pte_lift_excommunication = {
+cb_pte_lift_excommunication = { # question rectorate authority
 	valid_for_subject = no
 
 	prerequisites_self = {
@@ -245,7 +245,7 @@ cb_pte_cultural_hegemony = {
 	war_goal = pte_cultural_hegemony_war_goal
 }
 
-cb_pte_defend_rival_subject = {
+cb_pte_defend_rival_subject = { # intervene in independence war
 	valid_for_subject = no
 
 	prerequisites_self = {

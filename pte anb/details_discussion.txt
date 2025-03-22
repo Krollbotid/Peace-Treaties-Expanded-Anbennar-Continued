@@ -63,11 +63,11 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [b]Conditions for Visibility:[/b]
 [list]
-[*] winner declared war on the loser with the "Question Papal Authority" casus belli
+[*] winner declared war on the loser with the "Question Rectorate Authority" casus belli
 [*] winner is Ravelian
 [*] winner is excommunicated
 [*] loser is Ravelian
-[*] loser is Curia Controller
+[*] loser is Rectorate Controller
 [/list]
 
 [b]Effects:[/b]
@@ -180,11 +180,11 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [b]Conditions for Visibility:[/b]
 [list]
-[*] current age is Age of Reformation
-[*] winner's religion is either Protestant, Reformed, Hussite or Anglican
+[*] current age is Age of Unraveling or Age of Witch-Kings
+[*] winner's religion is either Corinite or Ravelian
 [*] winner has a different religion than the loser
 [*] loser owns at least 2 provinces
-[*] loser's capital is in Europe, was not target of this peace treaty within the last 25 years, is not a Restricted Center of Reformation, is not a reformation center, is not Rome, is not an island, is not expelling minorities, has at least 10 development and is neither in the same area as nor borders a reformation center
+[*] loser's capital is in Cannor, was not target of this peace treaty within the last 25 years, is not a Restricted Center of Reformation, is not a reformation center, is not an island, is not expelling minorities, has at least 10 development and is neither in the same area as nor borders a reformation center
 [*] there are less than 1 Restricted Centers of Reformation of the winner's religion in the world
 [/list]
 
@@ -240,21 +240,21 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [i]Countries with the Ottoman or Mamluk government get reduced war score cost.[/i]
 
-[h1]Abduct Cardinal[/h1]
+[h1]Abduct Veridical[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
 [*] winner is Ravelian
-[*] winner has less than 7 cardinals
+[*] winner has less than 7 veridicals
 [*] loser is Ravelian
-[*] loser has at least 1 cardinal
-[*] winner owns at least 1 Ravelian province that does not have a cardinal
+[*] loser has at least 1 veridical
+[*] winner owns at least 1 Ravelian province that does not have a veridical
 [/list]
 
 [b]Effects:[/b]
 [list]
-[*] loser loses 1 cardinal in a random owned province
-[*] winner gains 1 cardinal in a random owned province
+[*] loser loses 1 veridical in a random owned province
+[*] winner gains 1 veridical in a random owned province
 [/list]
 
 [h1]Abduct Administrative/Diplomatic/Military Advisor[/h1]
@@ -329,12 +329,12 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [i]Natives gain a discount on the war score cost against non-natives.[/i]
 
-[h1]Share Maps of Africa/Asia/Europe/North America/Oceania/South America/The New World[/h1]
+[h1]Share Maps of Sarhal/Haless/Cannor/North Aelantir/Insyaa/South Aelantir/The New World[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
 [*] loser has discovered at least one province on the specific continent that the winner has not discovered
-[*] for North America, South America, Oceania and The New World:
+[*] for North Aelantir, South Aelantir, Insyaa and The New World:
 [list]
 [*] either:
 [list]
@@ -381,7 +381,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] if winner and loser have a royal marriage, the marriage is broken
 [/list]
 
-[h1]Economic Supremacy[/h1]
+[h1]Force Bankruptcy[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
@@ -493,57 +493,57 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] when the next imperial diet is held, the winner will be the host and thus can pick the topic
 [/list]
 
-[h1]Plunder Curia Coffers[/h1]
+[h1]Plunder Rectorate Coffers[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
 [*] Emperor DLC is active
-[*] Papacy is active
-[*] loser is the Papal State
+[*] Rectorate is active
+[*] loser is the Ravelian State
 [*] loser is Ravelian
-[*] curia coffers have at least 300 ducats stored
+[*] rectorate coffers have at least 300 ducats stored
 [/list]
 
 [b]Effects:[/b]
 [list]
-[*] if there are at least 5000 ducats in the curia coffers:
+[*] if there are at least 5000 ducats in the rectorate coffers:
 [list]
 [*] winner gains 1500 ducats and 0.30 inflation
-[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 50 Papal Influence
-[*] curia coffers lose 2000 ducats
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Ravelian State as rival, winner loses 50 Ravelian Influence
+[*] rectorate coffers lose 2000 ducats
 [/list]
-[*] if there are between 2000 and 5000 ducats in the curia coffers:
+[*] if there are between 2000 and 5000 ducats in the rectorate coffers:
 [list]
 [*] winner gains 1000 ducats and 0.20 inflation
-[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 35 Papal Influence
-[*] curia coffers lose 1500 ducats
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Ravelian State as rival, winner loses 35 Ravelian Influence
+[*] rectorate coffers lose 1500 ducats
 [/list]
-[*] if there are between 1000 and 2000 ducats in the curia coffers:
+[*] if there are between 1000 and 2000 ducats in the rectorate coffers:
 [list]
 [*] winner gains 500 ducats and 0.10 inflation
-[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 20 Papal Influence
-[*] curia coffers lose 750 ducats
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Ravelian State as rival, winner loses 20 Ravelian Influence
+[*] rectorate coffers lose 750 ducats
 [/list]
-[*] if there are between 300 and 1000 ducats in the curia coffers:
+[*] if there are between 300 and 1000 ducats in the rectorate coffers:
 [list]
 [*] winner gains 200 ducats and 0.05 inflation
-[*] if winner is Ravelian, not excommunicated and doesn't have selected the Papal State as rival, winner loses 10 Papal Influence
-[*] curia coffers lose 300 ducats
+[*] if winner is Ravelian, not excommunicated and doesn't have selected the Ravelian State as rival, winner loses 10 Ravelian Influence
+[*] rectorate coffers lose 300 ducats
 [/list]
 [/list]
 
-[i]The war score cost differs from the money gained. The possible war score costs are 10, 20, 25 and 30 for non-Ravelians or Ravelians that are excommunicated or have selected the Papal State as rival. The war score cost for the other Ravelians are 20, 30, 40 and 50. In that case the winner will also suffer AE from this treaty.[/i]
+[i]The war score cost differs from the money gained. The possible war score costs are 10, 20, 25 and 30 for non-Ravelians or Ravelians that are excommunicated or have selected the Ravelian State as rival. The war score cost for the other Ravelians are 20, 30, 40 and 50. In that case the winner will also suffer AE from this treaty.[/i]
 
 [h1]Install Antipope[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
 [*] winner is Ravelian
-[*] winner is not Curia Controller
-[*] loser is Papal State
+[*] winner is not Rectorate Controller
+[*] loser is Ravelian State
 [*] loser is Ravelian
 [*] loser's ruler is not an Antipope installed by the winner
-[*] Papacy Mechanic is active
+[*] Rectorate Mechanic is active
 [*] either:
 [list]
 [*] "Rights of Man" or "Emperor" DLC is active and winner is a Great Power
@@ -564,7 +564,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] opinion of other Ravelian countries with winner change by -25
 [*] loser gains yearly devotion -0.25 and average monarch lifespan -10% until the death of the new ruler
 [*] winner gains diplomatic reputation -2 until the death of the current ruler
-[*] winner becomes curia controller
+[*] winner becomes rectorate controller
 [/list]
 
 [h1]Transfer Monument[/h1]
@@ -628,25 +628,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] all coastal provinces of the winner that are in slave raid range of the loser gain a modifier for 30 years that makes it impossible to raid the province
 [/list]
 
-[h1]Liberate the Holy See[/h1]
-
-[b]Conditions for Visibility:[/b]
-[list]
-[*] winner declared war on the loser with the "Liberate the Holy See" casus belli
-[*] winner is Ravelian
-[*] winner is not the Papal States or its overlord
-[*] loser owns Rome (directly or by subject)
-[*] loser is not Papal States
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] Rome is ceded to the Papal States
-[*] loser and the Papal States gain a 5 year truce
-[*] winner gains 25, 35 or 50 Papal Influence (depending on whether the loser is Ravelian, of a Heretic or of a Heathen faith)
-[*] the Papal States' opinion of the winner is changed by 100
-[/list]
-
 [h1]Join Trade League[/h1]
 
 [b]Conditions for Visibility:[/b]
@@ -678,7 +659,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [h1][b][u]Casus Bellis[/u][/b][/h1]
 
-[h1]Question Papal Authority[/h1]
+[h1]Question Rectorate Authority[/h1]
 
 [b]Conditions:[/b]
 [list]
@@ -686,7 +667,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] is Ravelian
 [*] is excommunicated
 [*] target is Ravelian
-[*] target is Curia Controller
+[*] target is Rectorate Controller
 [/list]
 
 [b]Effects:[/b]
@@ -794,7 +775,7 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 
 [b]Effects:[/b]
 [list]
-[*] unlocks the "Economic Supremacy" and "Show Strength" peace offers
+[*] unlocks the "Force Bankruptcy" and "Show Strength" peace offers
 [*] gives a discount on "Unequal Treaty", "Demand Administrative Aides", "Transfer Tradepower", "Abduct Administrative Advisor" and war reparations
 [*] the unlocks and discounts apply to both war leaders in the war
 [/list]
@@ -919,14 +900,14 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Conditions:[/b]
 [list]
 [*] is independent or a tributary type subject
-[*] is either the Defender of Faith, the Curia Controller or is a theocracy and neither Christian nor Muslim
+[*] is either the Defender of Faith, the Rectorate Controller or is a theocracy and neither Christian nor Muslim
 [*] does not have the "The Global Crusade" reform
 [*] it's not the Classical Age, Late Classical Age or Age of Migrations (early ages of Extended Timeline)
 [*] is in a different religion group than the target
 [*] the target is independent or a tributary type subject
-[*] the target is not the Papal State
+[*] the target is not the Ravelian State
 [*] the cost to force convert the target is smaller than or equal to 100% War Score Cost
-[*] is either a human player or has its capital on the same continent as the target or is either Christian or Muslim and the target has its capital outside of the Americas
+[*] is either a human player or has its capital on the same continent as the target or is either Christian or Muslim and the target has its capital outside of the Aelantirs
 [*] either has completed the Religious Ideas or has either the reform "Feudal Theocracy", "Crusader Order", "Crusading Empire", "Holy Horde", "Kingdom of God" or "Magister Militum Dei" or Extended Timeline is active and has completed Early Religious Ideas and has a worse ADM Technology than 50
 [*] neighbors the target or has a non-tributary type, non colonial subject following the overlord's religion neighboring the target
 [/list]
@@ -934,25 +915,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Effects:[/b]
 [list]
 [*] allows to force convert the target to your religion despite being a heathen
-[/list]
-
-[h1]Liberate the Holy See[/h1]
-
-[b]Conditions:[/b]
-[list]
-[*] is independent or a tributary type subject
-[*] is Ravelian
-[*] has at least 1 cardinal
-[*] is not Papal States or its overlord
-[*] Papal States does not exist or does not own Rome
-[*] does not own Rome (directly or by subject)
-[*] the target owns Rome
-[*] the target is either independent or a tributary type subject or its overlord is independent or a tributary type subject
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] unlocks the "Liberate the Holy See" peace offer
 [/list]
 
 [h1][b][u]State Edicts[/u][/b][/h1]

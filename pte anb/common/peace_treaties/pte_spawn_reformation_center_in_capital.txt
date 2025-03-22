@@ -1,4 +1,4 @@
-pte_spawn_reformation_center_in_capital = {
+pte_spawn_reformation_center_in_capital = { # spread the true faith
 	category = 6
 	power_projection = no
 	power_cost_base = 0.16
@@ -39,7 +39,7 @@ pte_spawn_reformation_center_in_capital = {
 					NOT = { has_province_flag = pte_spawn_reformation_center_in_capital_used }
 					had_province_flag = { flag = pte_spawn_reformation_center_in_capital_used days = 9125 }
 				}
-				NOT = { province_id = 118 }
+				#NOT = { province_id = 118 }
 				is_reformation_center = no
 				is_island = no
 				expelling_minorities = no

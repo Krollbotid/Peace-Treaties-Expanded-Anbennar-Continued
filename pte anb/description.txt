@@ -1,88 +1,90 @@
 [h1][b]Welcome to Peace Treaties Expanded Anbennar[/b][/h1]
 This mod adds some peace treaties and Casus Bellis from "Peace Treaties Expanded" adjusted to fit with Anbennar.
 
-~40% of mod is untested, If you can test it, please send results here so I can fix bugs if they exist.
+Hegemony and slavery abolishment is not tested because it requires lategame.
 
 [h1]Currently Added[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options. Some require a special CB or have minor requirements to show up in the peace treaty window (e.g. require a specific army size).
 Additional information about each treaty as well as the added Casus Bellis can be found [url=https://steamcommunity.com/workshop/filedetails/discussion/2615504872/2961670721745264890/]here[/url].
+32/36
 [list]
-[*] Abduct Administrative/Diplomatic/Military Advisor - works!
-[*] Abduct Cardinal - untested
-[*] Army Disarmament - works!
-[*] Ban Slavery - untested
-[*] Claim Cultural Hegemony - works!
-[*] Claim Defender of Faith - works!
-[*] Crush the Mandate - works!
-[*] Demand Administrative/Diplomatic/Military Aides - works!
-[*] Delegitimize Dynastic Branch - works!
-[*] Demand Slave Soldiers - works!
-[*] Demilitarize Borders - works!
-[*] Destabilize Nation - works!
-[*] Divorce of our Consort - works!
-[*] Divorce of their Consort - works!
-[*] Dynastic Legitimization - works!
-[*] Force Bankrupcy aka Economic Supremacy - untested
-[*] Enforced Embargo - works!
-[*] Enforced Marriage - works!
-[*] Fleet Disarmament - works!
-[*] Force Administrative/Diplomatic/Military Technology Sharing - works!
-[*] Force Knowledge Sharing - works!
-[*] Give up Cultural Hegemony - works!
-[*] Install Antipope - untested
-[*] Join Trade League - works!
-[*] Lift Excommunication - untested
-[*] Military Supremacy - untested
-[*] Plunder Curia Coffers - untested
-[*] Protect Religious Bretheren - works!
-[*] Raid Splendid Court - works!
-[*] Seize Fleets - untested
-[*] Seize Mercantilism - works!
-[*] Share Maps of Africa/Asia/Europe/North America/Oceania/South America/The New World - works!
-[*] Spread the True Faith - untested
-[*] Strengthen the Mandate - works!
-[*] Stop Slave Raids - untested
-[*] Unequal Treaty - works!
+[*] Abduct Administrative/Diplomatic/Military Advisor
+[*] Abduct Verdical
+[*] Army Disarmament
+[*] Ban Slavery                                                                             - not tested
+[*] Claim Cultural Hegemony
+[*] Claim Defender of Faith
+[*] Crush the Mandate
+[*] Demand Administrative/Diplomatic/Military Aides
+[*] Delegitimize Dynastic Branch
+[*] Demand Slave Soldiers
+[*] Demilitarize Borders
+[*] Destabilize Nation
+[*] Divorce of our Consort
+[*] Divorce of their Consort
+[*] Dynastic Legitimization
+[*] Enforced Embargo
+[*] Enforced Marriage
+[*] Fleet Disarmament
+[*] Force Administrative/Diplomatic/Military Technology Sharing
+[*] Force Bankruptcy aka Economic Supremacy                                                 - not tested
+[*] Force Knowledge Sharing
+[*] Give up Cultural Hegemony
+[*] Install Antipope
+[*] Join Trade League
+[*] Lift Excommunication
+[*] Military Supremacy                                                                      - not tested
+[*] Plunder Rectorate Coffers
+[*] Protect Religious Bretheren
+[*] Raid Splendid Court
+[*] Seize Fleets aka Naval Supremacy                                                        - not tested
+[*] Seize Mercantilism
+[*] Share Maps of Africa/Asia/Europe/North America/Oceania/South America/The New World
+[*] Spread the True Faith
+[*] Strengthen the Mandate
+[*] Stop Slave Raids
+[*] Unequal Treaty
 [/list]
 
 [h1]Disabled Peace Treaties[/h1]
 These options are disabled because they either don't fit to Anbennar, or uncompleted, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
-[*] Force Seppuku - Idk who in Anbennar may commit Seppuku
+[*] Force Seppuku - todo target because I don't know who in Anbennar may commit Seppuku
 [*] Host next Imperial Diet - requires HRE expanded
 [*] Liberate the Holy See - Ravelian doesn't have capital
-[*] Sacrifice Ruler - no one uses DOOM
-[*] Transfer Monument - Anbennar doesn't have movable monuments
+[*] Sacrifice Ruler - todo target because I don't know much about countries from Anbennar which uses DOOM
+[*] Transfer Monument - Anbennar doesn't have movable monuments?
 [/list]
 
 [h1]Casus Bellis[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options.
+7/11
 [list]
-[*] Ban Slavery - untested
-[*] Border Friction - works!
-[*] Claim Cultural Hegemony - works!
-[*] Crush the Coalition - works!
+[*] Ban Slavery                                                                             - not tested
+[*] Border Friction
+[*] Claim Cultural Hegemony
+[*] Crush the Coalition
 [*] Intervene in Independence War
-[*] Economic Hegemony - untested
-[*] Military Hegemony - untested
-[*] Naval Hegemony - untested
-[*] Protect Our Religious Bretheren - works!
-[*] Question Papal Authority - untested
-[*] Stop Slave Raids - untested
+[*] Economic Hegemony                                                                       - not tested
+[*] Military Hegemony                                                                       - not tested
+[*] Naval Hegemony                                                                          - not tested
+[*] Protect Our Religious Bretheren
+[*] Question Rectorate Authority
+[*] Stop Slave Raids
 [/list]
 
 [h1]Disabled Casus Bellis[/h1]
 These options are disabled because they either don't fit to Anbennar, or uncompleted, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
 [*] Proselytize the Heathen - todo target because there are too many religions in Anbennar who would fit this CB
-[*] Acquire Monument - Anbennar doesn't have movable monuments
+[*] Acquire Monument - Anbennar doesn't have movable monuments?
 [*] Liberate the Holy See - Ravelian doesn't have capital
 [/list]
 
 [h1]Localisations[/h1]
 [list]
 [*] English localisation included
-[*] German localisation included
+[*] German localisation included (uncompleted, e.g. Ravelian, if you)
 [*] French localisation included ([u]English[/u] language)
 [*] Spanish localisation included ([u]English[/u] language)
 [/list]
@@ -95,7 +97,7 @@ These options are disabled because they either don't fit to Anbennar, or uncompl
 [list]
 [*] mods that change the [i]countrydiplomacyview.gui[/i] file in the [i]interface[/i] folder may conflict
 [*] if mod adds new advisors or change existing one - these advisors can not be abducted.
-[*] builtin Compatibility with other mods from Expanded Mod Series cut, until someone (maybe me) make port of that mod for Anbennar.
+[*] builtin Compatibility with other mods from Expanded Mod Series has been cut, until someone (maybe me) make port of that mod for Anbennar.
 [/list]
 [/list]
 
@@ -108,6 +110,6 @@ Thanks to [i]Eon.e[/i] for his port of PTE for Anbennar and his permission for m
 https://imgur.com/a/S97gEHb
 
 [h1]Other[/h1]
-[b]If you find any bugs or have any suggestions, please let me know in the comments.[/b]
+[b]If you find any bugs or have any suggestions, please let me know in the comments or in Discord (Krollbotid) [/b]
 
 Also say thanks to Expanded Mod Family devs on their [url=https://discord.gg/tGskECCa9t]Discord[/url] and to Anbennar devs on their [url=https://discord.com/invite/XVJeBhtePe]Discord[/url].

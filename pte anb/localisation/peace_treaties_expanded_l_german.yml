@@ -36,9 +36,9 @@
  CB_ALLOWED_pte_ban_slavery: "Sklaverei verbieten"
  PEACE_pte_ban_slavery: "Sklaverei verbieten"
 
- pte_sacrifice_ruler_desc: "Der Herrscher von @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], wird den [Root.Religion.GetName]en Göttern geopfert, wodurch das Verhängnis von @[Root.GetTag] §Y[Root.GetName]§! um §G[From.GetRulerStatsCombinedForDoomReduction]§! gesenkt wird. [From.Monarch.GetName] wird sterben."
- CB_ALLOWED_pte_sacrifice_ruler: "Herrscher opfern"
- PEACE_pte_sacrifice_ruler: "Herrscher opfern"
+ #pte_sacrifice_ruler_desc: "Der Herrscher von @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], wird den [Root.Religion.GetName]en Göttern geopfert, wodurch das Verhängnis von @[Root.GetTag] §Y[Root.GetName]§! um §G[From.GetRulerStatsCombinedForDoomReduction]§! gesenkt wird. [From.Monarch.GetName] wird sterben."
+ #CB_ALLOWED_pte_sacrifice_ruler: "Herrscher opfern"
+ #PEACE_pte_sacrifice_ruler: "Herrscher opfern"
 
  pte_unequal_treaty_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G5§! Handelsmacht für §Y10 Jahre§! in @[From.GetTag] §Y[From.GetName]s§! Haupthandelsregion pro Küstenprovinz, die @[From.GetTag] §Y[From.GetName]§! dort besitzt."
  CB_ALLOWED_pte_unequal_treaty: "Ungleicher Vertrag"
@@ -68,9 +68,9 @@
  CB_ALLOWED_pte_army_disarmament: "Armeeabrüstung"
  PEACE_pte_army_disarmament: "Armeeabrüstung"
 
- pte_force_seppuku_desc: "@[From.GetTag] §Y[From.GetName]s§! Herrscher, [From.Monarch.GetName], wird sterben. @[Root.GetTag] §Y[Root.GetName]§! erhält §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ und §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ power."
- CB_ALLOWED_pte_force_seppuku: "Seppuku erzwingen"
- PEACE_pte_force_seppuku: "Seppuku erzwingen"
+ #pte_force_seppuku_desc: "@[From.GetTag] §Y[From.GetName]s§! Herrscher, [From.Monarch.GetName], wird sterben. @[Root.GetTag] §Y[Root.GetName]§! erhält §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ und §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ power."
+ #CB_ALLOWED_pte_force_seppuku: "Seppuku erzwingen"
+ #PEACE_pte_force_seppuku: "Seppuku erzwingen"
 
  pte_demand_manpower_desc: "@[From.GetTag] §Y[From.GetName]§! gibt §G10.0%§! seiner maximalen Mannstärke (ungefähr §Y[From.GetDemandManpowerAmount]§W Mannstärke) an @[Root.GetTag] §Y[Root.GetName]§! ab. @[Root.GetTag] §Y[Root.GetName]§! verliert §R5§! Armeetradition."
  CB_ALLOWED_pte_demand_manpower: "Sklaven-Soldaten verlangen"
@@ -80,9 +80,9 @@
  CB_ALLOWED_pte_demand_manpower_mam: "Sklaven-Soldaten verlangen"
  PEACE_pte_demand_manpower_mam: "Sklaven-Soldaten verlangen"
 
- pte_take_cardinal_desc: "@[From.GetTag] §Y[From.GetName]§! verliert §R1§! Kardinal. @[Root.GetTag] §Y[Root.GetName]§! erhält §G1§! Kardinal."
- CB_ALLOWED_pte_take_cardinal: "Kardinal entführen"
- PEACE_pte_take_cardinal: "$GIVERS$en Kardinal entführen"
+ pte_take_cardinal_desc: "@[From.GetTag] §Y[From.GetName]§! verliert §R1§! Veridical. @[Root.GetTag] §Y[Root.GetName]§! erhält §G1§! Veridical."
+ CB_ALLOWED_pte_take_cardinal: "Veridical entführen"
+ PEACE_pte_take_cardinal: "$GIVERS$en Veridical entführen"
 
  pte_take_advisor_adm_desc: "@[From.GetTag] §Y[From.GetName]§! verliert seinen administrativen Berater. @[Root.GetTag] §Y[Root.GetName]§! erhält einen §Y[From.Adm_Advisor.GetTitle]§! mit einer Fähigkeit von §Y[From.GetAbductAdvisorAdmSkill]§!, dem §Y[From.Religion.GetName]en§! Glauben und der §Y[From.Culture.GetName]en§! Kultur folgend. Dieser Berater wird im Unterhalt §G33.0%§! günstiger sein."
  CB_ALLOWED_pte_take_advisor_adm: "Administrativen Berater entführen"
@@ -96,9 +96,9 @@
  CB_ALLOWED_pte_take_advisor_mil: "Militärischen Berater entführen"
  PEACE_pte_take_advisor_mil: "Militärischen Berater entführen"
 
- pte_take_Merkantilismus_desc: "@[From.GetTag] §Y[From.GetName]§! verliert §R5§! Merkantilismus. @[Root.GetTag] §Y[Root.GetName]§! erhält §G5§! Merkantilismus."
- CB_ALLOWED_pte_take_Merkantilismus: "Merkantilismus übernehmen"
- PEACE_pte_take_Merkantilismus: "Merkantilismus übernehmen"
+ pte_take_mercantilism_desc: "@[From.GetTag] §Y[From.GetName]§! verliert §R5§! Merkantilismus. @[Root.GetTag] §Y[Root.GetName]§! erhält §G5§! Merkantilismus."
+ CB_ALLOWED_pte_take_mercantilism: "Merkantilismus übernehmen"
+ PEACE_pte_take_mercantilism: "Merkantilismus übernehmen"
 
  pte_take_over_cultural_hegemony_desc: "@[Root.GetTag] §Y[Root.GetName]§! übernimmt die §MKultur-Hegemonie§! für die §Y[Root.Culture.GetGroupName]e§! Kulturgruppe von @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_take_over_cultural_hegemony: "Kultur-Hegemonie beanspruchen"
@@ -132,33 +132,37 @@
  CB_ALLOWED_pte_force_mil_tech_sharing_natives: "Militärischen Technologieaustausch erzwingen"
  PEACE_pte_force_mil_tech_sharing_natives: "Mil. Technologieaustausch erzwingen"
 
- pte_share_map_europe_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YEuropa§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
- CB_ALLOWED_pte_share_map_europe: "Karten von Europa teilen"
- PEACE_pte_share_map_europe: "Karten von Europa teilen"
+ pte_share_map_europe_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YCannor§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_europe: "Karten von Cannor teilen"
+ PEACE_pte_share_map_europe: "Karten von Cannor teilen"
 
- pte_share_map_africa_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YAfrika§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
- CB_ALLOWED_pte_share_map_africa: "Karten von Afrika teilen"
- PEACE_pte_share_map_africa: "Karten von Afrika teilen"
+ pte_share_map_africa_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YSarhal§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_africa: "Karten von Sarhal teilen"
+ PEACE_pte_share_map_africa: "Karten von Sarhal teilen"
 
- pte_share_map_asia_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YAsien§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
- CB_ALLOWED_pte_share_map_asia: "Karten von Asien teilen"
- PEACE_pte_share_map_asia: "Karten von Asien teilen"
+ pte_share_map_asia_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YHaless§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_asia: "Karten von Haless teilen"
+ PEACE_pte_share_map_asia: "Karten von Haless teilen"
 
- pte_share_map_north_america_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YNordamerika§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
- CB_ALLOWED_pte_share_map_north_america: "Karten von Nordamerika teilen"
- PEACE_pte_share_map_north_america: "Karten von Nordamerika teilen"
+ pte_share_map_north_america_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YNorth Aelantir§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_north_america: "Karten von North Aelantir teilen"
+ PEACE_pte_share_map_north_america: "Karten von North Aelantir teilen"
 
- pte_share_map_south_america_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YSüdamerika§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
- CB_ALLOWED_pte_share_map_south_america: "Karten von Südamerika teilen"
- PEACE_pte_share_map_south_america: "Karten von Südamerika teilen"
+ pte_share_map_south_america_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YSouth Aelantir§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_south_america: "Karten von South Aelantir teilen"
+ PEACE_pte_share_map_south_america: "Karten von South Aelantir teilen"
 
- pte_share_map_oceania_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YOzeanien§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
- CB_ALLOWED_pte_share_map_oceania: "Karten von Ozeanien teilen"
- PEACE_pte_share_map_oceania: "Karten von Ozeanien teilen"
+ pte_share_map_oceania_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in §YInsyaa§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_oceania: "Karten von Insyaa teilen"
+ PEACE_pte_share_map_oceania: "Karten von Insyaa teilen"
 
  pte_share_map_new_world_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in der §YNeuen Welt§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
  CB_ALLOWED_pte_share_map_new_world: "Karten von der Neuen Welt teilen"
  PEACE_pte_share_map_new_world: "Karten von der Neuen Welt teilen"
+
+ pte_share_map_serpentspine_desc: "@[Root.GetTag] §Y[Root.GetName]§! entdeckt alle Provinzen in der §Yschlangenrücken§!, die von @[From.GetTag] §Y[From.GetName]§! entdeckt wurden."
+ CB_ALLOWED_pte_share_map_serpentspine: "Karten von der schlangenrücken teilen"
+ PEACE_pte_share_map_serpentspine: "Karten von der schlangenrücken teilen"
 
  pte_force_divorce_desc: "[Root.GetCDerDie] [From.GetAdjective]e Gemahl[Root.GetCinFemale] §Y[Root.Consort.GetName] [Root.Consort.Dynasty.GetName]§! wird von [Root.GetMdemder] [Root.GetAdjective]en Herrscher[Root.GetMinFemale] §Y[Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]§! geschieden. Wenn zwischen @[Root.GetTag] §Y[Root.GetName]§! und @[From.GetTag] §Y[From.GetName]§! eine Staatsehe besteht, wird diese aufgelöst."
  CB_ALLOWED_pte_force_divorce: "Scheidung erzwingen"
@@ -228,9 +232,9 @@
  CB_ALLOWED_pte_take_over_defender_of_faith: "Verteidiger des Glaubens beanspruchen"
  PEACE_pte_take_over_defender_of_faith: "Verteidiger des Glaubens beanspruchen"
 
- pte_guarantee_hree_diet_host_desc: "@[Root.GetTag] §Y[Root.GetName]§! wird den nächsten §YReichstag§! veranstalten. Die Meinung aller anderen Reichsmitlieder von @[Root.GetTag] §Y[Root.GetName]§! ändert sich um §R-20§!."
- CB_ALLOWED_pte_guarantee_hree_diet_host: "Verlangt das Recht, den nächsten Reichstag zu veranstalten"
- PEACE_pte_guarantee_hree_diet_host: "Nächsten Reichstag veranstalten"
+ #pte_guarantee_hree_diet_host_desc: "@[Root.GetTag] §Y[Root.GetName]§! wird den nächsten §YReichstag§! veranstalten. Die Meinung aller anderen Reichsmitlieder von @[Root.GetTag] §Y[Root.GetName]§! ändert sich um §R-20§!."
+ #CB_ALLOWED_pte_guarantee_hree_diet_host: "Verlangt das Recht, den nächsten Reichstag zu veranstalten"
+ #PEACE_pte_guarantee_hree_diet_host: "Nächsten Reichstag veranstalten"
 
  pte_plunder_curia_treasury_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G200.0§!¤ und §R0.05§! Inflation. Die Kurie verliert §R300§!¤."
  CB_ALLOWED_pte_plunder_curia_treasury_very_small: "Schatzkammer der Kurie plündern"
@@ -248,45 +252,29 @@
  CB_ALLOWED_pte_plunder_curia_treasury_large: "Schatzkammer der Kurie plündern"
  PEACE_pte_plunder_curia_treasury_large: "Schatzkammer der Kurie plündern"
 
- pte_plunder_curia_treasury_ravelian_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G200.0§!¤ und §R0.05§! Inflation. Die Kurie verliert §R300§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R10§! Papsteinfluss."
- CB_ALLOWED_pte_plunder_curia_treasury_ravelian_very_small: "Schatzkammer der Kurie plündern"
- PEACE_pte_plunder_curia_treasury_ravelian_very_small: "Schatzkammer der Kurie plündern"
+ pte_plunder_curia_treasury_catholic_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G200.0§!¤ und §R0.05§! Inflation. Die Kurie verliert §R300§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R10§! Papsteinfluss."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic_very_small: "Schatzkammer der Kurie plündern"
+ PEACE_pte_plunder_curia_treasury_catholic_very_small: "Schatzkammer der Kurie plündern"
 
- pte_plunder_curia_treasury_ravelian_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G500.0§!¤ und §R0.10§! Inflation. Die Kurie verliert §R750§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R20§! Papsteinfluss."
- CB_ALLOWED_pte_plunder_curia_treasury_ravelian_small: "Schatzkammer der Kurie plündern"
- PEACE_pte_plunder_curia_treasury_ravelian_small: "Schatzkammer der Kurie plündern"
+ pte_plunder_curia_treasury_catholic_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G500.0§!¤ und §R0.10§! Inflation. Die Kurie verliert §R750§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R20§! Papsteinfluss."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic_small: "Schatzkammer der Kurie plündern"
+ PEACE_pte_plunder_curia_treasury_catholic_small: "Schatzkammer der Kurie plündern"
 
- pte_plunder_curia_treasury_ravelian_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G1000.0§!¤ und §R0.20§! Inflation. Die Kurie verliert §R1500§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R35§! Papsteinfluss."
- CB_ALLOWED_pte_plunder_curia_treasury_ravelian: "Schatzkammer der Kurie plündern"
- PEACE_pte_plunder_curia_treasury_ravelian: "Schatzkammer der Kurie plündern"
+ pte_plunder_curia_treasury_catholic_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G1000.0§!¤ und §R0.20§! Inflation. Die Kurie verliert §R1500§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R35§! Papsteinfluss."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic: "Schatzkammer der Kurie plündern"
+ PEACE_pte_plunder_curia_treasury_catholic: "Schatzkammer der Kurie plündern"
 
- pte_plunder_curia_treasury_ravelian_large_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G1500.0§!¤ und §R0.30§! Inflation. Die Kurie verliert §R2000§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R50§! Papsteinfluss."
- CB_ALLOWED_pte_plunder_curia_treasury_ravelian_large: "Schatzkammer der Kurie plündern"
- PEACE_pte_plunder_curia_treasury_ravelian_large: "Schatzkammer der Kurie plündern"
+ pte_plunder_curia_treasury_catholic_large_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G1500.0§!¤ und §R0.30§! Inflation. Die Kurie verliert §R2000§!¤. @[Root.GetTag] §Y[Root.GetName]§! verliert §R50§! Papsteinfluss."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic_large: "Schatzkammer der Kurie plündern"
+ PEACE_pte_plunder_curia_treasury_catholic_large: "Schatzkammer der Kurie plündern"
 
  pte_install_anti_pope_desc: "@[From.GetTag] §Y[From.GetName]s§! derzeitiger Herrscher stirbt. Ein neuer §Y[From.Religion.GetName]er§! §Y[Root.Culture.GetName]er§! Adliger zwischen §Y60§! und §Y80§! Jahren mit einem §Rschwachen§! Anspruch wird Herrscher. \nDie gegenseitige Meinung von @[Root.GetTag] §Y[Root.GetName]§! und @[From.GetTag] §Y[From.GetName]§! ändert sich um §G+25§!. Die Meinung aller anderen §Y[From.Religion.GetName]en§! Länder von @[Root.GetTag] §Y[Root.GetName]§! ändert sich um §R-25§!. \n@[From.GetTag] §Y[From.GetName]§! erhält '§YGegenpapst§!' bis zum Tod des neuen Herrschers, was die folgenden Auswirkungen hat: \n   [monarch_lifespan]: §R-10.0%§! \n   [yearly_devotion]: §R-0.25§! \n\nWährend dieser neue Herrscher der [From.Monarch.GetTitle] ist, können sich Thronanwärterrebellen in [From.Capital.GetName] erheben. \n@[Root.GetTag] §Y[Root.GetName]§! wird der neue §YKontrolleur der Kurie§!. \n@[Root.GetTag] §Y[Root.GetName]§! erhält '§YGegenpapst eingesetzt§!' bis zum Tod von §Y[Root.Monarch.GetName]§!, was die folgenden Auswirkungen hat: \n[diplomatic_reputation]: §R-2.00§!"
  CB_ALLOWED_pte_install_anti_pope: "Gegenpapst einsetzen"
  PEACE_pte_install_anti_pope: "$TAKERS$er Gegenpapst"
 
- pte_take_monument_stonehenge_desc: "Das Monument §YStonehenge§! wird von der @[From.GetTag] §Y[From.GetAdjective]en§! Provinz, in der es sich derzeit befindet, in eine @[Root.GetTag] §Y[Root.GetAdjective]e§! Provinz transferiert. Bei der Auswahl des neuen Standorts wird die Hauptstadt §Y[Root.Capital.GetName]§! priorisiert, sollte sie die Anforderungen des Monuments erfüllen."
- CB_ALLOWED_pte_take_monument_stonehenge: "Transfer Monument: §YStonehenge§!"
- PEACE_pte_take_monument_stonehenge: "Transfer Stonehenge"
-
- pte_take_monument_buddha_statues_desc: "Das Monument §YBuddha-Statuen§! wird von der @[From.GetTag] §Y[From.GetAdjective]en§! Provinz, in der es sich derzeit befindet, in eine @[Root.GetTag] §Y[Root.GetAdjective]e§! Provinz transferiert. Bei der Auswahl des neuen Standorts wird die Hauptstadt §Y[Root.Capital.GetName]§! priorisiert, sollte sie die Anforderungen des Monuments erfüllen."
- CB_ALLOWED_pte_take_monument_buddha_statues: "Transfer Monument: §YBuddha-Statuen§!"
- PEACE_pte_take_monument_buddha_statues: "Transfer Buddha-Statuen"
-
- pte_take_monument_moai_desc: "Das Monument §YMoai§! wird von der @[From.GetTag] §Y[From.GetAdjective]en§! Provinz, in der es sich derzeit befindet, in eine @[Root.GetTag] §Y[Root.GetAdjective]e§! Provinz transferiert. Bei der Auswahl des neuen Standorts wird die Hauptstadt §Y[Root.Capital.GetName]§! priorisiert, sollte sie die Anforderungen des Monuments erfüllen."
- CB_ALLOWED_pte_take_monument_moai: "Transfer Monument: §YMoai§!"
- PEACE_pte_take_monument_moai: "Transfer Moai"
-
- pte_take_monument_inukshuk_desc: "Das Monument §YInuksuk§! wird von der @[From.GetTag] §Y[From.GetAdjective]en§! Provinz, in der es sich derzeit befindet, in eine @[Root.GetTag] §Y[Root.GetAdjective]e§! Provinz transferiert. Bei der Auswahl des neuen Standorts wird die Hauptstadt §Y[Root.Capital.GetName]§! priorisiert, sollte sie die Anforderungen des Monuments erfüllen."
- CB_ALLOWED_pte_take_monument_inukshuk: "Transfer Monument: §YInuksuk§!"
- PEACE_pte_take_monument_inukshuk: "Transfer Inuksuk"
-
- pte_take_monument_gomateshwara_statue_desc: "Das Monument §YGomateshwara-Statue§! wird von der @[From.GetTag] §Y[From.GetAdjective]en§! Provinz, in der es sich derzeit befindet, in eine @[Root.GetTag] §Y[Root.GetAdjective]e§! Provinz transferiert. Bei der Auswahl des neuen Standorts wird die Hauptstadt §Y[Root.Capital.GetName]§! priorisiert, sollte sie die Anforderungen des Monuments erfüllen."
- CB_ALLOWED_pte_take_monument_gomateshwara_statue: "Transfer Monument: §YGomateshwara-Statue§!"
- PEACE_pte_take_monument_gomateshwara_statue: "Transfer Gomateshwara-Statue"
+ #pte_take_monument_buddha_statues_desc: "Das Monument §YBuddha-Statuen§! wird von der @[From.GetTag] §Y[From.GetAdjective]en§! Provinz, in der es sich derzeit befindet, in eine @[Root.GetTag] §Y[Root.GetAdjective]e§! Provinz transferiert. Bei der Auswahl des neuen Standorts wird die Hauptstadt §Y[Root.Capital.GetName]§! priorisiert, sollte sie die Anforderungen des Monuments erfüllen."
+ #CB_ALLOWED_pte_take_monument_buddha_statues: "Transfer Monument: §YBuddha-Statuen§!"
+ #PEACE_pte_take_monument_buddha_statues: "Transfer Buddha-Statuen"
 
  pte_demand_dynastic_legitimization_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G25§! Legitimität."
  CB_ALLOWED_pte_demand_dynastic_legitimization: "Dynastische Legitimierung verlangen"
@@ -338,8 +326,8 @@
  cb_pte_border_friction: "Grenzdisput"
  cb_pte_border_friction_desc: "Unsere Spione haben einen Grenzdisput mit ihnen ausgelöst. Nun müssen wir dies ausnutzen und die Grenze erobern!"
 
- cb_pte_take_monument: "Monument aneignen"
- cb_pte_take_monument_desc: "Sie besitzen ein verlegbares Monument, das wir nutzen könnten, wenn es in eine unserer Provinzen verlegt würde. Wir sollten es definitiv zu unserer Sammlung hinzufügen."
+ #cb_pte_take_monument: "Monument aneignen"
+ #cb_pte_take_monument_desc: "Sie besitzen ein verlegbares Monument, das wir nutzen könnten, wenn es in eine unserer Provinzen verlegt würde. Wir sollten es definitiv zu unserer Sammlung hinzufügen."
 
  cb_pte_stop_raiding: "Küstenüberfälle unterbinden"
  cb_pte_stop_raiding_desc: "Sie überfallen unsere Küsten. Wir müssen dies unterbinden."
@@ -382,14 +370,14 @@
  pte_border_friction_war_goal: "Erobert Grenzprovinzen"
  pte_border_friction_war_goal_desc: "Das Kriegsziel ist es, eine Grenzprovinz zu erobern."
 
- pte_protect_religious_bretheren_war_goal: "Erobert eine Provinz mit einem Monument"
- pte_protect_religious_bretheren_war_goal_desc: "Kriegsziel ist, eine Provinz zu besetzen, die ein Monument beherbergt, welches wir nutzen können."
+ #pte_protect_religious_bretheren_war_goal: "Erobert eine Provinz mit einem Monument"
+ #pte_protect_religious_bretheren_war_goal_desc: "Kriegsziel ist, eine Provinz zu besetzen, die ein Monument beherbergt, welches wir nutzen können."
 
  pte_stop_raiding_war_goal: "Häfen blockieren"
  pte_stop_raiding_war_goal_desc: "Kriegsziel ist, den Handel des Feindes durch Blockaden möglichst vieler ihrer Häfen zu unterbinden."
 
- pte_force_convert_heathen_war_goal: "Überlegenheit demonstrieren"
- pte_force_convert_heathen_war_goal_desc: "Kriegsziel ist, Überlegenheit durch Siege in Schlachten zu zeigen."
+ #pte_force_convert_heathen_war_goal: "Überlegenheit demonstrieren"
+ #pte_force_convert_heathen_war_goal_desc: "Kriegsziel ist, Überlegenheit durch Siege in Schlachten zu zeigen."
 
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$er Krieg gegen die päpstliche Autorität"
@@ -402,9 +390,8 @@
  PTE_NAVAL_HEGEMON_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$er Krieg der Seehegemonie"
  PTE_MILITARY_HEGEMON_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$er Krieg der Militärhegemonie"
  PTE_ANTI_COALITION_WAR_NAME: "$ORDER$ $FIRST$er Krieg gegen die $SECOND$e Koalition"
- PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$er Krieg um das Monument in $PROVINCE$"
+ #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$er Krieg um das Monument in $PROVINCE$"
  PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$er Krieg gegen die $SECOND$en Überfälle"
- PTE_LIBERATE_PAPAL_STATES_WAR_NAME: "$ORDER$ $FIRST$er Krieg der päpstlichen Befreiung gegen $SECOND_NAME$"
 
  # Tooltips:
  PTE_BAN_SLAVERY_TT: "Irgendeine Provinz in Besitz von §Y[From.GetName]§! oder einer ihrer Kolonien, die §YSklaven§! produziert, wird von §Y[Root.GetName]§! oder eimem Kriegsverbündeten in diesem Krieg kontrolliert"
@@ -449,7 +436,7 @@
  PTE_FROM_IS_A_UNION_SINCE_LESS_THAN_10_YEARS_TT: "§Y[From.GetName]§! ist seit weniger als §Y10 Jahren§! in einer Personalunion unter §Y[From.Overlord.GetName]§!"
  PTE_NOT_START_SUCCESSION_CRISIS_USED_TT: "Hat innerhalb der letzten §Y10 Jahre§! keinen Erbanspruch fingiert"
  PTE_HAS_SUCCESSION_CLAIM_ON_FROM_TT: "Hat zumindest einen unsicheren Anspruch auf den §Y[From.GetAdjective]en§! Thron[Root.GetFabricateSuccessionClaimVagueClaimInfoStar]"
- PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "Die Provinz, in der sich dieses Monument befindet, wird von §Y[Root.GetName]§! oder einem Verbündeten in diesem Krieg kontrolliert"
+ #PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "Die Provinz, in der sich dieses Monument befindet, wird von §Y[Root.GetName]§! oder einem Verbündeten in diesem Krieg kontrolliert"
 
  # Modifiers:
  pte_protect_religious_bretheren_modifier: "Erzwungene Verteidigung von Häretikern"
