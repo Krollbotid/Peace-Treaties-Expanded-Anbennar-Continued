@@ -11,7 +11,7 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Abduct Administrative/Diplomatic/Military Advisor
 [*] Abduct Verdical
 [*] Army Disarmament
-[*] Ban Slavery                                                                             - not tested
+[*] Ban Slavery                                                                             - [b]not tested[/b]
 [*] Claim Cultural Hegemony
 [*] Claim Defender of Faith
 [*] Crush the Mandate
@@ -27,17 +27,17 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Enforced Marriage
 [*] Fleet Disarmament
 [*] Force Administrative/Diplomatic/Military Technology Sharing
-[*] Force Bankruptcy aka Economic Supremacy                                                 - not tested
+[*] Force Bankruptcy aka Economic Supremacy                                                 - [b]not tested[/b]
 [*] Force Knowledge Sharing
 [*] Give up Cultural Hegemony
 [*] Install Antirector
 [*] Join Trade League
 [*] Lift Excommunication
-[*] Military Supremacy                                                                      - not tested
+[*] Military Supremacy                                                                      - [b]not tested[/b]
 [*] Plunder Rectorate Coffers
 [*] Protect Religious Bretheren
 [*] Raid Splendid Court
-[*] Seize Fleets aka Naval Supremacy                                                        - not tested
+[*] Seize Fleets aka Naval Supremacy                                                        - [b]not tested[/b]
 [*] Seize Mercantilism
 [*] Share Maps of Africa/Asia/Europe/North America/Oceania/South America/The New World
 [*] Spread the True Faith
@@ -60,14 +60,14 @@ These options are disabled because they either don't fit to Anbennar, or uncompl
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options.
 7/11
 [list]
-[*] Ban Slavery                                                                             - not tested
+[*] Ban Slavery                                                                             - [b]not tested[/b]
 [*] Border Friction
 [*] Claim Cultural Hegemony
 [*] Crush the Coalition
 [*] Intervene in Independence War
-[*] Economic Hegemony                                                                       - not tested
-[*] Military Hegemony                                                                       - not tested
-[*] Naval Hegemony                                                                          - not tested
+[*] Economic Hegemony                                                                       - [b]not tested[/b]
+[*] Military Hegemony                                                                       - [b]not tested[/b]
+[*] Naval Hegemony                                                                          - [b]not tested[/b]
 [*] Protect Our Religious Bretheren
 [*] Question Rectorate Authority
 [*] Stop Slave Raids
