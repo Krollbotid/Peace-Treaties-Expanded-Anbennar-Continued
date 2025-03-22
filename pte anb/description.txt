@@ -84,7 +84,7 @@ These options are disabled because they either don't fit to Anbennar, or uncompl
 [h1]Localisations[/h1]
 [list]
 [*] English localisation included
-[*] German localisation included (uncompleted, e.g. Ravelian, if you)
+[*] German localisation included (uncompleted, e.g. Ravelian, if you know german and would like to help - contact me)
 [*] French localisation included ([u]English[/u] language)
 [*] Spanish localisation included ([u]English[/u] language)
 [/list]

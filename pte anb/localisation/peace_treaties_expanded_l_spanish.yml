@@ -252,19 +252,19 @@
  CB_ALLOWED_pte_plunder_curia_treasury_large: "Plunder the Treasury of the Rectorate"
  PEACE_pte_plunder_curia_treasury_large: "Plunder Rectorate Coffers"
 
- pte_plunder_curia_treasury_catholic_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G200.0§!¤ and §R0.05§! inflation. The Rectorate loses §R300§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R10§! Papal Influence."
+ pte_plunder_curia_treasury_catholic_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G200.0§!¤ and §R0.05§! inflation. The Rectorate loses §R300§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R10§! Rectorate Influence."
  CB_ALLOWED_pte_plunder_curia_treasury_catholic_very_small: "Plunder the Treasury of the Rectorate"
  PEACE_pte_plunder_curia_treasury_catholic_very_small: "Plunder Rectorate Coffers"
 
- pte_plunder_curia_treasury_catholic_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G500.0§!¤ and §R0.10§! inflation. The Rectorate loses §R750§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R20§! Papal Influence."
+ pte_plunder_curia_treasury_catholic_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G500.0§!¤ and §R0.10§! inflation. The Rectorate loses §R750§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R20§! Rectorate Influence."
  CB_ALLOWED_pte_plunder_curia_treasury_catholic_small: "Plunder the Treasury of the Rectorate"
  PEACE_pte_plunder_curia_treasury_catholic_small: "Plunder Rectorate Coffers"
 
- pte_plunder_curia_treasury_catholic_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1000.0§!¤ and §R0.20§! inflation. The Rectorate loses §R1500§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R35§! Papal Influence."
+ pte_plunder_curia_treasury_catholic_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1000.0§!¤ and §R0.20§! inflation. The Rectorate loses §R1500§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R35§! Rectorate Influence."
  CB_ALLOWED_pte_plunder_curia_treasury_catholic: "Plunder the Treasury of the Rectorate"
  PEACE_pte_plunder_curia_treasury_catholic: "Plunder Rectorate Coffers"
 
- pte_plunder_curia_treasury_catholic_large_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1500.0§!¤ and §R0.30§! inflation. The Rectorate loses §R2000§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R50§! Papal Influence."
+ pte_plunder_curia_treasury_catholic_large_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1500.0§!¤ and §R0.30§! inflation. The Rectorate loses §R2000§!¤. @[Root.GetTag] §Y[Root.GetName]§! loses §R50§! Rectorate Influence."
  CB_ALLOWED_pte_plunder_curia_treasury_catholic_large: "Plunder the Treasury of the Rectorate"
  PEACE_pte_plunder_curia_treasury_catholic_large: "Plunder Rectorate Coffers"
 
