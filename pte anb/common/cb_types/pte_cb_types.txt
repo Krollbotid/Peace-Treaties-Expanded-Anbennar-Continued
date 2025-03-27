@@ -556,7 +556,6 @@ cb_pte_force_convert_heathen = {
 		OR = {
 			is_defender_of_faith = yes
 			is_papal_controller = yes
-			religion = regent_court
 			AND { # Corintar doesn't have to be defender of faith
 				religion = corinite
 				tag = B02
