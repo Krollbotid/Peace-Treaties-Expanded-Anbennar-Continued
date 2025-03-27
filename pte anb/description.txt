@@ -6,7 +6,6 @@ Hegemony and slavery abolishment is not tested because it requires lategame.
 [h1]Currently Added[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options. Some require a special CB or have minor requirements to show up in the peace treaty window (e.g. require a specific army size).
 Additional information about each treaty as well as the added Casus Bellis can be found [url=https://steamcommunity.com/workshop/filedetails/discussion/2615504872/2961670721745264890/]here[/url].
-32/36
 [list]
 [*] Abduct Administrative/Diplomatic/Military Advisor
 [*] Abduct Verdical
@@ -58,7 +57,6 @@ These options from original mod are disabled because they either don't fit to An
 
 [h1]Casus Bellis[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following casus bellis.
-7/11
 [list]
 [*] Ban Slavery                                                                             - [b]not tested[/b]
 [*] Border Friction

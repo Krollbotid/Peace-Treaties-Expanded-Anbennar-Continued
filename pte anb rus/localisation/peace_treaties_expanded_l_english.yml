@@ -1,0 +1,542 @@
+﻿l_english:
+ # Peace Treaties:
+ pte_demilitarize_border_desc: "Ï ±¢ª°µªª  ¬±²¿½, ¬²º ±ª°¦®¨² ¦¨¢ @[From.GetTag] §Y[From.GetName]§! ª °¦¾²¾ ¢ ©°, ¦²¢³½¸þ  @[Root.GetTag] §Y[Root.GetAdjective]ª¯ª§! ±¢ª°µª¾¯ª, ®ªŒ²¾ ¬±²ª,  ²¬¨ §R1§! ¡©¢¥ ¬®ª¶²¢ ¬³²¢. ¯ ²¥, °ª ±®³¶² ¯ª°³ ¬ ³¢°½ ¬±²ª ¢ ²¢²²¢ªª  ±²¾°°þ ° §Y10 ®²§! ™² ±ª©þ¦ž² ¶© §Y1 ¦°¿§! ±® ±¦±ª°ª¾ ¯ª°¥ ¥®Œ°ª¾, ¶²¡º ³¦²¢ª²¿¾, ¶² ¡º®ª ª±®¿©¢°º °¢º ¥°ªµº."
+ CB_ALLOWED_pte_demilitarize_border: "ƒ¯ª®ª²ª©µª¾ ¥°ªµ"
+ PEACE_pte_demilitarize_border: "ƒ¯ª®ª²ª©µª¾ ¥°ªµ"
+
+ pte_demand_aides_adm_desc: "‰¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], ±²¾² §R1§! £adm£, ±¢ª²®¿ @[Root.GetTag] §Y[Root.GetName]§!, [Root.Monarch.GetName], ±®³¶ª² §G1§! £adm£."
+ CB_ALLOWED_pte_demand_aides_adm: "‰²¡¢²¿ ¦¯ª°ª²²ª¢°³½ ±¯¸¿"
+ PEACE_pte_demand_aides_adm: "‰²¡¢²¿ ¦¯ª°ª²²ª¢°³½ ±¯¸¿"
+
+ pte_demand_aides_dip_desc: "‰¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], ±²¾² §R1§! £dip£, ±¢ª²®¿ @[Root.GetTag] §Y[Root.GetName]§!, [Root.Monarch.GetName], ±®³¶ª² §G1§! £dip£."
+ CB_ALLOWED_pte_demand_aides_dip: "‰²¡¢²¿ ¦ª±®¯²ª¶¬³½ ±¯¸¿"
+ PEACE_pte_demand_aides_dip: "‰²¡¢²¿ ¦ª±®¯²ª¶¬³½ ±¯¸¿"
+
+ pte_demand_aides_mil_desc: "‰¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], ±²¾² §R1§! £mil£, ±¢ª²®¿ @[Root.GetTag] §Y[Root.GetName]§!, [Root.Monarch.GetName], ±®³¶ª² §G1§! £mil£."
+ CB_ALLOWED_pte_demand_aides_mil: "‰²¡¢²¿ ¢°°³½ ±¯¸¿"
+ PEACE_pte_demand_aides_mil: "‰²¡¢²¿ ¢°°³½ ±¯¸¿"
+
+ pte_enforced_embargo_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² §R3§! ¯¬°²ª®ª©¯, ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G3§! ¯¬°²ª®ª©¯."
+ CB_ALLOWED_pte_enforced_embargo: "‰ª°³¦ª²®¿° ¼¯¡¥"
+ PEACE_pte_enforced_embargo: "‰ª°³¦ª²®¿° ¼¯¡¥"
+
+ pte_enforced_royal_marriage_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ©¬®½¶ª² ¦ª°²ª¶¬ªþ ¡¬  @[Root.GetTag] §Y[Root.GetName]§!. ™² ±ª©þ¦ž² ¶© §Y1 ¦°¿§! ±® ±¦±ª°ª¾ ¯ª°¥ ¥®Œ°ª¾, ±²¯³ ¶² ¢ ¢¯¾ ¢þ°º ¡¬ª ©¬®½¶²¿ °®¿©¾."
+ CB_ALLOWED_pte_enforced_royal_marriage: "ª®¿²¢°°ºþ ¡¬"
+ PEACE_pte_enforced_royal_marriage: "ª®¿²¢°°ºþ ¡¬"
+
+ pte_force_to_join_trade_league_desc: "@[From.GetTag] §Y[From.GetName]§! ±ª¦ª°ª²¾ ¬ ²¥¢þ ®ª¥, ¢©¥®¢®¾¯þ ¦¨¢þ @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_pte_force_to_join_trade_league: "‰ª¦ª°°ª ¬ ²¥¢þ ®ª¥"
+ PEACE_pte_force_to_join_trade_league: "‰ª¦ª°°ª ¬ ²¥¢þ ®ª¥"
+
+ pte_lift_excommunication_desc: "@[From.GetTag] §Y[From.GetName]§! °ª¯² ²®³¶°ª  ¦¨¢º @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_pte_lift_excommunication: "Ô°¾²¿ ²®³¶°ª"
+ PEACE_pte_lift_excommunication: "Ô°¾²¿ ²®³¶°ª"
+
+ pte_ban_slavery_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ²¯°¾² ¡²¢. ™² ª¯² ² ¨ ¼´´¬²º, ¶² ª Œ°ª. ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G10§! £adm£, £dip£ ª £mil£ ¶¬¢ © ¬¨¦³½ ±¢ª°µª½, ±ª°¦®¨¸³½ ¦¨¢ @[From.GetTag] §Y[From.GetName]§! ª®ª ž ¬®°ª®¿°º¯ °µª¾¯, ¬²¾ ±ª©¢¦ª² §Y¡¢§!."
+ CB_ALLOWED_pte_ban_slavery: "…±²ª²¿ ¡²¢"
+ PEACE_pte_ban_slavery: "…±²ª²¿ ¡²¢"
+
+ pte_sacrifice_ruler_desc: "‰¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], ¹¦²¾ °Œª¯ ±¢ª²®¯, ¶² ³¯°¿Œª² ¥®¦ @[Root.GetTagRD] §Y[Root.GetName]§! ° §G[From.GetRulerStatsCombinedForDoomReduction]§!. [From.Monarch.GetName] ±¥ª¡°²."
+ CB_ALLOWED_pte_sacrifice_ruler: "Ô¹²¿ ±¢ª²®¾"
+ PEACE_pte_sacrifice_ruler: "Ô¹²¿ ±¢ª²®¾"
+
+ pte_unequal_treaty_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G5§! ²¥¢¥ ¢®ª¾°ª¾ ° §Y10 ®²§! ¢ ¦¯Œ°¯ ²¥¢¯ ³©® @[From.GetTag] §Y[From.GetName]§!, © ¬¨¦³½ ±ª¡¨°³½ ±¢ª°µª½ ¢ ¼²¯ ²¥¢¯ ³©®, ±ª°¦®¨¸³½ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_unequal_treaty: "¢°ºþ ¦¥¢"
+ PEACE_pte_unequal_treaty: "¢°ºþ ¦¥¢"
+
+ pte_protect_religious_bretheren_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ° §Y10 ®²§! ±®³¶ª² ¯¦ª´ª¬² «§Y‰ª°³¦ª²®¿°¾ ©¸ª² ²ª¬¢§!», ¬²ºþ ª¯² ®¦³½¸ª ¼´´¬²º: \n   [global_heretic_missionary_strength]: §R-100.0%§! \n   [tolerance_heretic]: §G+2.00§!"
+ CB_ALLOWED_pte_protect_religious_bretheren: "…¸ª²ª²¿ ¡²¿¢ ± ¢"
+ PEACE_pte_protect_religious_bretheren: "…¸ª²ª²¿ ¡²¿¢ ± ¢"
+
+ pte_destabilize_nation_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² §R2§! ²¡ª®¿°²ª ª §R100§! £adm£, £dip£ ª £mil£ ¶¬¢. @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G15§! ¦ª±®¯²ª¶¬¥ ¢."
+ CB_ALLOWED_pte_destabilize_nation: "ƒ²¡ª®ª©ª¢²¿ °µª½"
+ PEACE_pte_destabilize_nation: "ƒ²¡ª®ª©ª¢²¿ °µª½"
+
+ pte_force_knowledge_sharing_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G25§! ±ª°¾²ª¾ ª°²ª²³² §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W ¢ ¢þ ²®ª¶°þ ¡®²ª (§Y[Root.Capital.GetAreaName]§!)."
+ CB_ALLOWED_pte_force_knowledge_sharing: "‰ª°³¦ª²®¿°ºþ ¡¯° ©°°ª¾¯ª"
+ PEACE_pte_force_knowledge_sharing: "‰ª°³¦ª²®¿°ºþ ¡¯° ©°°ª¾¯ª"
+
+ pte_fleet_disarmament_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±®³¶ª² §R2.5§! ¢°°þ ³²®²ª. Ù¬¨ ° §Y10 ®²§! ° ±®³¶ª² ¯¦ª´ª¬² «§Yƒ¥¢  ©³¨°ªª ´®²§!», ¬²ºþ ª¯² ®¦³½¸ª ¼´´¬²º: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+10.0%§!"
+ CB_ALLOWED_pte_fleet_disarmament: "Ð©³¨°ª ´®²"
+ PEACE_pte_fleet_disarmament: "Ð©³¨°ª ´®²"
+
+ pte_spawn_reformation_center_in_capital_desc: "Ô²®ªµ ¦¨¢º @[From.GetTag] §Y[From.GetName], §Y[From.Capital.GetName]§! ±¦ª² ¢ ¢³ §Y[Root.Religion.GetName]§! ª ° ¡³¦² ±¦®¨²¿ ¡¸°ª½ ¢ ²¶°ª §Y5 ®²§! Ï ¼²² ±ª¦ ±¢ª°µª¾ ¡³¦² ¡¸²¿ ¡®ª©®¨¸ª ±¢ª°µªª ¢ ®ª¥ª½ §Y[Root.Religion.GetName]§! ¬¨¦º §Y6 ¯¾µ¢§!."
+ CB_ALLOWED_pte_spawn_reformation_center_in_capital: "Ð±²°°ª ª²ª°°þ ¢º"
+ PEACE_pte_spawn_reformation_center_in_capital: "Ð±²°ª²¿ ¢³ ¢ $TAKERS$"
+
+ pte_army_disarmament_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±®³¶² §R2.5§! ¢°°þ ³²®²ª. Ù¬¨ ° §Y10 ®²§! ° ±®³¶ª² ¯¦ª´ª¬² «ƒ¥¢  ©³¨°ªª ¯ªª §Y§!», ¬²ºþ ª¯² ®¦³½¸ª ¼´´¬²º: \n   [land_forcelimit_modifier]: §R-33.0%§! \n   [global_regiment_cost]: §R+10.0%§!"
+ CB_ALLOWED_pte_army_disarmament: "Ð©³¨°ª ¯ªª"
+ PEACE_pte_army_disarmament: "Ð©³¨°ª ¯ªª"
+
+ pte_force_seppuku_desc: "‰¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], ³¯ž². ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ ª §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ ¶¬¢."
+ CB_ALLOWED_pte_force_seppuku: "ª®¿° ²¶°ª"
+ PEACE_pte_force_seppuku: "ª®¿° ²¶°ª"
+
+ pte_demand_manpower_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G10.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R5§! ¯þ¬ª ²¦ªµªþ."
+ CB_ALLOWED_pte_demand_manpower: "‰²¡¢²¿ ¡¢-®¦²"
+ PEACE_pte_demand_manpower: "‰²¡¢²¿ ¡¢-®¦²"
+
+ pte_demand_manpower_mam_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G10.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R5§! ¯þ¬ª ²¦ªµªþ."
+ CB_ALLOWED_pte_demand_manpower_mam: "‰²¡¢²¿ ¡¢-®¦²"
+ PEACE_pte_demand_manpower_mam: "‰²¡¢²¿ ¡¢-®¦²"
+
+ pte_take_cardinal_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² §R1§! ¢¦ª¬®. @[Root.GetTag] §Y[Root.GetName]§! ±ª¡²ž² §G1§! ¢¦ª¬®."
+ CB_ALLOWED_pte_take_cardinal: "‰ª²ª²¿ ¢¦ª¬®"
+ PEACE_pte_take_cardinal: "‰ª²ª²¿ $GIVERS$ ¢¦ª¬®"
+
+ pte_take_advisor_adm_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² ¢¥ ¦¯ª°ª²²ª¢°¥ ¢²°ª¬. @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §Y[From.Adm_Advisor.GetTitle]§!  °¢º¬¯ §Y[From.GetAbductAdvisorAdmSkill]§!, ª±¢¦³½¸¥ ®ª¥ª½ §Y[From.Religion.GetName]§! ª ±ª°¦®¨¸¥ ¬ §Y[From.Culture.GetName]§z§!þ§ ¬³®¿²³. ™²² ¢²°ª¬ ¡þ¦ž²¾ ° §G33.0%§! ¦Œ¢®."
+ CB_ALLOWED_pte_take_advisor_adm: "‰ª²ª²¿ ¦¯. ¢²°ª¬"
+ PEACE_pte_take_advisor_adm: "‰ª²ª²¿ ¦¯. ¢²°ª¬"
+
+ pte_take_advisor_dip_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ²¾² ¢¥ ¦ª±®¯²ª¶¬¥ ¢²°ª¬. @[Root.GetTag] §Y[Root.GetName]§! ±®³¶² §Y[From.Dip_Advisor.GetTitle]§!  °¢º¬¯ §Y[From.GetAbductAdvisorDipSkill]§!, ª±¢¦³½¸¥ ®ª¥ª½ §Y[From.Religion.GetName]§! ª ±ª°¦®¨¸¥ ¬ §Y[From.Culture.GetName]§z§!þ§! ¬³®¿²³. ™²² ¢²°ª¬ ¡þ¦ž²¾ ° §G33.0%§! ¦Œ¢®."
+ CB_ALLOWED_pte_take_advisor_dip: "‰ª²ª²¿ ¦ª±. ¢²°ª¬"
+ PEACE_pte_take_advisor_dip: "‰ª²ª²¿ ¦ª±. ¢²°ª¬"
+
+ pte_take_advisor_mil_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ²¾² ¢¥ ¢°°¥ ¢²°ª¬. @[Root.GetTag] §Y[Root.GetName]§! ±®³¶² §Y[From.Mil_Advisor.GetTitle]§!  °¢º¬¯ §Y[From.GetAbductAdvisorMilSkill]§!, ª±¢¦³½¸¥ ®ª¥ª½ §Y[From.Religion.GetName]§! ª ±ª°¦®¨¸¥ ¬ §Y[From.Culture.GetName]§z§!þ§! ¬³®¿²³. ™²² ¢²°ª¬ ¡þ¦ž²¾ ° §G33.0%§! ¦Œ¢®."
+ CB_ALLOWED_pte_take_advisor_mil: "‰ª²ª²¿ ¢°. ¢²°ª¬"
+ PEACE_pte_take_advisor_mil: "‰ª²ª²¿ ¢°. ¢²°ª¬"
+
+ pte_take_mercantilism_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² §R5§! ¯¬°²ª®ª©¯. @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G5§! ¯¬°²ª®ª©¯."
+ CB_ALLOWED_pte_take_mercantilism: "…¢² ¯¬°²ª®ª©¯"
+ PEACE_pte_take_mercantilism: "…¢² ¯¬°²ª®ª©¯"
+
+ pte_take_over_cultural_hegemony_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶² §M³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ ¬³®¿²³°þ ¥³±±º §Y[Root.Culture.GetGroupName]§! ² @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_take_over_cultural_hegemony: "‹²¢¨¦°ª ¬³®¿²³°þ ¥¥¯°ªª"
+ PEACE_pte_take_over_cultural_hegemony: "‹²¢¨¦°ª ¬³®¿²³°þ ¥¥¯°ªª"
+
+ pte_give_up_cultural_hegemony_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² §M³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ §Y[From.pte_culture_group_hegemony_var.GetCultureGroupName]§! ¥³±±º ¬³®¿²³. °ª ±²¾½² ±ª®¥½¸ª¾ ¡°³º ª ° ¯¥³² °¢ ±²°¦¢²¿ ° °ž ¢ ²¶°ª ®¦³½¸ª §Y20 ®²§!."
+ CB_ALLOWED_pte_give_up_cultural_hegemony: "²¬© ² ¬³®¿²³°þ ¥¥¯°ªª"
+ PEACE_pte_give_up_cultural_hegemony: "²¬© ² ¬³®¿²³°þ ¥¥¯°ªª"
+
+ pte_force_adm_tech_sharing_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_administrative_tech£ §Y¦¯ª°ª²²ª¢°º ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_adm_tech_sharing: "Ôª®¢þ ¡¯° ¦¯ª°ª²²ª¢°º¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_adm_tech_sharing: "Ôª®¢þ ¡¯° ¦¯. ²°®¥ª¾¯ª"
+
+ pte_force_dip_tech_sharing_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_diplomatic_tech£ §Yƒª±®¯²ª¶¬ª ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_dip_tech_sharing: "Ôª®¢þ ¡¯° ¦ª±®¯²ª¶¬ª¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_dip_tech_sharing: "Ôª®¢þ ¡¯° ¦ª±. ²°®¥ª¾¯ª"
+
+ pte_force_mil_tech_sharing_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_military_tech£ §YÏ°°º ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_mil_tech_sharing: "Ôª®¢þ ¡¯° ¢°°º¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_mil_tech_sharing: "Ôª®¢þ ¡¯° ¢°. ²°®¥ª¾¯ª"
+
+ pte_force_adm_tech_sharing_natives_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_administrative_tech£ §Y¦¯ª°ª²²ª¢°º ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_adm_tech_sharing_natives: "Ôª®¢þ ¡¯° ¦¯ª°ª²²ª¢°º¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_adm_tech_sharing_natives: "Ôª®¢þ ¡¯° ¦¯. ²°®¥ª¾¯ª"
+
+ pte_force_dip_tech_sharing_natives_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_diplomatic_tech£ §Yƒª±®¯²ª¶¬ª ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_dip_tech_sharing_natives: "Ôª®¢þ ¡¯° ¦ª±®¯²ª¶¬ª¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_dip_tech_sharing_natives: "Ôª®¢þ ¡¯° ¦ª±. ²°®¥ª¾¯ª"
+
+ pte_force_mil_tech_sharing_natives_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_military_tech£ §YÏ°°º ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_mil_tech_sharing_natives: "Ôª®¢þ ¡¯° ¢°°º¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_mil_tech_sharing_natives: "Ôª®¢þ ¡¯° ¢°. ²°®¥ª¾¯ª"
+
+ pte_share_map_europe_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §Y°°§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_europe: "‰¦®ª²¿¾ ¬²¯ª °°"
+ PEACE_pte_share_map_europe: "‰¦®ª²¿¾ ¬²¯ª °°"
+
+ pte_share_map_africa_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §YÔ®§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_africa: "‰¦®ª²¿¾ ¬²¯ª Ô®"
+ PEACE_pte_share_map_africa: "‰¦®ª²¿¾ ¬²¯ª Ô®"
+
+ pte_share_map_asia_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §YÛ®§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_asia: "‰¦®ª²¿¾ ¬²¯ª Û®"
+ PEACE_pte_share_map_asia: "‰¦®ª²¿¾ ¬²¯ª Û®"
+
+ pte_share_map_north_america_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §YÔ¢°¯ ¼®°²ª§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_north_america: "‰¦®ª²¿¾ ¬²¯ª Ô¢°¥ ¼®°²ª"
+ PEACE_pte_share_map_north_america: "‰¦®ª²¿¾ ¬²¯ª Ô¢°¥ ¼®°²ª"
+
+ pte_share_map_south_america_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §Y›¨°¯ ¼®°²ª§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_south_america: "‰¦®ª²¿¾ ¬²¯ª ›¨°¥ ¼®°²ª"
+ PEACE_pte_share_map_south_america: "‰¦®ª²¿¾ ¬²¯ª ›¨°¥ ¼®°²ª"
+
+ pte_share_map_oceania_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §Y†°ªª§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_oceania: "‰¦®ª²¿¾ ¬²¯ª †°ªª"
+ PEACE_pte_share_map_oceania: "‰¦®ª²¿¾ ¬²¯ª †°ªª"
+
+ pte_share_map_new_world_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §Y¢¯ Ô¢²§! ²¬º²º @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_new_world: "‰¦®ª²¿¾ ¬²¯ª ¢¥ Ô¢²"
+ PEACE_pte_share_map_new_world: "‰¦®ª²¿¾ ¬²¯ª ¢¥ Ô¢²"
+ 
+ pte_share_map_serpentspine_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §Y…¯ª°¯ Û¡²§! ²¬º²º @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_share_map_serpentspine: "‰¦®ª²¿¾ ¬²¯ª …¯ª°¥ ¡²"
+ PEACE_pte_share_map_serpentspine: "‰¦®ª²¿¾ ¬²¯ª …¯ª°¥ ¡²"
+
+ pte_force_divorce_desc: "[From.GetAdjective]ªþ ¬°² §Y[Root.Consort.GetName] [Root.Consort.Dynasty.GetName]§! ©¢¦ž²¾  [Root.GetAdjective]ª¯ ±¢ª²®¯, §Y[Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]§!. ®ª ¯¨¦³ ¦¨¢¯ª @[Root.GetTag] §Y[Root.GetName]§! ª @[From.GetTag] §Y[From.GetName]§! ©¬®½¶ž° ¦ª°²ª¶¬ªþ ¡¬, ° ¡³¦² °°³®ª¢°."
+ CB_ALLOWED_pte_force_divorce: "‰ª°³¦ª²®¿°ºþ ©¢¦"
+ PEACE_pte_force_divorce: "Ð©¢¦ $TAKERS$ ¬°²"
+
+ pte_force_divorce_them_desc: "[Root.GetAdjective]ªþ ¬°² §Y[From.Consort.GetName] [From.Consort.Dynasty.GetName]§! ©¢¦ž²¾  [From.GetAdjective]ª¯ ±¢ª²®¯, §Y[From.Monarch.GetName] [From.Monarch.Dynasty.GetName]§!. ®ª ¯¨¦³ ¦¨¢¯ª @[Root.GetTag] §Y[Root.GetName]§! ª @[From.GetTag] §Y[From.GetName]§! ©¬®½¶ž° ¦ª°²ª¶¬ªþ ¡¬, ° ¡³¦² °°³®ª¢°."
+ CB_ALLOWED_pte_force_divorce_them: "‰ª°³¦ª²®¿°ºþ ©¢¦"
+ PEACE_pte_force_divorce_them: "Ð©¢¦ $GIVERS$ ¬°²"
+
+ pte_force_bankrupt_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G25§! ¦ª±®¯²ª¶¬¥ ¢. @[From.GetTag] §Y[From.GetName]§! ²°² §R¡°¬²¯§!."
+ CB_ALLOWED_pte_force_bankrupt: "‰ª°³¦ª²®¿° ¡°¬²²¢"
+ PEACE_pte_force_bankrupt: "‰ª°³¦ª²®¿° ¡°¬²²¢"
+
+ pte_take_over_fleet_desc: "Ï ¬¡®ª ¦¨¢º @[From.GetTag] §Y[From.GetAdjective]§! ²ª± §Mˆª°¬§!, §MÊ¥²§! ª §M¥®§! ±¦½²¾ ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_pte_take_over_fleet: "…¢² ´®²"
+ PEACE_pte_take_over_fleet: "…¢² $GIVERS$ ´®²"
+
+ pte_add_mandate_desc: "¯²°ª¶²¢ ¦¨¢º @[Root.GetTag] §Y[Root.GetName]§! ¡³¦² ±¢ºŒ° ° §G5.00§!."
+ CB_ALLOWED_pte_add_mandate: "‹ª®ª²¿ ¯²°ª¶²¢"
+ PEACE_pte_add_mandate: "‹ª®ª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_10_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_10: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_10: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_20_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_20: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_20: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_30_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_30: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_30: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_40_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_40: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_40: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_50_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_50: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_50: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_60_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_60: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_60: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_70_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_70: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_70: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_80_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_80: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_80: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_90_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_90: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_90: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_remove_mandate_100_desc: "¯²°ª¶²¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ³²°¢ª²¾ ° ²¯²¬³ §R0.00§!."
+ CB_ALLOWED_pte_remove_mandate_100: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+ PEACE_pte_remove_mandate_100: "Ô¬³Œª²¿ ¯²°ª¶²¢"
+
+ pte_demonstrate_military_supremacy_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G25§! ¦ª±®¯²ª¶¬¥ ¢. @[From.GetTag] §Y[From.GetName]§! ±®³¶ª² '§Yƒ¯°²µª¾ ¢°°¥ ±¢¦²¢§!' ° §Y10 ®²§!, ¶² ±ª°ž² ®¦³½¸ª ¼´´¬²º: \n   [global_manpower_modifier]: §R-25.0%§! \n   [manpower_recovery_speed]: §R-25.0%§! \n   [land_morale]: §R-10.0%§! \n   [yearly_army_tradition]: §R-0.50§! \n   [shock_damage_received]: §R+25.0%§! \n   [fire_damage_received]: §R+25.0%§! \n   [merc_maintenance_modifier]: §R+50.0%§!"
+ CB_ALLOWED_pte_demonstrate_military_supremacy: "ƒ¯°²µª¾ ¢°°¥ ±¢¦²¢"
+ PEACE_pte_demonstrate_military_supremacy: "Ï°° ±¢¦²¢"
+
+ pte_take_over_defender_of_faith_desc: "@[Root.GetTag] §Y[Root.GetName]§! ©þ¯ž² ²ª²³® ©¸ª²°ª¬ ¢º §Y[Root.Religion.GetName]§! ¢¯² @[From.GetTag] §Y[From.GetName]§!."
+ CB_ALLOWED_pte_take_over_defender_of_faith: "‰²°©ªª ° …¸ª²°ª¬ ¢º"
+ PEACE_pte_take_over_defender_of_faith: "‰²°©ªª ° …¸ª²°ª¬ ¢º"
+
+ #pte_guarantee_hree_diet_host_desc: "@[Root.GetTag] §Y[Root.GetName]§! ¡³¦² ¯²¯ ±¢¦°ª¾ ©¦°ª¾ ®¦³½¸¥ §Y†¯±¬¥ ¢²§!. °°ª ¢ ²®¿°º ª¯±¬ª ¬°¾©þ ¡ @[Root.GetTag] §Y[Root.GetName]§! ª©¯°ª²¾ ° §R-20§!."
+ #CB_ALLOWED_pte_guarantee_hree_diet_host: "‰²¡¢²¿ ±¢ ° ±¢¦°ª ®¦³½¸¥ †¯±¬¥ ¢²"
+ #PEACE_pte_guarantee_hree_diet_host: "‰¢²ª ®¦³½¸ªþ †¯±¬ªþ ¢²"
+
+ pte_plunder_curia_treasury_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G200.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.05§!. Ð¬²² ±²¾² §R300§!¤."
+ CB_ALLOWED_pte_plunder_curia_treasury_very_small: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_very_small: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G500.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.10§!. Ð¬²² ±²¾² §R750§!¤."
+ CB_ALLOWED_pte_plunder_curia_treasury_small: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_small: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1000.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.20§!. Ð¬²² ±²¾² §R1500§!¤."
+ CB_ALLOWED_pte_plunder_curia_treasury: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_large_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1500.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.30§!. Ð¬²² ±²¾² §R2000§!¤."
+ CB_ALLOWED_pte_plunder_curia_treasury_large: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_large: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_catholic_very_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G200.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.05§!. Ð¬²² ±²¾² §R300§!¤. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R10§! ¢®ª¾°ª¾ ° ¬²²."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic_very_small: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_catholic_very_small: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_catholic_small_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G500.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.10§!. Ð¬²² ±²¾² §R750§!¤. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R20§! ¢®ª¾°ª¾ ° ¬²²."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic_small: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_catholic_small: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_catholic_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1000.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.20§!. Ð¬²² ±²¾² §R1500§!¤. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R35§! ¢®ª¾°ª¾ ° ¬²²."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_catholic: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_plunder_curia_treasury_catholic_large_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1500.0§!¤ ª ³¢®ª¶ª² ¢½ ª°´®¾µª½ ° §R0.30§!. Ð¬²² ±²¾² §R2000§!¤. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R50§! ¢®ª¾°ª¾ ° ¬²²."
+ CB_ALLOWED_pte_plunder_curia_treasury_catholic_large: "Ð©¥¡ª²¿ ¬¢ª¸°ªµ³ ¬²²"
+ PEACE_pte_plunder_curia_treasury_catholic_large: "Ð©¥¡ª²¿ ¬©°³ ¬²²"
+
+ pte_install_anti_pope_desc: "‹¯ž² °º°Œ°ªþ ±¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!. ¢ºþ ¦¢¾°ª°, ª±¢¦³½¸ªþ §Y[From.Religion.GetName]§! ª §Y[Root.Culture.GetName]þ§! ¬³®¿²³º ¢©²¯ ¯¨¦³ §Y60§! ª §Y80§! ¥¦¯ª  §R®¡º¯ª§! ±²°©ª¾¯ª ²°² ±¢ª²®¯. \nÏ©ª¯° ¯°°ª @[Root.GetTag] §Y[Root.GetName]§! ª @[From.GetTag] §Y[From.GetName]§! ª©¯°ª²¾ ° §G+50§!. °°ª ¦¨¢, ª±¢¦³½¸ª §Y[From.Religion.GetName]§!  ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§! ª©¯°ª²¾ ° §R-25§!. \n@[From.GetTag] §Y[From.GetName]§! ±®³¶ª² '§Y°²ª¬²§!' ±¬ ° ³¯² °¢ºþ ±¢ª²®¿, ¶² ±ª°ž² ®¦³½¸ª ¼´´¬²º: \n   [monarch_lifespan]: §R-10.0%§! \n   [yearly_devotion]: §R-0.25§! \n\n‰¬ ¼²² °¢ºþ ±¢ª²®¿ ¾¢®¾²¾ [From.GetTitleTV], ±²°¦°²º ¯¥³² ¢²²¿ ¢ ª ²®ªµ [From.Capital.GetName]. \n™²  ¥°²ª³², ¶² ¯º ²°¯ ®¦³½¸ª¯ ¬°²®ž¯ ¬²²!"
+ CB_ALLOWED_pte_install_anti_pope: "‹²°¢ª²¿ °²ª¬²"
+ PEACE_pte_install_anti_pope: "°²ª¬² ¦¨¢º $TAKERS$"
+
+ #pte_take_monument_buddha_statues_desc: "The monument §YBuddha Statues§! is moved from the @[From.GetTag] §Y[From.GetAdjective]§! province it is currently in to a @[Root.GetTag] §Y[Root.GetAdjective]§! province. When picking the new location, the capital §Y[Root.Capital.GetName]§! will be prioritized, if it fulfills the monument's requirements."
+ #CB_ALLOWED_pte_take_monument_buddha_statues: "Transfer Monument: §YBuddha Statues§!"
+ #PEACE_pte_take_monument_buddha_statues: "Transfer Buddha Statues"
+
+ pte_demand_dynastic_legitimization_desc: "@[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G25§! ®¥ª²ª¯°²ª."
+ CB_ALLOWED_pte_demand_dynastic_legitimization: "‰²¡¢²¿ ±ª©°°ª¾ ¦ª°²ªª"
+ PEACE_pte_demand_dynastic_legitimization: "ƒª°²ª¶¬¾ ®¥ª²ª¯ª©µª¾"
+
+ pte_delegitimize_dynastic_branch_desc: "@[From.GetTag] §Y[From.GetName]§! ±²¾² §R50§! ®¥ª²ª¯°²ª.[From.GetDelegitimizeDynasticBranchHeirEffects]"
+ CB_ALLOWED_pte_delegitimize_dynastic_branch: "ƒ®¥ª²ª¯ª©ª¢²¿ ¦ª°²ª¶¬³½ ¢²¢¿"
+ PEACE_pte_delegitimize_dynastic_branch: "ƒ®¥ª²ª¯ª©ª¢²¿ ¦ª°²ª½"
+
+ pte_stop_raiding_desc: "¨¦¾ ±ª¡¨°¾ ±¢ª°µª¾ ¦¨¢º @[Root.GetTag] §Y[Root.GetName]§! ª ž ½©°ª¬ª ¢ ²¬³¸þ ¢þ° ¢ ©° ¦þ²¢ª¾ °¡¥¢ ¦¨¢º @[From.GetTag] §Y[From.GetName]§! ° ¯¥³² ±¦¢¥²¿¾ °¡¥¯ ¢ ²¶°ª ®¦³½¸ª §Y30 ®²§!."
+ CB_ALLOWED_pte_stop_raiding: "²°¢ª²¿ °¡¥ª © ¡¯ª"
+ PEACE_pte_stop_raiding: "²°¢ª²¿ °¡¥ª © ¡¯ª"
+
+ pte_raid_splendid_court_desc: "@[From.GetTag] §Y[From.GetName]§! ²¾² §R150§! Ï®ª¶ª¾"
+ CB_ALLOWED_pte_raid_splendid_court: "Ð©¥¡ª²¿ Ï®ª¶²¢°°ºþ ¦¢"
+ PEACE_pte_raid_splendid_court: "Ð©¥¡ª²¿ Ï®ª¶²¢°°ºþ ¦¢"
+
+ # Casus Bellis:
+ cb_pte_lift_excommunication: "‰¦¢¥°³²¿ ¯°°ª½ ¢®²¿ Ð¬²²"
+ cb_pte_lift_excommunication_desc: "°ª ²®³¶ª®ª ° ² µ¬¢ª, ¯º ¦®¨°º ±²¢ª²¿ ±¦ ¯°°ª ª ¢²ª²² ª ©²¢ª²¿ ª °¾²¿ ²®³¶°ª!"
+
+ cb_pte_ban_slavery: "…±²ª²¿ ¡²¢"
+ cb_pte_ban_slavery_desc: "°ª ¢ž ¸ž ±¦®¨½² ª±®¿©¢²¿ ¡²¢, ¯º ¦®¨°º ©²¢ª²¿ ª ²¯°ª²¿ ¥."
+
+ cb_pte_protect_religious_bretheren: "…¸ª²ª²¿ °Œª ¡²¿¢ ± ¢"
+ cb_pte_protect_religious_bretheren_desc: "™² ²ª¬ª, ¬²º ±¦¢®¾½² °Œª ¡²¿¢ ± ¢. º ¦®¨°º ²°¢ª²¿ ¼²."
+
+ cb_pte_liberation: "¢¡¨¦°ª"
+ cb_pte_liberation_desc: "°ª — ¥ª¢°¾ ¦¨¢, ¬²¾ ¦²²¶° ¦®¥ ±¦¢®¾® °¦, ª ª °³¨° ©²¢ª²¿ ¢¡¦ª²¿ ³¥°²ž°°º."
+
+ cb_pte_cultural_hegemony: "‰²°©ªª ° ¬³®¿²³°³½  ¥¥¯°ª½"
+ cb_pte_cultural_hegemony_desc: "°ª ±²°¦³½² ° §M¬³®¿²³°³½ ¥¥¯°ª½§! °Œþ ¬³®¿²³°þ ¥³±±º. ¶¢ª¦°, ¶² ¯º ª®¿° ª ®³¶Œ ª ¢ ¢ ²°Œ°ª¾, ±¼²¯³ ¢±®° ®¥ª¶°, ¶² ª¯°° ¯º ¦®¨°º ±²°¦¢²¿ ° §M¬³®¿²³°³½ ¥¥¯°ª½§! ¢¯² °ª."
+
+ cb_pte_defend_rival_subject: "Ï¯Œ²¿¾ ¢ ¢þ°³ © °©¢ªª¯²¿"
+ cb_pte_defend_rival_subject_desc: "¦ª° ª© ª ³¡¹¬²¢ ¡¹¾¢ª® ¢þ°³ © °©¢ªª¯²¿. º ¦®¨°º ¡¹¾¢ª²¿ ¢þ°³ ª ª¯, ¶²¡º ®¡ª²¿ ª ª ²¯ ¯º¯ ±¯¶¿ ª ¡º¢Œ¯³ ±¦¦°°¯³ ¡²ª °©¢ªª¯²¿."
+
+ cb_pte_economic_hegemon: "™¬°¯ª¶¬¾ ¥¥¯°ª¾"
+ cb_pte_economic_hegemon_desc: "°ª ¢ ¡®ª¨ ¬ ²¯³, ¶²¡º ±²°¦¢²¿ ° °Œ ±®¨°ª ¥¥¯°. º ¦®¨°º ®¡ª²¿ ª, ¶²¡º °ª ° ²¢®¾®ª °¯ ¬°¬³°µªª."
+
+ cb_pte_naval_hegemon: "Ï°°-¯¬¾ ¥¥¯°ª¾"
+ cb_pte_naval_hegemon_desc: "°ª ¢ ¡®ª¨ ¬ ²¯³, ¶²¡º ±²°¦¢²¿ ° °Œ ±®¨°ª ¥¥¯°. º ¦®¨°º ®¡ª²¿ ª, ¶²¡º °ª ° ²¢®¾®ª °¯ ¬°¬³°µªª."
+
+ cb_pte_military_hegemon: "Ï°°¾ ¥¥¯°ª¾"
+ cb_pte_military_hegemon_desc: "°ª ¢ ¡®ª¨ ¬ ²¯³, ¶²¡º ±²°¦¢²¿ ° °Œ ±®¨°ª ¥¥¯°. º ¦®¨°º ®¡ª²¿ ª, ¶²¡º °ª ° ²¢®¾®ª °¯ ¬°¬³°µªª."
+
+ cb_pte_anti_coalition: "Ð©¡ª²¿ ¬®ªµª½"
+ cb_pte_anti_coalition_desc: "°ª ©¦®ª ±²ª¢ ° ¬®ªµª½, ¬²¾ ³¨ ¦²²¶° ©®¿, ¶²¡º ±¦²¢®¾²¿ ¦®¾ ° ±²°µª®¿°³½ ³¥©³. º ¦®¨°º ±ª°¾²¿ ¯º ª ©¥¯ª²¿ ž, ±¬ ° ° ©¾¢ª®  ¡ ¢ °¢º¥¦°þ ¦®¾ ° ª²³µªª."
+
+ cb_pte_border_friction: "‰¥°ª¶°º ²°ª¾"
+ cb_pte_border_friction_desc: "Œª Œ±ª°º ©¦®ª  °ª¯ª ²°ª¾ ° ¥°ªµ. Ù±¿ ¯º ¦®¨°º ¢±®¿©¢²¿¾ ¼²ª¯ ª ©¢¢²¿ ¼²ª ³¡¨ª!"
+
+ cb_pte_take_monument: "…±®³¶ª²¿ ¯°³¯°²"
+ cb_pte_take_monument_desc: "°ª ¢®¦½² ±¦¢ª¨°º¯ ¯°³¯°²¯, ¬²ºþ ¯º ¯¨¯ ª±®¿©¢²¿, ®ª ¥ ±¢©³² ¢ ¦°³ ª© °Œª ±¢ª°µªþ. º ¡¾©²®¿° ¦®¨°º ¥ ©±®³¶ª²¿."
+
+ cb_pte_stop_raiding: "²°¢ª²¿ °¡¥ª © ¡¯ª"
+ cb_pte_stop_raiding_desc: "°ª ¢Œ½² °¡¥ª ° °Œª ±¡¨¿¾. º ¦®¨°º ²°¢ª²¿ ¼²."
+
+ cb_pte_force_convert_heathen: "¡²ª²¿ ¾©º¶°ª¬¢"
+ cb_pte_force_convert_heathen_desc: "º ¦®¨°º ¡²ª²¿ ª ¢ ª²ª°°³½ ¢³!"
+
+ # War Goals:
+ pte_lift_excommunication_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_lift_excommunication_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+
+ pte_ban_slavery_war_goal: "€®¬¦ ±²¢"
+ pte_ban_slavery_war_goal_desc: "Ë®¿ ¢þ°º — ²°¢ª²¿ ²¥¢®½ ±²ª¢°ª¬, ©¡®¬ª¢¢ ¬¬ ¯¨° ¡®¿Œ ±²¢."
+
+ pte_protect_religious_bretheren_war_goal: "…¢²ª²¿ ±¢ª°µª½ ¢Œþ ®ª¥ªª"
+ pte_protect_religious_bretheren_war_goal_desc: "Ë®¿ ¢þ°º — ©¢²ª²¿ ±¢ª°µª½ ¢Œþ ®ª¥ªª."
+
+ pte_liberation_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_liberation_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+
+ pte_cultural_hegemony_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_cultural_hegemony_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+
+ pte_defend_rival_subject_war_goal: "…¸ª²ª²¿ µ®¿"
+ pte_defend_rival_subject_war_goal_desc: "Ë®¿ ¢þ°º — ©¸ª²ª²¿ ¢º¡°°³½ ¦¨¢³."
+
+ pte_economic_hegemon_war_goal: "…¢²ª²¿ ²®ªµ³"
+ pte_economic_hegemon_war_goal_desc: "Ë®¿ ¢þ°º — ©¢²ª²¿ ª ²®ªµ³."
+
+ pte_naval_hegemon_war_goal: "‰¦¯°²ª¢²¿ ±¢¦²¢ ° ¯"
+ pte_naval_hegemon_war_goal_desc: "Ë®¿ ¢þ°º — ±¦¯°²ª¢²¿ ±¢¦²¢ ° ¯. ‰®³¶ª² ¢°°º ¶¬ª ² ±¡¦ ¢ ¯¬ª ¨°ª¾."
+
+ pte_military_hegemon_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_military_hegemon_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+
+ pte_anti_coalition_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_anti_coalition_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+ PTE_ANTI_COALITION_WAR_GOAL_COUNTRY_DESC: "Ï ¶®°º ¬®ªµªª"
+
+ pte_border_friction_war_goal: "…¢² ±ª¥°ª¶°º ±¢ª°µªþ"
+ pte_border_friction_war_goal_desc: "Ë®¿ ¢þ°º — ©¢²ª²¿ ±¥°ª¶°³½ ±¢ª°µª½."
+
+ #pte_take_monument_war_goal: "…¢²ª²¿ ±¢ª°µª½  ¯°³¯°²¯"
+ #pte_take_monument_war_goal_desc: "Ë®¿ ¢þ°º — ¢©¾²¿ ±¢ª°µª½  ¦¢ª¨ª¯º¯ ¯°³¯°²¯, ¬²ºþ ¯º ¯¨¯ ª±®¿©¢²¿."
+
+ pte_stop_raiding_war_goal: "…¡®¬ª¢²¿ ±²º"
+ pte_stop_raiding_war_goal_desc: "Ë®¿ ¢þ°º — ²°¢ª²¿ ²¥¢®½ ±²ª¢°ª¬, ©¡®¬ª¢¢ ¬¬ ¯¨° ¡®¿Œ ±²¢."
+
+ pte_force_convert_heathen_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_force_convert_heathen_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+
+ # War Names:
+ PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ ¢®²ª Ï¢°¥ ¬²"
+ PTE_BAN_SLAVERY_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ°  ¡²¢¯"
+ PTE_PROTECT_RELIGIOUS_BRETHEREN_WAR_NAME: "$ORDER$ $FIRST$¾ ®ª¥ª©°¾ ª°²¢°µª¾ ¢ ¦¨¢³ $SECOND_NAME$"
+ PTE_LIBERATION_WAR_NAME: "$ORDER$ $FIRST$¾ ¢¡¦ª²®¿°¾ ¢þ° ±²ª¢ ¦¨¢º $SECOND_NAME$"
+ PTE_CULTURAL_HEGEMONY_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ° © ¬³®¿²³°³½ ¥¥¯°ª½"
+ PTE_DEFEND_RIVAL_SUBJECT_WAR_NAME: "$ORDER$ $FIRST$ ¢¯Œ²®¿²¢ ¢ ¢þ°³ © °©¢ªª¯²¿ ¦¨¢º $TARGET$ ±²ª¢  $SECOND_NAME$"
+ PTE_ECONOMIC_HEGEMON_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ° © ¼¬°¯ª¶¬³½ ¥¥¯°ª½"
+ PTE_NAVAL_HEGEMON_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ° © ¯¬³½ ¥¥¯°ª½"
+ PTE_MILITARY_HEGEMON_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ° © ¢°°³½ ¥¥¯°ª½"
+ PTE_ANTI_COALITION_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ $SECOND$þ ¬®ªµªª"
+ #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° © ¯°³¯°² ¢ ±¢ª°µªª $PROVINCE$"
+ PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ °¡¥¢ ¦¨¢º $SECOND$"
+
+ # Tooltips:
+ PTE_BAN_SLAVERY_TT: "ˆ½¡¾ ±¢ª°µª¾, ±ª°¦®¨¸¾ ¦¨¢ §Y[From.GetName]§! ª®ª ¦°þ ª© ž ¬®°ª®¿°º ¥³¦²¢, ¬²¾ ±ª©¢¦ª² §Y¡¢§! ¬°²®ª³²¾ ¦¨¢þ §Y[Root.GetName]§! ª®ª ž ½©°ª¬¯ ¢ ¼²þ ¢þ°"
+ PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NOT_5_HEGEMONIES_YET_TT: "° §Y5§! ²° ¢ ¯ª ±²°¦³½² ° §M¬³®¿²³°³½ ¥¥¯°ª½§!"
+ PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NOT_CLAIMED_BY_ANYONE_TT: "§M³®¿²³°¾ ¥¥¯°ª¾§! ¦®¾ ¬³®¿²³°þ ¥³±±º §Y[Root.Culture.GetGroupName]§! ¸ž ° ©¾¢®°"
+ PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NO_COOLDOWN_TT: "… ±®¦°ª §Y20 ®²§! ¯º ° ¡º®ª ¢º°³¨¦°º ²¬©º¢²¿¾ ² ±²°©ªþ ° §M¬³®¿²³°³½ ¥¥¯°ª½§!"
+ PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NO_COUNTRY_STRONGER_THAN_US: "Ï °©¢ªª¯º ²°º  °¢°þ ¬³®¿²³þ ¢ ¬³®¿²³°þ ¥³±± §Y[Root.Culture.GetGroupName]§! ª¯½² §Y66%§! ² ¯¬ª¯®¿°¥ ©¯ ¯ªª ª ©¢ª²ª¾ ¦¨¢º §Y[Root.GetName]§!"
+ PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NO_SMALL_COOLDOWN_BECAUSE_SOMEONE_WAS_FORCED_TO_GIVE_UP_HEGEMONY: "ˆª¡ °ª ¦° ²° ° ¡º® ¢º°³¨¦° ²¬©²¿¾ ² ¢þ §M¬³®¿²³°þ ¥¥¯°ªª§! ¢ ²¶°ª ±®¦°ª §Y20 ¦°þ§! ®ª¡ ¯º ¢º°³¦ª®ª ª"
+ PTE_CULTURE_GROUP_HEGEMONY_ENABLES_STATE_EDICT_TT: "Ð©¡®¬ª³² ±¢ª°µª®¿°ºþ ¼¦ª¬² '§Y™¦ª¬² ¬³®¿²³°þ ¥¥¯°ªª§!', ¶² ±ª¢¦ž² ¬ ®¦³½¸ª¯ ¼´´¬²¯: \n   [local_prosperity_growth]: §G+0.50§! \n   [local_production_efficiency]: §G+10.0%§! \n‹¬© ¯¨° ª±®¿©¢²¿ ¢ ¥ª°  ¬³®¿²³¯ª ª© ¬³®¿²³°þ ¥³±±º §Y[Root.Culture.GetGroupName]§!.\n"
+ PTE_CULTURE_GROUP_HEGEMONY_TT: "§Yƒ³¥ª °©¢ªª¯º ²°º  °¢°þ ¬³®¿²³þ ¢ ¬³®¿²³°þ ¥³±± [Root.Culture.GetGroupName] ¬²º ª¯½² ®ª¡ ° ¯° 50 ©¢ª²ª¾, ®ª¡ ° ¯° 25% [Root.GetAdjective]¥ ©¢ª²ª¾ ±®³¶² casus belli ±²ª¢ [Root.GetTagRD], ¶² ±©¢®ª² ª¯ ±¢²ª²¿ §M¬³®¿²³°³½ ¥¥¯°ª½§!. \n¯ ²¥, ²°º  °¢°þ ¬³®¿²³þ, ° ¢¦¾¸þ ¢ ¥³±±³ ¬³®¿²³ [Root.Culture.GetGroupName] ¯¥³² ©²¢ª²¿ [Root.GetTagVN] ²¬©²¿¾ ² ±²°©ªþ ° §M¬³®¿²³°³½ ¥¥¯°ª½§! ¢ ¯¬ ¯ª°º ¥®Œ°ªþ.§W"
+ PTE_CULTURE_GROUP_HEGEMONY_CURRENT_HEGEMON_TT: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! ¢ °²¾¸ ¢¯¾ ±²°¦³² ° §M¬³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ °Œþ ¬³®¿²³°þ ¥³±±º. ®ª ¯º ¦²²¶° ¢®ª¬ª ª ° ©¬®½¶ª®ª  °ª¯ª ±¯ªª, ¯º ±®³¶ª¯ casus belli ±²ª¢ °ª, ¶²¡º ©¢²ª²¿ ž. \n\n‰²°©ª¾ ° §M¬³®¿²³°³½ ¥¥¯°ª½§! ¡³¦² ª¯²¿ ®¦³½¸ª ¼´´¬²º:\n"
+ PTE_CULTURE_GROUP_HEGEMONY_OTHERS_TT: "\nÔ®¦³½¸ª ²°º ¢ °²¾¸ ¢¯¾ ±²°¦³½² ° §M¬³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ ¦³¥þ ¬³®¿²³°þ ¥³±±º:"
+ PTE_CULTURE_GROUP_HEGEMONY_OTHERS_LIST_TT: "   — @[This.Owner.GetTag] §Y[This.Owner.GetName]§! ¦®¾ ¬³®¿²³°þ ¥³±±º §Y[This.Owner.pte_culture_group_hegemony_var.GetCultureGroupName]§!"
+ PTE_CULTURE_GROUP_HEGEMONY_OTHERS_EXPLANATION_TT: "\nº ¯¨¯ ©²¢ª²¿ ª ²¬©²¿¾ ² ¢ª ±ª²¾©°ªþ ¢ ¯¬ ®½¡þ ¯ª°þ ¦®¬ª."
+ PTE_CULTURE_GROUP_HEGEMONY_LOST_TT: "º ±²¾¯ §M¬³®¿²³°³½ ¥¥¯°ª½§!. Ï  ¡°³º ¡³¦³² ³¦®°º ª© °Œþ ²°º, ±¬ ¯º ° ¢²°¢ª¯ . \nº ° ¯¨¯ ±²°¦¢²¿ ° ¼²² ²ª²³® ¢ ²¶°ª ®¦³½¸ª §Y20 ®²§!."
+ PTE_PROVINCE_CONTROLLED_BY_OUR_SIDE: "¦ª²¾ ±¦ ¬°²®¯ ¦¨¢º §Y[Root.GetName]§! ª®ª ½©°ª¬ ¢ ¼²þ ¢þ°"
+ ALL_PROVINCES_OF_OUR_CULTURE_GROUP: "Ï ±¢ª°µªª °Œþ ¬³®¿²³°þ ¥³±±º"
+ pte_prev_is_behind_this_in_tech_adm_1: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y1§! ³¢°¿ ²²ž² ² §Y[From.GetTagRD]§! ¢ £adm£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_adm_2: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y2§! ³¢°¾ ²²ž² ² §Y[From.GetTagRD]§! ¢ £adm£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_adm_3: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y3§! ³¢°¾ ²²ž² ² §Y[From.GetTagRD]§! ¢ £adm£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_dip_1: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y1§! ³¢°¿ ²²ž² ² §Y[From.GetTagRD]§! ¢ £dip£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_dip_2: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y2§! ³¢°¾ ²²ž² ² §Y[From.GetTagRD]§! ¢ £dip£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_dip_3: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y3§! ³¢°¾ ²²ž² ² §Y[From.GetTagRD]§! ¢ £dip£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_mil_1: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y1§! ³¢°¿ ²²ž² ² §Y[From.GetTagRD]§! ¢ £mil£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_mil_2: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y2§! ³¢°¾ ²²ž² ² §Y[From.GetTagRD]§! ¢ £mil£ ²°®¥ª¾"
+ pte_prev_is_behind_this_in_tech_mil_3: "§Y[Prev.GetName]§! ¬¬ ¯ª°ª¯³¯ ° §Y3§! ³¢°¾ ²²ž² ² §Y[From.GetTagRD]§! ¢ £mil£ ²°®¥ª¾"
+ pte_is_hegemon_of_type_tt_economic_hegemon: "™² §Y[economic_hegemon]§!"
+ pte_is_hegemon_of_type_tt_naval_hegemon: "™² §Y[naval_hegemon]§!"
+ pte_is_hegemon_of_type_tt_military_hegemon: "™² §Y[military_hegemon]§!"
+ PTE_FROM_CAPITAL_CONTROLLED_BY_OUR_SIDE: "Ô²®ªµ ¦¨¢º §Y[From.GetName]§!, §Y[From.Capital.GetName]§!, °¦ª²¾ ±¦ ¬°²®¯ §Y[Root.GetTagRD]§! ª®ª ½©°ª¬ ¢ ¼²þ ¢þ°"
+ PTE_CUSTOM_COR_REMOVED_FROM_PROVINCE_TT: "§MË°² ´¯µªª§! ¡³¦² ³¡° ª© §Y[Root.GetName]§!."
+ PTE_AT_LEAST_EQUAL_PRESTIGE_AS_FROM_OVERLORD_TT: "†¯² ± ¯°¿Œþ ¯ ²¬þ ¨ ±²ª¨, ¬¬ ª §Y[From.Overlord.GetName]§!"
+ PTE_AT_LEAST_90_SPYNETWORK_IN_FROM_OVERLORD_TT: "†¯² ¬¬ ¯ª°ª¯³¯ §Y90§! ©¯ Œ±ª°¬þ ²ª ¢ §Y[From.Overlord.GetTagPR]§!"
+ PTE_NO_TRUCE_WITH_FROM_OVERLORD_TT: " ª¯² ±¯ªª¾  §Y[From.Overlord.GetTagTV]§!"
+ PTE_NOT_ALLIED_TO_FROM_OVERLORD_TT: " ²ª² ¢ ½©  §Y[From.Overlord.GetTagTV]§!"
+ PTE_NOT_GUARANTEEING_FROM_OVERLORD_TT: " ¥°²ª³² °©¢ªª¯²¿ ¦¨¢º §Y[From.Overlord.GetName]§!"
+ PTE_FROM_OVERLORD_IS_OUR_RIVAL_TT: "§Y[From.Overlord.GetName]§! ¾¢®¾²¾ °Œª¯ ±°ª¬¯"
+ PTE_AT_LEAST_TWICE_ARMY_SIZE_OF_FROM_OVERLORD_TT: "†¯² ¬¬ ¯ª°ª¯³¯ ¢ §Y2§! © ¡®¿Œ³½ ¯ª½, ¶¯ §Y[From.Overlord.GetName]§!"
+ PTE_AT_LEAST_EQUAL_DEVELOPMENT_AS_FROM_OVERLORD_TT: "¡¸ªþ ³¢°¿ ©¢ª²ª¾ ° ¯°¿Œ, ¶¯ ³ §Y[From.Overlord.GetTagRD]§!"
+ PTE_HIGHER_GP_RANK_THAN_FROM_OVERLORD_TT: "†¯² ¡® ¢º¬ªþ °¥ ¢®ª¬þ ¦¨¢º, ¶¯ §Y[From.Overlord.GetName]§!"
+ PTE_FROM_IS_A_UNION_SINCE_LESS_THAN_5_YEARS_TT: "§Y[From.GetName]§! ¾¢®¾²¾ ¯®¦Œª¯ ±²°ž¯ ¢ ®ª¶°þ ³°ªª ¦¨¢º §Y[From.Overlord.GetName]§! ¯° §Y5 ®²§!"
+ PTE_FROM_IS_A_UNION_SINCE_LESS_THAN_10_YEARS_TT: "§Y[From.GetName]§! ¾¢®¾²¾ ¯®¦Œª¯ ±²°ž¯ ¢ ®ª¶°þ ³°ªª ¦¨¢º §Y[From.Overlord.GetName]§! ¯° §Y10 ®²§!"
+ PTE_NOT_START_SUCCESSION_CRISIS_USED_TT: " ±¦¹¾¢®¾® ´¡ª¬¢°°º ±²°©ªþ ° ±¢ °®¦¢°ª¾ ¢ ²¶°ª ±®¦°ª §Y10 ®²§!"
+ PTE_HAS_SUCCESSION_CLAIM_ON_FROM_TT: "†¯² ²¾ ¡º ®¡º ±ª²¾©°ª¾ ° §Y[From.GetAdjective]ªþ§! ²°[Root.GetFabricateSuccessionClaimVagueClaimInfoStar]"
+ #PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "‰¢ª°µª¾  ¼²ª¯ ¯°³¯°²¯ ¬°²®ª³²¾ §Y[Root.GetName]§! ª®ª ½©°ª¬¯ ¢ ¼²þ ¢þ°"
+  
+
+ # Modifiers:
+ pte_protect_religious_bretheren_modifier: "‰ª°³¦ª²®¿°¾ ©¸ª² ² ²ª¬¢"
+ pte_fleet_disarmament_modifier: "ƒ¥¢  ¢°°-¯¬¯ ©³¨°ªª"
+ pte_army_disarmament_modifier: "ƒ¥¢  ©³¨°ªª ¯ªª"
+ pte_force_bankrupt_modifier: "²¬º² ¼¬°¯ª¶¬ ±¢¦²¢"
+ pte_demonstrate_military_supremacy_modifier: "ƒ¯°²µª¾ ¢°°¥ ±¢¦²¢"
+ pte_culture_group_hegemony_modifier: "³®¿²³°¾ ¥¥¯°ª¾"
+ desc_pte_culture_group_hegemony_modifier: "@[Root.GetTag] §Y[Root.GetName]§! ¡¹¾¢ª® §¬³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ ¬³®¿²³°þ ¥³±±º §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!. \n‹ ° ²¿ ¼²ª ±ª¯³¸²¢ ¦ ² ±, ±¬ °¯ ° ±ªŒ®¿ ²¬©²¿¾ ² °ª ± ³®¢ª¾¯ ¯ª, ±¬ ¯º ° ¾¢®¾¯¾ ³¡¹¬²¯, ±¬ ¯º ° ¯°ª®ª °Œ³ ¬³®¿²³³ ° ²³, ¬²¾ ° ¾¢®¾²¾ ¶²¿½ ¬³®¿²³°þ ¥³±±º §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! ª®ª ±¬ ¯º ° ±²°¯ ¢®¦²¿ ±¢ª°µª¾¯ª  ¬³®¿²³¯ª ª© ¬³®¿²³°þ ¥³±±º §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!."
+ pte_spawn_reformation_center_in_capital_modifier: "ªª¾"
+ desc_pte_spawn_reformation_center_in_capital_modifier: "§Y[Root.GetName]§! ¼² §¯ªª¾§! ¢º §Y[Root.pte_custom_cor_religion.GetReligionName]§!. \n™² ©°¶², ¶² ®¦³½¸ª §Y[Root.pte_custom_cor_duration_display.GetValue] ®²§!, ¦° ª© ¦°ª ±¢ª°µªþ ¡³¦² ¢º¡ª²¿¾ ¬¨¦º §Y6 ¯¾µ¢§! ¦®¾ ¡¸°ª¾ ¢ §Y[Root.pte_custom_cor_religion.GetReligionName]§! ¢³."
+ pte_anti_pope_modifier: "°²ª¬²"
+ pte_anti_pope_controller_modifier: "‰²¢ª® °²ª¬²"
+ pte_stop_raiding_modifier: "Ð¡¬ª °¡¥ª ²°¢®°º"
+ pte_demilitarize_border_modifier_1: "ƒ¯ª®ª²ª©¢°°¾ ¥°ªµ"
+ pte_demilitarize_border_modifier_2: "ƒ¯ª®ª²ª©¢°°¾ ¥°ªµ"
+ pte_demilitarize_border_modifier_3: "ƒ¯ª®ª²ª©¢°°¾ ¥°ªµ"
+ pte_demilitarize_border_modifier_4: "ƒ¯ª®ª²ª©¢°°¾ ¥°ªµ"
+ pte_demilitarize_border_modifier_5: "ƒ¯ª®ª²ª©¢°°¾ ¥°ªµ"
+
+ # Opinion Modifiers:
+ #pte_guarantee_hree_diet_host_opinion: "‰ª°³¦ª²®¿° ±¢¦°ª ©¦°ª¾ ª¯±¬¥ ¢² ¢ ¦°°¯ ¯²"
+ pte_anti_pope_opinion_positive: "¢ºþ Ï¢°ºþ ¬²"
+ pte_anti_pope_opinion_negative: "‹²°¢ª® °²ª¬²"
+ pte_start_succession_crisis_opinion_positive: "‰¦¦¨® °Œ ±¢ ° °®¦¢°ª"
+ pte_start_succession_crisis_opinion_negative: " ±¦¦¨® °Œ ±¢ ° °®¦¢°ª"
+ pte_joined_trade_league: "‰ª¦ª°ª®¾ ¬ ²¥¢þ ®ª¥"
+
+ # Customizable Localization:
+ string_force_knowledge_sharing_lacking_institution: "§W²þŒªþ ° ¢°¦ž°°ºþ ª°²ª²³²§!"
+ string_demand_manpower_amount_more_than_10k: "§Y¡® ¶¯ §Y10,000§W"
+ string_fabricate_succession_claim_vague_claim_info_text_dlc: "\n§* Ô®¡º ±²°©ªª ©°¶½² ®¦³½¸: \n   — ² ¨ ¦ª°²ª¾, ¶² ª ³ ª ½©°\n   — ±²°©ªª ° ª ²°\n   — ¢ ¬¬þ-² ¯¯°² ³ °ª ¡º® ±¢ª²®¿ °Œþ ¦ª°²ªª\n   — ¦ª° ª© ª ±¢ª²®þ ¦ª®¾, ¬¥¦ ³ °ª ¡º® ¬°² ª© °Œþ ²°º§!"
+ string_fabricate_succession_claim_vague_claim_info_text: "\n§* Ô®¡º ±²°©ªª ©°¶½² ®¦³½¸: \n   — ² ¨ ¦ª°²ª¾, ¶² ª ³ ª ½©°\n   — ±²°©ªª ° ª ²°\n   — ¢ ¬¬þ-² ¯¯°² ³ °ª ¡º® ±¢ª²®¿ °Œþ ¦ª°²ªª\n   — ¦ª° ª© ª ±¢ª²®þ ª¯® °Œ³ ¬³®¿²³³ ª ®ª¥ª½ ª ¦ª®¾, ¬¥¦ ¯º  °ª¯ª ©¬®½¶ª®ª ¡¬§!"
+ string_fabricate_succession_claim_vague_claim_info_star: "§*§!"
+ string_delegitimize_dynastic_branch_heir_effects: "‰²°©ªª [From.GetAdjective]¥ °®¦°ª¬ §Y[From.Heir.GetName]§! ³¯°¿Œ²¾ ° §R33§!."
+
+ # Decisions:
+ pte_claim_culture_group_hegemony_title: "¡¹¾¢®°ª [Root.Culture.GetGroupName]þ ¬³®¿²³°þ ¥¥¯°ªª"
+ pte_claim_culture_group_hegemony_desc: "º — ¯¾ ¬³±°¾ ª ¯¾ ¯¥³¸²¢°°¾ ²° ¢ ¬³®¿²³°þ ¥³±± §Y[Root.Culture.GetGroupName]§!. Ù¡¢°ª §M¬³®¿²³°þ ¥¥¯°ªª§! ¦² °¯ °¡¦ª¯º ±ª¢ª®¥ªª, ¦°¬ ¼² ²¬¨ ¦² ¦³¥ª¯ °¦¯ ¢ ²þ ¨ ¬³®¿²³°þ ¥³±± ±¢¦ ¦®¾ ¢þ°º  °¯ª, ¶² ±©¢®ª² ª¯ ²¡²¿ ³ ° ¥¥¯°ª½."
+
+ # Events:
+ pte_events.EVTNAME4: "³®¿²³°¾ ¥¥¯°ª¾ ³²¶°"
+ pte_events.EVTDESC4.1: "       º ³²²ª®ª °©¢ªª¯²¿ ª ±¢²ª®ª¿ ¢ ³¡¹¬² [Root.Overlord.GetTagRD]. ¬ °µª¾-³¡¹¬², ¯º ° ¯¨¯ ¡®¿Œ ¡¹¾¢®¾²¿ ¬³®¿²³°³½ ¥¥¯°ª½ ª ¯º ²¾¯ ²ª²³® ª ¥ ±ª¢ª®¥ªª. \nƒ³¥¾ ²° °Œþ ¬³®¿²³°þ ¥³±±º ¯¨² ¢°¢¿ ±²°¦¢²¿ ° ²ª²³® ° °¢°ªª Œ°ª¾."
+ pte_events.EVTDESC4.2: "       º ª©¯°ª®ª °Œ³ ±¢ª¶°³½ ¬³®¿²³³ ° ¦°³ ª© ¦³¥þ ¬³®¿²³°þ ¥³±±º, ª®ª ³ ° ¡®¿Œ °² °ª ¦°þ ±¢ª°µªª ¢° ¥³±±º °Œþ ±¢ª¶°þ ¬³®¿²³º,  ¼² ©°¶², ¶² ¯º ¡®¿Œ ° ¯¨¯ ±²°¦¢²¿ ° ¬³®¿²³°³½ ¥¥¯°ª½ ¦°¿¥ª.\nƒ³¥¾ ²° °Œþ ±¦º¦³¸þ ¬³®¿²³°þ ¥³±±º ²±¿ ¯¨² °¢ ±²°¦¢²¿ ° ²ª²³® ±¦²¢¯ Œ°ª¾.."
+ pte_events4.EVTOPT1: "™² ±©."
+
+ pte_events.EVTNAME5: "Ð² ¬³®¿²³°þ ¥¥¯°ªª"
+ pte_events.EVTDESC5: "       @[Root.GetTag] §Y[Root.GetName]§! ¡¹¾¢ª® §M¬³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]þ§! ¬³®¿²³°þ ¥³±±º. \n       °ª ¡®¦½² ¼²ª¯ª ±ª¯³¸²¢¯ª ¦ ² ±, ±¬ ° ¢º°³¨¦°º ¡³¦³² ²¬©²¿¾ ² °ª ¢ ¯¬ ¯ª°¥ ¦¥¢, ±¬ °ª ° ²°³² ³¡¹¬²¯, ±¬ °ª ° ©¯°¾² ¢½ ¬³®¿²³³ ° ²³, ¬²¾ ° ¾¢®¾²¾ ¶²¿½ §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]þ§! ¬³®¿²³°þ ¥³±±º ª®ª ¦ ² ± ±¬ °ª ° ±²°³² ¢®¦²¿ ±¢ª°µª¾¯ª  ¬³®¿²³þ ª© §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]þ§! ¬³®¿²³°þ ¥³±±º."
+ pte_events5.EVTOPT1: "Ì³¦°."
+
+ pte_events.EVTNAME7: "§Y[Root.religion_to_convert_to.GetReligionName]§! ¢®ª¾°ª ¢ §Y[Root.GetName]§!"
+ pte_events.EVTDESC7: "       Ï®ª¾°ª ¯ªªª [From.GetName] ¦²ª¥® [Root.GetName]. €®¿Œª°²¢ °®°ª¾ ±ª°¾®ª °¢³½ ¢³."
+ pte_events7.EVTOPT1: "™² ±¡®¯..."
+
+ pte_events.EVTNAME8: "ªª¾ ³°ª¶²¨°"
+ pte_events.EVTDESC8: "       Ë°² ´¯µªª ¢ [From.GetName] ¦þ²¢³² ³¨ 5 ®². Ù¬ª¯ ¡©¯ ³®¢ª¾ ¯ª°¥ ¦¥¢  ¢º±®°°º, ª µ°² ¡º® ³°ª¶²¨°."
+ pte_events8.EVTOPT1: "¬°µ-²!"
+
+ pte_events.EVTNAME9: "±ª¯®¯ºþ [Root.Monarch.GetTitle]"
+ pte_events.EVTDESC9: "       [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName], ¦°¨¦º ³²¢¨¦ž°°ºþ ¬¬ °²ª¬² ±ª ±¦¦¨¬ [installer_of_anti_pope.GetName], ° ±®¿©³²¾ ±±³®¾°²¿½ ¦ª [Root.GetAdjective]¥ °¦. Ôþ¶ ±¾¢ª®¾ ±°ª¬, ¦¡ª¢½¸ªþ¾ ±ª©°°ª¾ ³ [Root.GetTitleRD]!"
+ pte_events9.EVTOPT1: "Ì²? ²!"
+
+ # Power Projection Modifiers:
+ pte_destabilize_nation_power_projection: "³²þ¶ª¢º ±°ª¬ª"
+ pte_hegemony_peace_treaty_power_projection: "‰¢¦²¢ ¥¥¯°ªª"
+
+ # State Edicts:
+ pte_cultural_hegemony_edict: "™¦ª¬² ¬³®¿²³°þ ¥¥¯°ªª"
+ pte_friendly_movement_speed_edict: "‹®³¶Œ°ª¾ ¢°°þ ª°´²³¬²³º"
+ pte_hostile_movement_speed_edict: "™¦ª¬² ¢º¨¨°°þ ©¯®ª"
+ pte_increased_enemy_attrition_edict: "³Œ°ª °¡¨°ª¾"
+ pte_fast_recruiting_edict: "Ô¶°ºþ ±ª©º¢"
+ pte_increased_supply_limit_edict: "™¦ª¬²  ¨ª®¿ ¦®¾ ®¦²"
+ pte_fast_ship_building_edict: "Ê®²²°ª"
+ pte_increased_sailor_enlistment_edict: "¡ ¢ ´®² ³¢®ª¶°"
+ pte_increased_sailor_enlistment_edict_all_coastal: "¡ ¢ ´®² ³¢®ª¶°"
+ pte_banners_edicts: "‹¬©  ©¶ª®°ªª ° ¢°°³½ ®³¨¡³"
+
+ # New Diplomatic Actions:
+ ## Actions:
+ pte_start_border_friction_title: "Ô±  ¥°ªµ"
+ pte_start_border_friction_desc: "Ïº ¨®² °¶²¿ ±¥°ª¶°º ±º  §Y[From.GetTagTV]§!? \n\n™² ¦² °¯ ±¢¦ ¬ ¢þ°  °ª¯ª, ¢ ¬²þ ¯º ©¢²ª¯ ª ±ª¥°ª¶°º ±¢ª°µªª — ª °ª ¦ª°º¯ ¥ª°¯ ¡®¿Œ. Ï¦¡¢¬, ¯º ±®³¶ª¯ §R2.00§! ¬³±µªª. \n™² ¬²ª² °Œ³ Œ±ª°¬³½ ²¿ ° §Y60§!."
+ pte_start_border_friction_tooltip: "‰®³¶ª²¿ ±¢¦ ¦®¾ ¢þ°º  §Y[From.GetTagTV]§! ¦®¾ ©¢² ±ª¥°ª¶°º ±¢ª°µªþ.\n"
+
+ pte_start_succession_crisis_title: "‰¦¦®¿° ±¢ °®¦¢°ª¾"
+ pte_start_succession_crisis_desc: "Ïº ¨®² ±¦¦®²¿ ±¢ °®¦¢°ª¾ ° ²° §Y[From.GetName]§! ±ª ±¯¸ª ¯²°º ¦¢¾°? \n\n®ª °ª ¥®¾²¾, ±®¦²¢ª¾ ¡³¦³² ®¦³½¸ª¯ª: \n™² ±ª¢¦ž² ¬ §Y¢þ° © °®¦²¢§! ¦¨¢º §Y[From.GetName]§! ±²ª¢ §Y[From.Overlord.GetTagRD]§!. ƒ¨¢ §Y[From.GetName]§! ¢º²³±ª² ° ª ²°. Œ ¢©ª¯° ¯°°ª  ¦¨¢þ §Y[From.GetName]§! ª©¯°ª²¾ ° §G+100§!. \n™² ³¯°¿Œª² °Œ³ Œ±ª°¬³½ ²¿ ¢ ¦¨¢ [From.Overlord.GetName] ° §Y90§!. \n\n®ª °ª ²¬¨³²¾, ¼² ±ª¢¦ž² ¬ ²¯³, ¶²: \nº ±²¾¯ §R20§! ±²ª¨ ª °Œ ¢©ª¯° ¯°°ª  §Y[From.GetTagTV]§! ª©¯°ª²¾ ° §R-50§!."
+ pte_start_succession_crisis_tooltip: "¡¹¾¢ª²¿ ¢þ°³ © °®¦²¢ ¦¨¢º §Y[From.GetName]§! ±²ª¢ §Y[From.Overlord.GetTagRD]§!.\n[Root.GetFabricateSuccessionClaimVagueClaimInfoText]"
+ pte_start_succession_crisis_alert_tooltip: "‰¢ °®¦¢°ª¾"
+ pte_start_succession_crisis_dialog: "§Y[Root.GetName]§! ¡²ª®¾ © ±¦¦¨¬þ ¬ °Œ¯³ ¦¢¾°²¢³ ¢ ±ª²¾©°ª¾ ° °Œ ²°. \n\nÏ ®³¶ °Œþ ±¦¦¨¬ª §Y[Root.GetTagRD]§!, ¼² ¦² ©¬°°ºþ ±¢¦ ¬ ¡¹¾¢®°ª½ §Y¢þ°º © °®¦²¢§! ° °Œþ ²° ±²ª¢ §Y[From.Overlord.GetTagRD]§! ª ¼² ¡³¦² ¦®°. \n¯²¾ ° ±¦¦¨¬³ ¦¢¾°, °Œ ¬° ¢ž ¸ž ¢ ³¬ §Y[From.Overlord.GetTagRD]§!, ¶² ©°¶ª², ¶² ¯º ¦®¨°º ¡¹¦ª°ª²¿¾  ¦¨¢þ §G[From.Overlord.GetName]§! ±²ª¢ §R[Root.GetTagRD]§! ¢ ¼²þ ¢þ°. \nÏ©ª¯° ¯°°ª §Y[Root.GetTagRD]§! ª §Y[From.GetTagRD]§! ª©¯°ª²¾ ° §G+100§!. \n\n®ª ¯º ²¬¨¯ §Y[Root.GetTagDT]§!, ¯º ±²¾¯ §R20§! ±²ª¨ ª °Œ ¯°°ª ¦³¥  ¦³¥ ª©¯°ª²¾ ° §R-50§!. \n\n„®² ±ª°¾²¿ ¼² ±¦®¨°ª?"
+
+ ## AI Acceptance Reasons:
+ PTE_FROM_OPINION_WITH_OVERLORD: "† ¯°°ª  ¡²¢°°¯ ±¢®ª²®"
+ PTE_ROOT_FROM_OVERLORD_COMPARED_LEGITIMACY: "Œ ®¥ª²ª¯°²¿ ± ¢°°ª½  ®¥ª²ª¯°²¿½ ª ±¢®ª²®¾"
+ PTE_ROOT_FROM_OVERLORD_ARMY_STRENGTH: "Ôª® °Œþ ¯ªª ± ¢°°ª½  ¯ªþ ª ±¢®ª²®¾"
+ PTE_ROOT_FROM_ARE_HISTORICAL_FRIENDS: "†²ª¶¬ª ®¨ª¢Œª¾ ¦³¨²¢°°º ²°Œ°ª¾"
+ PTE_ROOT_FROM_ARE_HISTORICAL_RIVALS: "†²ª¶¬ª ®¨ª¢Œ¾ ±°ª¶²¢"
+ PTE_FROM_OVERLORD_HAS_REGENCY: "‹ ª ±¢®ª²®¾ ²¿ ¥°²"
+ PTE_FROM_OVERLORD_HAS_WEAK_OR_NO_HEIR: "‹ ª ±¢®ª²®¾ °² °®¦°ª¬ ª®ª ° ®¡ºþ"
+ PTE_FROM_OVERLORD_NOT_GREAT_POWER: "º — ¢®ª¬¾ ¦¨¢,  ª ±¢®ª²®¿ — °²."
+ PTE_ROOT_NOT_GREAT_POWER: "† ±¢®ª²®¿ — ¢®ª¬¾ ¦¨¢,  ¯º — °²."
+ PTE_ROOT_POWER_PROJECTION: "ƒª±®¯²ª¶¬ªþ ¢"
+ PTE_FROM_ATTITUDE_TOWARDS_ROOT: "† ²°Œ°ª ¬ °¯"

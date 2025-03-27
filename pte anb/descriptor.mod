@@ -7,5 +7,5 @@ tags={
 }
 name="Peace Treaties Expanded Anbennar Continued"
 picture="thumbnail.png"
-supported_version="1.37.*"
+supported_version="v1.37.5.0"
 remote_file_id="3449929366"
