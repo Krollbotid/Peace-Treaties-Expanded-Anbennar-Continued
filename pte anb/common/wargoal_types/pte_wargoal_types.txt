@@ -510,29 +510,29 @@ pte_stop_raiding_war_goal = {
 	war_name = PTE_STOP_RAIDING_WAR_NAME
 }
 
-#pte_force_convert_heathen_war_goal = {
-#	type = superiority
-#
-#	attacker = {
-#		badboy_factor = 1
-#		prestige_factor = 1
-#		peace_cost_factor = 1
-#
-#		peace_options = {
-#			po_change_religion
-#		}
-#	}
-#
-#	defender = {
-#		badboy_factor = 1
-#		prestige_factor = 1
-#		peace_cost_factor = 1
-#
-#		peace_options = {
-#			po_demand_provinces
-#			po_change_religion
-#		}
-#	}
-#
-#	war_name = CRUSADE_WAR_NAME
-#}
+pte_force_convert_heathen_war_goal = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_change_religion
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+			po_change_religion
+		}
+	}
+
+	war_name = CRUSADE_WAR_NAME
+}

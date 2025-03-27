@@ -1,5 +1,6 @@
 [u]Here you can find a list of all peace treaties, casus bellis, state edicts and diplomatic actions in the mod, with additional information.[/u]
 The conditions for peace treaties, state edicts and diplomatic actions listed here are purely the ones needed for them to show up in the UI, whether there are additional requirements to select them will be shown in-game.
+There is no info for disabled peace treaties/casus bellis
 
 [h1][b][u]Peace Treaties[/u][/b][/h1]
 
@@ -209,21 +210,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] loser gains 2.5 war exhaustion and gets land force limit -33.0% and regiment cost +10.0% for 10 years
 [/list]
 
-[h1]Force Seppuku[/h1]
-
-[b]Conditions for Visibility:[/b]
-[list]
-[*] winner is in the Japanese culture group
-[*] loser is in the Japanese culture group
-[*] winner is defender in the war
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] the loser's ruler dies
-[*] the winner gains 3 times the loser's ruler's skill in monarch power (so a 6 6 6 ruler will give 18 ADM, 18 DIP and 18 MIL power)
-[/list]
-
 [h1]Demand Slave Soldiers[/h1]
 
 [b]Conditions for Visibility:[/b]
@@ -237,8 +223,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] loser gives 10.0% of their maximal manpower to the winner
 [*] winner loses 5 army tradition
 [/list]
-
-[i]Countries with the Ottoman or Mamluk government get reduced war score cost.[/i]
 
 [h1]Abduct Veridical[/h1]
 
@@ -475,24 +459,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] if winner is excommunicated, he stops being excommunicated
 [/list]
 
-[h1]Host next Imperial Diet[/h1]
-
-[b]Conditions for Visibility:[/b]
-[list]
-[*] Holy Roman Empire Expanded is active
-[*] winner is not Emperor of the HRE
-[*] winner is a member of the HRE
-[*] loser is the Emperor of the HRE
-[*] is not the guaranteed host of the next Imperial Diet
-[*] no other country is the guaranteed host of the next Imperial Diet
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] opinion of other HRE members of the winner is changed by -20
-[*] when the next imperial diet is held, the winner will be the host and thus can pick the topic
-[/list]
-
 [h1]Plunder Rectorate Coffers[/h1]
 
 [b]Conditions for Visibility:[/b]
@@ -565,26 +531,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] loser gains yearly devotion -0.25 and average monarch lifespan -10% until the death of the new ruler
 [*] winner gains diplomatic reputation -2 until the death of the current ruler
 [*] winner becomes rectorate controller
-[/list]
-
-[h1]Transfer Monument[/h1]
-
-[b]Conditions for Visibility:[/b]
-[list]
-[*] winner declared war on the loser with the "Acquire Monument" casus belli
-[*] one of the following monuments is owned by the loser or one of the loser's non-tributary subjects:
-[list]
-[*] Stonhenge
-[*] Buddha Statues (not available with Extended Timeline)
-[*] Gomateshwara Statue (not available with Extended Timeline)
-[*] Inukshuk
-[*] Moai (not available with Extended Timeline)
-[/list]
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] the specific monument is moved to one of the winner's provinces that fulfills the monument's requirements, the capital is prioritized if possible
 [/list]
 
 [h1]Dynastic Legitimization[/h1]
@@ -852,36 +798,6 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [*] gives a small discount on war score cost and aggressive expansion for taking border provinces as well as the "Demilitarize Borders" peace offer
 [/list]
 
-[h1]Acquire Monument[/h1]
-
-[b]Conditions:[/b]
-[list]
-[*] Leviathan DLC is active
-[*] is independent or a tributary type subject
-[*] either:
-[list]
-[*] neighbors the target
-[*] has a border distance of less than 100
-[*] neighbors target's overlord and the target is a non-tributary type subject
-[*] has a border distance of less than 100 to the target's overlord and the target is a non-tributary type subject
-[/list]
-[*] the target owns one of the following monuments and we would fulfill the monument's requirements, if moved to any of our provinces:
-[list]
-[*] Stonhenge
-[*] Buddha Statues (not available with Extended Timeline)
-[*] Gomateshwara Statue (not available with Extended Timeline)
-[*] Inukshuk
-[*] Moai (not available with Extended Timeline)
-[/list]
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] unlocks the "Transfer Monument" peace offer
-[/list]
-
-[i]Should you have a mod active that makes these monuments unmoveable, the treaty will not work. If you have a mod active that makes other monuments moveable, those will not be available to be moved with this casus belli.[/i]
-
 [h1]Stop Slave Raids[/h1]
 
 [b]Conditions:[/b]
@@ -900,15 +816,14 @@ The conditions for peace treaties, state edicts and diplomatic actions listed he
 [b]Conditions:[/b]
 [list]
 [*] is independent or a tributary type subject
-[*] is either the Defender of Faith, the Rectorate Controller or is a theocracy and neither Christian nor Muslim
+[*] is either the Defender of Faith, the Rectorate Controller or is a theocracy and neither Cannorian faith nor Bulwari faith or is Jadd Jaddari or Corinite Corintar
 [*] does not have the "The Global Crusade" reform
-[*] it's not the Classical Age, Late Classical Age or Age of Migrations (early ages of Extended Timeline)
 [*] is in a different religion group than the target
 [*] the target is independent or a tributary type subject
 [*] the target is not the Ravelian State
 [*] the cost to force convert the target is smaller than or equal to 100% War Score Cost
-[*] is either a human player or has its capital on the same continent as the target or is either Christian or Muslim and the target has its capital outside of the Aelantirs
-[*] either has completed the Religious Ideas or has either the reform "Feudal Theocracy", "Crusader Order", "Crusading Empire", "Holy Horde", "Kingdom of God" or "Magister Militum Dei" or Extended Timeline is active and has completed Early Religious Ideas and has a worse ADM Technology than 50
+[*] is either a human player or has its capital on the same continent as the target or is either Cannorian faith or Bulwari faith and the target has its capital outside of the Aelantirs
+[*] either has completed the Religious Ideas or has the reform "Corinite Crusade"
 [*] neighbors the target or has a non-tributary type, non colonial subject following the overlord's religion neighboring the target
 [/list]
 

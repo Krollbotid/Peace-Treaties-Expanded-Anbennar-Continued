@@ -36,9 +36,9 @@
  CB_ALLOWED_pte_ban_slavery: "Sklaverei verbieten"
  PEACE_pte_ban_slavery: "Sklaverei verbieten"
 
- #pte_sacrifice_ruler_desc: "Der Herrscher von @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], wird den [Root.Religion.GetName]en Göttern geopfert, wodurch das Verhängnis von @[Root.GetTag] §Y[Root.GetName]§! um §G[From.GetRulerStatsCombinedForDoomReduction]§! gesenkt wird. [From.Monarch.GetName] wird sterben."
- #CB_ALLOWED_pte_sacrifice_ruler: "Herrscher opfern"
- #PEACE_pte_sacrifice_ruler: "Herrscher opfern"
+ pte_sacrifice_ruler_desc: "Der Herrscher von @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], wird den [Root.Religion.GetName]en Göttern geopfert, wodurch das Verhängnis von @[Root.GetTag] §Y[Root.GetName]§! um §G[From.GetRulerStatsCombinedForDoomReduction]§! gesenkt wird. [From.Monarch.GetName] wird sterben."
+ CB_ALLOWED_pte_sacrifice_ruler: "Herrscher opfern"
+ PEACE_pte_sacrifice_ruler: "Herrscher opfern"
 
  pte_unequal_treaty_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G5§! Handelsmacht für §Y10 Jahre§! in @[From.GetTag] §Y[From.GetName]s§! Haupthandelsregion pro Küstenprovinz, die @[From.GetTag] §Y[From.GetName]§! dort besitzt."
  CB_ALLOWED_pte_unequal_treaty: "Ungleicher Vertrag"
@@ -332,8 +332,8 @@
  cb_pte_stop_raiding: "Küstenüberfälle unterbinden"
  cb_pte_stop_raiding_desc: "Sie überfallen unsere Küsten. Wir müssen dies unterbinden."
 
- #cb_pte_force_convert_heathen: "Bekehrt die Ungläubigen"
- #cb_pte_force_convert_heathen_desc: "Wir müssen sie zum wahren Glauben bekehren!"
+ cb_pte_force_convert_heathen: "Bekehrt die Ungläubigen"
+ cb_pte_force_convert_heathen_desc: "Wir müssen sie zum wahren Glauben bekehren!"
 
  # War Goals:
  pte_lift_excommunication_war_goal: "Überlegenheit demonstrieren"
@@ -376,8 +376,8 @@
  pte_stop_raiding_war_goal: "Häfen blockieren"
  pte_stop_raiding_war_goal_desc: "Kriegsziel ist, den Handel des Feindes durch Blockaden möglichst vieler ihrer Häfen zu unterbinden."
 
- #pte_force_convert_heathen_war_goal: "Überlegenheit demonstrieren"
- #pte_force_convert_heathen_war_goal_desc: "Kriegsziel ist, Überlegenheit durch Siege in Schlachten zu zeigen."
+ pte_force_convert_heathen_war_goal: "Überlegenheit demonstrieren"
+ pte_force_convert_heathen_war_goal_desc: "Kriegsziel ist, Überlegenheit durch Siege in Schlachten zu zeigen."
 
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$er Krieg gegen die päpstliche Autorität"

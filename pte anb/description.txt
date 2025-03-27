@@ -37,9 +37,10 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Plunder Rectorate Coffers
 [*] Protect Religious Bretheren
 [*] Raid Splendid Court
+[*] Sacrifice Ruler
 [*] Seize Fleets aka Naval Supremacy                                                        - [b]not tested[/b]
 [*] Seize Mercantilism
-[*] Share Maps of Africa/Asia/Europe/North America/Oceania/South America/The New World
+[*] Share Maps of Sarhal/Haless/Cannor/North Aelantir/Insyaa/South Aelantir/The New World
 [*] Spread the True Faith
 [*] Strengthen the Mandate
 [*] Stop Slave Raids
@@ -47,17 +48,16 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [/list]
 
 [h1]Disabled Peace Treaties[/h1]
-These options are disabled because they either don't fit to Anbennar, or uncompleted, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
+These options from original mod are disabled because they either don't fit to Anbennar, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
 [*] Force Seppuku - todo target because I don't know who in Anbennar may commit Seppuku
 [*] Host next Imperial Diet - requires HRE expanded
 [*] Liberate the Holy See - Ravelian doesn't have capital
-[*] Sacrifice Ruler - todo target because I don't know much about countries from Anbennar which uses DOOM
 [*] Transfer Monument - Anbennar doesn't have movable monuments?
 [/list]
 
 [h1]Casus Bellis[/h1]
-Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options.
+Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following casus bellis.
 7/11
 [list]
 [*] Ban Slavery                                                                             - [b]not tested[/b]
@@ -68,15 +68,15 @@ Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace optio
 [*] Economic Hegemony                                                                       - [b]not tested[/b]
 [*] Military Hegemony                                                                       - [b]not tested[/b]
 [*] Naval Hegemony                                                                          - [b]not tested[/b]
+[*] Proselytize the Heathen
 [*] Protect Our Religious Bretheren
 [*] Question Rectorate Authority
 [*] Stop Slave Raids
 [/list]
 
 [h1]Disabled Casus Bellis[/h1]
-These options are disabled because they either don't fit to Anbennar, or uncompleted, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
+These options from original mod are disabled because they either don't fit to Anbennar, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
-[*] Proselytize the Heathen - todo target because there are too many religions in Anbennar who would fit this CB
 [*] Acquire Monument - Anbennar doesn't have movable monuments?
 [*] Liberate the Holy See - Ravelian doesn't have capital
 [/list]
@@ -113,3 +113,4 @@ https://imgur.com/a/S97gEHb
 [b]If you find any bugs or have any suggestions, please let me know in the comments or in Discord (Krollbotid) [/b]
 
 Also say thanks to Expanded Mod Family devs on their [url=https://discord.gg/tGskECCa9t]Discord[/url] and to Anbennar devs on their [url=https://discord.com/invite/XVJeBhtePe]Discord[/url].
+
