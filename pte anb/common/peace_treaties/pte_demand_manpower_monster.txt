@@ -1,13 +1,13 @@
 # todo
-pte_demand_manpower = {
+pte_demand_manpower_monster = {
 	category = 6
 	power_projection = no
-	power_cost_base = 0.5
-	prestige_base = 0.667
-	ae_base = 0.168
+	power_cost_base = 0
+	prestige_base = 0
+	ae_base = 0.152
 	warscore_cost = {
 		all_provinces = 0.0
-		no_provinces = 15.0
+		no_provinces = 10.0
 		owner_keeps = 0.0
 		conquered = 0.0
 		returned_core = 0.0
@@ -21,63 +21,25 @@ pte_demand_manpower = {
 	requires_is_allowed = no
 
 	is_visible = {
-		NOT = { has_country_modifier = monstrous_nation }
-		OR = {
-			#tag = ROM
-			is_revolutionary = yes
-			is_revolution_target = yes
-			has_reform = emperor_of_the_revolution_reform
-			has_reform = military_dictatorship_reform
-			has_reform = battle_pope_reform
-			has_reform = pirate_republic_reform
-			government = native
-			government = tribal
-			is_nomad = yes
-		}
+		has_country_modifier = monstrous_nation
 		FROM = {
 			max_manpower = 1
 		}
 	}
 	is_allowed = {
-		OR = {
-			AND = {
-				army_tradition = 5
-				FROM = {
-					NOT { has_country_modifier = monstrous_nation }
-				}
-			}
-			AND = {
-				prestige = 15
-				OR = {
-					FROM = {
-						has_country_modifier = monstrous_nation
-					}
-					is_rival = FROM
-				}
-			}
-		}
+		prestige = 0 # yeah, you can fall to negative prestige :D
 		FROM = {
-			manpower_percentage = 0.1
+			manpower_percentage = 0.2
 		}
 	}
 	effect = {
-		if {
-			limit {
-				FROM = {
-					NOT { has_country_modifier = monstrous_nation }
-				}
-			}
-			add_army_tradition = -5
-		}
-		else {
-			add_prestige = -20
-		}
+		add_prestige = -10
 		export_to_variable = {
 			which = enemy_max_manpower
 			value = max_manpower
 			who = FROM
 		}
-		divide_variable = { which = enemy_max_manpower value = 10 }
+		divide_variable = { which = enemy_max_manpower value = 20 }
 		divide_variable = { which = enemy_max_manpower value = 100 }
 		multiply_variable = { which = enemy_max_manpower value = 100 }
 		while = {
@@ -138,12 +100,12 @@ pte_demand_manpower = {
 			value = 1
 		}
 		limit = {
-			NOT = { manpower_percentage = 0.1 }
+			NOT = { manpower_percentage = 0.2 }
 			FROM = {
-				max_manpower = 50
+				max_manpower = 30
 				NOT = {
 					num_of_owned_provinces_with = {
-						value = 3
+						value = 5
 						OR = {
 							is_claim = ROOT
 							is_core = ROOT

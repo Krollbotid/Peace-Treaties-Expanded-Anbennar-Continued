@@ -42,9 +42,12 @@ pte_enforced_royal_marriage = {
 	is_allowed = {
 		NOT = { marriage_with = FROM }
 		religion_group = FROM
+		pte_has_racial_issues_sun_elf = no # you can overcome enemy's snobbism, but not yours
+		pte_has_racial_issues_elf_monarchy = no
 	}
 	effect = {
 		FROM = {
+			set_country_flag = enforced_marriage_racial # allowing humans enforce RM on elves
 			country_event = { id = pte_events.2 days = 1 }
 		}
 	}

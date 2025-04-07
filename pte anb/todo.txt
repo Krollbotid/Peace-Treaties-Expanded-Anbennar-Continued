@@ -1,0 +1,12 @@
+TODO LIST
+1.2     Port enforced seppuku (hobgoblins + wuhyun + azjakuma) to Anbennar - finish porting
+1.2     Make possible for humans/orcs/horcs to enforce marriage with elves
+1.2     Rework demand slave soldiers
+1.2     Decision, CB and peace treaty for converting EoA to Infernal Court
+        Take techs and institutions CB
+        earlier analog of nationalism CB for Cultural Hegemons
+        Add CB and/or peace treaties for releasing Sallas in Deepwoods
+        Add CB for installing Magocracy/Mage Rulers in EoA countries
+        Add CB against country who purges your race
+        Add peace treaty for enforced tolerance policy to your race in enemy's country
+        Add decision to turn off balance tweaks and additional CB/PT made by Kroll

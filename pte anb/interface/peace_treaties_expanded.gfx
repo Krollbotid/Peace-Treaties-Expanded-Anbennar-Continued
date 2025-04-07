@@ -69,4 +69,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/casus_bellis/cb_crusade.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	
+	spriteType = {
+		name = "INFERNAL_EMPEROR_DECLARES_eventPicture"
+		texturefile = "gfx/INFERNAL_EMPEROR_DECLARES_eventPicture.dds"
+		transparencecheck = yes
+	}
 }

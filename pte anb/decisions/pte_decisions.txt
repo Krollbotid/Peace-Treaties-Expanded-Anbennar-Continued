@@ -207,4 +207,145 @@ country_decisions = {
 		}
 		ai_importance = 300
 	}
+
+	# spread infernal court in EoA because vanilla ways suck - added by Kroll
+	pte_spread_infernal_empire = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = pte_emperor_spreads_infernal }
+			is_emperor = yes
+			hre_religion_locked = no
+			religion = infernal_court
+			any_country = {
+				is_part_of_hre = yes
+				NOT = { religion = infernal_court }
+				NOT = { is_subject_of = ROOT }
+			}
+			NOT = { has_country_flag = pte_failed_spread_infernal }
+		}
+		allow = {
+			OR = {
+				dominant_religion = infernal_court
+				hre_religion = infernal_court
+			}
+			OR = { # aside from
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Rights of Man"
+							has_dlc = "Emperor"
+						}
+					}
+					AND = {
+						stability = 2
+						prestige = 100
+						is_great_power = yes
+					}
+				}
+				else = {
+					power_projection = 80
+				}
+				AND = {
+					stability = 1
+					prestige = 80
+					custom_trigger_tooltip = {
+						tooltip = is_a_witch_king_tt
+						OR = { # I don't know which one is needed, Anbennar uses both sometimes
+							has_ruler_modifier = witch_king_modifier
+							has_country_flag = witch_king_flag
+						}
+					}
+				}
+			}
+			treasury = 5000
+		}
+		effect = {
+			add_treasury = -5000
+			add_prestige = -20
+			set_country_flag = pte_emperor_spreads_infernal
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					NOT = { religion = infernal_court }
+					NOT = { is_subject_of = ROOT }
+				}
+				country_event = { id = pte_events.12 }
+			}
+			country_event = {
+				id = pte_events.13
+				days = 30
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 300
+	}
+
+	pte_spread_infernal_empire_finish = {
+		major = yes
+		potential = {
+			has_country_flag = pte_emperor_spreads_infernal
+			had_country_flag = {
+				flag = pte_emperor_spreads_infernal
+				days = 60
+			}
+			is_emperor = yes
+			hre_religion_locked = no
+			religion = infernal_court
+		}
+		allow = {
+			OR = {
+				dominant_religion = infernal_court
+				hre_religion = infernal_court
+			}
+			all_known_country = {
+				OR = {
+					is_part_of_hre = no
+					religion = infernal_court
+					is_subject_of = ROOT
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_hre_religion_treaty = yes
+				set_global_flag = league_war_complete
+				if = {
+					limit = {
+						hre_religion = infernal_court
+					}
+					set_hre_religion_locked = yes
+				} else = {
+					set_country_flag = hre_religion_changed
+					if = {
+						limit = { hre_religion = regent_court }
+						set_hre_heretic_religion = regent_court
+					} else_if = {
+						limit = { hre_religion = corinite }
+						set_hre_heretic_religion = corinite
+					}
+					set_hre_religion = infernal_court
+					set_hre_religion_locked = yes
+				}
+			}
+			tooltip = {
+				set_hre_religion = infernal_court
+				set_hre_religion_locked = yes
+			}
+			clr_country_flag = pte_emperor_spreads_infernal
+			add_imperial_influence = 100
+			add_prestige = 100
+			add_power_projection = { 
+				type = 10_permanent_power_projection
+				amount = 10
+			}
+			add_stability_or_adm_power = yes
+			add_stability_or_adm_power = yes
+			}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 300
+	}
 }

@@ -536,3 +536,38 @@ pte_force_convert_heathen_war_goal = {
 
 	war_name = CRUSADE_WAR_NAME
 }
+
+pte_force_spread_infernal_empire_goal = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			pte_force_spread_infernal_empire
+			po_return_cores
+			po_release_annexed
+			po_become_vassal
+			po_subjugate_vassal # (same as become vassal, but for subjugate CB so it's always available and for a fixed war score)
+			po_transfer_vassals
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 0.25
+
+		peace_options = {
+			po_demand_provinces
+			po_remove_evil_ruler
+			po_return_cores
+			po_release_vassals
+			po_release_annexed
+		}
+	}
+
+	war_name = PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME
+}

@@ -638,3 +638,54 @@ cb_pte_force_convert_heathen = {
 
 	war_goal = pte_force_convert_heathen_war_goal
 }
+
+# spread infernal court in EoA because vanilla ways suck - added by Kroll
+cb_pte_force_spread_infernal_empire = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		has_country_flag = pte_emperor_spreads_infernal
+		has_country_flag = pte_able_spread_infernal # so emperor can't start multiple wars with this cb, otherwise join_all_defensive_wars_of bugs out
+		is_emperor = yes
+		religion = infernal_court
+		dominant_religion = infernal_court
+		NOT = {
+			is_in_war = {
+				casus_belli = cb_pte_force_spread_infernal_empire
+			}
+		}
+	}
+
+	prerequisites = {
+		#NOT = { # trigger if league wars ended with religous peace. todo
+		#	AND = {
+		#		hre_religion_treaty = yes
+		#		NOT = { has_global_flag = league_war_complete }
+		#	}
+		#}
+		hre_religion_locked = no
+		FROM = {
+			is_free_or_tributary_trigger = yes
+			has_country_flag = pte_refused_infernal
+			NOT = { religion = infernal_court }
+		}
+	}
+
+	attacker_disabled_po = {
+		po_change_religion
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals # until I find a way to insta-convert them on release
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		pte_spawn_reformation_center_in_capital
+	}
+
+	defender_disabled_po = {
+		po_change_religion
+		pte_spawn_reformation_center_in_capital
+	}
+
+	war_goal = pte_force_spread_infernal_empire_goal
+}

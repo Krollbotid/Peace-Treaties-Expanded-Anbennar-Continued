@@ -122,3 +122,22 @@ pte_is_hegemon_of_type = {
 #		}
 #	]
 #}
+
+pte_has_racial_issues_sun_elf = {
+	custom_trigger_tooltip = {
+		tooltip = SUN_ELF_SNOBBISM
+		ruler_culture = sun_elf
+		primary_culture = sun_elf
+	}
+}
+
+pte_has_racial_issues_elf_monarchy = {
+	custom_trigger_tooltip = {
+		tooltip = ELVEN_MONARCHY
+		government = monarchy
+		fast_ruler_is_elven = yes
+		culture_group = elven
+		NOT = { ruler_culture = desert_elf }
+		NOT = { primary_culture = desert_elf }
+	}
+}

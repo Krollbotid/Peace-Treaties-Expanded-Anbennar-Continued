@@ -69,14 +69,14 @@
  PEACE_pte_army_disarmament: "Ð©³¨°ª ¯ªª"
 
  pte_force_seppuku_desc: "‰¢ª²®¿ ¦¨¢º @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], ³¯ž². ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ ª §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ ¶¬¢."
- CB_ALLOWED_pte_force_seppuku: "ª®¿° ²¶°ª"
- PEACE_pte_force_seppuku: "ª®¿° ²¶°ª"
+ CB_ALLOWED_pte_force_seppuku: "‰²¡¢²¿ ±±³¬³"
+ PEACE_pte_force_seppuku: "‰²¡¢²¿ ±±³¬³"
 
- pte_demand_manpower_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G10.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R5§! ¯þ¬ª ²¦ªµªþ."
+ pte_demand_manpower_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G10.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. [ROOT.GetDemandManpowerNonMonsterEffect]"
  CB_ALLOWED_pte_demand_manpower: "‰²¡¢²¿ ¡¢-®¦²"
  PEACE_pte_demand_manpower: "‰²¡¢²¿ ¡¢-®¦²"
 
- pte_demand_manpower_mam_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G10.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R5§! ¯þ¬ª ²¦ªµªþ."
+ pte_demand_manpower_mam_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G20.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R10§! ±²ª¨."
  CB_ALLOWED_pte_demand_manpower_mam: "‰²¡¢²¿ ¡¢-®¦²"
  PEACE_pte_demand_manpower_mam: "‰²¡¢²¿ ¡¢-®¦²"
 
@@ -292,6 +292,13 @@
  CB_ALLOWED_pte_raid_splendid_court: "Ð©¥¡ª²¿ Ï®ª¶²¢°°ºþ ¦¢"
  PEACE_pte_raid_splendid_court: "Ð©¥¡ª²¿ Ï®ª¶²¢°°ºþ ¦¢"
 
+ pte_force_spread_infernal_empire_desc: "@[From.GetTag] §Y[From.GetName]§! ª ¢ ª ³¡¹¬²º, ¾¢®¾½¸ª¾ ¶®°¯ª ª¯±ªª °¡°° ¯°¾² ®ª¥ª½ ° †°´°®¿°ºþ ƒ¢. ®ª ³ °ª ²¿ µ°²º ´¯µªª, ² °ª ¡³¦³² ³°ª¶²¨°º."
+ CB_ALLOWED_pte_force_spread_infernal_empire: "‰ª°³¦ª²®¿° ±²°°ª †°´°®¿°¥ ƒ¢"
+ PEACE_pte_force_spread_infernal_empire: "‰ª°³¦ª²®¿° ±²°°ª †°´°®¿°¥ ƒ¢"
+
+ # paradox, why you didn't do this?
+ CB_ALLOWED_TRANSFER_VASSALS: "‰¦¶ ¢®¢"
+
  # Casus Bellis:
  cb_pte_lift_excommunication: "‰¦¢¥°³²¿ ¯°°ª½ ¢®²¿ Ð¬²²"
  cb_pte_lift_excommunication_desc: "°ª ²®³¶ª®ª ° ² µ¬¢ª, ¯º ¦®¨°º ±²¢ª²¿ ±¦ ¯°°ª ª ¢²ª²² ª ©²¢ª²¿ ª °¾²¿ ²®³¶°ª!"
@@ -334,6 +341,9 @@
 
  cb_pte_force_convert_heathen: "¡²ª²¿ ¾©º¶°ª¬¢"
  cb_pte_force_convert_heathen_desc: "º ¦®¨°º ¡²ª²¿ ª ¢ ª²ª°°³½ ¢³!"
+
+ cb_pte_force_spread_infernal_empire: "Ð±²°ª²¿ †°´°®¿°ºþ ƒ¢ ¢ †¯±ªª"
+ cb_pte_force_spread_infernal_empire_desc: "º ¦®¨°º ©²¢ª²¿ ª ±¦¶ª°¾²¿¾ °¯ ª ±¬®°¾²¿¾ ª¦¿¾¢®¯!"
 
  # War Goals:
  pte_lift_excommunication_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
@@ -379,6 +389,9 @@
  pte_force_convert_heathen_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
  pte_force_convert_heathen_war_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
 
+ pte_force_spread_infernal_empire_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
+ pte_force_spread_infernal_empire_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
+
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ ¢®²ª Ï¢°¥ ¬²"
  PTE_BAN_SLAVERY_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ°  ¡²¢¯"
@@ -392,6 +405,7 @@
  PTE_ANTI_COALITION_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ $SECOND$þ ¬®ªµªª"
  #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° © ¯°³¯°² ¢ ±¢ª°µªª $PROVINCE$"
  PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ °¡¥¢ ¦¨¢º $SECOND$"
+ PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° Ð©¢¸°ª¾ †¯±ªª ±²ª¢ ¦¨¢º $SECOND_NAME$"
 
  # Tooltips:
  PTE_BAN_SLAVERY_TT: "ˆ½¡¾ ±¢ª°µª¾, ±ª°¦®¨¸¾ ¦¨¢ §Y[From.GetName]§! ª®ª ¦°þ ª© ž ¬®°ª®¿°º ¥³¦²¢, ¬²¾ ±ª©¢¦ª² §Y¡¢§! ¬°²®ª³²¾ ¦¨¢þ §Y[Root.GetName]§! ª®ª ž ½©°ª¬¯ ¢ ¼²þ ¢þ°"
@@ -437,7 +451,7 @@
  PTE_NOT_START_SUCCESSION_CRISIS_USED_TT: " ±¦¹¾¢®¾® ´¡ª¬¢°°º ±²°©ªþ ° ±¢ °®¦¢°ª¾ ¢ ²¶°ª ±®¦°ª §Y10 ®²§!"
  PTE_HAS_SUCCESSION_CLAIM_ON_FROM_TT: "†¯² ²¾ ¡º ®¡º ±ª²¾©°ª¾ ° §Y[From.GetAdjective]ªþ§! ²°[Root.GetFabricateSuccessionClaimVagueClaimInfoStar]"
  #PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "‰¢ª°µª¾  ¼²ª¯ ¯°³¯°²¯ ¬°²®ª³²¾ §Y[Root.GetName]§! ª®ª ½©°ª¬¯ ¢ ¼²þ ¢þ°"
-  
+ PTE_ABLE_SPREAD_INFERNAL_TT: "Ù±¿ ¯º ¯¨¯ ª±®¿©¢²¿ ¬©³-¡®®ª §YÐ±²°ª²¿ †°´°®¿°ºþ ƒ¢ ¢ †¯±ªª§!. ƒ°°ºþ ¬©³-¡®®ª ±©¢®ª² °¯ ¡²ª²¿ ²ª¶¬¥ ¶®° ª¯±ªª ª ¥ ³¡¹¬²º ¢ †°´°®¿°ºþ ƒ¢. ¦°¬, ¯º ° ¯¨¯ ª±®¿©¢²¿ ¼²² ¬©³-¡®®ª, ®ª ³¨ ª±®¿©³¯ ¥ ¢ ¦³¥þ ¢þ°."
 
  # Modifiers:
  pte_protect_religious_bretheren_modifier: "‰ª°³¦ª²®¿°¾ ©¸ª² ² ²ª¬¢"
@@ -473,10 +487,16 @@
  string_fabricate_succession_claim_vague_claim_info_text: "\n§* Ô®¡º ±²°©ªª ©°¶½² ®¦³½¸: \n   — ² ¨ ¦ª°²ª¾, ¶² ª ³ ª ½©°\n   — ±²°©ªª ° ª ²°\n   — ¢ ¬¬þ-² ¯¯°² ³ °ª ¡º® ±¢ª²®¿ °Œþ ¦ª°²ªª\n   — ¦ª° ª© ª ±¢ª²®þ ª¯® °Œ³ ¬³®¿²³³ ª ®ª¥ª½ ª ¦ª®¾, ¬¥¦ ¯º  °ª¯ª ©¬®½¶ª®ª ¡¬§!"
  string_fabricate_succession_claim_vague_claim_info_star: "§*§!"
  string_delegitimize_dynastic_branch_heir_effects: "‰²°©ªª [From.GetAdjective]¥ °®¦°ª¬ §Y[From.Heir.GetName]§! ³¯°¿Œ²¾ ° §R33§!."
+ string_demand_manpower_from_monsters: "@[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R10§! ±²ª¨."
+ string_demand_manpower_from_non_monsters: "@[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R5§! ¯þ¬ª ²¦ªµªþ."
 
  # Decisions:
  pte_claim_culture_group_hegemony_title: "¡¹¾¢®°ª [Root.Culture.GetGroupName]þ ¬³®¿²³°þ ¥¥¯°ªª"
  pte_claim_culture_group_hegemony_desc: "º — ¯¾ ¬³±°¾ ª ¯¾ ¯¥³¸²¢°°¾ ²° ¢ ¬³®¿²³°þ ¥³±± §Y[Root.Culture.GetGroupName]§!. Ù¡¢°ª §M¬³®¿²³°þ ¥¥¯°ªª§! ¦² °¯ °¡¦ª¯º ±ª¢ª®¥ªª, ¦°¬ ¼² ²¬¨ ¦² ¦³¥ª¯ °¦¯ ¢ ²þ ¨ ¬³®¿²³°þ ¥³±± ±¢¦ ¦®¾ ¢þ°º  °¯ª, ¶² ±©¢®ª² ª¯ ²¡²¿ ³ ° ¥¥¯°ª½."
+ pte_spread_infernal_empire_title: "Ð±²°ª²¿ ±¬®°°ª ª¦¿¾¢®¯!"
+ pte_spread_infernal_empire_desc: "º ±²¡³¯, ¶²¡º ¬¨¦¾ ²° ¢ †¯±ªª °¡°°, ¬²¾ ° ¾¢®¾²¾ °Œþ ±¦¦°°þ ª ° ±¬®°¾²¾ ª¦¿¾¢®¯, ¯°ª® ¢½ ®ª¥ª½ ° †°´°®¿°ºþ ƒ¢. ®ª °ª ²¬¨³²¾, ¯º ±®³¶ª¯ ±¢¦ ¬ ¢þ°  °ª¯ª, ¶²¡º ¡²ª²¿ ª ¢ ¢½ ¢³. ÛŒª ²°Œ°ª¾ ±¢ºŒ½² Œ° ±ª°¾²ª¾ °Œ¥ ±¦®¨°ª¾, ¢° ¬¬, ®ª µ®¢¾ ²° ©®¾. ®ª °ª ¢ž ¨ ²¬¨³²¾, ² °¯ °¦ ¡³¦² °¶²¿ ±¦¶ª°¾²¿ ª ¢ ²¶°ª ¦¢³ ¯¾µ¢. ®ª ¯º ±²±ª¯ °³¦¶³ ª®ª ±²¾¯ ¢®²¿ °¦ †¯±ªþ, ±¬ ° ©¬°¶ª¯, ² ²®¬°¯¾  §R¿ž©°º¯ª Œ²´¯ª§! ° °Œ³ ²¡ª®¿°²¿, ®¥ª²ª¯°²¿, ±²ª¨ ª ¢²ª²²."
+ pte_spread_infernal_empire_finish_title: "…¢Œª²¿ ±²°°ª †°´°®¿°¥ ƒ¢!"
+ pte_spread_infernal_empire_finish_desc: "‰¬®¿¬³ ¢ ¬°¾©¿¾ ¡¸°º ¢ †°´°®¿°ºþ ƒ¢ ¯º ²±¿ ¯¨¯ ³²°¢ª²¿ †°´°®¿°ºþ ¦¢ ¢ ¬¶²¢ ´ªµª®¿°þ ®ª¥ªª †¯±ªª."
 
  # Events:
  pte_events.EVTNAME4: "³®¿²³°¾ ¥¥¯°ª¾ ³²¶°"
@@ -485,7 +505,7 @@
  pte_events4.EVTOPT1: "™² ±©."
 
  pte_events.EVTNAME5: "Ð² ¬³®¿²³°þ ¥¥¯°ªª"
- pte_events.EVTDESC5: "       @[Root.GetTag] §Y[Root.GetName]§! ¡¹¾¢ª® §M¬³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]þ§! ¬³®¿²³°þ ¥³±±º. \n       °ª ¡®¦½² ¼²ª¯ª ±ª¯³¸²¢¯ª ¦ ² ±, ±¬ ° ¢º°³¨¦°º ¡³¦³² ²¬©²¿¾ ² °ª ¢ ¯¬ ¯ª°¥ ¦¥¢, ±¬ °ª ° ²°³² ³¡¹¬²¯, ±¬ °ª ° ©¯°¾² ¢½ ¬³®¿²³³ ° ²³, ¬²¾ ° ¾¢®¾²¾ ¶²¿½ §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]þ§! ¬³®¿²³°þ ¥³±±º ª®ª ¦ ² ± ±¬ °ª ° ±²°³² ¢®¦²¿ ±¢ª°µª¾¯ª  ¬³®¿²³þ ª© §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]þ§! ¬³®¿²³°þ ¥³±±º."
+ pte_events.EVTDESC5: "       @[Root.GetTag] §Y[Root.GetName]§! ¡¹¾¢ª® §M¬³®¿²³°³½ ¥¥¯°ª½§! ¦®¾ ¬³®¿²³°þ ¥³±±º §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!. \n       °ª ¡®¦½² ¼²ª¯ª ±ª¯³¸²¢¯ª ¦ ² ±, ±¬ ° ¢º°³¨¦°º ¡³¦³² ²¬©²¿¾ ² °ª ¢ ¯¬ ¯ª°¥ ¦¥¢, ±¬ °ª ° ²°³² ³¡¹¬²¯, ±¬ °ª ° ©¯°¾² ¢½ ¬³®¿²³³ ° ²³, ¬²¾ ° ¾¢®¾²¾ ¶²¿½ ¬³®¿²³°þ ¥³±±º §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! ª®ª ¦ ² ± ±¬ °ª ° ±²°³² ¢®¦²¿ ±¢ª°µª¾¯ª  ¬³®¿²³þ ª© ¬³®¿²³°þ ¥³±±º §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!."
  pte_events5.EVTOPT1: "Ì³¦°."
 
  pte_events.EVTNAME7: "§Y[Root.religion_to_convert_to.GetReligionName]§! ¢®ª¾°ª ¢ §Y[Root.GetName]§!"
@@ -499,6 +519,30 @@
  pte_events.EVTNAME9: "±ª¯®¯ºþ [Root.Monarch.GetTitle]"
  pte_events.EVTDESC9: "       [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName], ¦°¨¦º ³²¢¨¦ž°°ºþ ¬¬ °²ª¬² ±ª ±¦¦¨¬ [installer_of_anti_pope.GetName], ° ±®¿©³²¾ ±±³®¾°²¿½ ¦ª [Root.GetAdjective]¥ °¦. Ôþ¶ ±¾¢ª®¾ ±°ª¬, ¦¡ª¢½¸ªþ¾ ±ª©°°ª¾ ³ [Root.GetTitleRD]!"
  pte_events9.EVTOPT1: "Ì²? ²!"
+
+ pte_events.EVTNAME12: "€¥³®¿° Ù¡¢°ª"
+ pte_events.EVTDESC12: "[Emperor.Monarch.GetTitle] [From.Monarch.GetName] [From.Monarch.Dynasty.GetName] ¡¹¾¢ª®, ¶² ¬¨¦ºþ ¶®° †¯±ªª °¡°° ²°º° ¦®¨° ±¬®°¾²¿¾ ª¦¿¾¢®¯, ª ®ª ¬²-®ª¡ ±¯² ²¬®°ª²¿ ¥ ²¡¢°ª, ² [Emperor.Monarch.GetTitle] ©²¢ª² ±¦¶ª°ª²¿¾... ±¦²¢¯ ª®º.\nƒ®¨°º ®ª ¯º ª±®°ª²¿ ²¡¢°ª¾ [Emperor.GetTitleRD_Cap] ª®ª ±¦®¨ª²¿ ¢ª²¿ ¢ [Root.Religion.GetName] ²±¿ ±¦²ª² Œª²¿ [Root.GetTitleDT] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]."
+ pte_events12.EVTOPT1: "× ±¦¦¨³ [Emperor.GetTitleVN_Cap]! Ô®¢ ©¼®½!"
+ pte_events12.EVTOPT2: "°¡°° ° ±¦ž² ¢ ¢®²¿ ©®, ¢° ¬¬ ª ¾!"
+
+ pte_events.EVTNAME13: "Ð¬µª¾ ¬°¾©þ"
+ pte_events.EVTDESC13_no_refused: "‰©¦¢®¾½, [Emperor.Monarch.GetTitle]! ÏŒ ¯¸¿ ° ©°² ¥°ªµ!\nÏ ¬°¾©¿¾ °¡°° ¦¡¢®¿° ±ª°¾®ª ±¬®°°ª ª¦¿¾¢®¯. ‰ªŒ® ¢¯¾ ³²°¢ª²¿ †°´°®¿°ºþ ƒ¢ ¢ ¬¶²¢ ´ªµª®¿°þ ®ª¥ªª †¯±ªª °¡°°.\nÔ®¢ ©¼®½!"
+ pte_events.EVTDESC13_refused: "¬²º ¬°¾©¿¾ ²¬®°ª®ª °Œ ¸¦ ±¦®¨°ª °¶²¿ ±¬®°°ª ª¦¿¾¢®¯. °ª ° ¡¾²¾ °Œª ³¥© ª ¥²¢º ©¸ª¸²¿ ¢½ ¢³ ° ±® ¡¾.\nÙ±¿ ¯º ¦®¨°º ±¬©²¿ ¿ž©°²¿ °Œª °¯°ªþ ¬¬ ¯¨° ¬, ª°¶ [Emperor.Monarch.GetTitle] ¡³¦² ¦ª¬¦ª²ª¢°."
+ pte_events13.EVTOPT1: "× ©°®, ¶² °ª ±ª¯³² ¯ž ±¦®¨°ª!"
+ pte_events13.EVTOPT2: "Ï¯¾ ±±¦²¿ ³¬ ¼²ª¯ ¦³¬¯."
+
+ pte_events.EVTNAME14: "‰®¦²¢ª¾"
+ pte_events.EVTDESC14_at_war: "º ¦¬©®ª ¿ž©°²¿ °Œª °¯°ªþ, ¡¹¾¢ª¢ ¢þ°³ ¦®¾ ¡¸°ª¾ ¬°¾©þ-²ª¬¢ ¢ †°´°®¿°ºþ ¦¢. ¦°¬, ²ª¬ª Œª®ª ¡¹¦ª°ª²¿¾ ±²ª¢ ° ª ¢º²³±ª²¿ ¦ª°º¯ª ´°²¯ ¦®¾ \"¡¿¡º  ©®¯ ° ‚®³¡ª°¯ Ù°\", ¬¬ °ª ¼² °©º¢½². ‹ ° °² ª°¥ ¢º¡, ¬¯ ¬¬ ¬³Œª²¿ ª ¢."
+ pte_events.EVTDESC14_fail: "‰Œž® ³¨ ¯¾µ  ²¬© ¬°¾©þ ª±®°¾²¿ °Œª ²¡¢°ª¾, ° ¯º ²¬ ª ° °¶®ª ¢þ°³ °ª  ¦°ª¯ ª© °ª. Ù±¿ °Œ ¢²ª²² ¢ †¯±ªª ±²¾°, ¢° ¬¬ ª ¢©¯¨°²¿ ³²°¢ª²¿ ¢ ¬¶²¢ ´ªµª®¿°þ ®ª¥ªª °¡°°."
+ pte_events14.EVTOPT1: "™²² °ª¶²¨°ºþ ®¿¾° ° ±¯¨² ª¯!"
+ pte_events14.EVTOPT2: "¬þ ±©!"
+
+ pte_events.EVTNAME15: "²¬¢°°ºþ ¬°¾©¿ ²±¢®¾² ±ª©º¢  ±¯¸ª"
+
+ pte_events.EVTNAME16: "²¬¢°°ºþ ¬°¾©¿ ±ª² °Œþ ±¯¸ª"
+ pte_events.EVTDESC16: "‰® ²¬© @[From.GetTag] §Y[From.GetTagRD]§! ±¬®°¾²¿¾ ª¦¿¾¢®¯ ¦¨¢ @[Emperor.GetTag] §Y[Emperor.GetName]§! ²¬¢® ª, ¶²¡º ©²¢ª²¿ ª ±¦¶ª°ª²¿¾ ±¦²¢¯ ª®º. Ù±¿ @[From.GetTag] §Y[From.GetName]§! ±ª²  ±¯¸ª ¬¨¦¥ ¬°¾©ª, ¬²ºþ ²¬®°ª® ²¡¢°ª¾ [Emperor.GetTitleRD] [Emperor.Monarch.GetName] [Emperor.Monarch.Dynasty.GetName]. ™², ¢¾²°, °Œ ±¢ºþ ª ±®¦°ªþ Œ° ¡¹¦ª°ª²¿¾ ±²ª¢ [Emperor.GetTitleRD_Cap] ª ª©¥°²¿ ©®  ‚®³¡ª°¥ Ù°.\n ´ª°®¿° Œ°ª, ¬°¶°, ²²¾ © [Root.GetTitleTV] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]."
+ pte_events16.EVTOPT1: "º ° ¯¨¯ ³±³²ª²¿ ¼²² Œ°.  ³¨ª½!"
+ pte_events16.EVTOPT2: "² °¡¦ª¯²ª ±ª¦ª°¾²¿¾ ¬ @[From.GetTag] §Y[From.GetTagDT]§! ¢ ª ¢þ°. º ¯¨¯ ©ª²¿¾  [Emperor.GetTitleTV_Cap] ¡© ¶¿þ-®ª¡ ±¯¸ª."
 
  # Power Projection Modifiers:
  pte_destabilize_nation_power_projection: "³²þ¶ª¢º ±°ª¬ª"

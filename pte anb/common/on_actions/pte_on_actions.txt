@@ -174,3 +174,62 @@ on_raid_coast = {
 		}
 	}
 }
+
+on_country_released = {
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			NOT = { religion = infernal_court }
+			emperor = {
+				religion = infernal_court
+				has_country_flag = pte_emperor_spreads_infernal
+			}
+		}
+		country_event = {
+			id = pte_events.12
+		}
+	}
+}
+
+on_religion_change = {
+	if = {
+		limit = {
+			religion = infernal_court
+		}
+		clr_country_flag = pte_refused_infernal
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = pte_emperor_spreads_infernal
+			NOT = { religion = infernal_court }
+		}
+		clr_country_flag = pte_emperor_spreads_infernal
+		set_country_flag = pte_failed_spread_infernal
+		add_prestige = -200
+		add_stability = -6
+		add_imperial_influence = -100
+		add_legitimacy = -100
+	}
+}
+
+on_emperor_elected = {
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = pte_emperor_spreads_infernal
+			}
+			ROOT = {
+				NOT = { has_country_flag = pte_emperor_spreads_infernal }
+			}
+		}
+		FROM = {
+			clr_country_flag = pte_emperor_spreads_infernal
+			set_country_flag = pte_failed_spread_infernal
+			add_prestige = -200
+			add_stability = -6
+			add_imperial_influence = -100
+			add_legitimacy = -100
+		}
+	}
+}

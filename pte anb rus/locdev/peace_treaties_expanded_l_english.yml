@@ -69,14 +69,14 @@
  PEACE_pte_army_disarmament: "Разоружение армии"
 
  pte_force_seppuku_desc: "Правитель державы @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], умрёт. Держава @[Root.GetTag] §Y[Root.GetName]§! получит §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ и §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ очков."
- CB_ALLOWED_pte_force_seppuku: "Насильное отречение"
- PEACE_pte_force_seppuku: "Насильное отречение"
+ CB_ALLOWED_pte_force_seppuku: "Потребовать сеппуку"
+ PEACE_pte_force_seppuku: "Потребовать сеппуку"
 
- pte_demand_manpower_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G10.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R5§! армейских традиций."
+ pte_demand_manpower_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G10.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. [ROOT.GetDemandManpowerNonMonsterEffect]"
  CB_ALLOWED_pte_demand_manpower: "Потребовать рабов-солдат"
  PEACE_pte_demand_manpower: "Потребовать рабов-солдат"
 
- pte_demand_manpower_mam_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G10.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R5§! армейских традиций."
+ pte_demand_manpower_mam_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G20.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R10§! престижа."
  CB_ALLOWED_pte_demand_manpower_mam: "Потребовать рабов-солдат"
  PEACE_pte_demand_manpower_mam: "Потребовать рабов-солдат"
 
@@ -292,6 +292,13 @@
  CB_ALLOWED_pte_raid_splendid_court: "Разграбить Величественный двор"
  PEACE_pte_raid_splendid_court: "Разграбить Величественный двор"
 
+ pte_force_spread_infernal_empire_desc: "@[From.GetTag] §Y[From.GetName]§! и все их субъекты, являющиеся членами империи Анбеннар сменят религию на Инфернальный Двор. Если у них есть центры реформации, то они будут уничтожены."
+ CB_ALLOWED_pte_force_spread_infernal_empire: "Принудительное распространение Инфернального Двора"
+ PEACE_pte_force_spread_infernal_empire: "Принудительное распространение Инфернального Двора"
+
+ # paradox, why you didn't do this?
+ CB_ALLOWED_TRANSFER_VASSALS: "Передача вассалов"
+
  # Casus Bellis:
  cb_pte_lift_excommunication: "Подвергнуть сомнению власть Ректората"
  cb_pte_lift_excommunication_desc: "Они отлучили нас от церкви, мы должны поставить под сомнение их авторитет и заставить их снять отлучение!"
@@ -334,6 +341,9 @@
 
  cb_pte_force_convert_heathen: "Обратить язычников"
  cb_pte_force_convert_heathen_desc: "Мы должны обратить их в истинную веру!"
+
+ cb_pte_force_spread_infernal_empire: "Распространить Инфернальный Двор в Империи"
+ cb_pte_force_spread_infernal_empire_desc: "Мы должны заставить их подчиняться нам и поклоняться Архидьяволам!"
 
  # War Goals:
  pte_lift_excommunication_war_goal: "Продемонстрировать военное превосходство"
@@ -379,6 +389,9 @@
  pte_force_convert_heathen_war_goal: "Продемонстрировать военное превосходство"
  pte_force_convert_heathen_war_goal_desc: "Цель войны — показать своё превосходство, побеждая в сражениях."
 
+ pte_force_spread_infernal_empire_goal: "Продемонстрировать военное превосходство"
+ pte_force_spread_infernal_empire_goal_desc: "Цель войны — показать своё превосходство, побеждая в сражениях."
+
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$ая война против власти Верховного ректора"
  PTE_BAN_SLAVERY_WAR_NAME: "$ORDER$ $FIRST$о-$SECOND$ая война с рабством"
@@ -391,7 +404,8 @@
  PTE_MILITARY_HEGEMON_WAR_NAME: "$ORDER$ $FIRST$о-$SECOND$ая война за военную гегемонию"
  PTE_ANTI_COALITION_WAR_NAME: "$ORDER$ $FIRST$ая война против $SECOND$ой коалиции"
  #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$ая война за монумент в провинции $PROVINCE$"
- PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$ая война против набегов державы $SECOND$"
+ PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$ая война против $SECOND$их набегов"
+ PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME: "$ORDER$ $FIRST$ая война Развращения Империи против державы $SECOND_NAME$"
 
  # Tooltips:
  PTE_BAN_SLAVERY_TT: "Любая провинция, принадлежащая державе §Y[From.GetName]§! или одной из её колониальных государств, которая производит §Yрабов§! контролируется державой §Y[Root.GetName]§! или её союзником в этой войне"
@@ -437,7 +451,7 @@
  PTE_NOT_START_SUCCESSION_CRISIS_USED_TT: "Не предъявлял сфабрикованных претензий на право наследования в течение последних §Y10 лет§!"
  PTE_HAS_SUCCESSION_CLAIM_ON_FROM_TT: "Имеет хотя бы слабые притязания на §Y[From.GetAdjective]ий§! трон[Root.GetFabricateSuccessionClaimVagueClaimInfoStar]"
  #PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "Провинция с этим монументом контролируется §Y[Root.GetName]§! или союзником в этой войне"
-  
+ PTE_ABLE_SPREAD_INFERNAL_TT: "Теперь мы можем использовать казус-белли §YРаспространить Инфернальный Двор в Империи§!. Данный казус-белли позволит нам обратить еретического члена империи и его субъекты в Инфернальный Двор. Однако, мы не сможем использовать этот казус-белли, если уже используем его в другой войне."
 
  # Modifiers:
  pte_protect_religious_bretheren_modifier: "Принудительная защита от еретиков"
@@ -473,10 +487,16 @@
  string_fabricate_succession_claim_vague_claim_info_text: "\n§О* Слабые претензии означают следующее: \n   — та же династия, что и у их сюзерена\n   — претензии на их трон\n   — в какой-то момент у них был правитель нашей династии\n   — один из их правителей имел нашу культуру и религию и родился, когда мы с ними заключили брак§!"
  string_fabricate_succession_claim_vague_claim_info_star: "§О*§!"
  string_delegitimize_dynastic_branch_heir_effects: "Претензии [From.GetAdjective]ого наследника §Y[From.Heir.GetName]§! уменьшатся на §R33§!."
+ string_demand_manpower_from_monsters: "@[Root.GetTag] §Y[Root.GetName]§! потеряет §R10§! престижа."
+ string_demand_manpower_from_non_monsters: "@[Root.GetTag] §Y[Root.GetName]§! потеряет §R5§! армейских традиций."
 
  # Decisions:
  pte_claim_culture_group_hegemony_title: "Объявление [Root.Culture.GetGroupName]ой культурной гегемонии"
  pte_claim_culture_group_hegemony_desc: "Мы — самая крупная и самая могущественная страна в культурной группе §Y[Root.Culture.GetGroupName]§!. Требование §Mкультурной гегемонии§! даст нам необходимые привилегии, однако это также даст другим народам в той же культурной группе повод для войны с нами, что позволит им отобрать у нас гегемонию."
+ pte_spread_infernal_empire_title: "Распространить поклонение Архидьяволам!"
+ pte_spread_infernal_empire_desc: "Мы потребуем, чтобы каждая страна в Империи Анбеннар, которая не является нашей подданной и не поклоняется архидьяволам, сменила свою религию на Инфернальный Двор. Если они откажутся, мы получим повод к войне с ними, чтобы обратить их в свою веру. Хорошие отношения повышают шанс принятия нашего предложения, равно как, если целевая страна злая. Если они всё же откажутся, то нам надо будет начать подчинять их в течение двух месяцев. Если мы потерпим неудачу или потеряем власть над Империей, пока не закончим, то столкнемся с §Rсерьёзными штрафами§! на нашу стабильность, легитимность, престиж и авторитет."
+ pte_spread_infernal_empire_finish_title: "Завершить распространение Инфернального Двора!"
+ pte_spread_infernal_empire_finish_desc: "Поскольку все князья обращены в Инфернальный Двор мы теперь можем установить Инфернальный двор в качестве официальной религии Империи."
 
  # Events:
  pte_events.EVTNAME4: "Культурная гегемония утрачена"
@@ -485,7 +505,7 @@
  pte_events4.EVTOPT1: "Это позор."
 
  pte_events.EVTNAME5: "Рост культурной гегемонии"
- pte_events.EVTDESC5: "       @[Root.GetTag] §Y[Root.GetName]§! объявил §Mкультурную гегемонию§! для §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]ой§! культурной группы. \n       Они обладают этими преимуществами до тех пор, пока не вынуждены будут отказаться от них в рамках мирного договора, пока они не станут субъектом, пока они не заменят свою культуру на ту, которая не является частью §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]ой§! культурной группы или до тех пор пока они не перестанут владеть провинциями с культурой из §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]ой§! культурной группы."
+ pte_events.EVTDESC5: "       @[Root.GetTag] §Y[Root.GetName]§! объявил §Mкультурную гегемонию§! для культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!. \n       Они обладают этими преимуществами до тех пор, пока не вынуждены будут отказаться от них в рамках мирного договора, пока они не станут субъектом, пока они не заменят свою культуру на ту, которая не является частью культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! или до тех пор пока они не перестанут владеть провинциями с культурой из культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!."
  pte_events5.EVTOPT1: "Чудесно."
 
  pte_events.EVTNAME7: "§Y[Root.religion_to_convert_to.GetReligionName]§! влияние в §Y[Root.GetName]§!"
@@ -499,6 +519,30 @@
  pte_events.EVTNAME9: "Неприемлемый [Root.Monarch.GetTitle]"
  pte_events.EVTDESC9: "       [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName], однажды утверждённый как Антиректор при поддержке [installer_of_anti_pope.GetName], не пользуется популярностью среди [Root.GetAdjective]ого народа. Сейчас появился соперник, добивающийся признания у [Root.GetTitleRD]!"
  pte_events9.EVTOPT1: "Что? Нет!"
+
+ pte_events.EVTNAME12: "Богохульное Требование"
+ pte_events.EVTDESC12: "[Emperor.Monarch.GetTitle] [From.Monarch.GetName] [From.Monarch.Dynasty.GetName] объявил, что каждый член Империи Анбеннар отныне должен поклоняться Архидьяволам, и если кто-либо посмеет отклонить его требование, то [Emperor.Monarch.GetTitle] заставит подчиниться... посредством силы.\nДолжны ли мы исполнить требования [Emperor.GetTitleRD_Cap] или продолжить верить в [Root.Religion.GetName] теперь предстоит решить [Root.GetTitleDT] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]."
+ pte_events12.EVTOPT1: "Я поддержу [Emperor.GetTitleVN_Cap]! Слава Казраэлю!"
+ pte_events12.EVTOPT2: "Анбеннар не падёт во власть зла, равно как и я!"
+
+ pte_events.EVTNAME13: "Реакция князей"
+ pte_events.EVTDESC13_no_refused: "Поздравляю, [Emperor.Monarch.GetTitle]! Ваша мощь не знает границ!\nВсе князья Анбеннара добровольно приняли поклонение Архидьяволам. Пришло время установить Инфернальный Двор в качестве официальной религии Империи Анбеннар.\nСлава Казраэлю!"
+ pte_events.EVTDESC13_refused: "Некоторые князья отклонили наше щедрое предложение начать поклонение Архидьяволам. Они не боятся наших угроз и готовы защищать свою веру на поле боя.\nТеперь мы должны показать серьёзность наших намерений как можно скорее, иначе [Emperor.Monarch.GetTitle] будет дискредитирован."
+ pte_events13.EVTOPT1: "Я знал, что они примут моё предложение!"
+ pte_events13.EVTOPT2: "Время преподать урок этим дуракам."
+
+ pte_events.EVTNAME14: "Последствия"
+ pte_events.EVTDESC14_at_war: "Мы доказали серьёзность наших намерений, объявив войну для обращения князей-еретиков в Инфернальный двор. Однако, еретики решили объединиться против нас и выступить едиными фронтом для \"борьбы со злом на Голубином Троне\", как они это называют. У нас нет иного выбора, кроме как сокрушить их всех."
+ pte_events.EVTDESC14_fail: "Прошёл уже месяц с отказа князей исполнять наши требования, но мы так и не начали войну ни с одним из них. Теперь наш автоитет в Империи потерян, равно как и возможность установить в качестве официальной религии Анбеннара."
+ pte_events14.EVTOPT1: "Этот ничтожный альянс не поможет им!"
+ pte_events14.EVTOPT2: "Какой позор!"
+
+ pte_events.EVTNAME15: "Атакованный князь отправляет призыв о помощи"
+
+ pte_events.EVTNAME16: "Атакованный князь просит нашей помощи"
+ pte_events.EVTDESC16: "После отказа @[From.GetTag] §Y[From.GetTagRD]§! поклоняться Архидьяволам держава @[Emperor.GetTag] §Y[Emperor.GetName]§! атаковала их, чтобы заставить их подчиниться посредством силы. Теперь @[From.GetTag] §Y[From.GetName]§! просит о помощи каждого князи, который отклонил требования [Emperor.GetTitleRD] [Emperor.Monarch.GetName] [Emperor.Monarch.Dynasty.GetName]. Это, вероятно, наш первый и последний шанс объединиться против [Emperor.GetTitleRD_Cap] и изгнать зло с Голубиного Трона.\nНо финальное решение, конечно, остается за [Root.GetTitleTV] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]."
+ pte_events16.EVTOPT1: "Мы не можем упустить этот шанс. К оружию!"
+ pte_events16.EVTOPT2: "Нет необходимости присоединяться к @[From.GetTag] §Y[From.GetTagDT]§! в их войне. Мы можем сразиться с [Emperor.GetTitleTV_Cap] без чьей-либо помощи."
 
  # Power Projection Modifiers:
  pte_destabilize_nation_power_projection: "Неустойчивые соперники"

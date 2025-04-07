@@ -1513,3 +1513,22 @@ defined_text = {
 		localisation_key = ""
 	}
 }
+defined_text {
+	name = GetDemandManpowerNonMonsterEffect
+	random = no
+
+	text = {
+		trigger = {
+			FROM = {
+				has_country_modifier = monstrous_nation
+			}
+		}
+		localisation_key = string_demand_manpower_from_monsters
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_demand_manpower_from_non_monsters
+	}
+}

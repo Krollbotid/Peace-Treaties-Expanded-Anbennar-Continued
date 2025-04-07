@@ -238,6 +238,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			create_marriage = FROM
+			clr_country_flag = pte_enforced_marriage_racial
 		}
 	}
 
@@ -806,5 +807,435 @@ country_event = {
 		name = pte_events11.EVTOPT1
 
 		ai_chance = { factor = 100 }
+	}
+}
+
+# 12-16 - spreading Infernal Court in the Empire
+
+# Accept spreading Infernal from emperor - added by Kroll
+country_event = {
+	id = pte_events.12
+	title = pte_events.EVTNAME12
+	desc = pte_events.EVTDESC12
+	#picture = INFERNAL_EMPEROR_DECLARES_eventPicture
+	picture = RELIGION_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# glory to Kazraiel!
+	option = {
+		name = pte_events12.EVTOPT1
+		change_religion = infernal_court
+		add_prestige = 100
+		custom_tooltip = {
+			tooltip = ""
+		}
+		every_province = {
+			limit = {
+				is_reformation_center = yes
+				owned_by = ROOT
+			}
+			remove_reform_center = corinite # since ravelian is whole another mess
+		}
+
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.25
+				hre_religion = infernal_court # emperor was already infernal when got elected
+			}
+			modifier = {
+				factor = 2
+				alliance_with = FROM
+			}
+			modifier = { # additional modifier is extra good opinion
+				factor = 1.1
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+			modifier = { # >= 190
+				factor = 1.5
+				has_opinion = {
+					who = FROM
+					value = 190
+				}
+			}
+			modifier = { # 100 <= opinion < 150
+				factor = 1.1
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 150
+					}
+				}
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 2
+				is_evil = yes
+			}
+			modifier = { # if elector votes for emperor, then it's loyal enough to convert
+				factor = 3
+				is_elector = yes
+				preferred_emperor = FROM
+			}
+			modifier = {
+				factor = 4
+				has_opinion_modifier = {
+					who = FROM
+					modifier = released_in_peace
+				}
+			}
+		}
+	}
+	# We will not fall to evil! - todo
+	option = {
+		name = pte_events12.EVTOPT2
+		set_country_flag = pte_refused_infernal
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { # < -100
+					has_opinion = {
+						who = FROM
+						value = -100
+					}
+				}
+			}
+			modifier = { # -100 <= opinion < 0
+				factor = 1.15
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+				has_opinion = {
+					who = ROOT
+					value = -100
+				}
+			}
+			modifier = { # Magisterium and Orda Aldresia less likely to convert
+				factor = 2
+				OR = {
+					tag = A77
+					tag = A85
+				}
+			}
+		}
+	}
+}
+
+# Results of declaration
+country_event = {
+	id = pte_events.13
+	title = pte_events.EVTNAME13
+	desc = {
+		trigger= {
+			NOT = {
+				any_country = {
+					is_part_of_hre = yes
+					has_country_flag = pte_refused_infernal
+				}
+			}
+		}
+	   	desc = pte_events.EVTDESC13_no_refused
+	}
+	desc = {
+		trigger= {
+			any_country = {
+				is_part_of_hre = yes
+				has_country_flag = pte_refused_infernal
+			}
+		}
+	   desc = pte_events.EVTDESC13_refused
+	}
+	
+	#picture = INFERNAL_EMPEROR_DECLARES_eventPicture
+	picture = RELIGION_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# no refused prince!
+	option = {
+		name = pte_events13.EVTOPT1
+		trigger = { # so emperor could kick refused countries from the empire
+			NOT = {
+				any_country = {
+					is_part_of_hre = yes
+					has_country_flag = pte_refused_infernal
+				}
+			}
+		}
+		hidden_effect = {
+			set_hre_religion_treaty = yes
+			set_global_flag = league_war_complete
+			if = {
+				limit = {
+					hre_religion = infernal_court
+				}
+				set_hre_religion_locked = yes
+			} else = {
+				set_country_flag = hre_religion_changed
+				if = {
+					limit = { hre_religion = regent_court }
+					set_hre_heretic_religion = regent_court
+				} else_if = {
+					limit = { hre_religion = corinite }
+					set_hre_heretic_religion = corinite
+				}
+				set_hre_religion = infernal_court
+				set_hre_religion_locked = yes
+			}
+		}
+		tooltip = {
+			set_hre_religion = infernal_court
+			set_hre_religion_locked = yes
+		}
+		clr_country_flag = pte_emperor_spreads_infernal
+		add_imperial_influence = 50
+		add_prestige = 50
+		add_power_projection = { 
+			type = 10_permanent_power_projection
+			amount = 10
+		}
+		add_stability_or_adm_power = yes
+
+		ai_chance = {
+			always = yes
+		}
+	}
+	# at least one prince refused converting
+	option = {
+		name = pte_events13.EVTOPT2
+		trigger = {
+			any_country = {
+				is_part_of_hre = yes
+				has_country_flag = pte_refused_infernal
+			}
+		}
+		custom_tooltip = PTE_ABLE_SPREAD_INFERNAL_TT
+		hidden_effect = {
+			set_country_flag = pte_able_spread_infernal
+			country_event = {
+				id = pte_events.14
+				days = 30
+			}
+		}
+
+		ai_chance = {
+			always = yes
+		}
+	}
+}
+
+# Did emperor fail
+country_event = {
+	id = pte_events.14
+	title = pte_events.EVTNAME14
+	desc = {
+		trigger = {
+			OR = {
+				is_in_war = {
+					casus_belli = cb_pte_force_spread_infernal_empire
+				}
+				any_country = {
+					is_part_of_hre = yes
+					NOT = { has_country_flag = pte_refused_infernal }
+					had_country_flag = {
+						flag = pte_refused_infernal
+						days = 1
+					}
+				}
+			}
+		}
+	   	desc = pte_events.EVTDESC14_at_war
+	}
+	desc = {
+		trigger= {
+			NOT = {
+				is_in_war = {
+					casus_belli = cb_pte_force_spread_infernal_empire
+				}
+			}
+		}
+	   desc = pte_events.EVTDESC14_fail
+	}
+	#picture = INFERNAL_EMPEROR_DECLARES_eventPicture
+	picture = RELIGION_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# started war for converting
+	option = {
+		name = pte_events14.EVTOPT1
+		trigger = {
+			OR = {
+				is_in_war = {
+					casus_belli = cb_pte_force_spread_infernal_empire
+				}
+				any_country = {
+					is_part_of_hre = yes
+					NOT = { has_country_flag = pte_refused_infernal }
+					had_country_flag = {
+						flag = pte_refused_infernal
+						days = 1
+					}
+				}
+			}
+		}
+		every_country = { # will not work if emperor is fast enough. T_T why pdx didn't made on_war_declared?
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				is_in_war = {
+					casus_belli = cb_pte_force_spread_infernal_empire
+					defender_leader = THIS
+				}
+			}
+			country_event = {
+				id = pte_events.15
+			}
+		}
+
+		ai_chance = {
+			always = yes
+		}
+	}
+	# is not at war for converting - fail
+	option = {
+		name = pte_events14.EVTOPT2
+		trigger = {
+			NOT = {
+				is_in_war = {
+					casus_belli = cb_pte_force_spread_infernal_empire
+				}
+				any_country = {
+					is_part_of_hre = yes
+					NOT = { has_country_flag = pte_refused_infernal }
+					had_country_flag = {
+						flag = pte_refused_infernal
+						days = 1
+					}
+				}
+			}
+		}
+		clr_country_flag = pte_emperor_spreads_infernal
+		set_country_flag = pte_failed_spread_infernal
+		add_prestige = -200
+		add_stability = -6
+		add_imperial_influence = -100
+		add_legitimacy = -100
+
+		ai_chance = {
+			always = yes
+		}
+	}
+}
+
+# hidden event - attacked prince calls other to war
+country_event = {
+	id = pte_events.15
+	title = pte_events.EVTNAME15
+
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		save_global_event_target_as = pte_refused_prince_attacked
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				has_country_flag = pte_refused_infernal
+			}
+			country_event = {
+				id = pte_events.16
+				days = 1
+				rendom = 30
+			}
+		}
+	}
+}
+
+# Princes answer call to war todo - adjust ai chances
+country_event = {
+	id = pte_events.16
+	title = pte_events.EVTNAME16
+	desc = pte_events.EVTDESC16
+	#picture = INFERNAL_EMPEROR_DECLARES_eventPicture
+	picture = RELIGION_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	option = { # support refused prince
+		name = pte_events16.EVTOPT1
+
+		join_all_defensive_wars_of = event_target:pte_refused_prince_attacked
+
+		ai_chance = {
+			factor = 60
+
+			modifier = {
+				factor = 100
+				alliance_with = FROM
+			}
+
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+		}
+	}
+	option = { #stay aside - very little chance
+		name = pte_events16.EVTOPT2
+		trigger = {
+			NOT = {
+				is_in_war = {
+					casus_belli = cb_pte_force_spread_infernal_empire
+				}
+			}
+		}
+		add_prestige = -50
+		add_stability = -1
+
+		ai_chance = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				alliance_with = emperor
+			}
+
+			modifier = {
+				factor = 3
+				is_rival = FROM
+			}
+
+			modifier = {
+				factor = 3
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -100
+					}
+				}
+			}
+		}
 	}
 }
