@@ -1,12 +1,13 @@
-pte_force_dip_tech_sharing = {
+# available with CB, cheaper
+pte_force_dip_tech_sharing_easy = {
 	category = 6
 	power_projection = no
-	power_cost_base = 0.85
-	prestige_base = 0.286
-	ae_base = 0.055
+	power_cost_base = 1
+	prestige_base = 0.2
+	ae_base = 0
 	warscore_cost = {
 		all_provinces = 0.0
-		no_provinces = 70.0
+		no_provinces = 50.0
 		owner_keeps = 0.0
 		conquered = 0.0
 		returned_core = 0.0
@@ -16,44 +17,10 @@ pte_force_dip_tech_sharing = {
 	}
 	warscore_cap = -1
 	requires_demand_independence = no
-	is_make_subject = yes
-	requires_is_allowed = no
+	is_make_subject = no
+	requires_is_allowed = yes
 
 	is_visible = {
-		NOT = {
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_raid_for_knowledge
-			}
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_raid_for_knowledge_cheap
-			}
-		}
-		OR = {
-			is_in_war = {
-				attacker_leader = ROOT
-				defender_leader = FROM
-			}
-			is_in_war = {
-				attacker_leader = FROM
-				defender_leader = ROOT
-			}
-		}
-		OR = {
-			AND = {
-				NOT = { government = native }
-				primitives = no
-			}
-			FROM = {
-				OR = {
-					government = native
-					primitives = yes
-				}
-			}
-		}
 		FROM = {
 			pte_prev_is_behind_this_in_tech = {
 				type = dip
@@ -62,12 +29,6 @@ pte_force_dip_tech_sharing = {
 		}
 	}
 	is_allowed = {
-		FROM = {
-			pte_prev_is_behind_this_in_tech = {
-				type = dip
-				amount = 2
-			}
-		}
 	}
 	effect = {
 		add_dip_tech = 1
@@ -89,7 +50,7 @@ pte_force_dip_tech_sharing = {
 				FROM = {
 					pte_prev_is_behind_this_in_tech = {
 						type = dip
-						amount = 3
+						amount = 2
 					}
 				}
 			}

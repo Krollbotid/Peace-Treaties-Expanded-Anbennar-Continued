@@ -5,7 +5,7 @@ Hegemony and slavery abolishment is not tested because it requires lategame.
 
 [h1]Currently Added[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options. Some require a special CB or have minor requirements to show up in the peace treaty window (e.g. require a specific army size).
-Additional information about each treaty as well as the added Casus Bellis can be found [url=https://steamcommunity.com/workshop/filedetails/discussion/2615504872/2961670721745264890/]here[/url].
+Additional information about each treaty as well as the added Casus Bellis can be found [url=https://steamcommunity.com/workshop/filedetails/discussion/3449929366/604151411899409217/]here[/url].
 [list]
 [*] Abduct Administrative/Diplomatic/Military Advisor
 [*] Abduct Verdical
@@ -28,6 +28,7 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Force Administrative/Diplomatic/Military Technology Sharing
 [*] Force Bankruptcy aka Economic Supremacy                                                 - [b]not tested[/b]
 [*] Force Knowledge Sharing
+[*] Force Seppuku
 [*] Give up Cultural Hegemony
 [*] Install Antirector
 [*] Join Trade League
@@ -40,6 +41,7 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Seize Fleets aka Naval Supremacy                                                        - [b]not tested[/b]
 [*] Seize Mercantilism
 [*] Share Maps of Sarhal/Haless/Cannor/North Aelantir/Insyaa/South Aelantir/The New World
+[*] Spread Infernal Court in Empire
 [*] Spread the True Faith
 [*] Strengthen the Mandate
 [*] Stop Slave Raids
@@ -49,7 +51,6 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [h1]Disabled Peace Treaties[/h1]
 These options from original mod are disabled because they either don't fit to Anbennar, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
-[*] Force Seppuku - todo target because I don't know who in Anbennar may commit Seppuku
 [*] Host next Imperial Diet - requires HRE expanded
 [*] Liberate the Holy See - Ravelian doesn't have capital
 [*] Transfer Monument - Anbennar doesn't have movable monuments?
@@ -69,20 +70,21 @@ Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following casus belli
 [*] Proselytize the Heathen
 [*] Protect Our Religious Bretheren
 [*] Question Rectorate Authority
+[*] Spread Infernal Court in Empire
 [*] Stop Slave Raids
 [/list]
 
 [h1]Disabled Casus Bellis[/h1]
 These options from original mod are disabled because they either don't fit to Anbennar, or refers to another mod from Expanded Mod Series which hasn't been ported to Anbennar yet.
 [list]
-[*] Acquire Monument - Anbennar doesn't have movable monuments?
+[*] Acquire Monument - Anbennar doesn't have movable monuments
 [*] Liberate the Holy See - Ravelian doesn't have capital
 [/list]
 
 [h1]Localisations[/h1]
 [list]
 [*] English localisation included
-[*] German localisation included (uncompleted, e.g. Ravelian, if you know german and would like to help - contact me)
+[*] German localisation included (only works with original PTE content)
 [*] French localisation included ([u]English[/u] language)
 [*] Spanish localisation included ([u]English[/u] language)
 [/list]
@@ -96,6 +98,7 @@ These options from original mod are disabled because they either don't fit to An
 [*] mods that change the [i]countrydiplomacyview.gui[/i] file in the [i]interface[/i] folder may conflict
 [*] if mod adds new advisors or change existing one - these advisors can not be abducted.
 [*] builtin Compatibility with other mods from Expanded Mod Series has been cut, until someone (maybe me) make port of that mod for Anbennar.
+[*] mods that change the [i]00_diplomatic_actions.txt[/i] file in the [i]diplomatic_actions[/i] folder may disable loser's elven snobbism ignorance for Enforced Marriage peace offer
 [/list]
 [/list]
 
@@ -103,12 +106,13 @@ These options from original mod are disabled because they either don't fit to An
 Thanks to [i]LimonenZitrone[/i] for his mod and permission for me to port it to Anbennar.
 Thanks to [i]TqkeOut[/i], [i]Chu[/i] and [i]Melvasul[/i] helping [i]LimonenZitrone[/i] with Peace Treaties Expanded.
 Thanks to [i]Eon.e[/i] for his port of PTE for Anbennar and his permission for me to continue this mod.
+Thanks to [i]Valera[/i] for his help with understanging religious leagues code.
 
 [h1]Permission[/h1]
 https://imgur.com/a/S97gEHb
 
 [h1]Other[/h1]
-[b]If you find any bugs or have any suggestions, please let me know in the comments or in Discord (Krollbotid) [/b]
+[b]If you find any bugs, have any suggestions or would like to help with localisation, please let me know in the comments or in Discord (Krollbotid) [/b]
 
 Also say thanks to Expanded Mod Family devs on their [url=https://discord.gg/tGskECCa9t]Discord[/url] and to Anbennar devs on their [url=https://discord.com/invite/XVJeBhtePe]Discord[/url].
 

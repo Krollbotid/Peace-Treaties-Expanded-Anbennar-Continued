@@ -1,12 +1,13 @@
-pte_force_knowledge_sharing = {
+# only available with raid for knowledge CB, insta embrace institution in capital area
+pte_force_knowledge_sharing_big = {
 	category = 6
 	power_projection = no
-	power_cost_base = 0.89
+	power_cost_base = 1
 	prestige_base = 0.2
 	ae_base = 0
 	warscore_cost = {
 		all_provinces = 0.0
-		no_provinces = 25.0
+		no_provinces = 50.0
 		owner_keeps = 0.0
 		conquered = 0.0
 		returned_core = 0.0
@@ -17,21 +18,9 @@ pte_force_knowledge_sharing = {
 	warscore_cap = -1
 	requires_demand_independence = no
 	is_make_subject = no
-	requires_is_allowed = no
+	requires_is_allowed = yes
 
 	is_visible = {
-		NOT = {
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_raid_for_knowledge
-			}
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_raid_for_knowledge_cheap
-			}
-		}
 		is_lacking_institutions = yes
 		FROM = {
 			institution_difference = {
@@ -57,7 +46,7 @@ pte_force_knowledge_sharing = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_next_institution_embracement = 25
+				add_next_institution_embracement = 100
 			}
 		}
 	}
@@ -92,7 +81,7 @@ pte_force_knowledge_sharing = {
 							who = ROOT
 							value = 2
 						}
-						tech_difference = 3
+						tech_difference = 2
 					}
 				}
 			}

@@ -52,7 +52,21 @@ country_decisions = {
 				power_projection = 50
 			}
 			is_at_war = no
-			dominant_culture = new_variable:Root:primary_culture
+			if = {
+				limit = {
+					tag = R62 # fuck the command and it's primary culture changes
+				}
+				development_in_provinces = {
+					value = 400
+					culture_group = ROOT
+				}
+			} else {
+				development_in_provinces = {
+					value = 200
+					culture_group = ROOT
+				}
+				dominant_culture = new_variable:Root:primary_culture
+			}
 			custom_trigger_tooltip = {
 				tooltip = PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NO_COOLDOWN_TT
 				NOT = { has_country_modifier = pte_culture_group_hegemony_cooldown_modifier }
@@ -78,10 +92,6 @@ country_decisions = {
 						amount = 5
 					}
 				}
-			}
-			development_in_provinces = {
-				value = 200
-				culture_group = ROOT
 			}
 			custom_trigger_tooltip = {
 				tooltip = PTE_CLAIM_CULTURE_GROUP_HEGEMONY_NO_COUNTRY_STRONGER_THAN_US

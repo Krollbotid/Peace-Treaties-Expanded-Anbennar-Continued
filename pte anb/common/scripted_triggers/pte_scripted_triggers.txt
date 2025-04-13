@@ -141,3 +141,172 @@ pte_has_racial_issues_elf_monarchy = {
 		NOT = { primary_culture = desert_elf }
 	}
 }
+
+pte_incompatible_biology = {
+	custom_trigger_tooltip = {
+	# goblin don't want sterile offspring, = yes if incompatible
+		tooltip = INCOMPITABLE_BIOLOGY
+		OR = {
+			AND = {
+				ROOT = { fast_ruler_is_goblin = yes }
+				FROM = {
+					fast_ruler_is_goblin = no
+					fast_ruler_is_harpy = no
+				}
+			}
+			AND = {
+				FROM = { fast_ruler_is_goblin = yes }
+				ROOT = {
+					fast_ruler_is_goblin = no
+					fast_ruler_is_harpy = no
+				}
+			}
+	# hobgoblin don't want sterile offspring, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_hobgoblin = yes }
+				FROM = {
+					fast_ruler_is_hobgoblin = no
+					fast_ruler_is_harpy = no
+				}
+			}
+			AND = {
+				FROM = { fast_ruler_is_hobgoblin = yes }
+				ROOT = {
+					fast_ruler_is_hobgoblin = no
+					fast_ruler_is_harpy = no
+				}
+			}
+	# gnolls, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_gnollish = yes }
+				FROM = { fast_ruler_is_gnollish = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_gnollish = yes }
+				ROOT = { fast_ruler_is_gnollish = no }
+			}
+	# kobolds, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_kobold = yes }
+				FROM = { fast_ruler_is_kobold = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_kobold = yes }
+				ROOT = { fast_ruler_is_kobold = no }
+			}
+	# halflings, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_halfling = yes }
+				FROM = { fast_ruler_is_halfling = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_halfling = yes }
+				ROOT = { fast_ruler_is_halfling = no }
+			}
+			# gnomes, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_gnomish = yes }
+				FROM = { fast_ruler_is_gnomish = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_gnomish = yes }
+				ROOT = { fast_ruler_is_gnomish = no }
+			}
+	# dwarves, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_dwarven = yes }
+				FROM = { fast_ruler_is_dwarven = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_dwarven = yes }
+				ROOT = { fast_ruler_is_dwarven = no }
+			}
+	# harimari, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_harimari = yes }
+				FROM = { fast_ruler_is_harimari = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_harimari = yes }
+				ROOT = { fast_ruler_is_harimari = no }
+			}
+	# trolls, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_troll = yes }
+				FROM = { fast_ruler_is_troll = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_troll = yes }
+				ROOT = { fast_ruler_is_troll = no }
+			}
+	# ogres, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_ogre = yes }
+				FROM = { fast_ruler_is_ogre = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_ogre = yes }
+				ROOT = { fast_ruler_is_ogre = no }
+			}
+	# centaurs, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_centaur = yes }
+				FROM = { fast_ruler_is_centaur = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_centaur = yes }
+				ROOT = { fast_ruler_is_centaur = no }
+			}
+	# lizardfolks, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_lizardfolk = yes }
+				FROM = { fast_ruler_is_lizardfolk = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_lizardfolk = yes }
+				ROOT = { fast_ruler_is_lizardfolk = no }
+			}
+	# mechanims, = yes if incompatible
+			AND = {
+				ROOT = { fast_ruler_is_mechanim = yes }
+				FROM = { fast_ruler_is_mechanim = no }
+			}
+			AND = {
+				FROM = { fast_ruler_is_mechanim = yes }
+				ROOT = { fast_ruler_is_mechanim = no }
+			}
+		}
+	}
+	# harpies are monogendered, = yes if incompatible
+	custom_trigger_tooltip = {
+		tooltip = MONO_GENDERED
+		ROOT = {
+			OR = {
+				fast_ruler_is_harpy = yes
+				AND = {
+					has_regency = yes
+					heir_is_harpy = yes
+				}
+			}
+		}
+		FROM = {
+			OR = {
+				fast_ruler_is_harpy = yes
+				AND = {
+					has_regency = yes
+					heir_is_harpy = yes
+				}
+			}
+		}
+	}
+}
+
+pte_isolationist_daengun = {
+	custom_trigger_tooltip = {
+		tooltip = ISOLATIONIST_DAENGUN
+		ROOT = {
+			tag = Y93
+			has_reform = isolated_kingdom_reform
+		}
+	}
+}

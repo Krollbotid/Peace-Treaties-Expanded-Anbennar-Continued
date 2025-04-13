@@ -56,6 +56,10 @@
  CB_ALLOWED_pte_force_knowledge_sharing: "Принудительный обмен знаниями"
  PEACE_pte_force_knowledge_sharing: "Принудительный обмен знаниями"
 
+ pte_force_knowledge_sharing_big_desc: "Держава @[Root.GetTag] §Y[Root.GetName]§! получит §G100§! принятия института §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W в своей столичной области (§Y[Root.Capital.GetAreaName]§!)."
+ CB_ALLOWED_pte_force_knowledge_sharing_big: "Принудительный обмен знаниями"
+ PEACE_pte_force_knowledge_sharing_big: "Принудительный обмен знаниями"
+
  pte_fleet_disarmament_desc: "Держава @[From.GetTag] §Y[From.GetName]§! получит §R2.5§! военной усталости. Также на §Y10 лет§! она получит модификатор «§YДоговор о разоружении флота§!», который имеет следующие эффекты: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+10.0%§!"
  CB_ALLOWED_pte_fleet_disarmament: "Разоружение флота"
  PEACE_pte_fleet_disarmament: "Разоружение флота"
@@ -76,9 +80,9 @@
  CB_ALLOWED_pte_demand_manpower: "Потребовать рабов-солдат"
  PEACE_pte_demand_manpower: "Потребовать рабов-солдат"
 
- pte_demand_manpower_mam_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G20.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R10§! престижа."
- CB_ALLOWED_pte_demand_manpower_mam: "Потребовать рабов-солдат"
- PEACE_pte_demand_manpower_mam: "Потребовать рабов-солдат"
+ pte_demand_manpower_monster_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G20.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R10§! престижа."
+ CB_ALLOWED_pte_demand_manpower_monster: "Потребовать рабов-солдат"
+ PEACE_pte_demand_manpower_monster: "Потребовать рабов-солдат"
 
  pte_take_cardinal_desc: "Держава @[From.GetTag] §Y[From.GetName]§! потеряет §R1§! вердикала. @[Root.GetTag] §Y[Root.GetName]§! приобретёт §G1§! вердикала."
  CB_ALLOWED_pte_take_cardinal: "Похитить вердикала"
@@ -132,6 +136,18 @@
  CB_ALLOWED_pte_force_mil_tech_sharing_natives: "Силовой обмен военными технологиями"
  PEACE_pte_force_mil_tech_sharing_natives: "Силовой обмен воен. технологиями"
 
+ pte_force_adm_tech_sharing_easy_desc: "Держава @[Root.GetTag] §Y[Root.GetName]§! получит §G1§! уровень в £icon_powers_administrative_tech£ §YАдминистративных технологиях§!."
+ CB_ALLOWED_pte_force_adm_tech_sharing_easy: "Силовой обмен административными технологиями"
+ PEACE_pte_force_adm_tech_sharing_easy: "Силовой обмен адм. технологиями"
+
+ pte_force_dip_tech_sharing_easy_desc: "Держава @[Root.GetTag] §Y[Root.GetName]§! получит §G1§! уровень в £icon_powers_diplomatic_tech£ §YДипломатических технологиях§!."
+ CB_ALLOWED_pte_force_dip_tech_sharing_easy: "Силовой обмен дипломатическими технологиями"
+ PEACE_pte_force_dip_tech_sharing_easy: "Силовой обмен дип. технологиями"
+
+ pte_force_mil_tech_sharing_easy_desc: "Держава @[Root.GetTag] §Y[Root.GetName]§! получит §G1§! уровень в £icon_powers_military_tech£ §YВоенных технологиях§!."
+ CB_ALLOWED_pte_force_mil_tech_sharing_easy: "Силовой обмен военными технологиями"
+ PEACE_pte_force_mil_tech_sharing_easy: "Силовой обмен воен. технологиями"
+
  pte_share_map_europe_desc: "@[Root.GetTag] §Y[Root.GetName]§! откроет все провинции в §YКанноре§! открытые державой @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_share_map_europe: "Поделиться картами Каннора"
  PEACE_pte_share_map_europe: "Поделиться картами Каннора"
@@ -159,7 +175,7 @@
  pte_share_map_new_world_desc: "@[Root.GetTag] §Y[Root.GetName]§! откроет все провинции в §YНовом Свете§! открытые @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_share_map_new_world: "Поделиться картами Нового Света"
  PEACE_pte_share_map_new_world: "Поделиться картами Нового Света"
- 
+
  pte_share_map_serpentspine_desc: "@[Root.GetTag] §Y[Root.GetName]§! откроет все провинции в §YЗмеином Хребте§! открытые @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_share_map_serpentspine: "Поделиться картами Змеиного хребта"
  PEACE_pte_share_map_serpentspine: "Поделиться картами Змеиного хребта"
@@ -345,6 +361,15 @@
  cb_pte_force_spread_infernal_empire: "Распространить Инфернальный Двор в Империи"
  cb_pte_force_spread_infernal_empire_desc: "Мы должны заставить их подчиняться нам и поклоняться Архидьяволам!"
 
+ cb_pte_raid_for_knowledge: "Набег за знаниями"
+ cb_pte_raid_for_knowledge_desc: "Нам не хватает технологического развития. Поскольку они не хотят делиться своими секретами, мы должны заставить их это сделать!"
+
+ cb_pte_raid_for_knowledge_cheap: "Набег за знаниями"
+ cb_pte_raid_for_knowledge_cheap_desc: "Нам не хватает технологического развития. Поскольку они не хотят делиться своими секретами, мы должны заставить их это сделать!"
+
+ cb_pte_hegemon_nationalism: "Национализм"
+ cb_pte_hegemon_nationalism_desc: "Они удерживают провинции нашей культурной группы. Как культурный гегемон, мы обязаны... освободить этот народ."
+
  # War Goals:
  pte_lift_excommunication_war_goal: "Продемонстрировать военное превосходство"
  pte_lift_excommunication_war_goal_desc: "Цель войны — показать своё превосходство, побеждая в сражениях."
@@ -392,6 +417,15 @@
  pte_force_spread_infernal_empire_goal: "Продемонстрировать военное превосходство"
  pte_force_spread_infernal_empire_goal_desc: "Цель войны — показать своё превосходство, побеждая в сражениях."
 
+ pte_raid_for_knowledge_goal: "Захватить столицу"
+ pte_raid_for_knowledge_goal_desc: "Цель войны — захватить их столицу."
+
+ pte_raid_for_knowledge_cheap_goal: "Захватить столицу"
+ pte_raid_for_knowledge_cheap_goal_desc: "Цель войны — захватить их столицу."
+
+ pte_take_province_nationalist: "Захватить провинцию"
+ pte_take_province_nationalist_desc: "Цель войны — захватить провинцию."
+
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$ая война против власти Верховного ректора"
  PTE_BAN_SLAVERY_WAR_NAME: "$ORDER$ $FIRST$о-$SECOND$ая война с рабством"
@@ -406,6 +440,7 @@
  #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$ая война за монумент в провинции $PROVINCE$"
  PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$ая война против $SECOND$их набегов"
  PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME: "$ORDER$ $FIRST$ая война Развращения Империи против державы $SECOND_NAME$"
+ PTE_RAID_FOR_KNOWLEDGE_WAR_NAME: "$ORDER$ $FIRST$ий Набег за знаниями против державы $SECOND_NAME$"
 
  # Tooltips:
  PTE_BAN_SLAVERY_TT: "Любая провинция, принадлежащая державе §Y[From.GetName]§! или одной из её колониальных государств, которая производит §Yрабов§! контролируется державой §Y[Root.GetName]§! или её союзником в этой войне"

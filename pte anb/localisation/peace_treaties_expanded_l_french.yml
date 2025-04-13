@@ -56,6 +56,10 @@
  CB_ALLOWED_pte_force_knowledge_sharing: "Force Knowledge Sharing"
  PEACE_pte_force_knowledge_sharing: "Force Knowledge Sharing"
 
+ pte_force_knowledge_sharing_big_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G100§! support for §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in their capital area (§Y[Root.Capital.GetAreaName]§!)."
+ CB_ALLOWED_pte_force_knowledge_sharing_big: "Force Knowledge Sharing"
+ PEACE_pte_force_knowledge_sharing_big: "Force Knowledge Sharing"
+
  pte_fleet_disarmament_desc: "@[From.GetTag] §Y[From.GetName]§! gains §R2.5§! war exhaustion and gets '§YNaval Disarmament Treaty§!' for §Y10 years§!, which has the following effects: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+10.0%§!"
  CB_ALLOWED_pte_fleet_disarmament: "Fleet Disarmament"
  PEACE_pte_fleet_disarmament: "Fleet Disarmament"
@@ -68,17 +72,17 @@
  CB_ALLOWED_pte_army_disarmament: "Army Disarmament"
  PEACE_pte_army_disarmament: "Army Disarmament"
 
- #pte_force_seppuku_desc: "@[From.GetTag] §Y[From.GetName]'s§! ruler, [From.Monarch.GetName], will die. @[Root.GetTag] §Y[Root.GetName]§! gains §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ and §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ power."
- #CB_ALLOWED_pte_force_seppuku: "Force Seppuku"
- #PEACE_pte_force_seppuku: "Force Seppuku"
+ pte_force_seppuku_desc: "@[From.GetTag] §Y[From.GetName]'s§! ruler, [From.Monarch.GetName], will die. @[Root.GetTag] §Y[Root.GetName]§! gains §G[From.GetForceSeppukuGainedAdmPowerFromMonarchSkills]§! £adm£, §G[From.GetForceSeppukuGainedDipPowerFromMonarchSkills]§! £dip£ and §G[From.GetForceSeppukuGainedMilPowerFromMonarchSkills]§! £mil£ power."
+ CB_ALLOWED_pte_force_seppuku: "Force Seppuku"
+ PEACE_pte_force_seppuku: "Force Seppuku"
 
- pte_demand_manpower_desc: "@[From.GetTag] §Y[From.GetName]§! gives §G10.0%§! of their maximal manpower (about §Y[From.GetDemandManpowerAmount]§W manpower) to @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! loses §R5§! army tradition."
+ pte_demand_manpower_desc: "@[From.GetTag] §Y[From.GetName]§! gives §G10.0%§! of their maximal manpower (about §Y[From.GetDemandManpowerAmount]§W manpower) to @[Root.GetTag] §Y[Root.GetName]§!. [ROOT.GetDemandManpowerNonMonsterEffect]"
  CB_ALLOWED_pte_demand_manpower: "Demand Slave Soldiers"
  PEACE_pte_demand_manpower: "Demand Slave Soldiers"
 
- pte_demand_manpower_mam_desc: "@[From.GetTag] §Y[From.GetName]§! gives §G10.0%§! of their maximal manpower (about §Y[From.GetDemandManpowerAmount]§W manpower) to @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! loses §R5§! army tradition."
- CB_ALLOWED_pte_demand_manpower_mam: "Demand Slave Soldiers"
- PEACE_pte_demand_manpower_mam: "Demand Slave Soldiers"
+ pte_demand_manpower_monster_desc: "@[From.GetTag] §Y[From.GetName]§! gives §G20.0%§! of their maximal manpower (about §Y[From.GetDemandManpowerAmount]§W manpower) to @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! loses §R10§! prestige."
+ CB_ALLOWED_pte_demand_manpower_monster: "Demand Slave Soldiers"
+ PEACE_pte_demand_manpower_monster: "Demand Slave Soldiers"
 
  pte_take_cardinal_desc: "@[From.GetTag] §Y[From.GetName]§! loses §R1§! veridical. @[Root.GetTag] §Y[Root.GetName]§! gains §G1§! veridical."
  CB_ALLOWED_pte_take_cardinal: "Abduct Veridical"
@@ -131,6 +135,18 @@
  pte_force_mil_tech_sharing_natives_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1§! level in £icon_powers_military_tech£ §YMilitary Technology§!."
  CB_ALLOWED_pte_force_mil_tech_sharing_natives: "Force Military Technology Sharing"
  PEACE_pte_force_mil_tech_sharing_natives: "Force Mil. Technology Sharing"
+
+ pte_force_adm_tech_sharing_easy_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1§! level in £icon_powers_administrative_tech£ §YAdministrative Technology§!."
+ CB_ALLOWED_pte_force_adm_tech_sharing_easy: "Force Administrative Technology Sharing"
+ PEACE_pte_force_adm_tech_sharing_easy: "Force Adm. Technology Sharing"
+
+ pte_force_dip_tech_sharing_easy_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1§! level in £icon_powers_diplomatic_tech£ §YDiplomatic Technology§!."
+ CB_ALLOWED_pte_force_dip_tech_sharing_easy: "Force Diplomatic Technology Sharing"
+ PEACE_pte_force_dip_tech_sharing_easy: "Force Dip. Technology Sharing"
+
+ pte_force_mil_tech_sharing_easy_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G1§! level in £icon_powers_military_tech£ §YMilitary Technology§!."
+ CB_ALLOWED_pte_force_mil_tech_sharing_easy: "Force Military Technology Sharing"
+ PEACE_pte_force_mil_tech_sharing_easy: "Force Mil. Technology Sharing"
 
  pte_share_map_europe_desc: "@[Root.GetTag] §Y[Root.GetName]§! discovers all provinces in §YCannor§! discovered by @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_share_map_europe: "Share Maps of Cannor"
@@ -292,6 +308,13 @@
  CB_ALLOWED_pte_raid_splendid_court: "Raid Splendid Court"
  PEACE_pte_raid_splendid_court: "Raid Splendid Court"
 
+ pte_force_spread_infernal_empire_desc: "@[From.GetTag] §Y[From.GetName]§! and all it's subjects which are members of Empire of Anbennar will convert to Infernal Court. If they have centers of Reformation - they'll be removed."
+ CB_ALLOWED_pte_force_spread_infernal_empire: "Force Infernal Court"
+ PEACE_pte_force_spread_infernal_empire: "Force Infernal Court"
+
+ # paradox, why you didn't do this?
+ CB_ALLOWED_TRANSFER_VASSALS: "Transfer vassals"
+
  # Casus Bellis:
  cb_pte_lift_excommunication: "Question Papal Authority"
  cb_pte_lift_excommunication_desc: "They have excommunicated us, we need to question their authority and force them to lift the excommunication!"
@@ -334,6 +357,18 @@
 
  cb_pte_force_convert_heathen: "Proselytize the Heathens"
  cb_pte_force_convert_heathen_desc: "We must convert them to the true faith!"
+
+ cb_pte_force_spread_infernal_empire: "Spread Infernal Court in Empire"
+ cb_pte_force_spread_infernal_empire_desc: "We must make them obey us and worship Archdevils!"
+
+ cb_pte_raid_for_knowledge: "Raid for Knowledge"
+ cb_pte_raid_for_knowledge_desc: "We lack technological development. Since they don't want to share their secrets, we have to make them do it!"
+
+ cb_pte_raid_for_knowledge_cheap: "Raid for Knowledge"
+ cb_pte_raid_for_knowledge_cheap_desc: "We lack technological development. Since they don't want to share their secrets, we have to make them do it!"
+
+ cb_pte_hegemon_nationalism: "Nationalism"
+ cb_pte_hegemon_nationalism_desc: "They hold the provinces of our cultural group. As a cultural hegemony, we must... free these people."
 
  # War Goals:
  pte_lift_excommunication_war_goal: "Show Superiority"
@@ -379,6 +414,18 @@
  pte_force_convert_heathen_war_goal: "Show Superiority"
  pte_force_convert_heathen_war_goal_desc: "War goal is to show them superiority by winning battles."
 
+ pte_force_spread_infernal_empire_goal: "Show Superiority"
+ pte_force_spread_infernal_empire_goal_desc: "War goal is to show them superiority by winning battles."
+
+ pte_raid_for_knowledge_goal: "Take Capital"
+ pte_raid_for_knowledge_goal_desc: "War goal is to take their capital."
+
+ pte_raid_for_knowledge_cheap_goal: "Take Capital"
+ pte_raid_for_knowledge_cheap_goal_desc: "War goal is to take their capital."
+
+ pte_take_province_nationalist: "Take a province"
+ pte_take_province_nationalist_desc: "War goal is to take a province."
+
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$ War against Papal Authority"
  PTE_BAN_SLAVERY_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Slavery"
@@ -392,6 +439,8 @@
  PTE_ANTI_COALITION_WAR_NAME: "$ORDER$ $FIRST$ War against the $SECOND$ Coalition"
  #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$ War over the Monument in $PROVINCE$"
  PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$ War against the $SECOND$ Raids"
+ PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME: "$ORDER$ $FIRST$ War of Empire Corruption against $SECOND_NAME$"
+ PTE_RAID_FOR_KNOWLEDGE_WAR_NAME: "$ORDER$ $FIRST$ Raid for Knowledge against $SECOND_NAME$"
 
  # Tooltips:
  PTE_BAN_SLAVERY_TT: "Any province owned by §Y[From.GetName]§! or one of their colonial nations that is producing §YSlaves§! is controlled by §Y[Root.GetName]§! or an ally in this war"
@@ -437,6 +486,7 @@
  PTE_NOT_START_SUCCESSION_CRISIS_USED_TT: "Has not fabricated a succession claim within the last §Y10 years§!"
  PTE_HAS_SUCCESSION_CLAIM_ON_FROM_TT: "Has at least a vague claim on the §Y[From.GetAdjective]§! throne[Root.GetFabricateSuccessionClaimVagueClaimInfoStar]"
  #PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "The province with this monument is controlled by §Y[Root.GetName]§! or an ally in this war"
+ PTE_ABLE_SPREAD_INFERNAL_TT: "We can now use casus belli §YSpread Infernal Court in Empire§!. This Casus belli allows us convert heretic member of empire and it's subjects to Infernal Court. However we can't use this casus belli, if we already using it in another war."
 
  # Modifiers:
  pte_protect_religious_bretheren_modifier: "Enforced Protection of Heretics"
@@ -472,10 +522,16 @@
  string_fabricate_succession_claim_vague_claim_info_text: "\n§O* Vague claim means one of the following: \n   - same dynasty as their overlord \n   - a claim on their throne \n   - at one point they had a ruler of our dynasty \n   - one of their rulers had our culture and religion and\n     was born when we had a marriage with them§!"
  string_fabricate_succession_claim_vague_claim_info_star: "§O*§!"
  string_delegitimize_dynastic_branch_heir_effects: " The [From.GetAdjective] heir §Y[From.Heir.GetName]'s§! claim is reduced by §R33§!."
+ string_demand_manpower_from_monsters: "@[Root.GetTag] §Y[Root.GetName]§! loses §R10§! prestige."
+ string_demand_manpower_from_non_monsters: "@[Root.GetTag] §Y[Root.GetName]§! loses §R5§! army tradition."
 
  # Decisions:
  pte_claim_culture_group_hegemony_title: "Claim the [Root.Culture.GetGroupName] Cultural Hegemony"
  pte_claim_culture_group_hegemony_desc: "We are the largest and strongest country within the §Y[Root.Culture.GetGroupName]§! culture group. Claiming the §MCultural Hegemony§! will grant us helpful bonuses, however it will also give other nations in the same culture group a casus belli against us, which allows them to take over the hegemony from us."
+ pte_spread_infernal_empire_title: "Spread the worshipping of Archdevils!"
+ pte_spread_infernal_empire_desc: "We will demand that every country in the Empire of Anbennar that is not our subject and does not worship Archdevils change their religion to the Infernal Court. If they refuse, we will get a reason to go to war with them in order to convert them. A good relationship increases the chance of accepting our offer, as well as if the target country is evil. If they do refuse, we will have to start subjugating them in 2 months. If we fail, or lose emperorship until we're done, then we'll face §Rhuge penalties§! on our stability, legitimacy, prestige and authority."
+ pte_spread_infernal_empire_finish_title: "Complete spreading Infernal Court"
+ pte_spread_infernal_empire_finish_desc: "As all of the princes have converted to Infernal Court we can now establish Infernal Court as an official religion of the Empire."
 
  # Events:
  pte_events.EVTNAME4: "Cultural Hegemony lost"
@@ -498,6 +554,30 @@
  pte_events.EVTNAME9: "An Unaccepted [Root.Monarch.GetTitle]"
  pte_events.EVTDESC9: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName], once installed as Antirector by [installer_of_anti_pope.GetName], isn't very accepted among the [Root.GetAdjective] people. Now a pretender has risen up, claiming to be the legit [Root.Monarch.GetTitle]!"
  pte_events9.EVTOPT1: "What? No!"
+
+ pte_events.EVTNAME12: "Blasphemous Demand"
+ pte_events.EVTDESC12: "[Emperor.Monarch.GetTitle] [From.Monarch.GetName] [From.Monarch.Dynasty.GetName] declared that every member of the Empire of Anbennar has to worship Archdevils from now on, and if anyone would dare to refuse their demand, then [Emperor.Monarch.GetTitle] will make them obey... by force.\nShall we fulfill the [Emperor.Monarch.GetTitle]'s demands or stay true to [Root.Religion.GetName] now [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] has to decide."
+ pte_events12.EVTOPT1: "I'll support the [Emperor.Monarch.GetTitle]! Glory to Kazraiel!"
+ pte_events12.EVTOPT2: "Anbennar will not fall to evil, neither will I!"
+
+ pte_events.EVTNAME13: "Princes' Reaction"
+ pte_events.EVTDESC13_no_refused: "Congratulations, mighty [Emperor.Monarch.GetTitle]!\nAll the princes of Anbennar have willingly accepted worshipping Archdevils. Now it's time to set Infernal Court as official religion of Empire of Anbennar.\nGlory to the Kazraiel!"
+ pte_events.EVTDESC13_refused: "Some princes rejected our generous offer to start worshiping Archdevils. They are not afraid of our threats and are ready to defend their beliefs on the battlefield.\nNow we must show the seriousness of our intentions as soon as possible, otherwise the [Emperor.Monarch.GetTitle] will be discredited."
+ pte_events13.EVTOPT1: "I knew they would accept my offer!"
+ pte_events13.EVTOPT2: "It's time to teach these fools a lesson."
+
+ pte_events.EVTNAME14: "Consequences"
+ pte_events.EVTDESC14_at_war: "We proved the seriousness of our intentions by declaring war to convert the heretic princes to the Infernal Court. However, the heretics decided to unite against us and present a united front to \"fight evil on the Dove Throne\", as they call it. We have no choice but to smash them all."
+ pte_events.EVTDESC14_fail: "It's been a month since princes refused our demand, but we have not started a war with any of them yet. Now our authority in the Empire has been lost, as well as the opportunity to establish the Infernal Court as the official religion of Anbennar."
+ pte_events14.EVTOPT1: "This pathetic alliance will not help them!"
+ pte_events14.EVTOPT2: "What a shame!"
+
+ pte_events.EVTNAME15: "Attacked prince calls for help"
+
+ pte_events.EVTNAME16: "Attacked prince calls for our help"
+ pte_events.EVTDESC16: "After refusal of @[From.GetTag] §Y[From.GetName]§! to worship Archdevils @[Emperor.GetTag] §Y[Emperor.GetName]§! attacked them, to make them obey by force. Now @[From.GetTag] §Y[From.GetName]§! calls for every prince who refused demands of [Emperor.Monarch.GetTitle] [Emperor.Monarch.GetName] [Emperor.Monarch.Dynasty.GetName] for their help. It may be our first and only opportunity to unite against the [Emperor.Monarch.GetTitle] and banish evil from the Dove Throne.\nBut final desicion is, of course, on [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]."
+ pte_events16.EVTOPT1: "We can't lose this opportunity. To the arms!"
+ pte_events16.EVTOPT2: "There's no need to join @[From.GetTag] §Y[From.GetName]§! in their war. We may fight [Emperor.Monarch.GetTitle] without any help."
 
  # Power Projection Modifiers:
  pte_destabilize_nation_power_projection: "Destabilized Rivals"

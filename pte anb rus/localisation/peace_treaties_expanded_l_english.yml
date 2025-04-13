@@ -56,6 +56,10 @@
  CB_ALLOWED_pte_force_knowledge_sharing: "‰ª°³¦ª²®¿°ºþ ¡¯° ©°°ª¾¯ª"
  PEACE_pte_force_knowledge_sharing: "‰ª°³¦ª²®¿°ºþ ¡¯° ©°°ª¾¯ª"
 
+ pte_force_knowledge_sharing_big_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G100§! ±ª°¾²ª¾ ª°²ª²³² §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W ¢ ¢þ ²®ª¶°þ ¡®²ª (§Y[Root.Capital.GetAreaName]§!)."
+ CB_ALLOWED_pte_force_knowledge_sharing_big: "‰ª°³¦ª²®¿°ºþ ¡¯° ©°°ª¾¯ª"
+ PEACE_pte_force_knowledge_sharing_big: "‰ª°³¦ª²®¿°ºþ ¡¯° ©°°ª¾¯ª"
+
  pte_fleet_disarmament_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±®³¶ª² §R2.5§! ¢°°þ ³²®²ª. Ù¬¨ ° §Y10 ®²§! ° ±®³¶ª² ¯¦ª´ª¬² «§Yƒ¥¢  ©³¨°ªª ´®²§!», ¬²ºþ ª¯² ®¦³½¸ª ¼´´¬²º: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+10.0%§!"
  CB_ALLOWED_pte_fleet_disarmament: "Ð©³¨°ª ´®²"
  PEACE_pte_fleet_disarmament: "Ð©³¨°ª ´®²"
@@ -76,9 +80,9 @@
  CB_ALLOWED_pte_demand_manpower: "‰²¡¢²¿ ¡¢-®¦²"
  PEACE_pte_demand_manpower: "‰²¡¢²¿ ¡¢-®¦²"
 
- pte_demand_manpower_mam_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G20.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R10§! ±²ª¨."
- CB_ALLOWED_pte_demand_manpower_mam: "‰²¡¢²¿ ¡¢-®¦²"
- PEACE_pte_demand_manpower_mam: "‰²¡¢²¿ ¡¢-®¦²"
+ pte_demand_manpower_monster_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±¦ž² §G20.0%§! ² ¢¥ ¯¬ª¯®¿°¥ ©± ¬³²¢ (¬® §Y[From.GetDemandManpowerAmount]§W), ¦¨¢ @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! ±²¾² §R10§! ±²ª¨."
+ CB_ALLOWED_pte_demand_manpower_monster: "‰²¡¢²¿ ¡¢-®¦²"
+ PEACE_pte_demand_manpower_monster: "‰²¡¢²¿ ¡¢-®¦²"
 
  pte_take_cardinal_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ±²¾² §R1§! ¢¦ª¬®. @[Root.GetTag] §Y[Root.GetName]§! ±ª¡²ž² §G1§! ¢¦ª¬®."
  CB_ALLOWED_pte_take_cardinal: "‰ª²ª²¿ ¢¦ª¬®"
@@ -131,6 +135,18 @@
  pte_force_mil_tech_sharing_natives_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_military_tech£ §YÏ°°º ²°®¥ª¾§!."
  CB_ALLOWED_pte_force_mil_tech_sharing_natives: "Ôª®¢þ ¡¯° ¢°°º¯ª ²°®¥ª¾¯ª"
  PEACE_pte_force_mil_tech_sharing_natives: "Ôª®¢þ ¡¯° ¢°. ²°®¥ª¾¯ª"
+
+ pte_force_adm_tech_sharing_easy_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_administrative_tech£ §Y¦¯ª°ª²²ª¢°º ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_adm_tech_sharing_easy: "Ôª®¢þ ¡¯° ¦¯ª°ª²²ª¢°º¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_adm_tech_sharing_easy: "Ôª®¢þ ¡¯° ¦¯. ²°®¥ª¾¯ª"
+
+ pte_force_dip_tech_sharing_easy_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_diplomatic_tech£ §Yƒª±®¯²ª¶¬ª ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_dip_tech_sharing_easy: "Ôª®¢þ ¡¯° ¦ª±®¯²ª¶¬ª¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_dip_tech_sharing_easy: "Ôª®¢þ ¡¯° ¦ª±. ²°®¥ª¾¯ª"
+
+ pte_force_mil_tech_sharing_easy_desc: "ƒ¨¢ @[Root.GetTag] §Y[Root.GetName]§! ±®³¶ª² §G1§! ³¢°¿ ¢ £icon_powers_military_tech£ §YÏ°°º ²°®¥ª¾§!."
+ CB_ALLOWED_pte_force_mil_tech_sharing_easy: "Ôª®¢þ ¡¯° ¢°°º¯ª ²°®¥ª¾¯ª"
+ PEACE_pte_force_mil_tech_sharing_easy: "Ôª®¢þ ¡¯° ¢°. ²°®¥ª¾¯ª"
 
  pte_share_map_europe_desc: "@[Root.GetTag] §Y[Root.GetName]§! ²¬² ¢ ±¢ª°µªª ¢ §Y°°§! ²¬º²º ¦¨¢þ @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_share_map_europe: "‰¦®ª²¿¾ ¬²¯ª °°"
@@ -333,8 +349,8 @@
  cb_pte_border_friction: "‰¥°ª¶°º ²°ª¾"
  cb_pte_border_friction_desc: "Œª Œ±ª°º ©¦®ª  °ª¯ª ²°ª¾ ° ¥°ªµ. Ù±¿ ¯º ¦®¨°º ¢±®¿©¢²¿¾ ¼²ª¯ ª ©¢¢²¿ ¼²ª ³¡¨ª!"
 
- cb_pte_take_monument: "…±®³¶ª²¿ ¯°³¯°²"
- cb_pte_take_monument_desc: "°ª ¢®¦½² ±¦¢ª¨°º¯ ¯°³¯°²¯, ¬²ºþ ¯º ¯¨¯ ª±®¿©¢²¿, ®ª ¥ ±¢©³² ¢ ¦°³ ª© °Œª ±¢ª°µªþ. º ¡¾©²®¿° ¦®¨°º ¥ ©±®³¶ª²¿."
+ #cb_pte_take_monument: "…±®³¶ª²¿ ¯°³¯°²"
+ #cb_pte_take_monument_desc: "°ª ¢®¦½² ±¦¢ª¨°º¯ ¯°³¯°²¯, ¬²ºþ ¯º ¯¨¯ ª±®¿©¢²¿, ®ª ¥ ±¢©³² ¢ ¦°³ ª© °Œª ±¢ª°µªþ. º ¡¾©²®¿° ¦®¨°º ¥ ©±®³¶ª²¿."
 
  cb_pte_stop_raiding: "²°¢ª²¿ °¡¥ª © ¡¯ª"
  cb_pte_stop_raiding_desc: "°ª ¢Œ½² °¡¥ª ° °Œª ±¡¨¿¾. º ¦®¨°º ²°¢ª²¿ ¼²."
@@ -344,6 +360,15 @@
 
  cb_pte_force_spread_infernal_empire: "Ð±²°ª²¿ †°´°®¿°ºþ ƒ¢ ¢ †¯±ªª"
  cb_pte_force_spread_infernal_empire_desc: "º ¦®¨°º ©²¢ª²¿ ª ±¦¶ª°¾²¿¾ °¯ ª ±¬®°¾²¿¾ ª¦¿¾¢®¯!"
+
+ cb_pte_raid_for_knowledge: "¡¥ © ©°°ª¾¯ª"
+ cb_pte_raid_for_knowledge_desc: "¯ ° ¢²² ²°®¥ª¶¬¥ ©¢ª²ª¾. ‰¬®¿¬³ °ª ° ²¾² ¦®ª²¿¾ ¢ª¯ª ¬²¯ª, ¯º ¦®¨°º ©²¢ª²¿ ª ¼² ¦®²¿!"
+
+ cb_pte_raid_for_knowledge_cheap: "¡¥ © ©°°ª¾¯ª"
+ cb_pte_raid_for_knowledge_cheap_desc: "¯ ° ¢²² ²°®¥ª¶¬¥ ©¢ª²ª¾. ‰¬®¿¬³ °ª ° ²¾² ¦®ª²¿¾ ¢ª¯ª ¬²¯ª, ¯º ¦®¨°º ©²¢ª²¿ ª ¼² ¦®²¿!"
+
+ cb_pte_hegemon_nationalism: "µª°®ª©¯"
+ cb_pte_hegemon_nationalism_desc: "°ª ³¦¨ª¢½² ±¢ª°µªª °Œþ ¬³®¿²³°þ ¥³±±º. ¬ ¬³®¿²³°ºþ ¥¥¯°, ¯º ¡¾©°º... ¢¡¦ª²¿ ¼²² °¦."
 
  # War Goals:
  pte_lift_excommunication_war_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
@@ -392,6 +417,15 @@
  pte_force_spread_infernal_empire_goal: "‰¦¯°²ª¢²¿ ¢°° ±¢¦²¢"
  pte_force_spread_infernal_empire_goal_desc: "Ë®¿ ¢þ°º — ±¬©²¿ ¢ž ±¢¦²¢, ±¡¨¦¾ ¢ ¨°ª¾."
 
+ pte_raid_for_knowledge_goal: "…¢²ª²¿ ²®ªµ³"
+ pte_raid_for_knowledge_goal_desc: "Ë®¿ ¢þ°º — ©¢²ª²¿ ª ²®ªµ³."
+
+ pte_raid_for_knowledge_cheap_goal: "…¢²ª²¿ ²®ªµ³"
+ pte_raid_for_knowledge_cheap_goal_desc: "Ë®¿ ¢þ°º — ©¢²ª²¿ ª ²®ªµ³."
+
+ pte_take_province_nationalist: "…¢²ª²¿ ±¢ª°µª½"
+ pte_take_province_nationalist_desc: "Ë®¿ ¢þ°º — ©¢²ª²¿ ±¢ª°µª½."
+
  # War Names:
  PTE_LIFT_EXCOMMUNICATION_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ ¢®²ª Ï¢°¥ ¬²"
  PTE_BAN_SLAVERY_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$¾ ¢þ°  ¡²¢¯"
@@ -406,6 +440,7 @@
  #PTE_TAKE_MONUMENT_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° © ¯°³¯°² ¢ ±¢ª°µªª $PROVINCE$"
  PTE_STOP_RAIDING_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° ±²ª¢ °¡¥¢ ¦¨¢º $SECOND$"
  PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME: "$ORDER$ $FIRST$¾ ¢þ° Ð©¢¸°ª¾ †¯±ªª ±²ª¢ ¦¨¢º $SECOND_NAME$"
+ PTE_RAID_FOR_KNOWLEDGE_WAR_NAME: "$ORDER$ $FIRST$ªþ ¡¥ © ©°°ª¾¯ª ±²ª¢ ¦¨¢º $SECOND_NAME$"
 
  # Tooltips:
  PTE_BAN_SLAVERY_TT: "ˆ½¡¾ ±¢ª°µª¾, ±ª°¦®¨¸¾ ¦¨¢ §Y[From.GetName]§! ª®ª ¦°þ ª© ž ¬®°ª®¿°º ¥³¦²¢, ¬²¾ ±ª©¢¦ª² §Y¡¢§! ¬°²®ª³²¾ ¦¨¢þ §Y[Root.GetName]§! ª®ª ž ½©°ª¬¯ ¢ ¼²þ ¢þ°"

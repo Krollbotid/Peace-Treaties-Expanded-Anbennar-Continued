@@ -537,6 +537,7 @@ pte_force_convert_heathen_war_goal = {
 	war_name = CRUSADE_WAR_NAME
 }
 
+# added by Kroll
 pte_force_spread_infernal_empire_goal = {
 	type = superiority
 
@@ -570,4 +571,119 @@ pte_force_spread_infernal_empire_goal = {
 	}
 
 	war_name = PTE_SPREAD_INFERNAL_EMPIRE_WAR_NAME
+}
+
+# added by Kroll
+pte_raid_for_knowledge_goal = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			pte_force_knowledge_sharing_big
+			pte_force_adm_tech_sharing_easy
+			pte_force_dip_tech_sharing_easy
+			pte_force_mil_tech_sharing_easy
+			po_pillage_capital
+		}
+	}
+
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 2
+		peace_cost_factor = 0.9
+
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_release_vassals
+			po_release_annexed
+			pte_army_disarmament
+			pte_demilitarize_border
+			pte_destabilize_nation
+		}
+	}
+
+	war_name = PTE_RAID_FOR_KNOWLEDGE_WAR_NAME
+}
+
+# added by Kroll
+pte_raid_for_knowledge_cheap_goal = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 0.4
+
+		peace_options = {
+			pte_force_knowledge_sharing_big
+			pte_force_adm_tech_sharing_easy
+			pte_force_dip_tech_sharing_easy
+			pte_force_mil_tech_sharing_easy
+			po_pillage_capital
+		}
+	}
+
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 2
+		peace_cost_factor = 0.9
+
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_release_vassals
+			po_release_annexed
+			pte_army_disarmament
+			pte_demilitarize_border
+			pte_destabilize_nation
+		}
+	}
+
+	war_name = PTE_RAID_FOR_KNOWLEDGE_WAR_NAME
+}
+
+# for earlier nationalism cb - added by Kroll
+pte_take_province_nationalist = {
+	type = take_province
+	
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 1.5
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			culture_group = ROOT
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CGROUP_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1.5
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			culture_group = FROM
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CGROUP_PROVS
+	}
+	
+	war_name = NATION_WAR_NAME	
 }

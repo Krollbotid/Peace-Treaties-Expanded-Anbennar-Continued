@@ -3,8 +3,10 @@ TODO LIST
 1.2     Make possible for humans/orcs/horcs to enforce marriage with elves
 1.2     Rework demand slave soldiers
 1.2     Decision, CB and peace treaty for converting EoA to Infernal Court
-        Take techs and institutions CB
-        earlier analog of nationalism CB for Cultural Hegemons
+1.2     Take techs and institutions CB
+1.2     Implement incompatible biology block for enforced marriage
+1.2     earlier analog of nationalism CB for Cultural Hegemons
+1.2     Remove dominant_culture requirement for Command to balance their primary culture shifts.
         Add CB and/or peace treaties for releasing Sallas in Deepwoods
         Add CB for installing Magocracy/Mage Rulers in EoA countries
         Add CB against country who purges your race

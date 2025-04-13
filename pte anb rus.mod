@@ -1,4 +1,4 @@
-version="0.2"
+version="0.4"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 	"Peace Treaties Expanded Anbennar Continued"

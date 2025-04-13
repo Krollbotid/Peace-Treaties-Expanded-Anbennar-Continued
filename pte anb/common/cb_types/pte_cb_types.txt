@@ -645,11 +645,11 @@ cb_pte_force_spread_infernal_empire = {
 
 	prerequisites_self = {
 		has_country_flag = pte_emperor_spreads_infernal
-		has_country_flag = pte_able_spread_infernal # so emperor can't start multiple wars with this cb, otherwise join_all_defensive_wars_of bugs out
+		has_country_flag = pte_able_spread_infernal
 		is_emperor = yes
 		religion = infernal_court
 		dominant_religion = infernal_court
-		NOT = {
+		NOT = { # so emperor can't start multiple wars with this cb, otherwise join_all_defensive_wars_of bugs out
 			is_in_war = {
 				casus_belli = cb_pte_force_spread_infernal_empire
 			}
@@ -688,4 +688,192 @@ cb_pte_force_spread_infernal_empire = {
 	}
 
 	war_goal = pte_force_spread_infernal_empire_goal
+}
+
+# cheaper techs and institutions - added by Kroll
+cb_pte_raid_for_knowledge = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		NOT = {
+			has_country_modifier = monstrous_nation
+			# race
+			culture_is_gnomish = yes
+			culture_is_goblin = yes
+			culture_is_kobold = yes
+			culture_is_mechanim = yes # Soon may the Insyya come, they bring us mechanim and drum
+			# tag
+			tag = I03 # Dur-Vazhatun
+			tag = I12 # Orlghelovar
+			tag = Z36 # Hammerhome
+			tag = B39 # Wyvernheart
+			tag = H61 # Plumstead
+		}
+	}
+
+	prerequisites = {
+		OR = {
+			FROM = {
+				pte_prev_is_behind_this_in_tech = {
+					type = adm
+					amount = 1
+				}
+			}
+			FROM = {
+				pte_prev_is_behind_this_in_tech = {
+					type = dip
+					amount = 1
+				}
+			}
+			FROM = {
+				pte_prev_is_behind_this_in_tech = {
+					type = mil
+					amount = 1
+				}
+			}
+			AND = {
+				is_lacking_institutions = yes
+				FROM = {
+					institution_difference = {
+						who = ROOT
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_change_religion
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+		pte_spawn_reformation_center_in_capital
+		# pte_force_adm_tech_sharing
+		# pte_force_adm_tech_sharing_natives
+		# pte_force_dip_tech_sharing
+		# pte_force_dip_tech_sharing_natives
+		# pte_force_mil_tech_sharing
+		# pte_force_mil_tech_sharing_natives
+		# pte_force_knowledge_sharing
+		pte_demand_manpower
+	}
+
+	defender_disabled_po = {
+		po_change_religion
+		pte_spawn_reformation_center_in_capital
+	}
+
+	war_goal = pte_raid_for_knowledge_goal
+}
+
+# even cheaper techs and institutions for certain race/tag/monster- added by Kroll
+cb_pte_raid_for_knowledge_cheap = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		OR = {
+			has_country_modifier = monstrous_nation
+			# race
+			culture_is_gnomish = yes
+			culture_is_goblin = yes
+			culture_is_kobold = yes
+			culture_is_mechanim = yes # Soon may the Insyya come, they bring us mechanim and drum
+			# tag
+			tag = I03 # Dur-Vazhatun
+			tag = I12 # Orlghelovar
+			tag = Z36 # Hammerhome
+			tag = B39 # Wyvernheart
+			tag = H61 # Plumstead
+		}
+	}
+
+	prerequisites = {
+		OR = {
+			FROM = {
+				pte_prev_is_behind_this_in_tech = {
+					type = adm
+					amount = 1
+				}
+			}
+			FROM = {
+				pte_prev_is_behind_this_in_tech = {
+					type = dip
+					amount = 1
+				}
+			}
+			FROM = {
+				pte_prev_is_behind_this_in_tech = {
+					type = mil
+					amount = 1
+				}
+			}
+			AND = {
+				is_lacking_institutions = yes
+				FROM = {
+					institution_difference = {
+						who = ROOT
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_change_religion
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+		pte_spawn_reformation_center_in_capital
+		# pte_force_adm_tech_sharing
+		# pte_force_adm_tech_sharing_natives
+		# pte_force_dip_tech_sharing
+		# pte_force_dip_tech_sharing_natives
+		# pte_force_mil_tech_sharing
+		# pte_force_mil_tech_sharing_natives
+		# pte_force_knowledge_sharing
+		pte_demand_manpower
+	}
+
+	defender_disabled_po = {
+		po_change_religion
+		pte_spawn_reformation_center_in_capital
+	}
+
+	war_goal = pte_raid_for_knowledge_cheap_goal
+}
+
+# earlier nationalism for cultural hegemons but for bigger cost/AE
+cb_pte_hegemon_nationalism = {
+
+	prerequisites_self = {
+		dip_tech = 14
+		NOT = { dip_tech = 23 } # original nationalism is better
+		is_free_or_tributary_trigger = yes
+		is_revolutionary = no
+		has_country_modifier = pte_culture_group_hegemony_modifier
+	}
+
+	prerequisites = {
+		culture_group_claim = FROM
+	}
+
+	war_goal = pte_take_province_nationalist
 }

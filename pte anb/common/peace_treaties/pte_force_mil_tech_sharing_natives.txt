@@ -20,6 +20,18 @@ pte_force_mil_tech_sharing_natives = {
 	requires_is_allowed = no
 
 	is_visible = {
+		NOT = {
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+				casus_belli = cb_pte_raid_for_knowledge
+			}
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+				casus_belli = cb_pte_raid_for_knowledge_cheap
+			}
+		}
 		OR = {
 			is_in_war = {
 				attacker_leader = ROOT

@@ -40,10 +40,14 @@ pte_enforced_royal_marriage = {
 		}
 	}
 	is_allowed = {
-		NOT = { marriage_with = FROM }
 		religion_group = FROM
-		pte_has_racial_issues_sun_elf = no # you can overcome enemy's snobbism, but not yours
-		pte_has_racial_issues_elf_monarchy = no
+		NOT = {
+			marriage_with = FROM
+			pte_has_racial_issues_sun_elf = yes # you can overcome enemy's snobbism, but not yours
+			pte_has_racial_issues_elf_monarchy = yes
+			pte_incompatible_biology = yes
+			pte_isolationist_daengun = yes
+		}
 	}
 	effect = {
 		FROM = {

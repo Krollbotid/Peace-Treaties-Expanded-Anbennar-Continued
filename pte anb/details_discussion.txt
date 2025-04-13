@@ -210,18 +210,42 @@ There is no info for disabled peace treaties/casus bellis
 [*] loser gains 2.5 war exhaustion and gets land force limit -33.0% and regiment cost +10.0% for 10 years
 [/list]
 
+[h1]Force Seppuku[/h1]
+
+[b]Conditions for Visibility:[/b]
+[list]
+[*] winner is in the Hobgoblin or Wuhyun culture group or Horned Ogre culture
+[*] loser is in the Hobgoblin or Wyhyun culture group or Horned Ogre culture
+[*] winner is defender in the war
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] the loser's ruler dies
+[*] the winner gains 3 times the loser's ruler's skill in monarch power (so a 6 6 6 ruler will give 18 ADM, 18 DIP and 18 MIL power)
+[/list]
+
 [h1]Demand Slave Soldiers[/h1]
 
 [b]Conditions for Visibility:[/b]
 [list]
-[*] winner has Ottoman or Mamluk government or is Rome or is revolutionary or native or a tribe or has the military dictatorship, battle pope or pirate republic reform
+[*] winner is monstrous nation or or is revolutionary or native or a tribe or has the military dictatorship, battle pope or pirate republic reform
 [*] loser has at least a max manpower of 1,000
 [/list]
 
 [b]Effects:[/b]
 [list]
+[*] If winner nation is monstrous:
+[list]
+[*] loser gives 20.0% of their maximal manpower to the winner
+[*] winner loses 10 prestige
+[/list]
+[*] If winner nation is non-monstrous:
+[list]
 [*] loser gives 10.0% of their maximal manpower to the winner
-[*] winner loses 5 army tradition
+[*] winner loses 10 prestige if loser is winner's rival or is monstrous nation
+[*] winner loses 5 army tradition, otherwise
+[/list]
 [/list]
 
 [h1]Abduct Veridical[/h1]
@@ -603,6 +627,23 @@ There is no info for disabled peace treaties/casus bellis
 [*] loser loses 150 splendor
 [/list]
 
+[h1]Spread Infernal Court in Empire[/h1]
+
+[b]Conditions for Visibility:[/b]
+[list]
+[*] winner and loser are in war declared with the "Stop Slave Raids" casus belli
+[*] winner is attacker leader
+[*] loser has refused Emperor's demand to convert to Infernal Court
+[*] loser's religion is not Infernal Court
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] loser's and loser's imperial subjects' religion changes to Infernal Court
+[*] if there are Corinite or Ravelian reformation centers in loser's and loser's imperial subjects' provinces - they're removed
+[*] loser and loser's imperial subjects don't count as "refused Emperor's demand" anymore
+[/list]
+
 [h1][b][u]Casus Bellis[/u][/b][/h1]
 
 [h1]Question Rectorate Authority[/h1]
@@ -830,6 +871,58 @@ There is no info for disabled peace treaties/casus bellis
 [b]Effects:[/b]
 [list]
 [*] allows to force convert the target to your religion despite being a heathen
+[/list]
+
+[h1]Spread Infernal Court in Empire[/h1]
+
+[b]Conditions:[/b]
+[list]
+[*] is Emperor of Anbennar
+[*] religion is Infernal Court
+[*] dominant religion is Infernal Court
+[*] is in a different religion group than the target
+[*] has taken decision "Spread the worshipping of Archdevils!"
+[*] at least one of the princes of Empire of Anbennar has refused Emperor's demand to convert to Infernal Court
+[*] is not at war with this casus belli
+[*] Empire of Anbennar doesn't have official religion
+[*] target has refused Emperor's demand, is independent or tributary type subject and it's religion is not Infernal Court
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] allows to force convert the target to Infernal Court at much lower warscore cost
+[*] allows target to remove evil from Empire's throne
+[/list]
+
+[h1]Raid for Knowledge[/h1]
+
+[b]Conditions:[/b]
+[list]
+[*] is lacking institutions or is at least one Administrative/Diplomatic/Military Technology behind the target
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] gives a discount on war score cost for the "Force Administrative/Diplomatic/Military Technology sharing" and "Force Knowledge sharing" peace offers
+[*] "Force Knowledge sharing" peace offer gets boost - winner gains 100 support for the institution instead of 25
+[/list]
+
+[i]Monstrous nations, gnomes, kobolds, goblins, mechanims, Hammerhome, Wyvernheart, Dur-Vazhatun, Orlghelovar and Plumstead get additional discount on tech/knowledge sharing.[/i]
+
+[h1]Nationalism[/h1]
+
+[b]Conditions:[/b]
+[list]
+[*] same as vanilla but:
+[list]
+[*] diplomatic technology requirement lowered to 14
+[*] has claimed Cultural Hegemony
+[/list]
+[/list]
+
+[b]Effects:[/b]
+[list]
+[*] works like vanilla nationalism, but aggressive expansion and warscore cost are increased from 50% to 75%
 [/list]
 
 [h1][b][u]State Edicts[/u][/b][/h1]

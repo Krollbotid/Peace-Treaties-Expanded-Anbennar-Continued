@@ -1,4 +1,3 @@
-# todo
 pte_demand_manpower = {
 	category = 6
 	power_projection = no
