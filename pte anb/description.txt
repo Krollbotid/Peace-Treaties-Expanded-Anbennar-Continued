@@ -87,6 +87,7 @@ These options from original mod are disabled because they either don't fit to An
 [*] German localisation included (only works with original PTE content)
 [*] French localisation included ([u]English[/u] language)
 [*] Spanish localisation included ([u]English[/u] language)
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3137113581]Russian localisation[/url]
 [/list]
 
 [h1]Compatibility[/h1]
@@ -112,6 +113,8 @@ Thanks to [i]Valera[/i] for his help with understanging religious leagues code.
 https://imgur.com/a/S97gEHb
 
 [h1]Other[/h1]
+Mod is available on [url=https://github.com/Krollbotid/Peace-Treaties-Expanded-Anbennar-Continued]Github[/url]!
+
 [b]If you find any bugs, have any suggestions or would like to help with localisation, please let me know in the comments or in Discord (Krollbotid) [/b]
 
 Also say thanks to Expanded Mod Family devs on their [url=https://discord.gg/tGskECCa9t]Discord[/url] and to Anbennar devs on their [url=https://discord.com/invite/XVJeBhtePe]Discord[/url].
