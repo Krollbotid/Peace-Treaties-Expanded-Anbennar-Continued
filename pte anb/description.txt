@@ -67,6 +67,7 @@ Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following casus belli
 [*] Economic Hegemony                                                                       - [b]not tested[/b]
 [*] Military Hegemony                                                                       - [b]not tested[/b]
 [*] Naval Hegemony                                                                          - [b]not tested[/b]
+[*] Raid for Knowledge
 [*] Proselytize the Heathen
 [*] Protect Our Religious Bretheren
 [*] Question Rectorate Authority
