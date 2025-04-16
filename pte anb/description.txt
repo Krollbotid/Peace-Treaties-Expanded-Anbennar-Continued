@@ -67,6 +67,7 @@ Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following casus belli
 [*] Economic Hegemony                                                                       - [b]not tested[/b]
 [*] Military Hegemony                                                                       - [b]not tested[/b]
 [*] Naval Hegemony                                                                          - [b]not tested[/b]
+[*] Raid for Knowledge
 [*] Proselytize the Heathen
 [*] Protect Our Religious Bretheren
 [*] Question Rectorate Authority
@@ -118,4 +119,3 @@ Mod is available on [url=https://github.com/Krollbotid/Peace-Treaties-Expanded-A
 [b]If you find any bugs, have any suggestions or would like to help with localisation, please let me know in the comments or in Discord (Krollbotid) [/b]
 
 Also say thanks to Expanded Mod Family devs on their [url=https://discord.gg/tGskECCa9t]Discord[/url] and to Anbennar devs on their [url=https://discord.com/invite/XVJeBhtePe]Discord[/url].
-
