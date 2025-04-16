@@ -7,4 +7,4 @@
 #
 #is_expanded_mod_active_advisor_types = {
 #	is_mod_active = "Advisor Types Expanded"
-}
+#}
