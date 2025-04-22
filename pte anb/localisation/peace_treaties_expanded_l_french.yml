@@ -20,7 +20,7 @@
  CB_ALLOWED_pte_enforced_embargo: "Enforced Embargo"
  PEACE_pte_enforced_embargo: "Enforced Embargo"
 
- pte_enforced_royal_marriage_desc: "@[From.GetTag] §Y[From.GetName]§! enters a royal marriage with @[Root.GetTag] §Y[Root.GetName]§!. This will happen §Y1 day§! after the peace deal is signed, because marriages cannot be made during war."
+ pte_enforced_royal_marriage_desc: "@[From.GetTag] §Y[From.GetName]§! enters a royal marriage with @[Root.GetTag] §Y[Root.GetName]§!. This will happen §Y1 day§! after the peace deal is signed, because marriages cannot be made during war. §RWILL NOT WORK IF RACES ARE INCOMPATIBLE!§!"
  CB_ALLOWED_pte_enforced_royal_marriage: "Enforced Marriage"
  PEACE_pte_enforced_royal_marriage: "Enforced Marriage"
 

@@ -215,7 +215,7 @@ There is no info for disabled peace treaties/casus bellis
 [b]Conditions for Visibility:[/b]
 [list]
 [*] winner is in the Hobgoblin or Wuhyun culture group or Horned Ogre culture
-[*] loser is in the Hobgoblin or Wyhyun culture group or Horned Ogre culture
+[*] loser is in the Hobgoblin or Wuhyun culture group or Horned Ogre culture
 [*] winner is defender in the war
 [/list]
 

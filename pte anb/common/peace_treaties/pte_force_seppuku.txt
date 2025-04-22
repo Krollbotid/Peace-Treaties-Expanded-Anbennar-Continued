@@ -22,13 +22,13 @@ pte_force_seppuku = {
 	is_visible = {
         OR = {
 		    culture_group = hobgoblin
-            culture_group = wyhyun
+            culture_group = wuhyun
             primary_culture = horned_ogre
         }
 		FROM = {
 			OR = {
 		        culture_group = hobgoblin
-                culture_group = wyhyun
+                culture_group = wuhyun
                 primary_culture = horned_ogre
             }
 		}

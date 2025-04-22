@@ -29,10 +29,6 @@ pte_take_advisor_mil = {
 				advisor = recruitmaster
 				advisor = fortification_expert
 				advisor = quartermaster
-				#AND = {
-				#	is_expanded_mod_active = { mod = advisor_types }
-				#	has_ate_advisor = { mil = yes skill = 1 }
-				#}
 			}
 		}
 	}

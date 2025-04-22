@@ -20,7 +20,7 @@
  CB_ALLOWED_pte_enforced_embargo: "Принудительное эмбарго"
  PEACE_pte_enforced_embargo: "Принудительное эмбарго"
 
- pte_enforced_royal_marriage_desc: "Держава @[From.GetTag] §Y[From.GetName]§! заключит династический брак с @[Root.GetTag] §Y[Root.GetName]§!. Это произойдёт через §Y1 день§! после подписания мирного соглашения, потому что во время войны браки заключать нельзя."
+ pte_enforced_royal_marriage_desc: "Держава @[From.GetTag] §Y[From.GetName]§! заключит династический брак с @[Root.GetTag] §Y[Root.GetName]§!. Это произойдёт через §Y1 день§! после подписания мирного соглашения, потому что во время войны браки заключать нельзя.  §RНЕ СРАБОТАЕТ ЕСЛИ РАСЫ НЕ СОВМЕСТИМЫ!§!"
  CB_ALLOWED_pte_enforced_royal_marriage: "Насильственный брак"
  PEACE_pte_enforced_royal_marriage: "Насильственный брак"
 

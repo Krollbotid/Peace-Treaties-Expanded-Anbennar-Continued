@@ -23,7 +23,6 @@ country_event = {
 						any_neighbor_province = {
 							owned_by = ROOT
 							OR = {
-								has_building = fort_et
 								has_building = fort_15th
 								has_building = fort_16th
 								has_building = fort_17th
@@ -31,7 +30,6 @@ country_event = {
 								area_for_scope_province = {
 									owned_by = ROOT
 									OR = {
-										has_building = fort_et
 										has_building = fort_15th
 										has_building = fort_16th
 										has_building = fort_17th
@@ -45,7 +43,6 @@ country_event = {
 						limit = {
 							owned_by = ROOT
 							OR = {
-								has_building = fort_et
 								has_building = fort_15th
 								has_building = fort_16th
 								has_building = fort_17th
@@ -53,7 +50,6 @@ country_event = {
 								area_for_scope_province = {
 									owned_by = ROOT
 									OR = {
-										has_building = fort_et
 										has_building = fort_15th
 										has_building = fort_16th
 										has_building = fort_17th
@@ -65,28 +61,16 @@ country_event = {
 						if = {
 							limit = {
 								OR = {
-									has_building = fort_et
 									has_building = fort_15th
 									has_building = fort_16th
 									has_building = fort_17th
 									has_building = fort_18th
 								}
 							}
-							remove_province_modifier = pte_demilitarize_border_modifier_1
 							remove_province_modifier = pte_demilitarize_border_modifier_2
 							remove_province_modifier = pte_demilitarize_border_modifier_3
 							remove_province_modifier = pte_demilitarize_border_modifier_4
 							remove_province_modifier = pte_demilitarize_border_modifier_5
-							if = {
-								limit = {
-									has_building = fort_et
-								}
-								remove_building = fort_et
-								add_province_modifier = {
-									name = pte_demilitarize_border_modifier_1
-									duration = 3650
-								}
-							}
 							if = {
 								limit = {
 									has_building = fort_15th
@@ -138,28 +122,16 @@ country_event = {
 							limit = {
 								owned_by = ROOT
 								OR = {
-									has_building = fort_et
 									has_building = fort_15th
 									has_building = fort_16th
 									has_building = fort_17th
 									has_building = fort_18th
 								}
 							}
-							remove_province_modifier = pte_demilitarize_border_modifier_1
 							remove_province_modifier = pte_demilitarize_border_modifier_2
 							remove_province_modifier = pte_demilitarize_border_modifier_3
 							remove_province_modifier = pte_demilitarize_border_modifier_4
 							remove_province_modifier = pte_demilitarize_border_modifier_5
-							if = {
-								limit = {
-									has_building = fort_et
-								}
-								remove_building = fort_et
-								add_province_modifier = {
-									name = pte_demilitarize_border_modifier_1
-									duration = 3650
-								}
-							}
 							if = {
 								limit = {
 									has_building = fort_15th
@@ -945,7 +917,7 @@ country_event = {
 	desc = {
 		trigger= {
 			NOT = {
-				any_country = {
+				any_known_country = {
 					is_part_of_hre = yes
 					has_country_flag = pte_refused_infernal
 				}
@@ -955,7 +927,7 @@ country_event = {
 	}
 	desc = {
 		trigger= {
-			any_country = {
+			any_known_country = {
 				is_part_of_hre = yes
 				has_country_flag = pte_refused_infernal
 			}
@@ -974,7 +946,7 @@ country_event = {
 		name = pte_events13.EVTOPT1
 		trigger = { # so emperor could kick refused countries from the empire
 			NOT = {
-				any_country = {
+				any_known_country = {
 					is_part_of_hre = yes
 					has_country_flag = pte_refused_infernal
 				}
@@ -1006,6 +978,7 @@ country_event = {
 			set_hre_religion_locked = yes
 		}
 		clr_country_flag = pte_emperor_spreads_infernal
+		clr_country_flag = pte_able_spread_infernal
 		add_imperial_influence = 50
 		add_prestige = 50
 		add_power_projection = { 
@@ -1022,7 +995,7 @@ country_event = {
 	option = {
 		name = pte_events13.EVTOPT2
 		trigger = {
-			any_country = {
+			any_known_country = {
 				is_part_of_hre = yes
 				has_country_flag = pte_refused_infernal
 			}
@@ -1052,7 +1025,7 @@ country_event = {
 				is_in_war = {
 					casus_belli = cb_pte_force_spread_infernal_empire
 				}
-				any_country = {
+				any_known_country = {
 					is_part_of_hre = yes
 					NOT = { has_country_flag = pte_refused_infernal }
 					had_country_flag = {
@@ -1088,7 +1061,7 @@ country_event = {
 				is_in_war = {
 					casus_belli = cb_pte_force_spread_infernal_empire
 				}
-				any_country = {
+				any_known_country = {
 					is_part_of_hre = yes
 					NOT = { has_country_flag = pte_refused_infernal }
 					had_country_flag = {
@@ -1124,7 +1097,7 @@ country_event = {
 				is_in_war = {
 					casus_belli = cb_pte_force_spread_infernal_empire
 				}
-				any_country = {
+				any_known_country = {
 					is_part_of_hre = yes
 					NOT = { has_country_flag = pte_refused_infernal }
 					had_country_flag = {
@@ -1135,6 +1108,7 @@ country_event = {
 			}
 		}
 		clr_country_flag = pte_emperor_spreads_infernal
+		clr_country_flag = pte_able_spread_infernal
 		set_country_flag = pte_failed_spread_infernal
 		add_prestige = -200
 		add_stability = -6

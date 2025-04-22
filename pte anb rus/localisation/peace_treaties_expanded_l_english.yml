@@ -20,7 +20,7 @@
  CB_ALLOWED_pte_enforced_embargo: "‰ª°³¦ª²®¿° ¼¯¡¥"
  PEACE_pte_enforced_embargo: "‰ª°³¦ª²®¿° ¼¯¡¥"
 
- pte_enforced_royal_marriage_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ©¬®½¶ª² ¦ª°²ª¶¬ªþ ¡¬  @[Root.GetTag] §Y[Root.GetName]§!. ™² ±ª©þ¦ž² ¶© §Y1 ¦°¿§! ±® ±¦±ª°ª¾ ¯ª°¥ ¥®Œ°ª¾, ±²¯³ ¶² ¢ ¢¯¾ ¢þ°º ¡¬ª ©¬®½¶²¿ °®¿©¾."
+ pte_enforced_royal_marriage_desc: "ƒ¨¢ @[From.GetTag] §Y[From.GetName]§! ©¬®½¶ª² ¦ª°²ª¶¬ªþ ¡¬  @[Root.GetTag] §Y[Root.GetName]§!. ™² ±ª©þ¦ž² ¶© §Y1 ¦°¿§! ±® ±¦±ª°ª¾ ¯ª°¥ ¥®Œ°ª¾, ±²¯³ ¶² ¢ ¢¯¾ ¢þ°º ¡¬ª ©¬®½¶²¿ °®¿©¾.  §R ÔÐ€ÙÙ Ôˆ† ÐÔœ  ÔÏÔÙ†œ!§!"
  CB_ALLOWED_pte_enforced_royal_marriage: "ª®¿²¢°°ºþ ¡¬"
  PEACE_pte_enforced_royal_marriage: "ª®¿²¢°°ºþ ¡¬"
 

@@ -50,16 +50,6 @@ pte_install_anti_pope = {
 			}
 		}
 		total_own_and_non_tributary_subject_development = 300
-		#OR = {
-		#	NOT = { is_expanded_mod_active = { mod = holy_roman_empire } }
-		#	AND = {
-		#		is_expanded_mod_active = { mod = holy_roman_empire }
-		#		OR = {
-		#			is_emperor = no
-		#			is_religion_enabled = protestant
-		#		}
-		#	}
-		#}
 	}
 	is_allowed = {
 		invested_papal_influence = 20

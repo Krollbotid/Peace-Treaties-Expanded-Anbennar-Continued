@@ -222,21 +222,23 @@ country_decisions = {
 	pte_spread_infernal_empire = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = pte_emperor_spreads_infernal }
+			NOT = {
+				has_country_flag = pte_failed_spread_infernal
+				has_country_flag = pte_emperor_spreads_infernal
+			}
 			is_emperor = yes
 			hre_religion_locked = no
 			religion = infernal_court
-			any_country = {
+			any_known_country = {
 				is_part_of_hre = yes
 				NOT = { religion = infernal_court }
 				NOT = { is_subject_of = ROOT }
 			}
-			NOT = { has_country_flag = pte_failed_spread_infernal }
 		}
 		allow = {
 			OR = {
-				dominant_religion = infernal_court
 				hre_religion = infernal_court
+				dominant_religion = infernal_court
 			}
 			OR = { # aside from
 				if = {
@@ -251,8 +253,7 @@ country_decisions = {
 						prestige = 100
 						is_great_power = yes
 					}
-				}
-				else = {
+				} else = {
 					power_projection = 80
 				}
 				AND = {

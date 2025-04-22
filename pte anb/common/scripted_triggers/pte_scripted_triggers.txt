@@ -24,289 +24,190 @@ pte_is_hegemon_of_type = {
 	is_hegemon_of_type = $type$
 }
 
-#pte_has_moveable_monument_usable_by = {
-#	OR = {
-#		AND = {
-#			has_great_project = { type = stonehenge }
-#			$who$ = {
-#				any_owned_province = {
-#					pte_can_use_monument_trigger = { stonehenge = yes }
+#pte_has_racial_issues_sun_elf = {
+#	custom_trigger_tooltip = {
+#		tooltip = SUN_ELF_SNOBBISM
+#		ruler_culture = sun_elf
+#		primary_culture = sun_elf
+#	}
+#}
+#
+#pte_has_racial_issues_elf_monarchy = {
+#	custom_trigger_tooltip = {
+#		tooltip = ELVEN_MONARCHY
+#		government = monarchy
+#		fast_ruler_is_elven = yes
+#		culture_group = elven
+#		NOT = { ruler_culture = desert_elf }
+#		NOT = { primary_culture = desert_elf }
+#	}
+#}
+#
+#pte_incompatible_biology = {
+#	custom_trigger_tooltip = {
+#	# goblin don't want sterile offspring, = yes if incompatible
+#		tooltip = INCOMPITABLE_BIOLOGY
+#		OR = {
+#			AND = {
+#				ROOT = { fast_ruler_is_goblin = yes }
+#				FROM = {
+#					fast_ruler_is_goblin = no
+#					fast_ruler_is_harpy = no
+#				}
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_goblin = yes }
+#				ROOT = {
+#					fast_ruler_is_goblin = no
+#					fast_ruler_is_harpy = no
+#				}
+#			}
+#	# hobgoblin don't want sterile offspring, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_hobgoblin = yes }
+#				FROM = {
+#					fast_ruler_is_hobgoblin = no
+#					fast_ruler_is_harpy = no
+#				}
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_hobgoblin = yes }
+#				ROOT = {
+#					fast_ruler_is_hobgoblin = no
+#					fast_ruler_is_harpy = no
+#				}
+#			}
+#	# gnolls, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_gnollish = yes }
+#				FROM = { fast_ruler_is_gnollish = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_gnollish = yes }
+#				ROOT = { fast_ruler_is_gnollish = no }
+#			}
+#	# kobolds, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_kobold = yes }
+#				FROM = { fast_ruler_is_kobold = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_kobold = yes }
+#				ROOT = { fast_ruler_is_kobold = no }
+#			}
+#	# halflings, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_halfling = yes }
+#				FROM = { fast_ruler_is_halfling = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_halfling = yes }
+#				ROOT = { fast_ruler_is_halfling = no }
+#			}
+#			# gnomes, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_gnomish = yes }
+#				FROM = { fast_ruler_is_gnomish = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_gnomish = yes }
+#				ROOT = { fast_ruler_is_gnomish = no }
+#			}
+#	# dwarves, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_dwarven = yes }
+#				FROM = { fast_ruler_is_dwarven = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_dwarven = yes }
+#				ROOT = { fast_ruler_is_dwarven = no }
+#			}
+#	# harimari, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_harimari = yes }
+#				FROM = { fast_ruler_is_harimari = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_harimari = yes }
+#				ROOT = { fast_ruler_is_harimari = no }
+#			}
+#	# trolls, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_troll = yes }
+#				FROM = { fast_ruler_is_troll = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_troll = yes }
+#				ROOT = { fast_ruler_is_troll = no }
+#			}
+#	# ogres, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_ogre = yes }
+#				FROM = { fast_ruler_is_ogre = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_ogre = yes }
+#				ROOT = { fast_ruler_is_ogre = no }
+#			}
+#	# centaurs, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_centaur = yes }
+#				FROM = { fast_ruler_is_centaur = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_centaur = yes }
+#				ROOT = { fast_ruler_is_centaur = no }
+#			}
+#	# lizardfolks, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_lizardfolk = yes }
+#				FROM = { fast_ruler_is_lizardfolk = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_lizardfolk = yes }
+#				ROOT = { fast_ruler_is_lizardfolk = no }
+#			}
+#	# mechanims, = yes if incompatible
+#			AND = {
+#				ROOT = { fast_ruler_is_mechanim = yes }
+#				FROM = { fast_ruler_is_mechanim = no }
+#			}
+#			AND = {
+#				FROM = { fast_ruler_is_mechanim = yes }
+#				ROOT = { fast_ruler_is_mechanim = no }
+#			}
+#		}
+#	}
+#	# harpies are monogendered, = yes if incompatible
+#	custom_trigger_tooltip = {
+#		tooltip = MONO_GENDERED
+#		ROOT = {
+#			OR = {
+#				fast_ruler_is_harpy = yes
+#				AND = {
+#					has_regency = yes
+#					heir_is_harpy = yes
 #				}
 #			}
 #		}
-#		AND = {
-#			has_great_project = { type = buddha_statues }
-#			$who$ = {
-#				any_owned_province = {
-#					pte_can_use_monument_trigger = { buddha_statues = yes }
-#				}
-#			}
-#		}
-#		AND = {
-#			has_great_project = { type = moai }
-#			$who$ = {
-#				any_owned_province = {
-#					pte_can_use_monument_trigger = { moai = yes }
-#				}
-#			}
-#		}
-#		AND = {
-#			has_great_project = { type = inukshuk }
-#			$who$ = {
-#				any_owned_province = {
-#					pte_can_use_monument_trigger = { inukshuk = yes }
-#				}
-#			}
-#		}
-#		AND = {
-#			has_great_project = { type = gomateshwara_statue }
-#			$who$ = {
-#				any_owned_province = {
-#					pte_can_use_monument_trigger = { gomateshwara_statue = yes }
+#		FROM = {
+#			OR = {
+#				fast_ruler_is_harpy = yes
+#				AND = {
+#					has_regency = yes
+#					heir_is_harpy = yes
 #				}
 #			}
 #		}
 #	}
 #}
 #
-##pte_can_use_monument_trigger = {
-#	[[stonehenge]
-#		if = {
-#			limit = {
-#				always = $stonehenge$
-#			}
-#			OR = {
-#				province_is_or_accepts_religion_group = {
-#					religion_group = pagan
-#				}
-#				AND = {
-#					culture = english
-#					province_is_or_accepts_culture = yes
-#				}
-#			}
+#pte_isolationist_daengun = {
+#	custom_trigger_tooltip = {
+#		tooltip = ISOLATIONIST_DAENGUN
+#		ROOT = {
+#			tag = Y93
+#			has_reform = isolated_kingdom_reform
 #		}
-#	]
-#	[[buddha_statues]
-#		if = {
-#			limit = {
-#				always = $buddha_statues$
-#			}
-#			province_is_buddhist_or_accepts_buddhism = yes
-#		}
-#	]
-#	[[moai]
-#		if = {
-#			limit = {
-#				always = $moai$
-#			}
-#			culture = polynesian
-#			province_is_or_accepts_culture = yes
-#		}
-#	]
-#	[[inukshuk]
-#		if = {
-#			limit = {
-#				always = $inukshuk$
-#			}
-#			always = yes
-#		}
-#	]
-#	[[gomateshwara_statue]
-#		if = {
-#			limit = {
-#				always = $gomateshwara_statue$
-#			}
-#			province_is_or_accepts_religion_group = {
-#				religion_group = dharmic
-#			}
-#		}
-#	]
+#	}
 #}
-
-pte_has_racial_issues_sun_elf = {
-	custom_trigger_tooltip = {
-		tooltip = SUN_ELF_SNOBBISM
-		ruler_culture = sun_elf
-		primary_culture = sun_elf
-	}
-}
-
-pte_has_racial_issues_elf_monarchy = {
-	custom_trigger_tooltip = {
-		tooltip = ELVEN_MONARCHY
-		government = monarchy
-		fast_ruler_is_elven = yes
-		culture_group = elven
-		NOT = { ruler_culture = desert_elf }
-		NOT = { primary_culture = desert_elf }
-	}
-}
-
-pte_incompatible_biology = {
-	custom_trigger_tooltip = {
-	# goblin don't want sterile offspring, = yes if incompatible
-		tooltip = INCOMPITABLE_BIOLOGY
-		OR = {
-			AND = {
-				ROOT = { fast_ruler_is_goblin = yes }
-				FROM = {
-					fast_ruler_is_goblin = no
-					fast_ruler_is_harpy = no
-				}
-			}
-			AND = {
-				FROM = { fast_ruler_is_goblin = yes }
-				ROOT = {
-					fast_ruler_is_goblin = no
-					fast_ruler_is_harpy = no
-				}
-			}
-	# hobgoblin don't want sterile offspring, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_hobgoblin = yes }
-				FROM = {
-					fast_ruler_is_hobgoblin = no
-					fast_ruler_is_harpy = no
-				}
-			}
-			AND = {
-				FROM = { fast_ruler_is_hobgoblin = yes }
-				ROOT = {
-					fast_ruler_is_hobgoblin = no
-					fast_ruler_is_harpy = no
-				}
-			}
-	# gnolls, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_gnollish = yes }
-				FROM = { fast_ruler_is_gnollish = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_gnollish = yes }
-				ROOT = { fast_ruler_is_gnollish = no }
-			}
-	# kobolds, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_kobold = yes }
-				FROM = { fast_ruler_is_kobold = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_kobold = yes }
-				ROOT = { fast_ruler_is_kobold = no }
-			}
-	# halflings, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_halfling = yes }
-				FROM = { fast_ruler_is_halfling = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_halfling = yes }
-				ROOT = { fast_ruler_is_halfling = no }
-			}
-			# gnomes, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_gnomish = yes }
-				FROM = { fast_ruler_is_gnomish = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_gnomish = yes }
-				ROOT = { fast_ruler_is_gnomish = no }
-			}
-	# dwarves, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_dwarven = yes }
-				FROM = { fast_ruler_is_dwarven = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_dwarven = yes }
-				ROOT = { fast_ruler_is_dwarven = no }
-			}
-	# harimari, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_harimari = yes }
-				FROM = { fast_ruler_is_harimari = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_harimari = yes }
-				ROOT = { fast_ruler_is_harimari = no }
-			}
-	# trolls, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_troll = yes }
-				FROM = { fast_ruler_is_troll = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_troll = yes }
-				ROOT = { fast_ruler_is_troll = no }
-			}
-	# ogres, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_ogre = yes }
-				FROM = { fast_ruler_is_ogre = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_ogre = yes }
-				ROOT = { fast_ruler_is_ogre = no }
-			}
-	# centaurs, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_centaur = yes }
-				FROM = { fast_ruler_is_centaur = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_centaur = yes }
-				ROOT = { fast_ruler_is_centaur = no }
-			}
-	# lizardfolks, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_lizardfolk = yes }
-				FROM = { fast_ruler_is_lizardfolk = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_lizardfolk = yes }
-				ROOT = { fast_ruler_is_lizardfolk = no }
-			}
-	# mechanims, = yes if incompatible
-			AND = {
-				ROOT = { fast_ruler_is_mechanim = yes }
-				FROM = { fast_ruler_is_mechanim = no }
-			}
-			AND = {
-				FROM = { fast_ruler_is_mechanim = yes }
-				ROOT = { fast_ruler_is_mechanim = no }
-			}
-		}
-	}
-	# harpies are monogendered, = yes if incompatible
-	custom_trigger_tooltip = {
-		tooltip = MONO_GENDERED
-		ROOT = {
-			OR = {
-				fast_ruler_is_harpy = yes
-				AND = {
-					has_regency = yes
-					heir_is_harpy = yes
-				}
-			}
-		}
-		FROM = {
-			OR = {
-				fast_ruler_is_harpy = yes
-				AND = {
-					has_regency = yes
-					heir_is_harpy = yes
-				}
-			}
-		}
-	}
-}
-
-pte_isolationist_daengun = {
-	custom_trigger_tooltip = {
-		tooltip = ISOLATIONIST_DAENGUN
-		ROOT = {
-			tag = Y93
-			has_reform = isolated_kingdom_reform
-		}
-	}
-}

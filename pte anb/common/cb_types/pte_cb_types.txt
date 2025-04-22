@@ -52,13 +52,7 @@ cb_pte_ban_slavery = {
 			OR = {
 				slaves = 1
 				any_subject_country = {
-					OR = {
-						is_colonial_nation = yes
-						#AND = {
-						#	is_expanded_mod_active = { mod = subjects }
-						#	is_subject_of_type = dominion_tc
-						#}
-					}
+					is_colonial_nation = yes
 					is_subject_other_than_tributary_trigger = yes
 					NOT = { has_country_modifier = the_abolish_slavery_act }
 					slaves = 1
@@ -448,71 +442,6 @@ cb_pte_border_friction = {
 	war_goal = pte_border_friction_war_goal
 }
 
-# Anbennar doesn't have movable monuments yet
-#cb_pte_take_monument = {
-#	valid_for_subject = no
-#
-#	prerequisites_self = {
-#		has_dlc = "Leviathan"
-#		is_free_or_tributary_trigger = yes
-#	}
-#
-#	prerequisites = {
-#		NOT = { overlord_of = FROM }
-#		NOT = { is_subject_of = FROM }
-#		NOT = { truce_with = FROM }
-#		NOT = { alliance_with = FROM }
-#		OR = {
-#			is_neighbor_of = FROM
-#			NOT = {
-#				border_distance = {
-#					who = FROM
-#					distance = 100
-#				}
-#			}
-#			FROM = {
-#				is_subject_other_than_tributary_trigger = yes
-#				overlord = {
-#					OR = {
-#						is_neighbor_of = ROOT
-#						NOT = {
-#							border_distance = {
-#								who = FROM
-#								distance = 100
-#							}
-#						}
-#					}
-#				}
-#			}
-#		}
-#		FROM = {
-#			any_owned_province = {
-#				is_city = yes
-#				pte_has_moveable_monument_usable_by = { who = ROOT }
-#			}
-#		}
-#	}
-#
-#	attacker_disabled_po = {
-#		po_demand_provinces
-#		po_release_vassals
-#		po_release_annexed
-#		po_return_cores
-#		po_change_religion
-#		po_form_personal_union
-#		po_become_vassal
-#		po_subjugate_vassal
-#		po_transfer_vassals
-#		po_annul_treaties
-#		po_change_government
-#		po_revoke_elector
-#		po_trade_power
-#		pte_spawn_reformation_center_in_capital
-#	}
-#
-#	war_goal = pte_take_monument_war_goal
-#}
-
 cb_pte_stop_raiding = {
 	valid_for_subject = no
 
@@ -644,8 +573,8 @@ cb_pte_force_spread_infernal_empire = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		has_country_flag = pte_emperor_spreads_infernal
 		has_country_flag = pte_able_spread_infernal
+		has_country_flag = pte_emperor_spreads_infernal
 		is_emperor = yes
 		religion = infernal_court
 		dominant_religion = infernal_court
@@ -657,17 +586,11 @@ cb_pte_force_spread_infernal_empire = {
 	}
 
 	prerequisites = {
-		#NOT = { # trigger if league wars ended with religous peace. todo
-		#	AND = {
-		#		hre_religion_treaty = yes
-		#		NOT = { has_global_flag = league_war_complete }
-		#	}
-		#}
 		hre_religion_locked = no
 		FROM = {
+			NOT = { religion = infernal_court }
 			is_free_or_tributary_trigger = yes
 			has_country_flag = pte_refused_infernal
-			NOT = { religion = infernal_court }
 		}
 	}
 
@@ -695,6 +618,7 @@ cb_pte_raid_for_knowledge = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		is_neighbor_of = FROM
 		NOT = {
 			has_country_modifier = monstrous_nation
 			# race
@@ -780,6 +704,7 @@ cb_pte_raid_for_knowledge_cheap = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		is_neighbor_of = FROM
 		OR = {
 			has_country_modifier = monstrous_nation
 			# race
@@ -864,11 +789,11 @@ cb_pte_raid_for_knowledge_cheap = {
 cb_pte_hegemon_nationalism = {
 
 	prerequisites_self = {
+		has_country_modifier = pte_culture_group_hegemony_modifier
 		dip_tech = 14
 		NOT = { dip_tech = 23 } # original nationalism is better
 		is_free_or_tributary_trigger = yes
 		is_revolutionary = no
-		has_country_modifier = pte_culture_group_hegemony_modifier
 	}
 
 	prerequisites = {

@@ -29,10 +29,6 @@ pte_take_advisor_adm = {
 				advisor = master_of_mint
 				advisor = inquisitor
 				advisor = natural_scientist
-				#AND = {
-				#	is_expanded_mod_active = { mod = advisor_types }
-				#	has_ate_advisor = { adm = yes skill = 1 }
-				#}
 			}
 		}
 	}

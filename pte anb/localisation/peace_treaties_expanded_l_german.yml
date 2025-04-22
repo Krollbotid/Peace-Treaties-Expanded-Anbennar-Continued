@@ -20,7 +20,7 @@
  CB_ALLOWED_pte_enforced_embargo: "Embargo durchsetzen"
  PEACE_pte_enforced_embargo: "Embargo durchsetzen"
 
- pte_enforced_royal_marriage_desc: "@[From.GetTag] §Y[From.GetName]§! geht mit @[Root.GetTag] §Y[Root.GetName]§! eine Staatsehe ein. Dies wird §Y1 Tag§! nach Friedensschluss passieren, da Staatsehen nicht während eines Krieges eingegangen werden können."
+ pte_enforced_royal_marriage_desc: "@[From.GetTag] §Y[From.GetName]§! geht mit @[Root.GetTag] §Y[Root.GetName]§! eine Staatsehe ein. Dies wird §Y1 Tag§! nach Friedensschluss passieren, da Staatsehen nicht während eines Krieges eingegangen werden können. §RWILL NOT WORK IF RACES ARE INCOMPATIBLE!§!"
  CB_ALLOWED_pte_enforced_royal_marriage: "Staatsehe erzwingen"
  PEACE_pte_enforced_royal_marriage: "Staatsehe erzwingen"
 
