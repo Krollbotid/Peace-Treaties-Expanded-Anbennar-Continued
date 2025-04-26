@@ -20,6 +20,7 @@ pte_install_anti_pope = {
 	requires_is_allowed = no
 
 	is_visible = {
+		is_religion_enabled = ravelian
 		religion = ravelian
 		is_papal_controller = no
 		FROM = {

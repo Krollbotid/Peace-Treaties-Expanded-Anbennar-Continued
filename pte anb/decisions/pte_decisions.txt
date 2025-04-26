@@ -332,7 +332,8 @@ country_decisions = {
 					if = {
 						limit = { hre_religion = regent_court }
 						set_hre_heretic_religion = regent_court
-					} else_if = {
+					}
+					else_if = {
 						limit = { hre_religion = corinite }
 						set_hre_heretic_religion = corinite
 					}

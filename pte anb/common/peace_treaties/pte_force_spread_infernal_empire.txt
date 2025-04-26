@@ -29,9 +29,9 @@ pte_force_spread_infernal_empire = { # spread the infernal court in empire
 			has_country_flag = pte_refused_infernal
 			NOT = { religion = infernal_court }
 		}
-		religion = infernal_court
 	}
 	is_allowed = {
+		religion = infernal_court
 		FROM = {
 			is_free_or_tributary_trigger = yes
 		}

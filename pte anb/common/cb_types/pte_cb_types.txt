@@ -484,23 +484,23 @@ cb_pte_force_convert_heathen = {
 		is_free_or_tributary_trigger = yes
 		OR = {
 			is_defender_of_faith = yes
-			is_papal_controller = yes
-			AND { # Corintar doesn't have to be defender of faith
+			AND = {
+				government = theocracy
+				NOT = { religion_group = cannorian }
+				NOT = { religion_group = bulwari }
+			}
+			AND = { # Corintar doesn't have to be defender of faith
 				religion = corinite
 				tag = B02
 			}
-			AND { # Jaddari doesn't have to be defender of faith
+			AND = { # Jaddari doesn't have to be defender of faith
 				religion = the_jadd
-				OR {
+				OR = {
 					tag = F46
 					tag = F51
 				}
 			}
-			AND = {
-				NOT = { religion_group = cannorian }
-				NOT = { religion_group = bulwari }
-				government = theocracy
-			}
+			is_papal_controller = yes
 		}
 		NOT = { has_reform = religious_permanent_revolution_reform }
 		OR = {
@@ -574,10 +574,6 @@ cb_pte_force_spread_infernal_empire = {
 
 	prerequisites_self = {
 		has_country_flag = pte_able_spread_infernal
-		has_country_flag = pte_emperor_spreads_infernal
-		is_emperor = yes
-		religion = infernal_court
-		dominant_religion = infernal_court
 		NOT = { # so emperor can't start multiple wars with this cb, otherwise join_all_defensive_wars_of bugs out
 			is_in_war = {
 				casus_belli = cb_pte_force_spread_infernal_empire
@@ -586,11 +582,10 @@ cb_pte_force_spread_infernal_empire = {
 	}
 
 	prerequisites = {
-		hre_religion_locked = no
 		FROM = {
+			has_country_flag = pte_refused_infernal
 			NOT = { religion = infernal_court }
 			is_free_or_tributary_trigger = yes
-			has_country_flag = pte_refused_infernal
 		}
 	}
 
@@ -605,11 +600,6 @@ cb_pte_force_spread_infernal_empire = {
 		pte_spawn_reformation_center_in_capital
 	}
 
-	defender_disabled_po = {
-		po_change_religion
-		pte_spawn_reformation_center_in_capital
-	}
-
 	war_goal = pte_force_spread_infernal_empire_goal
 }
 
@@ -618,24 +608,21 @@ cb_pte_raid_for_knowledge = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		is_neighbor_of = FROM
 		NOT = {
 			has_country_modifier = monstrous_nation
 			# race
 			culture_is_gnomish = yes
 			culture_is_goblin = yes
 			culture_is_kobold = yes
-			culture_is_mechanim = yes # Soon may the Insyya come, they bring us mechanim and drum
-			# tag
-			tag = I03 # Dur-Vazhatun
-			tag = I12 # Orlghelovar
-			tag = Z36 # Hammerhome
-			tag = B39 # Wyvernheart
-			tag = H61 # Plumstead
+			#culture_is_mechanim = yes # Soon may the Insyya come, they bring us mechanim and drum
 		}
 	}
 
 	prerequisites = {
+		is_neighbor_of = FROM
+		FROM = {
+			is_free_or_tributary_trigger = yes
+		}
 		OR = {
 			FROM = {
 				pte_prev_is_behind_this_in_tech = {
@@ -689,11 +676,6 @@ cb_pte_raid_for_knowledge = {
 		# pte_force_mil_tech_sharing_natives
 		# pte_force_knowledge_sharing
 		pte_demand_manpower
-	}
-
-	defender_disabled_po = {
-		po_change_religion
-		pte_spawn_reformation_center_in_capital
 	}
 
 	war_goal = pte_raid_for_knowledge_goal
@@ -704,24 +686,21 @@ cb_pte_raid_for_knowledge_cheap = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		is_neighbor_of = FROM
 		OR = {
 			has_country_modifier = monstrous_nation
 			# race
 			culture_is_gnomish = yes
 			culture_is_goblin = yes
 			culture_is_kobold = yes
-			culture_is_mechanim = yes # Soon may the Insyya come, they bring us mechanim and drum
-			# tag
-			tag = I03 # Dur-Vazhatun
-			tag = I12 # Orlghelovar
-			tag = Z36 # Hammerhome
-			tag = B39 # Wyvernheart
-			tag = H61 # Plumstead
+			# culture_is_mechanim = yes # Soon may the Insyya come, they bring us mechanim and drum
 		}
 	}
 
 	prerequisites = {
+		is_neighbor_of = FROM
+		FROM = {
+			is_free_or_tributary_trigger = yes
+		}
 		OR = {
 			FROM = {
 				pte_prev_is_behind_this_in_tech = {
@@ -775,11 +754,6 @@ cb_pte_raid_for_knowledge_cheap = {
 		# pte_force_mil_tech_sharing_natives
 		# pte_force_knowledge_sharing
 		pte_demand_manpower
-	}
-
-	defender_disabled_po = {
-		po_change_religion
-		pte_spawn_reformation_center_in_capital
 	}
 
 	war_goal = pte_raid_for_knowledge_cheap_goal

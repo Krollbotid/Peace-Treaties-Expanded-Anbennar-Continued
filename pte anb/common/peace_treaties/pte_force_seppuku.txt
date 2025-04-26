@@ -32,10 +32,6 @@ pte_force_seppuku = {
                 primary_culture = horned_ogre
             }
 		}
-		is_in_war = {
-			attackers = FROM
-			defenders = ROOT
-		}
 	}
 	is_allowed = {
 		FROM = {

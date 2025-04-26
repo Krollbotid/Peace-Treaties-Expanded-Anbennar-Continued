@@ -26,10 +26,10 @@ pte_demand_manpower_monster = {
 		}
 	}
 	is_allowed = {
-		prestige = 0 # yeah, you can fall to negative prestige :D
 		FROM = {
 			manpower_percentage = 0.2
 		}
+		prestige = 0 # yeah, you can fall to negative prestige :D
 	}
 	effect = {
 		add_prestige = -10

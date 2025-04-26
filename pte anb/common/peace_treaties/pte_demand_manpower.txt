@@ -26,13 +26,13 @@ pte_demand_manpower = {
 				has_country_modifier = monstrous_nation
 			}
 			is_nomad = yes
+			government = tribal
+			government = native
 			#tag = ROM
 			has_reform = emperor_of_the_revolution_reform
 			has_reform = military_dictatorship_reform
-			has_reform = battle_pope_reform
 			has_reform = pirate_republic_reform
-			government = native
-			government = tribal
+			has_reform = battle_pope_reform
 			is_revolutionary = yes
 			is_revolution_target = yes
 		}
@@ -49,13 +49,13 @@ pte_demand_manpower = {
 				army_tradition = 5
 			}
 			AND = {
-				prestige = 15
 				OR = {
 					FROM = {
 						has_country_modifier = monstrous_nation
 					}
 					is_rival = FROM
 				}
+				prestige = 15
 			}
 		}
 		FROM = {

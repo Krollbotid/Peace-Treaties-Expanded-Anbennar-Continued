@@ -965,7 +965,8 @@ country_event = {
 				if = {
 					limit = { hre_religion = regent_court }
 					set_hre_heretic_religion = regent_court
-				} else_if = {
+				}
+				else_if = {
 					limit = { hre_religion = corinite }
 					set_hre_heretic_religion = corinite
 				}
@@ -978,7 +979,6 @@ country_event = {
 			set_hre_religion_locked = yes
 		}
 		clr_country_flag = pte_emperor_spreads_infernal
-		clr_country_flag = pte_able_spread_infernal
 		add_imperial_influence = 50
 		add_prestige = 50
 		add_power_projection = { 

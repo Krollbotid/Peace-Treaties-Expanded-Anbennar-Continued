@@ -20,18 +20,6 @@ pte_force_knowledge_sharing = {
 	requires_is_allowed = no
 
 	is_visible = {
-		NOT = {
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_raid_for_knowledge
-			}
-			is_in_war = {
-				participants = ROOT
-				participants = FROM
-				casus_belli = cb_pte_raid_for_knowledge_cheap
-			}
-		}
 		is_lacking_institutions = yes
 		FROM = {
 			institution_difference = {
@@ -57,7 +45,18 @@ pte_force_knowledge_sharing = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_next_institution_embracement = 25
+				if = {
+					limit = {
+						is_in_war = {
+							participants = FROM
+							participants = ROOT
+							casus_belli = cb_pte_raid_for_knowledge
+						}
+					}
+					add_next_institution_embracement = 100
+				} else {
+					add_next_institution_embracement = 25
+				}
 			}
 		}
 	}

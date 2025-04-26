@@ -540,7 +540,7 @@ pte_raid_for_knowledge_goal = {
 	attacker = {
 		badboy_factor = 1
 		prestige_factor = 1
-		peace_cost_factor = 0.5
+		peace_cost_factor = 1
 
 		peace_options = {
 			pte_force_knowledge_sharing_big
@@ -577,7 +577,7 @@ pte_raid_for_knowledge_cheap_goal = {
 	attacker = {
 		badboy_factor = 1
 		prestige_factor = 1
-		peace_cost_factor = 0.4
+		peace_cost_factor = 0.8
 
 		peace_options = {
 			pte_force_knowledge_sharing_big
