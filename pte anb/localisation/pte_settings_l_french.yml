@@ -117,7 +117,7 @@
  
 #militare
  pte_settings.60: "Military"
- pte_settings.61: "This group contains:\n       CB and peace treaty to ban slavery in enemy's country.\n       Peace treaty for decreasing stability and mana in enemy's country with gain power projection for you.\n       Peace treaty for seizing mercantilism from rival.\n       Peace treaty to force enemy join your trade league.\n       Peace treaty for seizing mercantilism in trade wars.\n       Peace treaty for getting trade influence in enemy's home trade node.\n       Peace treaty to decrease enemy's splendor and get prestige."
+ pte_settings.61: "This group contains peace treaties which will:\n       Peace treaty to put land army limit and regiment cost debuff on your enemy alongside with war exhaustion.\n       Peace treaty to steal manpower from your enemy at cost of prestige or army traditions.\n       Peace treaty to demolish all enemy's fortresses on your borders.\n       Peace treaty to put fleet limit and ship cost debuff on your enemy alongside with war exhaustion.\n       Peace treaty for protecting your coastal provinces from raiding."
  pte_settings.62: "Army Disarmament"
  pte_settings.63: "Demand Slave Soldiers"
  pte_settings.64: "Demilitarize Borders"
