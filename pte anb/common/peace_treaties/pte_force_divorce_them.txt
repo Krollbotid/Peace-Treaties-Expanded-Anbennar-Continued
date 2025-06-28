@@ -20,7 +20,7 @@ pte_force_divorce_them = {
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "Rights of Man"
+		has_global_flag = pte_divorce_enabled
 		FROM = {
 			has_consort = yes
 		}

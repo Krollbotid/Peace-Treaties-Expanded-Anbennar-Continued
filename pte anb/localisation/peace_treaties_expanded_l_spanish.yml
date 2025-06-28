@@ -36,9 +36,9 @@
  CB_ALLOWED_pte_ban_slavery: "Ban Slavery"
  PEACE_pte_ban_slavery: "Ban Slavery"
 
- pte_sacrifice_ruler_desc: "The ruler of @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], is sacrificed to the [Root.Religion.GetName] gods, which reduces the hunger of @[Root.GetTag] §Y[Root.GetName]§! by §G[From.GetRulerStatsCombinedForDoomReduction]§!. [From.Monarch.GetName] will die."
- CB_ALLOWED_pte_sacrifice_ruler: "Sacrifice Ruler"
- PEACE_pte_sacrifice_ruler: "Sacrifice Ruler"
+ pte_sacrifice_ruler_desc: "The ruler of @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], and many of his subjects will be devoured by the people of @[Root.GetTag] §Y[Root.GetName]§!, which reduces their hunger by §G[From.GetRulerStatsCombinedForDoomReduction]§!. [From.Monarch.GetName] will die."
+ CB_ALLOWED_pte_sacrifice_ruler: "Devour Ruler"
+ PEACE_pte_sacrifice_ruler: "Devour Ruler"
 
  pte_unequal_treaty_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G5§! trade power for §Y10 years§! in @[From.GetTag] §Y[From.GetName]'s§! home trade node for each coastal province in that trade node owned by @[From.GetTag] §Y[From.GetName]§!."
  CB_ALLOWED_pte_unequal_treaty: "Unequal Treaty"
@@ -52,13 +52,9 @@
  CB_ALLOWED_pte_destabilize_nation: "Destabilize Nation"
  PEACE_pte_destabilize_nation: "Destabilize Nation"
 
- pte_force_knowledge_sharing_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G25§! support for §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in their capital area (§Y[Root.Capital.GetAreaName]§!)."
+ pte_force_knowledge_sharing_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G[Root.GetForceKnowledgeInstitutionAmount]§! support for §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in their capital area (§Y[Root.Capital.GetAreaName]§!)."
  CB_ALLOWED_pte_force_knowledge_sharing: "Force Knowledge Sharing"
  PEACE_pte_force_knowledge_sharing: "Force Knowledge Sharing"
-
- pte_force_knowledge_sharing_big_desc: "@[Root.GetTag] §Y[Root.GetName]§! gains §G100§! support for §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in their capital area (§Y[Root.Capital.GetAreaName]§!)."
- CB_ALLOWED_pte_force_knowledge_sharing_big: "Force Knowledge Sharing"
- PEACE_pte_force_knowledge_sharing_big: "Force Knowledge Sharing"
 
  pte_fleet_disarmament_desc: "@[From.GetTag] §Y[From.GetName]§! gains §R2.5§! war exhaustion and gets '§YNaval Disarmament Treaty§!' for §Y10 years§!, which has the following effects: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+10.0%§!"
  CB_ALLOWED_pte_fleet_disarmament: "Fleet Disarmament"
@@ -80,7 +76,7 @@
  CB_ALLOWED_pte_demand_manpower: "Demand Slave Soldiers"
  PEACE_pte_demand_manpower: "Demand Slave Soldiers"
 
- pte_demand_manpower_monster_desc: "@[From.GetTag] §Y[From.GetName]§! gives §G20.0%§! of their maximal manpower (about §Y[From.GetDemandManpowerAmount]§W manpower) to @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! loses §R10§! prestige."
+ pte_demand_manpower_monster_desc: "@[From.GetTag] §Y[From.GetName]§! gives §G20.0%§! of their maximal manpower (about §Y[From.GetDemandManpowerAmountTwice]§W manpower) to @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! loses §R10§! prestige."
  CB_ALLOWED_pte_demand_manpower_monster: "Demand Slave Soldiers"
  PEACE_pte_demand_manpower_monster: "Demand Slave Soldiers"
 
@@ -312,6 +308,10 @@
  CB_ALLOWED_pte_force_spread_infernal_empire: "Force Infernal Court"
  PEACE_pte_force_spread_infernal_empire: "Force Infernal Court"
 
+ pte_prove_claims_desc: "Every §Ycoalition member§! loses §R50%§! of their aggressive expansion toward us. If any of them has more than 100 aggressive expansion toward us, we will also get improve relations bonus!"
+ CB_ALLOWED_pte_prove_claims: "Prove your Claims"
+ PEACE_pte_prove_claims: "Prove your Claims"
+
  # paradox, why you didn't do this?
  CB_ALLOWED_TRANSFER_VASSALS: "Transfer vassals"
 
@@ -506,6 +506,7 @@
  pte_demilitarize_border_modifier_3: "Demilitarized Border"
  pte_demilitarize_border_modifier_4: "Demilitarized Border"
  pte_demilitarize_border_modifier_5: "Demilitarized Border"
+ pte_crushed_the_coalition: "Crushed the coalition"
 
  # Opinion Modifiers:
  #pte_guarantee_hree_diet_host_opinion: "Forced Diet Hosting"
@@ -518,6 +519,7 @@
  # Customizable Localization:
  string_force_knowledge_sharing_lacking_institution: "§Wthe oldest unembraced institution§!"
  string_demand_manpower_amount_more_than_10k: "§Wmore than §Y10,000§W"
+ string_demand_manpower_amount_more_than_20k: "§Wmore than §Y20,000§W"
  string_fabricate_succession_claim_vague_claim_info_text_dlc: "\n§O* Vague claim means one of the following: \n   - same dynasty as their overlord \n   - a claim on their throne \n   - at one point they had a ruler of our dynasty \n   - one of their rulers was born when they had a consort\n     from our country§!"
  string_fabricate_succession_claim_vague_claim_info_text: "\n§O* Vague claim means one of the following: \n   - same dynasty as their overlord \n   - a claim on their throne \n   - at one point they had a ruler of our dynasty \n   - one of their rulers had our culture and religion and\n     was born when we had a marriage with them§!"
  string_fabricate_succession_claim_vague_claim_info_star: "§O*§!"

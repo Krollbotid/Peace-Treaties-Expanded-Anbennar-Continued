@@ -3,6 +3,7 @@ cb_pte_lift_excommunication = { # question rectorate authority
 
 	prerequisites_self = {
 		ai = no
+		has_global_flag = pte_excom_enabled
 		religion = ravelian
 		is_excommunicated = yes
 	}
@@ -41,6 +42,7 @@ cb_pte_ban_slavery = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		has_global_flag = pte_ban_slave_enabled
 		has_country_modifier = the_abolish_slavery_act
 		NOT = { has_country_flag = was_forced_to_abolish_slavery }
 	}
@@ -82,6 +84,7 @@ cb_pte_protect_religious_bretheren = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		has_global_flag = pte_bretheren_enabled
 		is_defender_of_faith = yes
 	}
 
@@ -122,6 +125,10 @@ cb_pte_protect_religious_bretheren = {
 
 cb_pte_liberation = {
 	valid_for_subject = no
+
+	prerequisites_self = {
+		has_global_flag = pte_liberation_enabled
+	}
 
 	prerequisites = {
 		OR = {
@@ -204,6 +211,7 @@ cb_pte_cultural_hegemony = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		has_global_flag = pte_culhegB_enabled
 		is_subject = no
 		NOT = { has_country_modifier = pte_culture_group_hegemony_cooldown_modifier }
 		any_owned_province = {
@@ -243,6 +251,7 @@ cb_pte_defend_rival_subject = { # intervene in independence war
 	valid_for_subject = no
 
 	prerequisites_self = {
+		has_global_flag = pte_rival_subject_enabled
 		is_subject = no
 	}
 
@@ -289,7 +298,7 @@ cb_pte_economic_hegemon = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		has_dlc = "Emperor"
+		has_global_flag = pte_ecoheg_enabled
 		pte_is_hegemon_of_type = { type = economic_hegemon }
 		hegemon_strength = 25
 	}
@@ -322,7 +331,7 @@ cb_pte_naval_hegemon = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		has_dlc = "Emperor"
+		has_global_flag = pte_navheg_enabled
 		pte_is_hegemon_of_type = { type = naval_hegemon }
 		hegemon_strength = 25
 	}
@@ -371,7 +380,7 @@ cb_pte_military_hegemon = {
 	valid_for_subject = no
 
 	prerequisites_self = {
-		has_dlc = "Emperor"
+		has_global_flag = pte_milheg_enabled
 		pte_is_hegemon_of_type = { type = military_hegemon }
 		hegemon_strength = 25
 	}
@@ -405,6 +414,7 @@ cb_pte_anti_coalition = {
 	ai_peace_desire = -30
 
 	prerequisites_self = {
+		has_global_flag = pte_anti_coalition_enabled
 		is_in_coalition_war = no
 	}
 
@@ -449,6 +459,7 @@ cb_pte_stop_raiding = {
 	months = 60
 
 	prerequisites_self = {
+		has_global_flag = pte_stop_raid_enabled
 		is_free_or_tributary_trigger = yes
 	}
 
@@ -608,6 +619,7 @@ cb_pte_raid_for_knowledge = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		has_global_flag = pte_raid_knowledge_enabled
 		NOT = {
 			has_country_modifier = monstrous_nation
 			# race
@@ -686,6 +698,7 @@ cb_pte_raid_for_knowledge_cheap = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		has_global_flag = pte_raid_knowledge_enabled
 		OR = {
 			has_country_modifier = monstrous_nation
 			# race
@@ -763,6 +776,7 @@ cb_pte_raid_for_knowledge_cheap = {
 cb_pte_hegemon_nationalism = {
 
 	prerequisites_self = {
+		has_global_flag = pte_culheg_nation_enabled
 		has_country_modifier = pte_culture_group_hegemony_modifier
 		dip_tech = 14
 		NOT = { dip_tech = 23 } # original nationalism is better

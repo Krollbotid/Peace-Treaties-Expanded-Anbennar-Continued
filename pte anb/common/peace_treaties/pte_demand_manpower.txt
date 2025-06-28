@@ -20,6 +20,7 @@ pte_demand_manpower = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_manpower_enabled
 		NOT = { has_country_modifier = monstrous_nation }
 		OR = {
 			FROM = {
@@ -63,7 +64,7 @@ pte_demand_manpower = {
 		}
 	}
 	effect = {
-		if {
+		if = {
 			limit {
 				FROM = {
 					NOT = { has_country_modifier = monstrous_nation }
@@ -71,7 +72,7 @@ pte_demand_manpower = {
 			}
 			add_army_tradition = -5
 		}
-		else {
+		else = {
 			add_prestige = -20
 		}
 		export_to_variable = {

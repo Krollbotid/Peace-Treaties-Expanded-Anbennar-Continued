@@ -20,6 +20,7 @@ pte_take_advisor_dip = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_advisor_enabled
 		FROM = {
 			OR = {
 				advisor = statesman

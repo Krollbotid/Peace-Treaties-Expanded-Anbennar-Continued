@@ -960,7 +960,8 @@ country_event = {
 					hre_religion = infernal_court
 				}
 				set_hre_religion_locked = yes
-			} else = {
+			}
+			else = {
 				set_country_flag = hre_religion_changed
 				if = {
 					limit = { hre_religion = regent_court }

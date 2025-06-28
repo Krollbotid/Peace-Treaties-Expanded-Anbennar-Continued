@@ -20,6 +20,7 @@ pte_share_map_south_america = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_map_enabled
 		OR = {
 			capital_scope = {
 				continent = south_america

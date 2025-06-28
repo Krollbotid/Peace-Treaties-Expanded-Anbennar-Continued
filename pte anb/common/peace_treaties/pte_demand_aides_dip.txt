@@ -20,6 +20,7 @@ pte_demand_aides_dip = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_aid_enabled
 		FROM = {
 			DIP = 3
 		}

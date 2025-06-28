@@ -20,7 +20,7 @@ pte_sacrifice_ruler = {
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "El Dorado"
+		has_global_flag = pte_sacrifice_enabled
 		uses_doom = yes
 		FROM = {
 			has_regency = no

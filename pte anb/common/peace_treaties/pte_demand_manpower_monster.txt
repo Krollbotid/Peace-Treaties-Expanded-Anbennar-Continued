@@ -20,6 +20,7 @@ pte_demand_manpower_monster = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_manpower_enabled
 		has_country_modifier = monstrous_nation
 		FROM = {
 			max_manpower = 1
@@ -38,7 +39,7 @@ pte_demand_manpower_monster = {
 			value = max_manpower
 			who = FROM
 		}
-		divide_variable = { which = enemy_max_manpower value = 20 }
+		divide_variable = { which = enemy_max_manpower value = 5 }
 		divide_variable = { which = enemy_max_manpower value = 100 }
 		multiply_variable = { which = enemy_max_manpower value = 100 }
 		while = {

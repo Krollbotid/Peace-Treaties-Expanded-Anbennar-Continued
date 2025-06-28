@@ -1,0 +1,1383 @@
+# 10-13 - general
+# 14 - mandate
+# 15 - infernal empire
+# 16 - share map
+# 3 free
+# 22 - general exit to main, 23+ - dynastic options
+# X3+ - category options
+# 20-25 4 - dynastic, such as divorce, force marriage, legitimize
+# 30-36 3 - vanilla and cultural hegemony
+# 40-48 1 - religious, such as lift excommunication, install anti pope, plunder curia, protect religious bretheren, spawn reformation center, take cardinal, take defender of faith
+# 50-58 1 - economy, such as ban slavery, destabilize nation, enforced embargo, force trade league, take mercantilism, unequal treaty
+# 60-66 3 - militare, such as army disarmament, demand manpower, demilitarize borders, fleet disarmament, stop raiding
+# 70-74 5 - tech and knowledge
+# 80-85 4 - ruler and advisors such as demand aids, force seppuku, sacrifice ruler, take advisor
+# 90-95 4 - diplomacy such as liberation, defend rival subject, anti coalition, border friction
+
+namespace = pte_settings
+
+# general event
+country_event = {
+	id = pte_settings.1
+	title = "pte_settings.10"
+	desc = "pte_settings.11"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = { # exit
+		name = "pte_settings.12"
+	}
+
+	option = { # switch all
+		name = "pte_settings.13"
+        if = {
+			limit = {
+			    OR = {
+					has_global_flag = pte_mandate_enabled
+					has_global_flag = pte_infernal_enabled
+					has_global_flag = pte_map_enabled
+
+					has_global_flag = pte_divorce_enabled
+					has_global_flag = pte_marriage_enabled
+					has_global_flag = pte_legitimize_enabled
+
+					has_global_flag = pte_ecoheg_enabled
+					has_global_flag = pte_navheg_enabled
+					has_global_flag = pte_milheg_enabled
+					has_global_flag = pte_culhegA_enabled
+					has_global_flag = pte_culhegB_enabled
+
+					has_global_flag = pte_excom_enabled
+					has_global_flag = pte_antipope_enabled
+					has_global_flag = pte_curia_enabled
+					has_global_flag = pte_bretheren_enabled
+					has_global_flag = pte_spawncenter_enabled
+					has_global_flag = pte_cardinal_enabled
+					has_global_flag = pte_dof_enabled
+
+					has_global_flag = pte_ban_slave_enabled
+					has_global_flag = pte_destabilize_enabled
+					has_global_flag = pte_embargo_enabled
+					has_global_flag = pte_trade_league_enabled
+					has_global_flag = pte_mercantilism_enabled
+					has_global_flag = pte_unequal_treaty_enabled
+					has_global_flag = pte_raid_court_enabled
+
+					has_global_flag = pte_army_disarmament_enabled
+					has_global_flag = pte_manpower_enabled
+					has_global_flag = pte_demil_border_enabled
+					has_global_flag = pte_fleet_disarmament_enabled
+					has_global_flag = pte_stop_raid_enabled
+
+					has_global_flag = pte_orig_tech_sharing_enabled
+					has_global_flag = pte_knowledge_sharing_enabled
+					has_global_flag = pte_raid_knowledge_enabled
+
+					has_global_flag = pte_aid_enabled
+					has_global_flag = pte_seppuku_enabled
+					has_global_flag = pte_sacrifice_enabled
+					has_global_flag = pte_advisor_enabled
+					
+					has_global_flag = pte_liberation_enabled
+					has_global_flag = pte_rival_subject_enabled
+					has_global_flag = pte_anti_coalition_enabled
+					has_global_flag = pte_border_friction_enabled
+				}	
+			}
+			if = {
+				limit = {
+					AND = {
+						has_global_flag = pte_mandate_enabled
+						has_global_flag = pte_infernal_enabled
+						has_global_flag = pte_map_enabled
+						has_global_flag = pte_divorce_enabled
+						has_global_flag = pte_marriage_enabled
+						has_global_flag = pte_legitimize_enabled
+						has_global_flag = pte_ecoheg_enabled
+						has_global_flag = pte_navheg_enabled
+						has_global_flag = pte_milheg_enabled
+						has_global_flag = pte_culhegA_enabled
+						has_global_flag = pte_culhegB_enabled
+						has_global_flag = pte_excom_enabled
+						has_global_flag = pte_antipope_enabled
+						has_global_flag = pte_curia_enabled
+						has_global_flag = pte_bretheren_enabled
+						has_global_flag = pte_spawncenter_enabled
+						has_global_flag = pte_cardinal_enabled
+						has_global_flag = pte_dof_enabled
+						has_global_flag = pte_ban_slave_enabled
+						has_global_flag = pte_destabilize_enabled
+						has_global_flag = pte_embargo_enabled
+						has_global_flag = pte_trade_league_enabled
+						has_global_flag = pte_mercantilism_enabled
+						has_global_flag = pte_unequal_treaty_enabled
+						has_global_flag = pte_raid_court_enabled
+						has_global_flag = pte_army_disarmament_enabled
+						has_global_flag = pte_manpower_enabled
+						has_global_flag = pte_demil_border_enabled
+						has_global_flag = pte_fleet_disarmament_enabled
+						has_global_flag = pte_stop_raid_enabled
+						has_global_flag = pte_orig_tech_sharing_enabled
+						has_global_flag = pte_knowledge_sharing_enabled
+						has_global_flag = pte_raid_knowledge_enabled
+						has_global_flag = pte_aid_enabled
+						has_global_flag = pte_seppuku_enabled
+						has_global_flag = pte_sacrifice_enabled
+						has_global_flag = pte_advisor_enabled
+						has_global_flag = pte_liberation_enabled
+						has_global_flag = pte_rival_subject_enabled
+						has_global_flag = pte_anti_coalition_enabled
+						has_global_flag = pte_border_friction_enabled
+					}
+				}
+				custom_tooltip = pte_all_enabled_tt
+			}
+			else = {
+				custom_tooltip = pte_partially_enabled_tt
+			}
+			hidden_effect = {
+				clr_global_flag = pte_mandate_enabled
+				clr_global_flag = pte_infernal_enabled
+				clr_global_flag = pte_map_enabled
+				clr_global_flag = pte_divorce_enabled
+				clr_global_flag = pte_marriage_enabled
+				clr_global_flag = pte_legitimize_enabled
+				clr_global_flag = pte_ecoheg_enabled
+				clr_global_flag = pte_navheg_enabled
+				clr_global_flag = pte_milheg_enabled
+				clr_global_flag = pte_culhegA_enabled
+				clr_global_flag = pte_culhegB_enabled
+				clr_global_flag = pte_excom_enabled
+				clr_global_flag = pte_antipope_enabled
+				clr_global_flag = pte_curia_enabled
+				clr_global_flag = pte_bretheren_enabled
+				clr_global_flag = pte_spawncenter_enabled
+				clr_global_flag = pte_cardinal_enabled
+				clr_global_flag = pte_dof_enabled
+				clr_global_flag = pte_ban_slave_enabled
+				clr_global_flag = pte_destabilize_enabled
+				clr_global_flag = pte_embargo_enabled
+				clr_global_flag = pte_trade_league_enabled
+				clr_global_flag = pte_mercantilism_enabled
+				clr_global_flag = pte_unequal_treaty_enabled
+				clr_global_flag = pte_raid_court_enabled
+				clr_global_flag = pte_army_disarmament_enabled
+				clr_global_flag = pte_manpower_enabled
+				clr_global_flag = pte_demil_border_enabled
+				clr_global_flag = pte_fleet_disarmament_enabled
+				clr_global_flag = pte_stop_raid_enabled
+				clr_global_flag = pte_orig_tech_sharing_enabled
+				clr_global_flag = pte_knowledge_sharing_enabled
+				clr_global_flag = pte_raid_knowledge_enabled
+				clr_global_flag = pte_aid_enabled
+				clr_global_flag = pte_seppuku_enabled
+				clr_global_flag = pte_sacrifice_enabled
+				clr_global_flag = pte_advisor_enabled
+				clr_global_flag = pte_liberation_enabled
+				clr_global_flag = pte_rival_subject_enabled
+				clr_global_flag = pte_anti_coalition_enabled
+				clr_global_flag = pte_border_friction_enabled
+			}
+		}
+        else = {
+			custom_tooltip = pte_all_disabled_tt
+			hidden_effect = {
+				set_global_flag = pte_mandate_enabled
+				set_global_flag = pte_infernal_enabled
+				set_global_flag = pte_map_enabled
+				set_global_flag = pte_divorce_enabled
+				set_global_flag = pte_marriage_enabled
+				set_global_flag = pte_legitimize_enabled
+				set_global_flag = pte_ecoheg_enabled
+				set_global_flag = pte_navheg_enabled
+				set_global_flag = pte_milheg_enabled
+				set_global_flag = pte_culhegA_enabled
+				set_global_flag = pte_culhegB_enabled
+				set_global_flag = pte_excom_enabled
+				set_global_flag = pte_antipope_enabled
+				set_global_flag = pte_curia_enabled
+				set_global_flag = pte_bretheren_enabled
+				set_global_flag = pte_spawncenter_enabled
+				set_global_flag = pte_cardinal_enabled
+				set_global_flag = pte_dof_enabled
+				set_global_flag = pte_ban_slave_enabled
+				set_global_flag = pte_destabilize_enabled
+				set_global_flag = pte_embargo_enabled
+				set_global_flag = pte_trade_league_enabled
+				set_global_flag = pte_mercantilism_enabled
+				set_global_flag = pte_unequal_treaty_enabled
+				set_global_flag = pte_raid_court_enabled
+				set_global_flag = pte_army_disarmament_enabled
+				set_global_flag = pte_manpower_enabled
+				set_global_flag = pte_demil_border_enabled
+				set_global_flag = pte_fleet_disarmament_enabled
+				set_global_flag = pte_stop_raid_enabled
+				set_global_flag = pte_orig_tech_sharing_enabled
+				set_global_flag = pte_knowledge_sharing_enabled
+				set_global_flag = pte_raid_knowledge_enabled
+				set_global_flag = pte_aid_enabled
+				set_global_flag = pte_seppuku_enabled
+				set_global_flag = pte_sacrifice_enabled
+				set_global_flag = pte_advisor_enabled
+				set_global_flag = pte_liberation_enabled
+				set_global_flag = pte_rival_subject_enabled
+				set_global_flag = pte_anti_coalition_enabled
+				set_global_flag = pte_border_friction_enabled
+			}
+		}
+		hidden_effect = {
+			country_event = { id = pte_settings.11 }
+		}
+	}
+
+	#option = { # overall check
+	#	name = "pte_settings.17"
+    #    country_event = { id = pte_settings.17 }
+	#}
+
+    # without subevents
+
+	option = { # mandate
+		name = "pte_settings.14"
+        if = {
+			limit = {
+			    has_global_flag = pte_mandate_enabled	
+			}
+			custom_tooltip = pte_mandate_enabled_tt
+            clr_global_flag = pte_mandate_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+            custom_tooltip = pte_mandate_disabled_tt
+            set_global_flag = pte_mandate_enabled
+			}
+			else = {
+				custom_tooltip = pte_mandate_of_heaven_tt
+			}
+        }
+		hidden_effect = {
+			country_event = { id = pte_settings.11 }
+		}
+	}
+
+	option = { # infernal empire
+		name = "pte_settings.15"
+        if = {
+			limit = {
+			    has_global_flag = pte_infernal_enabled	
+			}
+			custom_tooltip = pte_infernal_enabled_tt
+            clr_global_flag = pte_infernal_enabled
+		}
+        else = {
+            custom_tooltip = pte_infernal_disabled_tt
+            set_global_flag = pte_infernal_enabled
+        }
+		hidden_effect = {
+			country_event = { id = pte_settings.11 }
+		}
+	}
+
+	option = { # share map
+		name = "pte_settings.16"
+        if = {
+			limit = {
+			    has_global_flag = pte_map_enabled	
+			}
+			custom_tooltip = pte_map_enabled_tt
+            clr_global_flag = pte_map_enabled
+		}
+        else = {
+            custom_tooltip = pte_map_disabled_tt
+            set_global_flag = pte_map_enabled
+        }
+		hidden_effect = {
+			country_event = { id = pte_settings.11 }
+		}
+	}
+
+    # with subevents
+
+	option = { # dynastic
+		name = "pte_settings.20"
+        country_event = { id = pte_settings.2 }
+	}
+
+	option = { # hegemony
+		name = "pte_settings.30"
+        country_event = { id = pte_settings.3 }
+	}
+
+	option = { # religious
+		name = "pte_settings.40"
+        country_event = { id = pte_settings.4 }
+	}
+
+	option = { # economy
+		name = "pte_settings.50"
+        country_event = { id = pte_settings.5 }
+	}
+
+	option = { # tech and knowledge
+		name = "pte_settings.60"
+        country_event = { id = pte_settings.6 }
+	}
+
+	option = { # militare
+		name = "pte_settings.70"
+        country_event = { id = pte_settings.7 }
+	}
+
+	option = { # ruler and advisors
+		name = "pte_settings.80"
+        country_event = { id = pte_settings.8 }
+	}
+
+	option = { # diplomacy
+		name = "pte_settings.90"
+        country_event = { id = pte_settings.9 }
+	}
+}
+# general event dummy
+country_event = {
+	id = pte_settings.11
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.1 }
+	}
+}
+
+# dynastic
+country_event = {
+	id = pte_settings.2
+	title = "pte_settings.20"
+	desc = "pte_settings.21"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+	
+	option = {
+		name = "pte_settings.23" # divorce
+        if = {
+			limit = {
+			    has_global_flag = pte_divorce_enabled
+			}
+			custom_tooltip = pte_divorce_enabled_tt
+            clr_global_flag = pte_divorce_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+            	custom_tooltip = pte_divorce_disabled_tt
+            	set_global_flag = pte_divorce_enabled
+			}
+			else = {
+				custom_tooltip = pte_rights_of_man_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.21 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.24" # enforce rm
+        if = {
+			limit = {
+			    has_global_flag = pte_marriage_enabled
+			}
+			custom_tooltip = pte_marriage_enabled_tt
+            clr_global_flag = pte_marriage_enabled
+		}
+        else = {
+            custom_tooltip = pte_marriage_disabled_tt
+            set_global_flag = pte_marriage_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.21 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.25" # legitimize and delegitimize
+        if = {
+			limit = {
+			    has_global_flag = pte_legitimize_enabled
+			}
+			custom_tooltip = pte_legitimize_enabled_tt
+            clr_global_flag = pte_legitimize_enabled
+		}
+        else = {
+            custom_tooltip = pte_legitimize_disabled_tt
+            set_global_flag = pte_legitimize_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.21 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.21
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.2 }
+	}
+}
+
+# hegemony
+country_event = {
+	id = pte_settings.3
+	title = "pte_settings.30"
+	desc = "pte_settings.31"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+	
+	option = {
+		name = "pte_settings.32" # economic hegemony
+        if = {
+			limit = {
+			    has_global_flag = pte_ecoheg_enabled
+			}
+			custom_tooltip = pte_ecoheg_enabled_tt
+            clr_global_flag = pte_ecoheg_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+            	custom_tooltip = pte_ecoheg_disabled_tt
+            	set_global_flag = pte_ecoheg_enabled
+			}
+			else = {
+				custom_tooltip = pte_dlc_emperor_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.31 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.33" # naval hegemony
+        if = {
+			limit = {
+			    has_global_flag = pte_navheg_enabled
+			}
+			custom_tooltip = pte_navheg_enabled_tt
+            clr_global_flag = pte_navheg_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+            	custom_tooltip = pte_navheg_disabled_tt
+            	set_global_flag = pte_navheg_enabled
+			}
+			else = {
+				custom_tooltip = pte_dlc_emperor_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.31 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.34" # military hegemony
+        if = {
+			limit = {
+			    has_global_flag = pte_milheg_enabled
+			}
+			custom_tooltip = pte_milheg_enabled_tt
+            clr_global_flag = pte_milheg_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+            	custom_tooltip = pte_milheg_disabled_tt
+            	set_global_flag = pte_milheg_enabled
+			}
+			else = {
+				custom_tooltip = pte_dlc_emperor_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.31 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.35" # give up cultural hegemony
+        if = {
+			limit = {
+			    has_global_flag = pte_culhegA_enabled
+			}
+			custom_tooltip = pte_culhegA_enabled_tt
+            clr_global_flag = pte_culhegA_enabled
+		}
+        else = {
+            custom_tooltip = pte_culhegA_disabled_tt
+            set_global_flag = pte_culhegA_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.31 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.36" # take over cultural hegemony
+        if = {
+			limit = {
+			    has_global_flag = pte_culhegB_enabled
+			}
+			custom_tooltip = pte_culhegB_enabled_tt
+            clr_global_flag = pte_culhegB_enabled
+		}
+        else = {
+            custom_tooltip = pte_culhegB_disabled_tt
+            set_global_flag = pte_culhegB_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.31 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.37" # cultural hegemon nationalism
+        if = {
+			limit = {
+			    has_global_flag = pte_culheg_nation_enabled
+			}
+			custom_tooltip = pte_culheg_nation_enabled_tt
+            clr_global_flag = pte_culheg_nation_enabled
+		}
+        else = {
+            custom_tooltip = pte_culheg_nation_disabled_tt
+            set_global_flag = pte_culheg_nation_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.31 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.31
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.3 }
+	}
+}
+
+# religious
+country_event = {
+	id = pte_settings.4
+	title = "pte_settings.40"
+	desc = "pte_settings.41"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+	
+	option = {
+		name = "pte_settings.42" # lift excommunication
+        if = {
+			limit = {
+			    has_global_flag = pte_excom_enabled
+			}
+			custom_tooltip = pte_excom_enabled_tt
+            clr_global_flag = pte_excom_enabled
+		}
+        else = {
+            custom_tooltip = pte_excom_disabled_tt
+            set_global_flag = pte_excom_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.43" # antipope
+        if = {
+			limit = {
+			    has_global_flag = pte_antipope_enabled
+			}
+			custom_tooltip = pte_antipope_enabled_tt
+            clr_global_flag = pte_antipope_enabled
+		}
+        else = {
+            custom_tooltip = pte_antipope_disabled_tt
+            set_global_flag = pte_antipope_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.44" # plunder curia
+        if = {
+			limit = {
+			    has_global_flag = pte_curia_enabled
+			}
+			custom_tooltip = pte_curia_enabled_tt
+            clr_global_flag = pte_curia_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+            	custom_tooltip = pte_curia_disabled_tt
+            	set_global_flag = pte_curia_enabled
+			}
+			else = {
+				custom_tooltip = pte_dlc_emperor_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.45" # protect religious bretheren
+        if = {
+			limit = {
+			    has_global_flag = pte_bretheren_enabled
+			}
+			custom_tooltip = pte_bretheren_enabled_tt
+            clr_global_flag = pte_bretheren_enabled
+		}
+        else = {
+            custom_tooltip = pte_bretheren_disabled_tt
+            set_global_flag = pte_bretheren_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.46" # spawn reform center
+        if = {
+			limit = {
+			    has_global_flag = pte_spawncenter_enabled
+			}
+			custom_tooltip = pte_spawncenter_enabled_tt
+            clr_global_flag = pte_spawncenter_enabled
+		}
+        else = {
+            custom_tooltip = pte_spawncenter_disabled_tt
+            set_global_flag = pte_spawncenter_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.47" # take cardinal
+        if = {
+			limit = {
+			    has_global_flag = pte_cardinal_enabled
+			}
+			custom_tooltip = pte_cardinal_enabled_tt
+            clr_global_flag = pte_cardinal_enabled
+		}
+        else = {
+            custom_tooltip = pte_cardinal_disabled_tt
+            set_global_flag = pte_cardinal_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.48" # take defender of faith
+        if = {
+			limit = {
+			    has_global_flag = pte_dof_enabled
+			}
+			custom_tooltip = pte_dof_enabled_tt
+            clr_global_flag = pte_dof_enabled
+		}
+        else = {
+            custom_tooltip = pte_dof_disabled_tt
+            set_global_flag = pte_dof_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.41 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.41
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.4 }
+	}
+}
+
+# economy
+country_event = {
+	id = pte_settings.5
+	title = "pte_settings.50"
+	desc = "pte_settings.51"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+	
+	option = {
+		name = "pte_settings.52" # ban slavery
+        if = {
+			limit = {
+			    has_global_flag = pte_ban_slave_enabled
+			}
+			custom_tooltip = pte_ban_slave_enabled_tt
+            clr_global_flag = pte_ban_slave_enabled
+		}
+        else = {
+            custom_tooltip = pte_ban_slave_disabled_tt
+            set_global_flag = pte_ban_slave_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.53" # destabilize nation
+        if = {
+			limit = {
+			    has_global_flag = pte_destabilize_enabled
+			}
+			custom_tooltip = pte_destabilize_enabled_tt
+            clr_global_flag = pte_destabilize_enabled
+		}
+        else = {
+            custom_tooltip = pte_destabilize_disabled_tt
+            set_global_flag = pte_destabilize_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.54" # enforced embargo
+        if = {
+			limit = {
+			    has_global_flag = pte_embargo_enabled
+			}
+			custom_tooltip = pte_embargo_enabled_tt
+            clr_global_flag = pte_embargo_enabled
+		}
+        else = {
+            custom_tooltip = pte_embargo_disabled_tt
+            set_global_flag = pte_embargo_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.55" # force trade league
+        if = {
+			limit = {
+			    has_global_flag = pte_trade_league_enabled
+			}
+			custom_tooltip = pte_trade_league_enabled_tt
+            clr_global_flag = pte_trade_league_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Mare Nostrum"
+				}
+            	custom_tooltip = pte_trade_league_disabled_tt
+            	set_global_flag = pte_trade_league_enabled
+			}
+			else = {
+				custom_tooltip = pte_dlc_mare_nostrum_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.56" # take mercantilism
+        if = {
+			limit = {
+			    has_global_flag = pte_mercantilism_enabled
+			}
+			custom_tooltip = pte_mercantilism_enabled_tt
+            clr_global_flag = pte_mercantilism_enabled
+		}
+        else = {
+            custom_tooltip = pte_mercantilism_disabled_tt
+            set_global_flag = pte_mercantilism_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.57" # unequal treaty
+        if = {
+			limit = {
+			    has_global_flag = pte_unequal_treaty_enabled
+			}
+			custom_tooltip = pte_unequal_treaty_enabled_tt
+            clr_global_flag = pte_unequal_treaty_enabled
+		}
+        else = {
+            custom_tooltip = pte_unequal_treaty_disabled_tt
+            set_global_flag = pte_unequal_treaty_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.58" # raid splendid court
+        if = {
+			limit = {
+			    has_global_flag = pte_raid_court_enabled
+			}
+			custom_tooltip = pte_raid_court_enabled_tt
+            clr_global_flag = pte_raid_court_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+            	custom_tooltip = pte_raid_court_disabled_tt
+            	set_global_flag = pte_raid_court_enabled
+			}
+			else = {
+				custom_tooltip = pte_mandate_of_heaven_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.51 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.51
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.5 }
+	}
+}
+
+# militare
+country_event = {
+	id = pte_settings.6
+	title = "pte_settings.60"
+	desc = "pte_settings.61"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+
+	option = {
+		name = "pte_settings.62" # army disarmament
+        if = {
+			limit = {
+			    has_global_flag = pte_army_disarmament_enabled
+			}
+			custom_tooltip = pte_army_disarmament_enabled_tt
+            clr_global_flag = pte_army_disarmament_enabled
+		}
+        else = {
+            custom_tooltip = pte_army_disarmament_disabled_tt
+            set_global_flag = pte_army_disarmament_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.61 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.63" # demand manpower 
+        if = {
+			limit = {
+			    has_global_flag = pte_manpower_enabled
+			}
+			custom_tooltip = pte_manpower_enabled_tt
+            clr_global_flag = pte_manpower_enabled
+		}
+        else = {
+            custom_tooltip = pte_manpower_disabled_tt
+            set_global_flag = pte_manpower_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.61 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.64" # demilitarize borders
+        if = {
+			limit = {
+			    has_global_flag = pte_demil_border_enabled
+			}
+			custom_tooltip = pte_demil_border_enabled_tt
+            clr_global_flag = pte_demil_border_enabled
+		}
+        else = {
+            custom_tooltip = pte_demil_border_disabled_tt
+            set_global_flag = pte_demil_border_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.61 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.65" # fleet disarmament 
+        if = {
+			limit = {
+			    has_global_flag = pte_fleet_disarmament_enabled
+			}
+			custom_tooltip = pte_fleet_disarmament_enabled_tt
+            clr_global_flag = pte_fleet_disarmament_enabled
+		}
+        else = {
+            custom_tooltip = pte_fleet_disarmament_disabled_tt
+            set_global_flag = pte_fleet_disarmament_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.61 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.66" # stop raiding
+        if = {
+			limit = {
+			    has_global_flag = pte_stop_raid_enabled
+			}
+			custom_tooltip = pte_stop_raid_enabled_tt
+            clr_global_flag = pte_stop_raid_enabled
+		}
+        else = {
+            custom_tooltip = pte_stop_raid_disabled_tt
+            set_global_flag = pte_stop_raid_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.61 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.61
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.6 }
+	}
+}
+
+# tech and knowledge
+country_event = {
+	id = pte_settings.7
+	title = "pte_settings.70"
+	desc = "pte_settings.71"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+
+	option = {
+		name = "pte_settings.72" # original tech sharing
+        if = {
+			limit = {
+			    has_global_flag = pte_orig_tech_sharing_enabled
+			}
+			custom_tooltip = pte_orig_tech_sharing_enabled_tt
+            clr_global_flag = pte_orig_tech_sharing_enabled
+		}
+        else = {
+            custom_tooltip = pte_orig_tech_sharing_disabled_tt
+            set_global_flag = pte_orig_tech_sharing_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.71 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.73" # knowledge sharing
+        if = {
+			limit = {
+			    has_global_flag = pte_knowledge_sharing_enabled
+			}
+			custom_tooltip = pte_knowledge_sharing_enabled_tt
+            clr_global_flag = pte_knowledge_sharing_enabled
+		}
+        else = {
+            custom_tooltip = pte_knowledge_sharing_disabled_tt
+            set_global_flag = pte_knowledge_sharing_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.71 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.74" # raid for knowledge
+        if = {
+			limit = {
+			    has_global_flag = pte_raid_knowledge_enabled
+			}
+			custom_tooltip = pte_raid_knowledge_enabled_tt
+            clr_global_flag = pte_raid_knowledge_enabled
+		}
+        else = {
+            custom_tooltip = pte_raid_knowledge_disabled_tt
+            set_global_flag = pte_raid_knowledge_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.71 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.71
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.7 }
+	}
+}
+
+# ruler and advisors
+country_event = {
+	id = pte_settings.8
+	title = "pte_settings.80"
+	desc = "pte_settings.81"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+
+	option = {
+		name = "pte_settings.82" # demand aid
+        if = {
+			limit = {
+			    has_global_flag = pte_aid_enabled
+			}
+			custom_tooltip = pte_aid_enabled_tt
+            clr_global_flag = pte_aid_enabled
+		}
+        else = {
+            custom_tooltip = pte_aid_disabled_tt
+            set_global_flag = pte_aid_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.81 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.83" # force seppuku
+        if = {
+			limit = {
+			    has_global_flag = pte_seppuku_enabled
+			}
+			custom_tooltip = pte_seppuku_enabled_tt
+            clr_global_flag = pte_seppuku_enabled
+		}
+        else = {
+            custom_tooltip = pte_seppuku_disabled_tt
+            set_global_flag = pte_seppuku_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.81 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.84" # sacrifice
+        if = {
+			limit = {
+			    has_global_flag = pte_sacrifice_enabled
+			}
+			custom_tooltip = pte_sacrifice_enabled_tt
+            clr_global_flag = pte_sacrifice_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "El Dorado"
+				}
+            	custom_tooltip = pte_sacrifice_disabled_tt
+            	set_global_flag = pte_sacrifice_enabled
+			}
+			else = {
+				custom_tooltip = pte_el_dorado_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.81 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.85" # take advisor
+        if = {
+			limit = {
+			    has_global_flag = pte_advisor_enabled
+			}
+			custom_tooltip = pte_advisor_enabled_tt
+            clr_global_flag = pte_advisor_enabled
+		}
+        else = {
+            custom_tooltip = pte_advisor_disabled_tt
+            set_global_flag = pte_advisor_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.81 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.81
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.8 }
+	}
+}
+
+# diplomacy
+country_event = {
+	id = pte_settings.9
+	title = "pte_settings.90"
+	desc = "pte_settings.91"
+	picture = BIG_BOOK_eventPicture   
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pte_settings.22" # exit
+        country_event = { id = pte_settings.1 }
+	}
+
+	option = {
+		name = "pte_settings.92" # liberation
+        if = {
+			limit = {
+			    has_global_flag = pte_liberation_enabled
+			}
+			custom_tooltip = pte_liberation_enabled_tt
+            clr_global_flag = pte_liberation_enabled
+		}
+        else = {
+            custom_tooltip = pte_liberation_disabled_tt
+            set_global_flag = pte_liberation_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.91 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.93" # rival subject
+        if = {
+			limit = {
+			    has_global_flag = pte_rival_subject_enabled
+			}
+			custom_tooltip = pte_rival_subject_enabled_tt
+            clr_global_flag = pte_rival_subject_enabled
+		}
+        else = {
+            custom_tooltip = pte_rival_subject_disabled_tt
+            set_global_flag = pte_rival_subject_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.91 }
+		}
+	}
+	
+	option = {
+		name = "pte_settings.94" # anti coalition
+        if = {
+			limit = {
+			    has_global_flag = pte_anti_coalition_enabled
+			}
+			custom_tooltip = pte_anti_coalition_enabled_tt
+            clr_global_flag = pte_anti_coalition_enabled
+		}
+        else = {
+			if = {
+				limit = {
+					has_dlc = "El Dorado"
+				}
+            	custom_tooltip = pte_anti_coalition_disabled_tt
+            	set_global_flag = pte_anti_coalition_enabled
+			}
+			else = {
+				custom_tooltip = pte_el_dorado_tt
+			}
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.91 }
+		}
+	}
+
+	option = {
+		name = "pte_settings.95" # border friction
+        if = {
+			limit = {
+			    has_global_flag = pte_border_friction_enabled
+			}
+			custom_tooltip = pte_border_friction_enabled_tt
+            clr_global_flag = pte_border_friction_enabled
+		}
+        else = {
+            custom_tooltip = pte_border_friction_disabled_tt
+            set_global_flag = pte_border_friction_enabled
+        }
+		hidden_effect = {
+        	country_event = { id = pte_settings.91 }
+		}
+	}
+}
+country_event = {
+	id = pte_settings.91
+	title = "You shouldn't see this"
+	desc = "You shouldn't see this"
+	picture = BIG_BOOK_eventPicture 
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "You shouldn't see this"
+		ai_chance = { factor = 100 }
+		country_event = { id = pte_settings.9 }
+	}
+}

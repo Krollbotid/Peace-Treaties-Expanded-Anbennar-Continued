@@ -1,3 +1,4 @@
+# aka military hegemony
 pte_demonstrate_military_supremacy = {
 	category = 6
 	power_projection = no
@@ -20,7 +21,6 @@ pte_demonstrate_military_supremacy = {
 	requires_is_allowed = yes
 
 	is_visible = {
-		has_dlc = "Emperor"
 	}
 	is_allowed = {
 		OR = {

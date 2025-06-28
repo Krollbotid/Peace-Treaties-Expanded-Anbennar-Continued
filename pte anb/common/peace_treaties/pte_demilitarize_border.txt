@@ -20,6 +20,7 @@ pte_demilitarize_border = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_demil_border_enabled
 		any_owned_province = {
 			any_neighbor_province = {
 				owned_by = FROM

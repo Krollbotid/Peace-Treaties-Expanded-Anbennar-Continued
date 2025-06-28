@@ -162,7 +162,7 @@ There is no info for disabled peace treaties/casus bellis
 
 [b]Effects:[/b]
 [list]
-[*] winner gains 25 support for the oldest still by them not yet embraced institution in their capital area
+[*] winner gains 25 support (100 support if used with Raid for Knowledge CB) for the oldest still by them not yet embraced institution in their capital area
 [/list]
 
 [h1]Fleet Disarmament[/h1]

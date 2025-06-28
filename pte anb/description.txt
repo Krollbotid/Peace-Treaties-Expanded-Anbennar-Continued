@@ -1,7 +1,7 @@
 [h1][b]Welcome to Peace Treaties Expanded Anbennar[/b][/h1]
 This mod adds some peace treaties and Casus Bellis from "Peace Treaties Expanded" adjusted to fit with Anbennar.
-
-Hegemony and slavery abolishment is not tested because it requires lategame.
+Mod provides settings menu available via decisions. All settings are disabled by default. it's highly NOT recommended to turn on all settings. Because of Anbennar's performance and EU4 ways of managing peace treaties your game will lag a lot with all settings enabled.
+You've been warned.
 
 [h1]Currently Added[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following peace options. Some require a special CB or have minor requirements to show up in the peace treaty window (e.g. require a specific army size).
@@ -10,7 +10,7 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Abduct Administrative/Diplomatic/Military Advisor
 [*] Abduct Verdical
 [*] Army Disarmament
-[*] Ban Slavery                                                                             - [b]not tested[/b]
+[*] Ban Slavery
 [*] Claim Cultural Hegemony
 [*] Claim Defender of Faith
 [*] Crush the Mandate
@@ -26,19 +26,19 @@ Additional information about each treaty as well as the added Casus Bellis can b
 [*] Enforced Marriage
 [*] Fleet Disarmament
 [*] Force Administrative/Diplomatic/Military Technology Sharing
-[*] Force Bankruptcy aka Economic Supremacy                                                 - [b]not tested[/b]
+[*] Force Bankruptcy aka Economic Supremacy
 [*] Force Knowledge Sharing
 [*] Force Seppuku
 [*] Give up Cultural Hegemony
 [*] Install Antirector
 [*] Join Trade League
 [*] Lift Excommunication
-[*] Military Supremacy                                                                      - [b]not tested[/b]
+[*] Military Supremacy
 [*] Plunder Rectorate Coffers
 [*] Protect Religious Bretheren
 [*] Raid Splendid Court
 [*] Sacrifice Ruler
-[*] Seize Fleets aka Naval Supremacy                                                        - [b]not tested[/b]
+[*] Seize Fleets aka Naval Supremacy
 [*] Seize Mercantilism
 [*] Share Maps of Sarhal/Haless/Cannor/North Aelantir/Insyaa/South Aelantir/The New World
 [*] Spread Infernal Court in Empire
@@ -59,14 +59,14 @@ These options from original mod are disabled because they either don't fit to An
 [h1]Casus Bellis[/h1]
 Currently [i]Peace Treaties Expanded Anbennar[/i] adds the following casus bellis.
 [list]
-[*] Ban Slavery                                                                             - [b]not tested[/b]
+[*] Ban Slavery
 [*] Border Friction
 [*] Claim Cultural Hegemony
 [*] Crush the Coalition
 [*] Intervene in Independence War
-[*] Economic Hegemony                                                                       - [b]not tested[/b]
-[*] Military Hegemony                                                                       - [b]not tested[/b]
-[*] Naval Hegemony                                                                          - [b]not tested[/b]
+[*] Economic Hegemony
+[*] Military Hegemony
+[*] Naval Hegemony
 [*] Raid for Knowledge
 [*] Proselytize the Heathen
 [*] Protect Our Religious Bretheren

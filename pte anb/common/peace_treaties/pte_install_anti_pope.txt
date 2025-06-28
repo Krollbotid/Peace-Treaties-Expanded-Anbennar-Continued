@@ -20,6 +20,7 @@ pte_install_anti_pope = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_antipope_enabled
 		is_religion_enabled = ravelian
 		religion = ravelian
 		is_papal_controller = no

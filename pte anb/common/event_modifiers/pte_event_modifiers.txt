@@ -70,6 +70,10 @@ pte_demilitarize_border_modifier_5 = {
 	fort_level = -8
 }
 
+pte_crushed_the_coalition = {
+	improve_relation_modifier = 0.25
+}
+
 # Decisions:
 pte_culture_group_hegemony_modifier = {
 	culture_conversion_cost = -0.25

@@ -36,9 +36,9 @@
  CB_ALLOWED_pte_ban_slavery: "Sklaverei verbieten"
  PEACE_pte_ban_slavery: "Sklaverei verbieten"
 
- pte_sacrifice_ruler_desc: "Der Herrscher von @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], wird den [Root.Religion.GetName]en Göttern geopfert, wodurch das Verhängnis von @[Root.GetTag] §Y[Root.GetName]§! um §G[From.GetRulerStatsCombinedForDoomReduction]§! gesenkt wird. [From.Monarch.GetName] wird sterben."
- CB_ALLOWED_pte_sacrifice_ruler: "Herrscher opfern"
- PEACE_pte_sacrifice_ruler: "Herrscher opfern"
+ pte_sacrifice_ruler_desc: "The ruler of @[From.GetTag] §Y[From.GetName]§!, [From.Monarch.GetName], and many of his subjects will be devoured by the people of @[Root.GetTag] §Y[Root.GetName]§!, which reduces their hunger by §G[From.GetRulerStatsCombinedForDoomReduction]§!. [From.Monarch.GetName] will die."
+ CB_ALLOWED_pte_sacrifice_ruler: "Devour Ruler"
+ PEACE_pte_sacrifice_ruler: "Devour Ruler"
 
  pte_unequal_treaty_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G5§! Handelsmacht für §Y10 Jahre§! in @[From.GetTag] §Y[From.GetName]s§! Haupthandelsregion pro Küstenprovinz, die @[From.GetTag] §Y[From.GetName]§! dort besitzt."
  CB_ALLOWED_pte_unequal_treaty: "Ungleicher Vertrag"
@@ -52,11 +52,7 @@
  CB_ALLOWED_pte_destabilize_nation: "Land destabilisieren"
  PEACE_pte_destabilize_nation: "Land destabilisieren"
 
- pte_force_knowledge_sharing_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G25§! Unterstützung für §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in seinem Hauptstadtgebiet (§Y[Root.Capital.GetAreaName]§!)."
- CB_ALLOWED_pte_force_knowledge_sharing: "Wissensaustausch erzwingen"
- PEACE_pte_force_knowledge_sharing: "Wissensaustausch erzwingen"
-
- pte_force_knowledge_sharing_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G100§! Unterstützung für §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in seinem Hauptstadtgebiet (§Y[Root.Capital.GetAreaName]§!)."
+ pte_force_knowledge_sharing_desc: "@[Root.GetTag] §Y[Root.GetName]§! erhält §G[Root.GetForceKnowledgeInstitutionAmount]§! Unterstützung für §Y[Root.GetForceKnowledgeSharingLackingInstitutionName]§W in seinem Hauptstadtgebiet (§Y[Root.Capital.GetAreaName]§!)."
  CB_ALLOWED_pte_force_knowledge_sharing: "Wissensaustausch erzwingen"
  PEACE_pte_force_knowledge_sharing: "Wissensaustausch erzwingen"
 
@@ -80,9 +76,9 @@
  CB_ALLOWED_pte_demand_manpower: "Sklaven-Soldaten verlangen"
  PEACE_pte_demand_manpower: "Sklaven-Soldaten verlangen"
 
- pte_demand_manpower_mam_desc: "@[From.GetTag] §Y[From.GetName]§! gibt §G10.0%§! seiner maximalen Mannstärke (ungefähr §Y[From.GetDemandManpowerAmount]§W Mannstärke) ab @[Root.GetTag] §Y[Root.GetName]§! ab. @[Root.GetTag] §Y[Root.GetName]§! verliert §R5§! Armeetradition."
- CB_ALLOWED_pte_demand_manpower_mam: "Sklaven-Soldaten verlangen"
- PEACE_pte_demand_manpower_mam: "Sklaven-Soldaten verlangen"
+ pte_demand_manpower_monster_desc: "@[From.GetTag] §Y[From.GetName]§! gibt §G10.0%§! seiner maximalen Mannstärke (ungefähr §Y[From.GetDemandManpowerAmountTwice]§W Mannstärke) ab @[Root.GetTag] §Y[Root.GetName]§! ab. @[Root.GetTag] §Y[Root.GetName]§! verliert §R5§! Armeetradition."
+ CB_ALLOWED_pte_demand_manpower_monster: "Sklaven-Soldaten verlangen"
+ PEACE_pte_demand_manpower_monster: "Sklaven-Soldaten verlangen"
 
  pte_take_cardinal_desc: "@[From.GetTag] §Y[From.GetName]§! verliert §R1§! Veridical. @[Root.GetTag] §Y[Root.GetName]§! erhält §G1§! Veridical."
  CB_ALLOWED_pte_take_cardinal: "Veridical entführen"
@@ -312,6 +308,10 @@
  CB_ALLOWED_pte_force_spread_infernal_empire: "Force Infernal Court"
  PEACE_pte_force_spread_infernal_empire: "Force Infernal Court"
 
+ pte_prove_claims_desc: "Every §Ycoalition member§! loses §R50%§! of their aggressive expansion toward us. If any of them has more than 100 aggressive expansion toward us, we will also get improve relations bonus!"
+ CB_ALLOWED_pte_prove_claims: "Prove your Claims"
+ PEACE_pte_prove_claims: "Prove your Claims"
+
  # paradox, why you didn't do this?
  CB_ALLOWED_TRANSFER_VASSALS: "Transfer vassals"
 
@@ -506,6 +506,7 @@
  pte_demilitarize_border_modifier_3: "Entmilitarisierte Grenze"
  pte_demilitarize_border_modifier_4: "Entmilitarisierte Grenze"
  pte_demilitarize_border_modifier_5: "Entmilitarisierte Grenze"
+ pte_crushed_the_coalition: "Crushed the coalition"
 
  # Opinion Modifiers:
  #pte_guarantee_hree_diet_host_opinion: "Erzwang Reichstagsveranstaltung"
@@ -518,6 +519,7 @@
  # Customizable Localization:
  string_force_knowledge_sharing_lacking_institution: "§Wdie älteste, nicht geförderte Institution§!"
  string_demand_manpower_amount_more_than_10k: "§Wmehr als §Y10,000§W"
+ string_demand_manpower_amount_more_than_20k: "§Wmehr als §Y20,000§W"
  string_fabricate_succession_claim_vague_claim_info_text_dlc: "\n§O* Unsicherer Anspruch bedeutet einer der folgenden\n   Punkte: \n   - gleiche Dynastie wie ihr Lehnsherr \n   - Anspruch auf ihren Thron \n   - sie hatten einmal einen Herrscher aus unserer Dynastie \n   - einer ihrer Herrscher wurde geboren, als sie eine/n\n     Gemahl/in aus unserem Land hatten§!"
  string_fabricate_succession_claim_vague_claim_info_text: "\n§O* Unsicherer Anspruch bedeutet einer der folgenden\n   Punkte: \n   - gleiche Dynastie wie ihr Lehnsherr \n   - Anspruch auf ihren Thron \n   - sie hatten einmal einen Herrscher aus unserer Dynastie \n   - einer ihrer Herrscher hatte unsere Kultur und Religion\n     und wurde geboren, als wir eine Staatsehe mit ihnen\n     hatten§!"
  string_fabricate_succession_claim_vague_claim_info_star: "§O*§!"

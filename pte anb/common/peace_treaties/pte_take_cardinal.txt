@@ -20,6 +20,7 @@ pte_take_cardinal = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_cardinal_enabled
 		is_religion_enabled = ravelian
 		religion = ravelian
 		NOT = { num_of_cardinals = 7 }

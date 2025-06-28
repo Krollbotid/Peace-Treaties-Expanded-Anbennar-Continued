@@ -20,7 +20,7 @@ pte_force_to_join_trade_league = {
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "Mare Nostrum"
+		has_global_flag = pte_trade_league_enabled
 		is_trade_league_leader = yes
 		NOT = { is_in_trade_league_with = FROM }
 		FROM = {

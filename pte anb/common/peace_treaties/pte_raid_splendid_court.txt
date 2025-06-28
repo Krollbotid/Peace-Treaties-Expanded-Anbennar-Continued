@@ -20,6 +20,7 @@ pte_raid_splendid_court = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_raid_court_enabled
 		has_dlc = "Mandate of Heaven"
 		FROM = {
 			splendor = 1

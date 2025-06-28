@@ -543,7 +543,7 @@ pte_raid_for_knowledge_goal = {
 		peace_cost_factor = 1
 
 		peace_options = {
-			pte_force_knowledge_sharing_big
+			pte_force_knowledge_sharing
 			pte_force_adm_tech_sharing_easy
 			pte_force_dip_tech_sharing_easy
 			pte_force_mil_tech_sharing_easy
@@ -580,7 +580,7 @@ pte_raid_for_knowledge_cheap_goal = {
 		peace_cost_factor = 0.8
 
 		peace_options = {
-			pte_force_knowledge_sharing_big
+			pte_force_knowledge_sharing
 			pte_force_adm_tech_sharing_easy
 			pte_force_dip_tech_sharing_easy
 			pte_force_mil_tech_sharing_easy

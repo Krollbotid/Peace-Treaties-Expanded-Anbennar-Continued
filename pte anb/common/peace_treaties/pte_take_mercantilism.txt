@@ -20,6 +20,7 @@ pte_take_mercantilism = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_mercantilism_enabled
 		FROM = {
 			mercantilism = 5
 		}

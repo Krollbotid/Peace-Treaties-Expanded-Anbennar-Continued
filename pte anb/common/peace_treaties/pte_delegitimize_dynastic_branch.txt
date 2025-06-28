@@ -20,6 +20,7 @@ pte_delegitimize_dynastic_branch = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_legitimize_enabled
 		OR = {
 			current_age = age_of_discovery
 			current_age = age_of_reformation
