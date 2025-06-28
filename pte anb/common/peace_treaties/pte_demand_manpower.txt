@@ -20,18 +20,22 @@ pte_demand_manpower = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_manpower_enabled
 		NOT = { has_country_modifier = monstrous_nation }
 		OR = {
+			FROM = {
+				has_country_modifier = monstrous_nation
+			}
+			is_nomad = yes
+			government = tribal
+			government = native
 			#tag = ROM
-			is_revolutionary = yes
-			is_revolution_target = yes
 			has_reform = emperor_of_the_revolution_reform
 			has_reform = military_dictatorship_reform
-			has_reform = battle_pope_reform
 			has_reform = pirate_republic_reform
-			government = native
-			government = tribal
-			is_nomad = yes
+			has_reform = battle_pope_reform
+			is_revolutionary = yes
+			is_revolution_target = yes
 		}
 		FROM = {
 			max_manpower = 1
@@ -40,19 +44,19 @@ pte_demand_manpower = {
 	is_allowed = {
 		OR = {
 			AND = {
-				army_tradition = 5
 				FROM = {
-					NOT { has_country_modifier = monstrous_nation }
+					NOT = { has_country_modifier = monstrous_nation }
 				}
+				army_tradition = 5
 			}
 			AND = {
-				prestige = 15
 				OR = {
 					FROM = {
 						has_country_modifier = monstrous_nation
 					}
 					is_rival = FROM
 				}
+				prestige = 15
 			}
 		}
 		FROM = {
@@ -60,15 +64,15 @@ pte_demand_manpower = {
 		}
 	}
 	effect = {
-		if {
+		if = {
 			limit {
 				FROM = {
-					NOT { has_country_modifier = monstrous_nation }
+					NOT = { has_country_modifier = monstrous_nation }
 				}
 			}
 			add_army_tradition = -5
 		}
-		else {
+		else = {
 			add_prestige = -20
 		}
 		export_to_variable = {

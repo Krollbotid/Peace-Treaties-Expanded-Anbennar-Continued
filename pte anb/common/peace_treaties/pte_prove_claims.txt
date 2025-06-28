@@ -1,0 +1,229 @@
+pte_prove_claims = {
+	category = 6
+	power_projection = 30
+	power_cost_base = 0
+	prestige_base = 0.4
+	ae_base = 0
+	warscore_cost = {
+		all_provinces = 0.0
+		no_provinces = 50.0
+		owner_keeps = 0.0
+		conquered = 0.0
+		returned_core = 0.0
+		released_nation = 0.0
+		cancelled_subject = 0.0
+		concede_colonial_region = 0.0
+	}
+	warscore_cap = -1
+	requires_demand_independence = no
+	is_make_subject = no
+	requires_is_allowed = no
+
+	is_visible = {
+		OR = {
+            is_in_war = {
+                defender_leader = ROOT
+				attacker_leader = FROM
+                casus_belli = cb_super_badboy
+            }
+            is_in_war = {
+                defender_leader = FROM
+				attacker_leader = ROOT
+                casus_belli = cb_pte_anti_coalition
+            }
+		}
+	}
+	is_allowed = {
+	}
+	effect = {
+		#give buff for lowering ae if it's was too high
+		if = {
+			limit = {
+				any_known_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = aggressive_expansion
+					}
+					NOT = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = aggressive_expansion
+							value = -100
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = pte_crushed_the_coalition
+				duration = 720
+			}
+		}
+		every_known_country = {
+			if = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = aggressive_expansion
+					}
+					NOT = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = aggressive_expansion
+							value = -50
+						}
+					}
+				}
+				# decrease ae by 50%
+				# here we calculate ae
+				set_variable = { which = pte_country_ae value = 0 }
+				while = {
+					limit = {
+						NOT = { # true if value < pte_country_ae
+							has_opinion_modifier = { # true if value >= pte_country_ae
+								who = ROOT
+								modifier = aggressive_expansion
+								value = -100
+							}
+						}
+					}
+					change_variable = { which = pte_country_ae value = 100 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -100
+						apply_calc = no
+					}
+				}
+				while = {
+					limit = {
+						NOT = { # true if value < pte_country_ae
+							has_opinion_modifier = { # true if value >= pte_country_ae
+								who = ROOT
+								modifier = aggressive_expansion
+								value = -10
+							}
+						}
+					}
+					change_variable = { which = pte_country_ae value = 10 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -10
+						apply_calc = no
+					}
+				}
+				while = {
+					limit = {
+						NOT = { # true if value < pte_country_ae
+							has_opinion_modifier = { # true if value >= pte_country_ae
+								who = ROOT
+								modifier = aggressive_expansion
+								value = -1
+							}
+						}
+					}
+					change_variable = { which = pte_country_ae value = 1 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -1
+						apply_calc = no
+					}
+				}
+				while = {
+					limit = {
+						NOT = { # true if value < pte_country_ae
+							has_opinion_modifier = { # true if value >= pte_country_ae
+								who = ROOT
+								modifier = aggressive_expansion
+								value = -0.1
+							}
+						}
+					}
+					change_variable = { which = pte_country_ae value = 0.1 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -0.1
+						apply_calc = no
+					}
+				}
+				# FUCK PARADOX. Why you limit usage of variable so much?
+				while = {
+					limit = {
+						check_variable = { which = pte_country_ae value = 100}
+					}
+					change_variable = { which = pte_country_ae value = -100 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = 50
+						apply_calc = no
+					}
+				}
+				while = {
+					limit = {
+						check_variable = { which = pte_country_ae value = 10}
+					}
+					change_variable = { which = pte_country_ae value = -10 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = 5
+						apply_calc = no
+					}
+				}
+				while = {
+					limit = {
+						check_variable = { which = pte_country_ae value = 1}
+					}
+					change_variable = { which = pte_country_ae value = -1 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = 0.5
+						apply_calc = no
+					}
+				}
+				while = {
+					limit = {
+						check_variable = { which = pte_country_ae value = 0.2}
+					}
+					change_variable = { which = pte_country_ae value = -0.2 }
+					add_aggressive_expansion = {
+						who = ROOT
+						value = 0.1
+						apply_calc = no
+					}
+				}
+				set_variable = {
+					which = pte_country_ae
+					value = 0
+				}
+			}
+		}
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 1
+		}
+		limit = {
+			NOT = { manpower_percentage = 0.1 }
+			FROM = {
+				max_manpower = 50
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 3
+						OR = {
+							is_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+			}
+			OR = {
+				border_distance = {
+					who = FROM
+					distance = 300
+				}
+				FROM = {
+					num_of_cities = 5
+				}
+			}
+		}
+	}
+}

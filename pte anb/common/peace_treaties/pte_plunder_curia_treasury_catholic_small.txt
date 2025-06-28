@@ -20,7 +20,8 @@ pte_plunder_curia_treasury_ravelian_small = {
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "Emperor"
+		has_global_flag = pte_curia_enabled
+		is_religion_enabled = ravelian
 		FROM = {
 			papacy_active = yes
 		}

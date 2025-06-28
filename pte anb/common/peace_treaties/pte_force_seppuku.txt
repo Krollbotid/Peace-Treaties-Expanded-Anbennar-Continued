@@ -20,21 +20,18 @@ pte_force_seppuku = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_seppuku_enabled
         OR = {
 		    culture_group = hobgoblin
-            culture_group = wyhyun
+            culture_group = wuhyun
             primary_culture = horned_ogre
         }
 		FROM = {
 			OR = {
 		        culture_group = hobgoblin
-                culture_group = wyhyun
+                culture_group = wuhyun
                 primary_culture = horned_ogre
             }
-		}
-		is_in_war = {
-			attackers = FROM
-			defenders = ROOT
 		}
 	}
 	is_allowed = {

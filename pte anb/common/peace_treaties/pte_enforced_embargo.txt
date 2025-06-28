@@ -20,6 +20,7 @@ pte_enforced_embargo = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_embargo_enabled
 		is_rival = FROM
 		NOT = { mercantilism = 100 }
 		FROM = {

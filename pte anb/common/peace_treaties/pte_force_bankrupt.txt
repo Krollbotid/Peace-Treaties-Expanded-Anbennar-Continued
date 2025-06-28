@@ -1,3 +1,4 @@
+# aka economic hegemony
 pte_force_bankrupt = {
 	category = 6
 	power_projection = no
@@ -20,7 +21,6 @@ pte_force_bankrupt = {
 	requires_is_allowed = yes
 
 	is_visible = {
-		has_dlc = "Emperor"
 	}
 	is_allowed = {
 		OR = {

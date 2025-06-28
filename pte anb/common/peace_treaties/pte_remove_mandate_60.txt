@@ -20,7 +20,7 @@ pte_remove_mandate_60 = {
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "Mandate of Heaven"
+		has_global_flag = pte_mandate_enabled
 		is_emperor_of_china = no
 		FROM = {
 			is_emperor_of_china = yes

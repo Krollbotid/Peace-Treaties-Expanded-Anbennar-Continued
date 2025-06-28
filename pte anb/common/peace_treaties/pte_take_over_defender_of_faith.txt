@@ -20,6 +20,7 @@ pte_take_over_defender_of_faith = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_dof_enabled
 		is_subject = no
 		religion = FROM
 		is_defender_of_faith = no

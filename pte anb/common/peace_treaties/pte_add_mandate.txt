@@ -20,7 +20,7 @@ pte_add_mandate = {
 	requires_is_allowed = no
 
 	is_visible = {
-		has_dlc = "Mandate of Heaven"
+		has_global_flag = pte_mandate_enabled
 		is_emperor_of_china = yes
 		NOT = { imperial_mandate = 100 }
 		OR = {

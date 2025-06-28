@@ -20,7 +20,6 @@ pte_stop_raiding = {
 	requires_is_allowed = yes
 
 	is_visible = {
-		always = yes
 	}
 	is_allowed = {
 		always = yes

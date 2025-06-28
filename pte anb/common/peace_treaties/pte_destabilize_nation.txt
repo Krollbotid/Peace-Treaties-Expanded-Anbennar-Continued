@@ -20,6 +20,7 @@ pte_destabilize_nation = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_destabilize_enabled
 		is_rival = FROM
 	}
 	is_allowed = {

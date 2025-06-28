@@ -60,7 +60,8 @@ country_decisions = {
 					value = 400
 					culture_group = ROOT
 				}
-			} else {
+			}
+			else = {
 				development_in_provinces = {
 					value = 200
 					culture_group = ROOT
@@ -222,21 +223,24 @@ country_decisions = {
 	pte_spread_infernal_empire = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = pte_emperor_spreads_infernal }
+			has_global_flag = pte_infernal_enabled
+			NOT = {
+				has_country_flag = pte_failed_spread_infernal
+				has_country_flag = pte_emperor_spreads_infernal
+			}
 			is_emperor = yes
 			hre_religion_locked = no
 			religion = infernal_court
-			any_country = {
+			any_known_country = {
 				is_part_of_hre = yes
 				NOT = { religion = infernal_court }
 				NOT = { is_subject_of = ROOT }
 			}
-			NOT = { has_country_flag = pte_failed_spread_infernal }
 		}
 		allow = {
 			OR = {
-				dominant_religion = infernal_court
 				hre_religion = infernal_court
+				dominant_religion = infernal_court
 			}
 			OR = { # aside from
 				if = {
@@ -326,12 +330,14 @@ country_decisions = {
 						hre_religion = infernal_court
 					}
 					set_hre_religion_locked = yes
-				} else = {
+				}
+				else = {
 					set_country_flag = hre_religion_changed
 					if = {
 						limit = { hre_religion = regent_court }
 						set_hre_heretic_religion = regent_court
-					} else_if = {
+					}
+					else_if = {
 						limit = { hre_religion = corinite }
 						set_hre_heretic_religion = corinite
 					}
@@ -357,5 +363,21 @@ country_decisions = {
 			factor = 10
 		}
 		ai_importance = 300
+	}
+	
+	pte_game_options = {
+			major = yes
+			color = { 255 0 0 }
+			potential = {
+				ai = no
+			}
+
+			allow = {
+			}
+
+			effect = {
+				country_event = { id = pte_settings.1}
+			}	
+
 	}
 }

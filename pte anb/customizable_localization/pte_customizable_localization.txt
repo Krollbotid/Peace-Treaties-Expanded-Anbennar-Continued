@@ -1210,6 +1210,624 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetDemandManpowerAmountTwice
+	random = no
+
+	text = {
+		trigger = {
+			max_manpower = 101
+		}
+		localisation_key = string_demand_manpower_amount_more_than_20k
+	}
+	text = {
+		trigger = {
+			max_manpower = 100
+		}
+		localisation_key = "20,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 99
+		}
+		localisation_key = "19,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 98
+		}
+		localisation_key = "19,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 97
+		}
+		localisation_key = "19,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 96
+		}
+		localisation_key = "19,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 95
+		}
+		localisation_key = "19,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 94
+		}
+		localisation_key = "18,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 93
+		}
+		localisation_key = "18,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 92
+		}
+		localisation_key = "18,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 91
+		}
+		localisation_key = "18,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 90
+		}
+		localisation_key = "18,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 89
+		}
+		localisation_key = "17,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 88
+		}
+		localisation_key = "17,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 87
+		}
+		localisation_key = "17,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 86
+		}
+		localisation_key = "17,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 85
+		}
+		localisation_key = "17,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 84
+		}
+		localisation_key = "16,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 83
+		}
+		localisation_key = "16,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 82
+		}
+		localisation_key = "16,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 81
+		}
+		localisation_key = "16,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 80
+		}
+		localisation_key = "16,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 79
+		}
+		localisation_key = "15,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 78
+		}
+		localisation_key = "15,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 77
+		}
+		localisation_key = "15,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 76
+		}
+		localisation_key = "15,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 75
+		}
+		localisation_key = "15,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 74
+		}
+		localisation_key = "14,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 73
+		}
+		localisation_key = "14,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 72
+		}
+		localisation_key = "14,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 71
+		}
+		localisation_key = "14,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 70
+		}
+		localisation_key = "14,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 69
+		}
+		localisation_key = "13,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 68
+		}
+		localisation_key = "13,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 67
+		}
+		localisation_key = "13,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 66
+		}
+		localisation_key = "13,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 65
+		}
+		localisation_key = "13,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 64
+		}
+		localisation_key = "12,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 63
+		}
+		localisation_key = "12,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 62
+		}
+		localisation_key = "12,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 61
+		}
+		localisation_key = "12,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 60
+		}
+		localisation_key = "12,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 59
+		}
+		localisation_key = "11,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 58
+		}
+		localisation_key = "11,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 57
+		}
+		localisation_key = "11,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 56
+		}
+		localisation_key = "11,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 55
+		}
+		localisation_key = "11,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 54
+		}
+		localisation_key = "10,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 53
+		}
+		localisation_key = "10,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 52
+		}
+		localisation_key = "10,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 51
+		}
+		localisation_key = "10,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 50
+		}
+		localisation_key = "10,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 49
+		}
+		localisation_key = "9,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 48
+		}
+		localisation_key = "9,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 47
+		}
+		localisation_key = "9,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 46
+		}
+		localisation_key = "9,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 45
+		}
+		localisation_key = "9,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 44
+		}
+		localisation_key = "8,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 43
+		}
+		localisation_key = "8,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 42
+		}
+		localisation_key = "8,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 41
+		}
+		localisation_key = "8,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 40
+		}
+		localisation_key = "8,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 39
+		}
+		localisation_key = "7,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 38
+		}
+		localisation_key = "7,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 37
+		}
+		localisation_key = "7,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 36
+		}
+		localisation_key = "7,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 35
+		}
+		localisation_key = "7,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 34
+		}
+		localisation_key = "6,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 33
+		}
+		localisation_key = "6,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 32
+		}
+		localisation_key = "6,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 31
+		}
+		localisation_key = "6,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 30
+		}
+		localisation_key = "6,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 29
+		}
+		localisation_key = "5,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 28
+		}
+		localisation_key = "5,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 27
+		}
+		localisation_key = "5,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 26
+		}
+		localisation_key = "5,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 25
+		}
+		localisation_key = "5,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 24
+		}
+		localisation_key = "4,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 23
+		}
+		localisation_key = "4,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 22
+		}
+		localisation_key = "4,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 21
+		}
+		localisation_key = "4,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 20
+		}
+		localisation_key = "4,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 19
+		}
+		localisation_key = "3,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 18
+		}
+		localisation_key = "3,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 17
+		}
+		localisation_key = "3,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 16
+		}
+		localisation_key = "3,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 15
+		}
+		localisation_key = "3,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 14
+		}
+		localisation_key = "2,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 13
+		}
+		localisation_key = "2,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 12
+		}
+		localisation_key = "2,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 11
+		}
+		localisation_key = "2,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 10
+		}
+		localisation_key = "2,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 9
+		}
+		localisation_key = "1,800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 8
+		}
+		localisation_key = "1,600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 7
+		}
+		localisation_key = "1,400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 6
+		}
+		localisation_key = "1,200"
+	}
+	text = {
+		trigger = {
+			max_manpower = 5
+		}
+		localisation_key = "1,000"
+	}
+	text = {
+		trigger = {
+			max_manpower = 4
+		}
+		localisation_key = "800"
+	}
+	text = {
+		trigger = {
+			max_manpower = 3
+		}
+		localisation_key = "600"
+	}
+	text = {
+		trigger = {
+			max_manpower = 2
+		}
+		localisation_key = "400"
+	}
+	text = {
+		trigger = {
+			max_manpower = 1
+		}
+		localisation_key = "200"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}
+
+defined_text = {
 	name = GetAbductAdvisorAdmSkill
 	random = no
 
@@ -1513,6 +2131,7 @@ defined_text = {
 		localisation_key = ""
 	}
 }
+
 defined_text {
 	name = GetDemandManpowerNonMonsterEffect
 	random = no
@@ -1530,5 +2149,27 @@ defined_text {
 			always = yes
 		}
 		localisation_key = string_demand_manpower_from_non_monsters
+	}
+}
+
+defined_text {
+	name = GetForceKnowledgeInstitutionAmount
+	random = no
+
+	text = {
+		trigger = {
+			is_in_war = {
+				participants = FROM
+				participants = ROOT
+				casus_belli = cb_pte_raid_for_knowledge
+			}
+		}
+		localisation_key = "100"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "25"
 	}
 }

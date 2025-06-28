@@ -20,6 +20,7 @@ pte_fleet_disarmament = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_fleet_disarmament_enabled
 		FROM = {
 			navy_size = 10
 		}

@@ -20,6 +20,7 @@ pte_give_up_cultural_hegemony = {
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_culhegA_enabled
 		FROM = {
 			has_country_modifier = pte_culture_group_hegemony_modifier
 			NOT = { is_variable_equal = { which = pte_culture_group_hegemony_var value = 0 } }

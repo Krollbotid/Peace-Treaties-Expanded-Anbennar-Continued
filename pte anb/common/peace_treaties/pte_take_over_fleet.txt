@@ -1,3 +1,4 @@
+# aka naval hegemony
 pte_take_over_fleet = {
 	category = 6
 	power_projection = no
@@ -20,7 +21,6 @@ pte_take_over_fleet = {
 	requires_is_allowed = yes
 
 	is_visible = {
-		has_dlc = "Emperor"
 	}
 	is_allowed = {
 		OR = {

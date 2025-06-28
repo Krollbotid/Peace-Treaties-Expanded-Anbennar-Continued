@@ -20,6 +20,7 @@ pte_spawn_reformation_center_in_capital = { # spread the true faith
 	requires_is_allowed = no
 
 	is_visible = {
+		has_global_flag = pte_spawncenter_enabled
 		# since ravelianism spawns at the end of age of Unraveling
 		OR = {
 			current_age = age_of_reformation

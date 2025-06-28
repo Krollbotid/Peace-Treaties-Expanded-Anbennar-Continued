@@ -20,6 +20,7 @@ pte_lift_excommunication = {
 	requires_is_allowed = yes
 
 	is_visible = {
+		is_religion_enabled = ravelian
 		religion = ravelian
 		is_excommunicated = yes
 		FROM = {

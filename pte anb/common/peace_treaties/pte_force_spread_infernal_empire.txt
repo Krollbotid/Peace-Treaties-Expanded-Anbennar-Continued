@@ -20,7 +20,6 @@ pte_force_spread_infernal_empire = { # spread the infernal court in empire
 	requires_is_allowed = no
 
 	is_visible = {
-		religion = infernal_court
 		is_in_war = {
 			attacker_leader = ROOT
 			defenders = FROM
@@ -32,6 +31,7 @@ pte_force_spread_infernal_empire = { # spread the infernal court in empire
 		}
 	}
 	is_allowed = {
+		religion = infernal_court
 		FROM = {
 			is_free_or_tributary_trigger = yes
 		}
