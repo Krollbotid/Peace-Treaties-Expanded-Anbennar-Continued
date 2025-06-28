@@ -20,7 +20,7 @@
  CB_ALLOWED_pte_enforced_embargo: "Принудительное эмбарго"
  PEACE_pte_enforced_embargo: "Принудительное эмбарго"
 
- pte_enforced_royal_marriage_desc: "Держава @[From.GetTag] §Y[From.GetName]§! заключит династический брак с @[Root.GetTag] §Y[Root.GetName]§!. Это произойдёт через §Y1 день§! после подписания мирного соглашения, потому что во время войны браки заключать нельзя."
+ pte_enforced_royal_marriage_desc: "Держава @[From.GetTag] §Y[From.GetName]§! заключит династический брак с @[Root.GetTag] §Y[Root.GetName]§!. Это произойдёт через §Y1 день§! после подписания мирного соглашения, потому что во время войны браки заключать нельзя.  §RНЕ СРАБОТАЕТ ЕСЛИ РАСЫ НЕ СОВМЕСТИМЫ!§!"
  CB_ALLOWED_pte_enforced_royal_marriage: "Насильственный брак"
  PEACE_pte_enforced_royal_marriage: "Насильственный брак"
 
@@ -80,7 +80,7 @@
  CB_ALLOWED_pte_demand_manpower: "Потребовать рабов-солдат"
  PEACE_pte_demand_manpower: "Потребовать рабов-солдат"
 
- pte_demand_manpower_monster_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G20.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmount]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R10§! престижа."
+ pte_demand_manpower_monster_desc: "Держава @[From.GetTag] §Y[From.GetName]§! передаёт §G20.0%§! от своего максимального запаса рекрутов (около §Y[From.GetDemandManpowerAmountTwice]§W), державе @[Root.GetTag] §Y[Root.GetName]§!. @[Root.GetTag] §Y[Root.GetName]§! потеряет §R10§! престижа."
  CB_ALLOWED_pte_demand_manpower_monster: "Потребовать рабов-солдат"
  PEACE_pte_demand_manpower_monster: "Потребовать рабов-солдат"
 
@@ -88,7 +88,7 @@
  CB_ALLOWED_pte_take_cardinal: "Похитить вердикала"
  PEACE_pte_take_cardinal: "Похитить $GIVERS$ вердикала"
 
- pte_take_advisor_adm_desc: "Держава @[From.GetTag] §Y[From.GetName]§! потеряет своего административного советника. @[Root.GetTag] §Y[Root.GetName]§! получит §Y[From.Adm_Advisor.GetTitle]§! с навыком §Y[From.GetAbductAdvisorAdmSkill]§!, исповедующего религию §Y[From.Religion.GetName]§! и принадлежащего к §Y[From.Culture.GetName]§z§!ой§ культуре. Этот советник обойдётся на §G33.0%§! дешевле."
+ pte_take_advisor_adm_desc: "Держава @[From.GetTag] §Y[From.GetName]§! потеряет своего административного советника. @[Root.GetTag] §Y[Root.GetName]§! получит §Y[From.Adm_Advisor.GetTitle]§! с навыком §Y[From.GetAbductAdvisorAdmSkill]§!, исповедующего религию §Y[From.Religion.GetName]§! и принадлежащего к §Y[From.Culture.GetName]§z§!ой§! культуре. Этот советник обойдётся на §G33.0%§! дешевле."
  CB_ALLOWED_pte_take_advisor_adm: "Похитить адм. советника"
  PEACE_pte_take_advisor_adm: "Похитить адм. советника"
 
@@ -108,7 +108,7 @@
  CB_ALLOWED_pte_take_over_cultural_hegemony: "Утверждение культурной гегемонии"
  PEACE_pte_take_over_cultural_hegemony: "Утверждение культурной гегемонии"
 
- pte_give_up_cultural_hegemony_desc: "Держава @[From.GetTag] §Y[From.GetName]§! потеряет §MКультурную гегемонию§! для §Y[From.pte_culture_group_hegemony_var.GetCultureGroupName]§! группы культур. Они потеряют прилагающиеся бонусы и не смогут снова претендовать на неё в течение следующих §Y20 лет§!."
+ pte_give_up_cultural_hegemony_desc: "Держава @[From.GetTag] §Y[From.GetName]§! потеряет §MКультурную гегемонию§! для культурной группы §Y[From.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§!. Они потеряют прилагающиеся бонусы и не смогут снова претендовать на неё в течение следующих §Y20 лет§!."
  CB_ALLOWED_pte_give_up_cultural_hegemony: "Отказ от культурной гегемонии"
  PEACE_pte_give_up_cultural_hegemony: "Отказ от культурной гегемонии"
 
@@ -312,6 +312,10 @@
  CB_ALLOWED_pte_force_spread_infernal_empire: "Принудительное распространение Инфернального Двора"
  PEACE_pte_force_spread_infernal_empire: "Принудительное распространение Инфернального Двора"
 
+ pte_prove_claims_desc: "Каждый член коалиции на §R50%§! уменьшит штраф к мнению о нашем агрессивном расширении. Если хотя бы один из них имеет штраф в размере более чем 100 мнения о нашем агрессивном расширении, мы также получим бонус к улучшению отношений!"
+ CB_ALLOWED_pte_prove_claims: "Доказать свои Претензии"
+ PEACE_pte_prove_claims: "Доказать свои Претензии"
+
  # paradox, why you didn't do this?
  CB_ALLOWED_TRANSFER_VASSALS: "Передача вассалов"
 
@@ -453,7 +457,7 @@
  PTE_CULTURE_GROUP_HEGEMONY_TT: "§YДругие независимые страны с основной культурой в культурной группе [Root.Culture.GetGroupName] которые имеют либо не менее 50 развития, либо не менее 25% [Root.GetAdjective]ого развития получат casus belli против [Root.GetTagRD], что позволит им перехватить §Mкультурную гегемонию§!. \nКроме того, страны с основной культурой, не входящей в группу культур [Root.Culture.GetGroupName] могут заставить [Root.GetTagVN] отказаться от претензий на §Mкультурную гегемонию§! в рамках мирных соглашений.§W"
  PTE_CULTURE_GROUP_HEGEMONY_CURRENT_HEGEMON_TT: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! в настоящее время претендует на §Mкультурную гегемонию§! для нашей культурной группы. Если мы достаточно велики и не заключили с ними перемирие, мы получим casus belli против них, чтобы захватить её. \n\nПретензия на §Mкультурную гегемонию§! будет иметь следующие эффекты:\n"
  PTE_CULTURE_GROUP_HEGEMONY_OTHERS_TT: "\nСледующие страны в настоящее время претендуют на §Mкультурную гегемонию§! для другой культурной группы:"
- PTE_CULTURE_GROUP_HEGEMONY_OTHERS_LIST_TT: "   — @[This.Owner.GetTag] §Y[This.Owner.GetName]§! для культурной группы §Y[This.Owner.pte_culture_group_hegemony_var.GetCultureGroupName]§!"
+ PTE_CULTURE_GROUP_HEGEMONY_OTHERS_LIST_TT: "   — @[This.Owner.GetTag] §Y[This.Owner.GetName]§! для культурной группы §Y[This.Owner.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§!"
  PTE_CULTURE_GROUP_HEGEMONY_OTHERS_EXPLANATION_TT: "\nМы можем заставить их отказаться от своих притязаний в рамках любой мирной сделки."
  PTE_CULTURE_GROUP_HEGEMONY_LOST_TT: "Мы потеряем §Mкультурную гегемонию§!. Все ее бонусы будут удалены из нашей страны, пока мы не восстановим ее. \nМы не сможем претендовать на этот титул в течение следующих §Y20 лет§!."
  PTE_PROVINCE_CONTROLLED_BY_OUR_SIDE: "Находится под контролем державы §Y[Root.GetName]§! или союзника в этой войне"
@@ -486,7 +490,7 @@
  PTE_NOT_START_SUCCESSION_CRISIS_USED_TT: "Не предъявлял сфабрикованных претензий на право наследования в течение последних §Y10 лет§!"
  PTE_HAS_SUCCESSION_CLAIM_ON_FROM_TT: "Имеет хотя бы слабые притязания на §Y[From.GetAdjective]ий§! трон[Root.GetFabricateSuccessionClaimVagueClaimInfoStar]"
  #PTE_FROM_PROVINCE_WITH_GREAT_PROJECT_CONTROLLED_BY_OUR_SIDE: "Провинция с этим монументом контролируется §Y[Root.GetName]§! или союзником в этой войне"
- PTE_ABLE_SPREAD_INFERNAL_TT: "Теперь мы можем использовать казус-белли §YРаспространить Инфернальный Двор в Империи§!. Данный казус-белли позволит нам обратить еретического члена империи и его субъекты в Инфернальный Двор. Однако, мы не сможем использовать этот казус-белли, если уже используем его в другой войне."
+ PTE_ABLE_SPREAD_INFERNAL_TT: "Теперь мы можем использовать casus belli §YРаспространить Инфернальный Двор в Империи§!. Данный casus belli позволит нам обратить еретического члена империи и его субъекты в Инфернальный Двор. Однако, мы не сможем использовать этот казус-белли, если уже используем его в другой войне."
 
  # Modifiers:
  pte_protect_religious_bretheren_modifier: "Принудительная защита от еретиков"
@@ -495,7 +499,7 @@
  pte_force_bankrupt_modifier: "Открытое экономическое превосходство"
  pte_demonstrate_military_supremacy_modifier: "Демонстрация военного превосходства"
  pte_culture_group_hegemony_modifier: "Культурная гегемония"
- desc_pte_culture_group_hegemony_modifier: "@[Root.GetTag] §Y[Root.GetName]§! объявил §Мкультурную гегемонию§! для культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!. \nУ нас есть эти преимущества до тех пор, пока нам не пришлось отказаться от них по условиям мира, пока мы не являемся субъектом, пока мы не сменили нашу культуру на ту, которая не является частью культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! или пока мы не перестанем владеть провинциями с культурами из культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!."
+ desc_pte_culture_group_hegemony_modifier: "@[Root.GetTag] §Y[Root.GetName]§! объявил §Мкультурную гегемонию§! для культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§!. \nУ нас есть эти преимущества до тех пор, пока нам не пришлось отказаться от них по условиям мира, пока мы не являемся субъектом, пока мы не сменили нашу культуру на ту, которая не является частью культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§! или пока мы не перестанем владеть провинциями с культурами из культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§!."
  pte_spawn_reformation_center_in_capital_modifier: "Миссия"
  desc_pte_spawn_reformation_center_in_capital_modifier: "§Y[Root.GetName]§! это §Ммиссия§! веры §Y[Root.pte_custom_cor_religion.GetReligionName]§!. \nЭто означает, что следующие §Y[Root.pte_custom_cor_duration_display.GetValue] лет§!, одна из соседних провинций будет выбираться каждые §Y6 месяцев§! для обращения в §Y[Root.pte_custom_cor_religion.GetReligionName]§! веру."
  pte_anti_pope_modifier: "Антиректор"
@@ -506,6 +510,7 @@
  pte_demilitarize_border_modifier_3: "Демилитаризованная граница"
  pte_demilitarize_border_modifier_4: "Демилитаризованная граница"
  pte_demilitarize_border_modifier_5: "Демилитаризованная граница"
+ pte_crushed_the_coalition: "Сокрушил коалицию"
 
  # Opinion Modifiers:
  #pte_guarantee_hree_diet_host_opinion: "Принудительное проведение заседания имперского совета в данном месте"
@@ -518,6 +523,7 @@
  # Customizable Localization:
  string_force_knowledge_sharing_lacking_institution: "§Wстарейший не внедрённый институт§!"
  string_demand_manpower_amount_more_than_10k: "§Yболее чем §Y10,000§W"
+ string_demand_manpower_amount_more_than_20k: "§Yболее чем §Y20,000§W"
  string_fabricate_succession_claim_vague_claim_info_text_dlc: "\n§О* Слабые претензии означают следующее: \n   — та же династия, что и у их сюзерена\n   — претензии на их трон\n   — в какой-то момент у них был правитель нашей династии\n   — один из их правителей родился, когда у них был консорт из нашей страны§!"
  string_fabricate_succession_claim_vague_claim_info_text: "\n§О* Слабые претензии означают следующее: \n   — та же династия, что и у их сюзерена\n   — претензии на их трон\n   — в какой-то момент у них был правитель нашей династии\n   — один из их правителей имел нашу культуру и религию и родился, когда мы с ними заключили брак§!"
  string_fabricate_succession_claim_vague_claim_info_star: "§О*§!"
@@ -540,7 +546,7 @@
  pte_events4.EVTOPT1: "Это позор."
 
  pte_events.EVTNAME5: "Рост культурной гегемонии"
- pte_events.EVTDESC5: "       @[Root.GetTag] §Y[Root.GetName]§! объявил §Mкультурную гегемонию§! для культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!. \n       Они обладают этими преимуществами до тех пор, пока не вынуждены будут отказаться от них в рамках мирного договора, пока они не станут субъектом, пока они не заменят свою культуру на ту, которая не является частью культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§! или до тех пор пока они не перестанут владеть провинциями с культурой из культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§!."
+ pte_events.EVTDESC5: "       Держава @[Root.GetTag] §Y[Root.GetName]§! объявила §MКультурную гегемонию§! для культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§!. \n       Они обладают этими преимуществами до тех пор, пока не вынуждены будут отказаться от них в рамках мирного договора, пока они не станут субъектом, пока они не заменят свою культуру на ту, которая не является частью культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§! или до тех пор пока они не перестанут владеть провинциями с культурой из культурной группы §Y[Root.pte_culture_group_hegemony_var.GetCultureGroupName]§z§!ая§!."
  pte_events5.EVTOPT1: "Чудесно."
 
  pte_events.EVTNAME7: "§Y[Root.religion_to_convert_to.GetReligionName]§! влияние в §Y[Root.GetName]§!"
@@ -548,7 +554,7 @@
  pte_events7.EVTOPT1: "Это проблема..."
 
  pte_events.EVTNAME8: "Миссия уничтожена"
- pte_events.EVTDESC8: "       Центр реформации в [From.GetName] действует уже 5 лет. Таким образом условия мирного договора  выполнены, и центр был уничтожен."
+ pte_events.EVTDESC8: "       Центр реформации в [From.GetName] действует уже 5 лет. Таким образом условия мирного договора выполнены, и центр был уничтожен."
  pte_events8.EVTOPT1: "Наконец-то!"
 
  pte_events.EVTNAME9: "Неприемлемый [Root.Monarch.GetTitle]"
@@ -568,7 +574,7 @@
 
  pte_events.EVTNAME14: "Последствия"
  pte_events.EVTDESC14_at_war: "Мы доказали серьёзность наших намерений, объявив войну для обращения князей-еретиков в Инфернальный двор. Однако, еретики решили объединиться против нас и выступить едиными фронтом для \"борьбы со злом на Голубином Троне\", как они это называют. У нас нет иного выбора, кроме как сокрушить их всех."
- pte_events.EVTDESC14_fail: "Прошёл уже месяц с отказа князей исполнять наши требования, но мы так и не начали войну ни с одним из них. Теперь наш автоитет в Империи потерян, равно как и возможность установить в качестве официальной религии Анбеннара."
+ pte_events.EVTDESC14_fail: "Прошёл уже месяц с отказа князей исполнять наши требования, но мы так и не начали войну ни с одним из них. Теперь наш авторитет в Империи потерян, равно как и возможность установить Инфернальный Двор в качестве официальной религии Анбеннара."
  pte_events14.EVTOPT1: "Этот ничтожный альянс не поможет им!"
  pte_events14.EVTOPT2: "Какой позор!"
 
