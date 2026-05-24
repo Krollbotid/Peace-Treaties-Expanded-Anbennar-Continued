@@ -599,6 +599,8 @@
 
  # New Diplomatic Actions:
  ## Actions:
+ custom_diplomacy_PTE_sub_header: "PTE Actions"
+ n_custom_diplomacy_PTE_sub_header: "\nPTE Actions"
  pte_start_border_friction_title: "Create Border Friction"
  pte_start_border_friction_desc: "Do you want to create a border friction with §Y[From.GetName]§!? \n\nThis will give us a casus belli against them that allows us to conquer their border provinces - and no other provinces. Additionally, we will gain §R2.00§! corruption. \nThis will reduce our spy network by §Y60§!."
  pte_start_border_friction_tooltip: "Gain a casus belli on §Y[From.GetName]§! to take the border provinces.\n"

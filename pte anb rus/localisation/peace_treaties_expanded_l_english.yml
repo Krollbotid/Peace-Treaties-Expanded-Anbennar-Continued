@@ -603,6 +603,8 @@
 
  # New Diplomatic Actions:
  ## Actions:
+ custom_diplomacy_PTE_sub_header: "Ðƒ ¦þ²¢ª¾"
+ n_custom_diplomacy_PTE_sub_header: "\nÐƒ ¦þ²¢ª¾"
  pte_start_border_friction_title: "Ô±  ¥°ªµ"
  pte_start_border_friction_desc: "Ïº ¨®² °¶²¿ ±¥°ª¶°º ±º  §Y[From.GetTagTV]§!? \n\n™² ¦² °¯ ±¢¦ ¬ ¢þ°  °ª¯ª, ¢ ¬²þ ¯º ©¢²ª¯ ª ±ª¥°ª¶°º ±¢ª°µªª — ª °ª ¦ª°º¯ ¥ª°¯ ¡®¿Œ. Ï¦¡¢¬, ¯º ±®³¶ª¯ §R2.00§! ¬³±µªª. \n™² ¬²ª² °Œ³ Œ±ª°¬³½ ²¿ ° §Y60§!."
  pte_start_border_friction_tooltip: "‰®³¶ª²¿ ±¢¦ ¦®¾ ¢þ°º  §Y[From.GetTagTV]§! ¦®¾ ©¢² ±ª¥°ª¶°º ±¢ª°µªþ.\n"

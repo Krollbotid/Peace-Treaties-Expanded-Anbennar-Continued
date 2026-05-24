@@ -603,6 +603,8 @@
 
  # New Diplomatic Actions:
  ## Actions:
+ custom_diplomacy_PTE_sub_header: "РМД действия"
+ n_custom_diplomacy_PTE_sub_header: "\nРМД действия"
  pte_start_border_friction_title: "Спор о границе"
  pte_start_border_friction_desc: "Вы желаете начать пограничные споры с §Y[From.GetTagTV]§!? \n\nЭто даст нам повод к войне с ними, в которой мы захватим их приграничные провинции — и ни единым регионом больше. Вдобавок, мы получим §R2.00§! коррупции. \nЭто сократит нашу шпионскую сеть на §Y60§!."
  pte_start_border_friction_tooltip: "Получить повод для войны с §Y[From.GetTagTV]§! для захвата приграничных провинций.\n"

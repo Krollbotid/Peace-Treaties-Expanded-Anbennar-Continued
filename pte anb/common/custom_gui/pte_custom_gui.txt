@@ -1,37 +1,37 @@
-custom_button = {
-	name = pte_custom_gui_cultural_hegemons_open_button
-	potential = {
-		FROM = {
-			ai = no
-			has_country_flag = pte_custom_gui_cultural_hegemons_hidden
-		}
-	}
-	effect = {
-		hidden_effect = {
-			FROM = {
-				clr_country_flag = pte_custom_gui_cultural_hegemons_hidden
-			}
-		}
-	}
-	tooltip = pte_custom_gui_cultural_hegemons_open_button_tt
-}
-custom_button = {
-	name = pte_custom_gui_cultural_hegemons_close_button
-	potential = {
-		FROM = {
-			ai = no
-			NOT = { has_country_flag = pte_custom_gui_cultural_hegemons_hidden }
-		}
-	}
-	effect = {
-		hidden_effect = {
-			FROM = {
-				set_country_flag = pte_custom_gui_cultural_hegemons_hidden
-			}
-		}
-	}
-	tooltip = pte_custom_gui_cultural_hegemons_close_button_tt
-}
+#custom_button = {
+#	name = pte_custom_gui_cultural_hegemons_open_button
+#	potential = {
+#		FROM = {
+#			ai = no
+#			has_country_flag = pte_custom_gui_cultural_hegemons_hidden
+#		}
+#	}
+#	effect = {
+#		hidden_effect = {
+#			FROM = {
+#				clr_country_flag = pte_custom_gui_cultural_hegemons_hidden
+#			}
+#		}
+#	}
+#	tooltip = pte_custom_gui_cultural_hegemons_open_button_tt
+#}
+#custom_button = {
+#	name = pte_custom_gui_cultural_hegemons_close_button
+#	potential = {
+#		FROM = {
+#			ai = no
+#			NOT = { has_country_flag = pte_custom_gui_cultural_hegemons_hidden }
+#		}
+#	}
+#	effect = {
+#		hidden_effect = {
+#			FROM = {
+#				set_country_flag = pte_custom_gui_cultural_hegemons_hidden
+#			}
+#		}
+#	}
+#	tooltip = pte_custom_gui_cultural_hegemons_close_button_tt
+#}
 
 custom_window = {
 	name = pte_custom_gui_cultural_hegemons_window

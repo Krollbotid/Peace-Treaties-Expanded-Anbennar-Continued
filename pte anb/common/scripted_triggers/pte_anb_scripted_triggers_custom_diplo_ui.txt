@@ -1,0 +1,564 @@
+@custom_diplomacy_PTE_sub_container_number = 9020
+
+#Scripted triggers for custom UI diploactions go here
+#Example uses of these are for frame triggers + and button triggers for ai_acceptance
+#ai_acceptance triggers that use VATs require an effect to calculate values for the tooltip
+#Place scripted effects in common\scripted_effects\anb_scripted_effects_custom_diplo_ui.txt
+
+# is_variable_between = {
+# 	check_variable = { which = $var$ value = $low$ } #Above low
+# 	NOT = {
+# 		AND = {
+# 			check_variable = { which = $var$ value = $high$ } #Not above high
+# 			NOT = { is_variable_equal = { which = $var$ value = $high$ } } #Edge case
+# 		}
+# 	}
+# }
+#is_variable_mostly_outside_range = {
+#	# __Greater than__ or equal to $high$
+#	# Less than $low$
+#	OR = {
+#		check_variable = { which = $var$ value = $high$ }
+#		NOT = { check_variable = { which = $var$ value = $low$ } }
+#	}
+#}
+
+#window_number = $window_number$
+#custdip_sort_ascending = {
+#	NOT = { check_variable = { which = show_diplo_container value = $window_number$ } }
+#}
+# custdip_sort_descending = {
+# 	# check_variable = { which = show_diplo_container value = check_number }
+# 	is_variable_equal = { which = show_diplo_container value = $next_number$ }
+# 	NOT = { is_variable_equal = { which = show_diplo_container value = $window_number$ } }
+# }
+
+#custdip_unique_button_trigger = {
+#	hidden_trigger = {
+#		OR = {
+#			#Put scripted triggers for any subcategories in here
+#			custdip_unique_Y20_trigger = yes
+#			custdip_unique_Y10_trigger = yes
+#			custdip_unique_Z99_trigger = yes
+#			custdip_unique_B58_trigger = yes
+#			custdip_unique_F35_trigger = yes
+#			custdip_unique_B32_trigger = yes
+#			custdip_unique_J33_trigger = yes
+#			custdip_unique_Z97_trigger = yes
+#			custdip_unique_B02_trigger = yes
+#			custdip_unique_H85_trigger = yes
+#			custdip_unique_B37_trigger = yes
+#			custdip_unique_Y25_trigger = yes
+#			custdip_unique_J95_trigger = yes
+#			custdip_unique_I69_trigger = yes
+#			custdip_unique_Y15_trigger = yes
+#			custdip_unique_U39_trigger = yes
+#			custdip_unique_L80_trigger = yes
+#			custdip_unique_S37_trigger = yes
+#			custdip_unique_A80_trigger = yes
+#			custdip_unique_F98_trigger = yes
+#			# has_global_flag = custdip_debug
+#		}
+#	}
+#}
+#custdip_has_multiple_unique_tabs_trigger = {
+#	hidden_trigger = {
+#		has_country_flag = show_diplo_unique
+#		calc_true_if = {
+#			amount = 2
+#			#Put scripted triggers for any subcategories in here too
+#			#They must be inside an OR to ensure each scripted trigger only counts once
+#			OR = { custdip_unique_Y20_trigger = yes }
+#			OR = { custdip_unique_Y10_trigger = yes }
+#			OR = { custdip_unique_Z99_trigger = yes }
+#			OR = { custdip_unique_B58_trigger = yes }
+#			OR = { custdip_unique_F35_trigger = yes }
+#			OR = { custdip_unique_B32_trigger = yes }
+#			OR = { custdip_unique_J33_trigger = yes }
+#			OR = { custdip_unique_Z97_trigger = yes }
+#			OR = { custdip_unique_B02_trigger = yes }
+#			OR = { custdip_unique_H85_trigger = yes }
+#			OR = { custdip_unique_B37_trigger = yes }
+#			OR = { custdip_unique_Y25_trigger = yes }
+#			OR = { custdip_unique_J95_trigger = yes }
+#			OR = { custdip_unique_I69_trigger = yes }
+#			OR = { custdip_unique_Y15_trigger = yes }
+#			OR = { custdip_unique_U39_trigger = yes }
+#			OR = { custdip_unique_L80_trigger = yes }
+#			OR = { custdip_unique_S37_trigger = yes }
+#			OR = { custdip_unique_A80_trigger = yes }
+#			OR = { custdip_unique_F98_trigger = yes }
+#			# has_global_flag = custdip_debug
+#		}
+#	}
+#}
+
+custdip_PTE_button_trigger = {
+	hidden_trigger = {
+		OR = {
+			#Put scripted triggers for any subcategories in here
+			custdip_PTE_sub_trigger = yes
+			# has_global_flag = custdip_debug
+		}
+    }
+}
+
+custdip_has_multiple_PTE_tabs_trigger = {
+	hidden_trigger = {
+		has_country_flag = show_diplo_PTE
+		calc_true_if = {
+			amount = 2
+			OR = { custdip_PTE_sub_trigger = yes }
+			# has_global_flag = custdip_debug
+		}
+	}
+}
+
+#custdip_estates_vampires_potential = {
+#	is_variable_equal = { which = show_diplo_container value = @custom_diplomacy_vampires_container_number }
+#}
+#custdip_estates_vampires_trigger = {
+#	OR = {
+#		has_country_flag = has_vampires_estate
+#		has_estate = estate_vampires
+#	}
+#}
+#custdip_unique_Y20_potential = {
+#	is_variable_equal = { which = show_diplo_container value = @custom_diplomacy_Y20_number }
+#}
+#custdip_unique_Y20_trigger = {
+#	is_or_was_tag = { tag = Y20 }
+#}
+
+custdip_PTE_sub_potential = {
+	is_variable_equal = { which = show_diplo_container value = @custom_diplomacy_PTE_sub_container_number }
+}
+custdip_PTE_sub_trigger = {
+	always = yes
+}
+
+
+#################################################
+# Variable Arithmetic Triggers					#
+#	 for ai_acceptance in the custom diplo UI	#
+#################################################
+
+#TODO:
+#PTE_succession_crisis_ai_acceptance_trigger = { #ROOT - AI, FROM - player
+#	variable_arithmetic_trigger = {
+#		custom_tooltip = trigger_ai_accept_string
+#		#Export all variables first - they're temporary, it's ok, and necessary
+#		export_to_variable = { which = ai_accept_var value = trigger_value:always } #=0
+#		export_to_variable = { which = temp_opinion value = opinion who = ROOT with = FROM }
+#		export_to_variable = { which = temp_diplomatic_reputation value = modifier:diplomatic_reputation who = FROM }
+#		export_to_variable = { which = temp_liberty_desire value = trigger_value:liberty_desire who = ROOT }
+#		export_to_variable = { which = temp_legitimacy_ai value = trigger_value:legitimacy who = ROOT }
+#		export_to_variable = { which = temp_legitimacy_player value = trigger_value:legitimacy who = FROM }
+#
+#
+#
+#		#1st - opinion
+#		divide_variable = { which = temp_opinion value = 6.66 }
+#		change_variable = { which = ai_accept_var which = temp_opinion }
+#
+#        #2nd diplo rep
+#		#1 rep = 3
+#		multiply_variable = { which = temp_diplomatic_reputation value = 5 }
+#		change_variable = { which = ai_accept_var which = temp_diplomatic_reputation }
+#
+#        #3rd liberty desire
+#		if = {
+#			limit = { NOT = { temp_liberty_desire = 50 } }
+#			variable_arithmetic_trigger = {
+#				subtract_variable = { which = temp_liberty_desire value = 50 }
+#		        change_variable = { which = ai_accept_var which = temp_liberty_desire }
+#			}
+#		}
+#        if = {
+#			limit = { temp_liberty_desire = 50 }
+#			variable_arithmetic_trigger = {
+#				subtract_variable = { which = temp_liberty_desire value = 50 }
+#				divide_variable = { which = temp_liberty_desire value = 2 }
+#		        change_variable = { which = ai_accept_var which = temp_liberty_desire }
+#			}
+#		}
+#
+#		#4th DIPLO_BORDER_DISTANCE_TT
+#		if = {
+#			limit = { NOT = { is_neighbor_of = FROM } }
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = -10 }
+#			}
+#		}
+#
+#        #5th opinion with overlord
+#        if = {# opinion of overlord is between 100 and 149
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = 150
+#							}
+#						}
+#						reverse_has_opinion = {
+#							who = PREV
+#							value = 100
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 5 }
+#			}
+#		}
+#        if = {# opinion of overlord is between 50 and 99
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = 100
+#							}
+#						}
+#						reverse_has_opinion = {
+#							who = PREV
+#							value = 50
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 10 }
+#			}
+#		}
+#        if = {# opinion of overlord is between 0 and 49
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = 50
+#							}
+#						}
+#						reverse_has_opinion = {
+#							who = PREV
+#							value = 0
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 15 }
+#			}
+#		}
+#        if = {# opinion of overlord is between -50 and -1
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = 0
+#							}
+#						}
+#						reverse_has_opinion = {
+#							who = PREV
+#							value = -50
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 20 }
+#			}
+#		}
+#        if = {# opinion of overlord is between -100 and -51
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = -50
+#							}
+#						}
+#						reverse_has_opinion = {
+#							who = PREV
+#							value = -100
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 25 }
+#			}
+#		}
+#        if = {# opinion of overlord is between -150 and -101
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = -100
+#							}
+#						}
+#						reverse_has_opinion = {
+#							who = PREV
+#							value = -150
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 30 }
+#			}
+#		}
+#        if = {# opinion of overlord is between -200 and -151
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						NOT = {
+#							reverse_has_opinion = {
+#								who = PREV
+#								value = -150
+#							}
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 50 }
+#			}
+#		}
+#
+#        #6th legitimacy
+#		subtract_variable = { which = temp_legitimacy_player which = temp_legitimacy_ai }
+#		divide_variable = { which = temp_legitimacy_player value = 2.5 }
+#		change_variable = { which = ai_accept_var which = temp_legitimacy_player }
+#
+#        #7th player's strength against ai's overlord strength
+#        if = {
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						FROM = {
+#							army_strength = { who = PREV value = 3 }
+#							NOT = { army_strength = { who = PREV value = 4 } }
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 5 }
+#			}
+#		}
+#        if = {
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						FROM = {
+#							army_strength = { who = PREV value = 4 }
+#							NOT = { army_strength = { who = PREV value = 5 } }
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 10 }
+#			}
+#		}
+#        if = {
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						FROM = {
+#							army_strength = { who = PREV value = 5 }
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 15 }
+#			}
+#		}
+#
+#        #8th historical friends
+#		change_variable = { which = ai_accept_var which = 10 }
+#
+#        #9th historical rivals
+#		change_variable = { which = ai_accept_var which = -10 }
+#
+#        #10th ai's overlord regency
+#        if = {
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						has_regency = yes
+#						has_consort_regency = no
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 20 }
+#			}
+#		}
+#        if = {
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						has_consort_regency = yes
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 10 }
+#			}
+#		}
+#
+#        #11th ai's overlord heir weak or not exist
+#        if = {
+#			limit = {
+#				ROOT = {
+#					overlord = {
+#						OR = {
+#							has_heir = no
+#							NOT = { heir_claim = 33 }
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 10 }
+#			}
+#		}
+#
+#        #12th ai's overlord and player great powers comparison
+#        if = {
+#			limit = {
+#				OR = {
+#					has_dlc = "Rights of Man"
+#					has_dlc = "Emperor"
+#				}
+#                FROM = {
+#				    is_great_power = yes
+#                }
+#				ROOT = {
+#					overlord = {
+#						OR = {
+#							is_great_power = no
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 10 }
+#			}
+#		}
+#        if = {
+#			limit = {
+#				OR = {
+#					has_dlc = "Rights of Man"
+#					has_dlc = "Emperor"
+#				}
+#                FROM = {
+#				    is_great_power = no
+#                }
+#				ROOT = {
+#					overlord = {
+#						OR = {
+#							is_great_power = yes
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = -20 }
+#			}
+#		}
+#
+#        #13th power projection
+#        if = {
+#			limit = {
+#                FROM = {
+#				    power_projection = 50
+#                }
+#				ROOT = {
+#					overlord = {
+#						variable_arithmetic_trigger = {
+#							export_to_variable = {
+#								which = our_pp
+#								value = trigger_value:power_projection
+#								who = FROM
+#							}
+#							export_to_variable = {
+#								which = their_pp
+#								value = trigger_value:power_projection
+#							}
+#							check_variable = { which = our_pp which = their_pp }
+#						}
+#					}
+#				}
+#			}
+#			variable_arithmetic_trigger = {
+#		        change_variable = { which = ai_accept_var which = 5 }
+#			}
+#		}
+#
+#        #14 attitude
+#
+#		#attitude_hostile_DIPLO_ATTITUDE_TT
+#		if = {
+#			limit = {
+#				ROOT = { ai_attitude = { who = FROM attitude = attitude_hostile } }
+#			}
+#			variable_arithmetic_trigger = {
+#				change_variable = { which = ai_accept_var value = -1000 }
+#			}
+#		}
+#		#attitude_outraged_DIPLO_ATTITUDE_TT
+#		if = {
+#			limit = {
+#				ROOT = { ai_attitude = { who = FROM attitude = attitude_outraged } }
+#			}
+#			variable_arithmetic_trigger = {
+#				change_variable = { which = ai_accept_var value = -25 }
+#			}
+#		}
+#		#attitude_neutral_DIPLO_ATTITUDE_TT
+#		if = {
+#			limit = { ROOT = { ai_attitude = { who = FROM attitude = attitude_neutral } } }
+#			variable_arithmetic_trigger = {
+#				change_variable = { which = ai_accept_var value = -5 }
+#			}
+#		}
+#		#attitude_friendly_DIPLO_ATTITUDE_TT
+#		if = {
+#			limit = {
+#				ROOT = { ai_attitude = { who = FROM attitude = attitude_friendly } }
+#			}
+#			variable_arithmetic_trigger = {
+#				change_variable = { which = ai_accept_var value = 5 }
+#			}
+#		}
+#		#attitude_threatened_DIPLO_ATTITUDE_TT
+#		if = {
+#			limit = {
+#				ROOT = { ai_attitude = { who = FROM attitude = attitude_threatened } }
+#			}
+#			variable_arithmetic_trigger = {
+#				change_variable = { which = ai_accept_var value = 10 }
+#			}
+#		}
+#		
+#		
+#
+#		#Final check - passed as a string
+#		$custom_trigger$
+#	}
+#}
+#

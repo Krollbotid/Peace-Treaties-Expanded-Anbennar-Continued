@@ -1,0 +1,196 @@
+# #For the hotkey
+# custom_button = { # custom_diplomacy_close
+# 	name = custom_diplomacy_close
+# 	potential = {
+# 		FROM = { has_country_flag = show_custom_diplo_flag }
+# 	}
+# 	effect = {
+# 		FROM = {
+# 			trigger_switch = {
+# 				on_trigger = has_country_flag
+# 				show_diplo_general = { clr_country_flag = show_diplo_general }
+# 				show_diplo_government = { clr_country_flag = show_diplo_government }
+# 				show_diplo_religion = { clr_country_flag = show_diplo_religion }
+# 				show_diplo_cultural = { clr_country_flag = show_diplo_cultural }
+# 				show_diplo_estates = { clr_country_flag = show_diplo_estates }
+# 				show_diplo_unique = { clr_country_flag = show_diplo_unique }
+# 				show_diplo_PTE = { clr_country_flag = show_diplo_PTE }
+# 				#Like a fallback
+# 				show_custom_diplo_flag = { clr_country_flag = show_custom_diplo_flag }
+# 			}
+# 		}
+# 	}
+# }
+# 
+# custom_window = {
+# 	name = custom_diplomacy_header_container
+# 	potential = {
+# 		FROM = {
+# 			OR = {
+# 				has_country_flag = show_diplo_general
+# 				has_country_flag = show_diplo_government
+# 				has_country_flag = show_diplo_religion
+# 				has_country_flag = show_diplo_cultural
+# 				has_country_flag = show_diplo_estates
+# 				has_country_flag = show_diplo_unique
+# 				has_country_flag = show_diplo_PTE
+# 			}
+# 		}
+# 	}
+# }
+# #To close the current list by clicking the header
+# custom_button = { # custom_diplomacy_header_back
+# 	name = custom_diplomacy_header_back
+# 
+# 	effect = {
+# 		FROM = {
+# 			trigger_switch = {
+# 				on_trigger = has_country_flag
+# 				show_diplo_general = { clr_country_flag = show_diplo_general }
+# 				show_diplo_government = { clr_country_flag = show_diplo_government }
+# 				show_diplo_religion = { clr_country_flag = show_diplo_religion }
+# 				show_diplo_cultural = { clr_country_flag = show_diplo_cultural }
+# 				show_diplo_estates = { clr_country_flag = show_diplo_estates }
+# 				show_diplo_unique = { clr_country_flag = show_diplo_unique }
+# 				show_diplo_PTE = { clr_country_flag = show_diplo_PTE }
+# 			}
+# 		}
+# 	}
+# }
+# custom_text_box = { #custom_diplomacy_header_back_text
+# 	name = custom_diplomacy_header_back_text
+# }
+# 
+# custom_button = { # custom_diplomacy_right
+# 	name = custom_diplomacy_right
+# 	tooltip = custom_diplo_next
+# 	potential = {
+# 		FROM = {
+# 			OR = {
+# 				custdip_has_multiple_general_tabs_trigger = yes
+# 				custdip_has_multiple_government_tabs_trigger = yes
+# 				custdip_has_multiple_religion_tabs_trigger = yes
+# 				custdip_has_multiple_cultural_tabs_trigger = yes
+# 				custdip_has_multiple_estates_tabs_trigger = yes
+# 				custdip_has_multiple_unique_tabs_trigger = yes
+# 				custdip_has_multiple_pte_tabs_trigger = yes
+# 			}
+# 		}
+# 	}
+# 	effect = {
+# 		hidden_effect = {
+# 			FROM = {
+# 				trigger_switch = {
+# 					on_trigger = has_country_flag
+# 					show_diplo_general = { custdip_show_next_window = { category = general } }
+# 					show_diplo_government = { custdip_show_next_window = { category = government } }
+# 					show_diplo_religion = { custdip_show_next_window = { category = religion } }
+# 					show_diplo_cultural = { custdip_show_next_window = { category = cultural } }
+# 					show_diplo_estates = { custdip_show_next_window = { category = estates } }
+# 					show_diplo_unique = { custdip_show_next_window = { category = unique } }
+# 					show_diplo_PTE = { custdip_show_next_window = { category = PTE } }
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# 
+# #Container windowTypes
+# custom_window = {
+# 	name = custom_diplomacy_categories_container
+# 	potential = {
+# 		FROM = {
+# 			# has_country_flag = show_diplo_categories
+# 			NOT = { #NOR
+# 				OR = {
+# 					has_country_flag = show_diplo_general
+# 					has_country_flag = show_diplo_government
+# 					has_country_flag = show_diplo_religion
+# 					has_country_flag = show_diplo_cultural
+# 					has_country_flag = show_diplo_estates
+# 					has_country_flag = show_diplo_unique
+# 					has_country_flag = show_diplo_PTE
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# custom_window = {
+# 	name = custom_diplomacy_PTE_container
+# 	potential = { FROM = { has_country_flag = show_diplo_PTE } }
+# }
+# 
+# #####
+# #Category buttons
+# #####
+# 
+# custom_button = {
+# 	name = custdip_PTE_button
+# 	tooltip = custdip_PTE_button_tt
+# 	trigger = {
+# 		hidden_trigger = {
+# 			FROM = { custdip_PTE_button_trigger = yes }
+# 		}
+# 	}
+# 	effect = {
+# 		custom_tooltip = custdip_PTE_button_desc
+# 		hidden_effect = {
+# 			FROM = {
+# 				custdip_category_open_PTE = yes
+# 			}
+# 		}
+# 	}
+# }
+# 
+# 
+# #####
+# #PTE Actions
+# #####
+# 
+# 
+# custom_window = {
+# 	name = custom_diplomacy_PTE_sub_container
+# 	potential = {
+# 		FROM = { custdip_PTE_sub_potential = yes }
+# 	}
+# }
+# custom_button = { # cultural hegemony open
+# 	name = pte_custom_gui_cultural_hegemons_open_action
+# 	tooltip = pte_custom_gui_cultural_hegemons_open_button_tt
+# 	potential = {
+#         FROM = {
+# 			ai = no
+# 			has_country_flag = pte_custom_gui_cultural_hegemons_hidden
+# 		}
+#     }
+# 	trigger = {
+# 		always = yes
+# 	}
+# 	effect = {
+#         hidden_effect = {
+# 			FROM = {
+# 				clr_country_flag = pte_custom_gui_cultural_hegemons_hidden
+# 			}
+# 		}
+# 	}
+# }
+# custom_button = { # cultural hegemony close
+# 	name = pte_custom_gui_cultural_hegemons_close_action
+# 	tooltip = pte_custom_gui_cultural_hegemons_close_button_tt
+# 	potential = {
+# 		FROM = {
+# 			ai = no
+# 			NOT = { has_country_flag = pte_custom_gui_cultural_hegemons_hidden }
+# 		}
+#     }
+# 	trigger = {
+# 		always = yes
+# 	}
+# 	effect = {
+# 		hidden_effect = {
+# 			FROM = {
+# 				set_country_flag = pte_custom_gui_cultural_hegemons_hidden
+# 			}
+# 		}
+# 	}
+# }
