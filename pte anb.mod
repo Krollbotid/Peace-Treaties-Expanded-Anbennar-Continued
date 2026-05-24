@@ -1,4 +1,4 @@
-version="1.3.0.1"
+version="1.4"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 }
@@ -8,5 +8,5 @@ tags={
 name="Peace Treaties Expanded Anbennar Continued"
 picture="thumbnail.png"
 supported_version="v1.37.5.0"
-path="C:/Users/USER/Documents/Paradox Interactive/Europa Universalis IV/mod/pte anb"
+path="mod/pte anb"
 remote_file_id="3449929366"

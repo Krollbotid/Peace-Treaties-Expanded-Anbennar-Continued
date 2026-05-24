@@ -1,0 +1,115 @@
+@custom_diplomacy_PTE_sub_container_number = 9020
+
+#Place scripted triggers in common\scripted_triggers\anb_scripted_triggers_custom_diplo_ui.txt
+
+#Scripted effects for category buttons - selects subcategory to show
+#If the category has ai acceptance, the scripted effect must be placed inside the 'if'
+
+#show_diplo_container ranges
+# 1-999 = reserved
+# 1000-1999 = show_diplo_general
+# 2000-2999 = show_diplo_government
+# 3000-3999 = show_diplo_religion
+# 4000-4999 = show_diplo_cultural
+# 5000-5999 = show_diplo_estates
+# 6000-6999 = show_diplo_unique
+# 7000-7999 = show_diplo_<unassigned>
+# 8000-8999 = show_diplo_<unassigned>
+
+# 9000-9999 = show_diplo_PTE
+
+#custdip_category_open_religion = {
+#	set_country_flag = show_diplo_religion
+#	if = {
+#		limit = {
+#			is_variable_mostly_outside_range = { var = show_diplo_container low = 3000 high = 4000 }
+#		}
+#		set_variable = { which = show_diplo_container value = 3000 }
+#		custdip_category_sort_religion = { ascending = yes }
+#	}
+#}
+
+custdip_category_open_PTE = {
+	set_country_flag = show_diplo_PTE
+	if = {
+		limit = {
+			is_variable_mostly_outside_range = { var = show_diplo_container low = 9000 high = 10000 }
+		}
+		set_variable = { which = show_diplo_container value = 9000 }
+		custdip_category_sort_PTE = { ascending = yes }
+	}
+}
+
+#custdip_category_sort_religion = {
+#	if = { #custom_diplomacy_nsc
+#		limit = {
+#			[[ascending] custdip_sort_ascending = { window_number = @custom_diplomacy_religion_new_sun_cult_number } ]
+#			custdip_religion_nsc_trigger = yes
+#		}
+#		set_variable = { which = show_diplo_container value = @custom_diplomacy_religion_new_sun_cult_number }
+#	}
+#	else_if = { #custom_diplomacy_rs
+#		limit = {
+#			[[ascending] custdip_sort_ascending = { window_number = @custom_diplomacy_religion_rinta_seekers_number } ]
+#			custdip_religion_rs_trigger = yes
+#		}
+#		set_variable = { which = show_diplo_container value = @custom_diplomacy_religion_rinta_seekers_number }
+#	}
+#	else_if = { #custom_diplomacy_sp
+#		limit = {
+#			[[ascending] custdip_sort_ascending = { window_number = @custom_diplomacy_religion_shadowpact_number } ]
+#			custdip_religion_sp_trigger = yes
+#		}
+#		set_variable = { which = show_diplo_container value = @custom_diplomacy_religion_shadowpact_number }
+#	}
+#	# else_if = { #Label_me
+#	# 	limit = {
+#	# 		[[ascending] custdip_sort_ascending = { window_number = 3040 } ]
+#	# 		#<subcategory trigger here>
+#	# 	}
+#	# 	set_variable = { which = show_diplo_container value = 3040 }
+#	# }
+#	else = {
+#		[[ascending] #First
+#			set_variable = { which = show_diplo_container value = 3000 }
+#		]
+#		set_country_flag = custdip_loop
+#	}
+#}
+#
+custdip_category_sort_PTE = {
+	if = { #custom_diplomacy_PTE_sub_container
+		limit = {
+			[[ascending] custdip_sort_ascending = { window_number = @custom_diplomacy_PTE_sub_container_number } ]
+			custdip_PTE_sub_trigger = yes
+		}
+		set_variable = { which = show_diplo_container value = @custom_diplomacy_PTE_sub_container_number }
+	}
+	# else_if = { #Label_me
+	# 	limit = {
+	# 		[[ascending] custdip_sort_ascending = { window_number = 5020 } ]
+	# 		#<subcategory trigger here>
+	# 	}
+	# 	set_variable = { which = show_diplo_container value = 5020 }
+	# }
+	else = {
+		[[ascending] #First
+			set_variable = { which = show_diplo_container value = 9000 }
+		]
+		set_country_flag = custdip_loop
+	}
+}
+
+
+
+#############################
+# Scripted variable exports
+#############################
+
+
+#############################
+# AI Acceptance Calcs
+#############################
+#Must be scripted to use unique variables within each category
+### The values need to add up in the tooltip
+### Then, standardise them so that the same loc can be re-used

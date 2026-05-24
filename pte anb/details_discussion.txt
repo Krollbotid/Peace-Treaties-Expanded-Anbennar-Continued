@@ -644,20 +644,6 @@ There is no info for disabled peace treaties/casus bellis
 [*] loser and loser's imperial subjects don't count as "refused Emperor's demand" anymore
 [/list]
 
-[h1]Prove your claims[/h1]
-
-[b]Conditions for Visibility:[/b]
-[list]
-[*] winner and loser are in war declared with the "Coalition" or "Crush the Coalition" casus belli
-[*] winner is attacker leader
-[/list]
-
-[b]Effects:[/b]
-[list]
-[*] all members of coalition against the winner lose half of their AE toward winner
-[*] if at least one country has more than 100 AE toward winner, winner gets 25% improve relation modifier
-[/list]
-
 [h1][b][u]Casus Bellis[/u][/b][/h1]
 
 [h1]Question Rectorate Authority[/h1]

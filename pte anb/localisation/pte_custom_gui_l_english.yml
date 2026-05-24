@@ -1,5 +1,10 @@
 ﻿l_english:
  # GUIs:
+ custdip_PTE_button: "PTE Actions"
+ custdip_PTE_button_tt: "PTE Actions"
+ custdip_PTE_button_desc: "[From.n_custom_diplomacy_PTE_sub_header]" #Add custom loc to list what is inside
+ pte_custom_gui_cultural_hegemons_open_action: "Cultural Hegemony List"
+ pte_custom_gui_cultural_hegemons_close_action: "Cultural Hegemony List"
  pte_custom_gui_cultural_hegemons_open_button_tt: "Open the §YCultural Hegemonies§! window."
  pte_custom_gui_cultural_hegemons_close_button_tt: "Close the §YCultural Hegemonies§! window."
  pte_custom_gui_cultural_hegemons_header: "Cultural Hegemons"
@@ -20,6 +25,7 @@
  pte_custom_gui_cultural_hegemons_entry_5_bg_tt: "[From.GetPteCustomGuiCulturalHegemonTooltip5]"
 
  # Customizable Localization:
+ custom_diplomacy_header_back_text: "[From.getCustDipCategoryPTE]" #FUCK PARADOX overriding! I just make another custom loca
  string_pte_custom_gui_cultural_hegemons_entry_empty: "Not Claimed"
  string_pte_custom_gui_cultural_hegemons_entry_1_name: "[pte_cultural_hegemony_target_1.GetName]"
  string_pte_custom_gui_cultural_hegemons_entry_1_desc: "§M[pte_cultural_hegemony_target_1.pte_culture_group_hegemony_var.GetCultureGroupName]§!"

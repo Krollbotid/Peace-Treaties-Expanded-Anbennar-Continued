@@ -1,4 +1,4 @@
-version="1.3.0.1"
+version="1.4"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 }

@@ -1,0 +1,5 @@
+common\custom_gui\countrydiplomacyview.txt - scripts for diplomacy gui
+
+common\scripted_triggers\anb_scripted_triggers_early_escann.txt - escann triggers, includes peace treaty restrictions
+
+interface\countrydiplomacyview.gui - diplomacy gui

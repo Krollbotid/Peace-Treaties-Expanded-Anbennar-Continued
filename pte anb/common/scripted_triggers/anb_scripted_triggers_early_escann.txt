@@ -1,3 +1,5 @@
+
+# PTE Changed
 # Province scope
 escann_adventurer_allowed_provinces = {
 	OR = {
@@ -25,15 +27,33 @@ escann_adventurer_can_settle_down = {
 
 escann_restricted_greentide_diplo_trigger = {
 	OR = {
+	
 		AND = {
 			ROOT = {
 				has_reform = adventurer_reform
 				NOT = { has_reform = found_our_nation }
 			}
-			FROM = { has_reform = greentide_horde }
+			FROM = {
+				has_reform = greentide_horde
+				NOT = {
+					OR = {
+						has_ruler_flag = arosha_oakbreaker 
+						has_country_flag = B42_escanni_diplomacy_bypass
+					}
+
+				}
+			}
 		}
 		AND = {
-			ROOT = { has_reform = greentide_horde }
+			ROOT = {
+				has_reform = greentide_horde 
+				NOT = {
+					OR = {
+						has_ruler_flag = arosha_oakbreaker 
+						has_country_flag = B42_escanni_diplomacy_bypass
+					}
+				} 
+			}
 			FROM = {
 				has_reform = adventurer_reform
 				NOT = { has_reform = found_our_nation }
@@ -60,7 +80,6 @@ escann_adventurer_cb_restriction_trigger = {
 	}
 }
 
-# PTE Changed
 escann_adventurer_no_no_cb_wars_trigger = {
 	has_reform = adventurer_reform
 	NOT = { has_reform = found_our_nation }

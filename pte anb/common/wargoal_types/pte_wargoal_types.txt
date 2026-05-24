@@ -210,7 +210,7 @@ pte_defend_rival_subject_war_goal = {
 			po_humiliate_rival
 			po_humiliate
 			pte_demand_manpower
-			pte_demand_manpower_mam
+			pte_demand_manpower_monster
 			pte_demilitarize_border
 			po_war_reparations
 			po_gold
@@ -228,7 +228,7 @@ pte_defend_rival_subject_war_goal = {
 			po_humiliate_rival
 			po_humiliate
 			pte_demand_manpower
-			pte_demand_manpower_mam
+			pte_demand_manpower_monster
 			pte_demilitarize_border
 			po_war_reparations
 			po_gold
@@ -324,7 +324,7 @@ pte_military_hegemon_war_goal = {
 			pte_demonstrate_military_supremacy
 			pte_army_disarmament
 			pte_demand_manpower
-			pte_demand_manpower_mam
+			pte_demand_manpower_monster
 			pte_demilitarize_border
 			pte_demand_aides_mil
 			pte_take_advisor_mil
@@ -341,7 +341,7 @@ pte_military_hegemon_war_goal = {
 			pte_demonstrate_military_supremacy
 			pte_army_disarmament
 			pte_demand_manpower
-			pte_demand_manpower_mam
+			pte_demand_manpower_monster
 			pte_demilitarize_border
 			pte_demand_aides_mil
 			pte_take_advisor_mil
