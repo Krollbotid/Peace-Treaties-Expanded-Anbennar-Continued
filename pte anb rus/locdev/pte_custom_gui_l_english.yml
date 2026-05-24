@@ -1,5 +1,10 @@
 ﻿l_english:
  # GUIs:
+ custdip_PTE_button: "РМД действия"
+ custdip_PTE_button_tt: "РМД действия"
+ custdip_PTE_button_desc: "[From.n_custom_diplomacy_PTE_sub_header]" #Add custom loc to list what is inside
+ pte_custom_gui_cultural_hegemons_open_action: "Список культурных гегемоний"
+ pte_custom_gui_cultural_hegemons_close_action: "Список культурных гегемоний"
  pte_custom_gui_cultural_hegemons_open_button_tt: "Открыть окно §YКультурных Гегемоний§!."
  pte_custom_gui_cultural_hegemons_close_button_tt: "Закрыть окно §YКультурных Гегемоний§!."
  pte_custom_gui_cultural_hegemons_header: "Культурные Гегемоны"
@@ -20,6 +25,7 @@
  pte_custom_gui_cultural_hegemons_entry_5_bg_tt: "[From.GetPteCustomGuiCulturalHegemonTooltip5]"
 
  # Customizable Localization:
+ custom_diplomacy_header_back_text: "[From.getCustDipCategoryPTE]" #FUCK PARADOX overriding! I just make another custom loca
  string_pte_custom_gui_cultural_hegemons_entry_empty: "Не объявлена"
  string_pte_custom_gui_cultural_hegemons_entry_1_name: "[pte_cultural_hegemony_target_1.GetName]"
  string_pte_custom_gui_cultural_hegemons_entry_1_desc: "§M[pte_cultural_hegemony_target_1.pte_culture_group_hegemony_var.GetCultureGroupName]ая§!"

@@ -1,5 +1,10 @@
 ﻿l_english:
  # GUIs:
+ custdip_PTE_button: "Ðƒ ¦þ²¢ª¾"
+ custdip_PTE_button_tt: "Ðƒ ¦þ²¢ª¾"
+ custdip_PTE_button_desc: "[From.n_custom_diplomacy_PTE_sub_header]" #Add custom loc to list what is inside
+ pte_custom_gui_cultural_hegemons_open_action: "Ô±ª¬ ¬³®¿²³°º ¥¥¯°ªþ"
+ pte_custom_gui_cultural_hegemons_close_action: "Ô±ª¬ ¬³®¿²³°º ¥¥¯°ªþ"
  pte_custom_gui_cultural_hegemons_open_button_tt: "²¬º²¿ ¬° §Y³®¿²³°º ‚¥¯°ªþ§!."
  pte_custom_gui_cultural_hegemons_close_button_tt: "…¬º²¿ ¬° §Y³®¿²³°º ‚¥¯°ªþ§!."
  pte_custom_gui_cultural_hegemons_header: "³®¿²³°º ‚¥¯°º"
@@ -20,6 +25,7 @@
  pte_custom_gui_cultural_hegemons_entry_5_bg_tt: "[From.GetPteCustomGuiCulturalHegemonTooltip5]"
 
  # Customizable Localization:
+ custom_diplomacy_header_back_text: "[From.getCustDipCategoryPTE]" #FUCK PARADOX overriding! I just make another custom loca
  string_pte_custom_gui_cultural_hegemons_entry_empty: " ¡¹¾¢®°"
  string_pte_custom_gui_cultural_hegemons_entry_1_name: "[pte_cultural_hegemony_target_1.GetName]"
  string_pte_custom_gui_cultural_hegemons_entry_1_desc: "§M[pte_cultural_hegemony_target_1.pte_culture_group_hegemony_var.GetCultureGroupName]¾§!"
