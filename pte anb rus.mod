@@ -11,4 +11,5 @@ tags={
 name="Peace Treaties Expanded Anbennar [Russian Loc] dev"
 picture="thumbnail.png"
 supported_version="v1.37.5.0"
-path="C:/Users/USER/Documents/Paradox Interactive/Europa Universalis IV/mod/pte anb rus"
+path="mod/pte anb rus"
+remote_file_id="3137113581"
